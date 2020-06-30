@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperUni\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperUniBackUp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
                     "source": "C:\\Users\\dev_1\\.gradle\\caches\\transforms-2\\files-2.1\\214c1052c1cd2dfcc04a5b041539c080\\res\\values-v24\\values-v24.xml",

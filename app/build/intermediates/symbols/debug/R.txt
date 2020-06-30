@@ -8145,8 +8145,6 @@ int raw lb_voice_failure 0x7f110001
 int raw lb_voice_no_input 0x7f110002
 int raw lb_voice_open 0x7f110003
 int raw lb_voice_success 0x7f110004
-int raw superteve 0x7f110005
-int raw supertvplus 0x7f110006
 int string abc_action_bar_home_description 0x7f120000
 int string abc_action_bar_up_description 0x7f120001
 int string abc_action_menu_overflow_description 0x7f120002

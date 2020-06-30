@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperUni\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bg\\values-bg.xml",
+            "outputFile": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperUniBackUp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bg\\values-bg.xml",
             "map": [
                 {
                     "source": "C:\\Users\\dev_1\\.gradle\\caches\\transforms-2\\files-2.1\\4eae12b8040261ada83512afa36a8487\\res\\values-bg\\values-bg.xml",
@@ -38,20 +38,20 @@
                     }
                 },
                 {
-                    "source": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperUni\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-bg\\values-bg.xml",
+                    "source": "C:\\Users\\dev_1\\.gradle\\caches\\transforms-2\\files-2.1\\b4fff972fecea2eaac2d373819157c9a\\res\\values-bg\\values.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,140,214,281,349,428,507",
-                        "endColumns": "84,73,66,67,78,78,67",
-                        "endOffsets": "135,209,276,344,423,502,570"
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "196",
+                        "endOffsets": "443"
                     },
                     "to": {
-                        "startLines": "89,90,91,92,93,94,95",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "10214,10299,10373,10440,10508,10587,10666",
-                        "endColumns": "84,73,66,67,78,78,67",
-                        "endOffsets": "10294,10368,10435,10503,10582,10661,10729"
+                        "startLines": "79",
+                        "startColumns": "4",
+                        "startOffsets": "8626",
+                        "endColumns": "196",
+                        "endOffsets": "8818"
                     }
                 },
                 {
@@ -106,20 +106,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\dev_1\\.gradle\\caches\\transforms-2\\files-2.1\\e35c82980ff92e3ce11af34718f40e87\\res\\values-bg\\values.xml",
+                    "source": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperUniBackUp\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-bg\\values-bg.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "207",
-                        "endColumns": "99",
-                        "endOffsets": "306"
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,140,214,281,349,428,507",
+                        "endColumns": "84,73,66,67,78,78,67",
+                        "endOffsets": "135,209,276,344,423,502,570"
                     },
                     "to": {
-                        "startLines": "97",
-                        "startColumns": "4",
-                        "startOffsets": "10822",
-                        "endColumns": "103",
-                        "endOffsets": "10921"
+                        "startLines": "89,90,91,92,93,94,95",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "10214,10299,10373,10440,10508,10587,10666",
+                        "endColumns": "84,73,66,67,78,78,67",
+                        "endOffsets": "10294,10368,10435,10503,10582,10661,10729"
                     }
                 },
                 {
@@ -137,23 +137,6 @@
                         "startOffsets": "5096,5247,5400,5502",
                         "endColumns": "150,152,101,111",
                         "endOffsets": "5242,5395,5497,5609"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\dev_1\\.gradle\\caches\\transforms-2\\files-2.1\\5339115b5f2a180ab29c55b59b088ec2\\res\\values-bg\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "196",
-                        "endOffsets": "443"
-                    },
-                    "to": {
-                        "startLines": "79",
-                        "startColumns": "4",
-                        "startOffsets": "8626",
-                        "endColumns": "196",
-                        "endOffsets": "8818"
                     }
                 },
                 {
@@ -188,6 +171,23 @@
                         "startOffsets": "15357,15464,15587,15712,15840,15960,16060,16149,16249,16355,16455,16550,16658,16753,16867,16981,17078,17171,17256,17364,17476,17583,17695,17782",
                         "endColumns": "106,122,124,127,119,99,88,99,105,99,94,107,94,113,113,96,92,84,107,111,106,111,86,96",
                         "endOffsets": "15459,15582,15707,15835,15955,16055,16144,16244,16350,16450,16545,16653,16748,16862,16976,17073,17166,17251,17359,17471,17578,17690,17777,17874"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dev_1\\.gradle\\caches\\transforms-2\\files-2.1\\019adc94a79a4470084282e06846b95c\\res\\values-bg\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "207",
+                        "endColumns": "99",
+                        "endOffsets": "306"
+                    },
+                    "to": {
+                        "startLines": "97",
+                        "startColumns": "4",
+                        "startOffsets": "10822",
+                        "endColumns": "103",
+                        "endOffsets": "10921"
                     }
                 }
             ]

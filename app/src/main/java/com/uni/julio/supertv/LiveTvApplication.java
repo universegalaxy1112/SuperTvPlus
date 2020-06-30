@@ -153,7 +153,6 @@ public class LiveTvApplication extends MultiDexApplication implements StringRequ
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
-
                 }
 
             }

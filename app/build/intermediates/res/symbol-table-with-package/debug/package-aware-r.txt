@@ -8146,8 +8146,6 @@ raw lb_voice_failure
 raw lb_voice_no_input
 raw lb_voice_open
 raw lb_voice_success
-raw superteve
-raw supertvplus
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

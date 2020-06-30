@@ -113,7 +113,7 @@ public class SplashViewModel implements SplashViewModelContract.ViewModel, Strin
 //                e.printStackTrace();
             }
         }
-        DataManager.getInstance().saveData("theUser","");
+        //DataManager.getInstance().saveData("theUser","");
         viewCallback.onLoginCompleted(false);
     }
 

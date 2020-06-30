@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperUni\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-b+sr+Latn\\values-b+sr+Latn.xml",
+            "outputFile": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperUniBackUp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-b+sr+Latn\\values-b+sr+Latn.xml",
             "map": [
-                {
-                    "source": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperUni\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-b+sr+Latn\\values-b+sr+Latn.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,139,213,280,346,426,504",
-                        "endColumns": "83,73,66,65,79,77,68",
-                        "endOffsets": "134,208,275,341,421,499,568"
-                    },
-                    "to": {
-                        "startLines": "89,90,91,92,93,94,95",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "9979,10063,10137,10204,10270,10350,10428",
-                        "endColumns": "83,73,66,65,79,77,68",
-                        "endOffsets": "10058,10132,10199,10265,10345,10423,10492"
-                    }
-                },
                 {
                     "source": "C:\\Users\\dev_1\\.gradle\\caches\\transforms-2\\files-2.1\\8450325a38a916bf35b43d894f534553\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
                     "from": {
@@ -89,20 +72,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\dev_1\\.gradle\\caches\\transforms-2\\files-2.1\\5339115b5f2a180ab29c55b59b088ec2\\res\\values-b+sr+Latn\\values.xml",
+                    "source": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperUniBackUp\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-b+sr+Latn\\values-b+sr+Latn.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "254",
-                        "endColumns": "188",
-                        "endOffsets": "442"
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,139,213,280,346,426,504",
+                        "endColumns": "83,73,66,65,79,77,68",
+                        "endOffsets": "134,208,275,341,421,499,568"
                     },
                     "to": {
-                        "startLines": "79",
-                        "startColumns": "4",
-                        "startOffsets": "8471",
-                        "endColumns": "188",
-                        "endOffsets": "8655"
+                        "startLines": "89,90,91,92,93,94,95",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "9979,10063,10137,10204,10270,10350,10428",
+                        "endColumns": "83,73,66,65,79,77,68",
+                        "endOffsets": "10058,10132,10199,10265,10345,10423,10492"
                     }
                 },
                 {
@@ -123,20 +106,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\dev_1\\.gradle\\caches\\transforms-2\\files-2.1\\e35c82980ff92e3ce11af34718f40e87\\res\\values-b+sr+Latn\\values.xml",
+                    "source": "C:\\Users\\dev_1\\.gradle\\caches\\transforms-2\\files-2.1\\b4fff972fecea2eaac2d373819157c9a\\res\\values-b+sr+Latn\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
-                        "startOffsets": "214",
-                        "endColumns": "99",
-                        "endOffsets": "313"
+                        "startOffsets": "254",
+                        "endColumns": "188",
+                        "endOffsets": "442"
                     },
                     "to": {
-                        "startLines": "97",
+                        "startLines": "79",
                         "startColumns": "4",
-                        "startOffsets": "10584",
-                        "endColumns": "103",
-                        "endOffsets": "10683"
+                        "startOffsets": "8471",
+                        "endColumns": "188",
+                        "endOffsets": "8655"
                     }
                 },
                 {
@@ -154,6 +137,23 @@
                         "startOffsets": "7320,7428,7616,7744,7856,8069,8198,8340,8660,8868,8977,9168,9297,9505,9677,9775,9870",
                         "endColumns": "107,187,127,111,212,128,141,130,207,108,190,128,207,171,97,94,108",
                         "endOffsets": "7423,7611,7739,7851,8064,8193,8335,8466,8863,8972,9163,9292,9500,9672,9770,9865,9974"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dev_1\\.gradle\\caches\\transforms-2\\files-2.1\\019adc94a79a4470084282e06846b95c\\res\\values-b+sr+Latn\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "214",
+                        "endColumns": "99",
+                        "endOffsets": "313"
+                    },
+                    "to": {
+                        "startLines": "97",
+                        "startColumns": "4",
+                        "startOffsets": "10584",
+                        "endColumns": "103",
+                        "endOffsets": "10683"
                     }
                 },
                 {
