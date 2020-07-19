@@ -96,7 +96,7 @@
 
                             <com.bosphere.fadingedgelayout.FadingEdgeLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="3000dp"
                                 app:fel_edge="top"
                                 app:fel_size_top="@dimen/dip_100">
 

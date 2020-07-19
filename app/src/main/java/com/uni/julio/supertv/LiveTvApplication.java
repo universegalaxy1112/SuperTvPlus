@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Handler;
 import android.text.TextUtils;
+import android.util.Log;
+
 import androidx.multidex.MultiDexApplication;
 /*import com.google.android.exoplayer2.DefaultRenderersFactory;
 import com.google.android.exoplayer2.RenderersFactory;*/
@@ -23,6 +25,7 @@ import com.uni.julio.supertv.utils.Device;
 import com.uni.julio.supertv.utils.Dialogs;
 import com.uni.julio.supertv.utils.Tracking;
 import com.uni.julio.supertv.utils.networing.NetManager;
+import com.uni.julio.supertv.view.LoginActivity;
 import com.uni.julio.supertv.view.SplashActivity;
 
 import org.json.JSONException;
@@ -45,7 +48,7 @@ public class LiveTvApplication extends MultiDexApplication implements StringRequ
                 performLogin();
                 handler.postDelayed(this, 600000);
             }
-        }, 600000);
+        }, 60000);
     }
 
     public void performLogin(){
@@ -108,6 +111,16 @@ public class LiveTvApplication extends MultiDexApplication implements StringRequ
                         if (jsonObject.has("status") && "1".equals(jsonObject.getString("status"))) {
                             LiveTvApplication.getUser().setAdultos(jsonObject.getInt("adultos"));
                         }else{
+                            if(!Connectivity.isConnected()){
+                                Dialogs.showOneButtonDialog(appContext, R.string.no_connection_title,  R.string.no_connection_message, new DialogInterface.OnClickListener(){
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Log.d("TAG", "no internet");
+                                    }
+                                });
+                                return;
+                            }
+
                             Tracking.getInstance().enableTrack(false);
                             String errorFound = jsonObject.getString("error_found");
                             switch (errorFound) {
@@ -146,7 +159,7 @@ public class LiveTvApplication extends MultiDexApplication implements StringRequ
                                 }
                                 break;
                                 default:
-                                    Dialogs.showCustomDialog(appContext,appContext.getString(R.string.attention),"Dear "+ LiveTvApplication.getUser().getName()+", Your account is inactive due to some problems. Please contact the support.",this);
+                                    Dialogs.showCustomDialog(appContext,appContext.getString(R.string.attention),"Estimado "+ LiveTvApplication.getUser().getName()+", su cuenta a sido desactivada, porfavor comunicate con tu vendedor.",this);
                                     break;
                             }
                         }
@@ -161,9 +174,21 @@ public class LiveTvApplication extends MultiDexApplication implements StringRequ
            e.printStackTrace();
         }
     }
-    public void closeApp(){
-        ((Activity)appContext).finishAffinity();
-        System.exit(0);
+    public void closeApp() {
+        if(Connectivity.isConnected()){
+            ((Activity)appContext).finishAffinity();
+            System.exit(0);
+        }
+        else{
+            Dialogs.showOneButtonDialog(appContext, R.string.no_connection_title,  R.string.no_connection_message, new DialogInterface.OnClickListener(){
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    ((Activity)appContext).finishAffinity();
+                    System.exit(0);
+                }
+            });
+        }
+
     }
     public void showErrorMessage() {
         if(appContext != null)

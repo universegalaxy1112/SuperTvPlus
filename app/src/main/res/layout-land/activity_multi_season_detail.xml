@@ -86,16 +86,16 @@
                         </androidx.constraintlayout.widget.ConstraintLayout>
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="match_parent">
                             <com.bosphere.fadingedgelayout.FadingEdgeLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="3000dp"
                                 app:fel_edge="top"
                                 app:fel_size_top="@dimen/dip_100">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="match_parent"
                                     android:background="@color/detail_background"
                                     android:minHeight="@dimen/dip_500"
                                     android:orientation="vertical"

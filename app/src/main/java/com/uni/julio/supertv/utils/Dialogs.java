@@ -21,6 +21,7 @@ import com.uni.julio.supertv.LiveTvApplication;
 import com.uni.julio.supertv.R;
 import com.uni.julio.supertv.listeners.DialogListener;
 import com.uni.julio.supertv.listeners.MessageCallbackListener;
+import com.uni.julio.supertv.view.SplashActivity;
 
 public class Dialogs {
 
@@ -203,4 +204,6 @@ public class Dialogs {
         }
 
     }
+
+
 }

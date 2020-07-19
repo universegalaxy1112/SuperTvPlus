@@ -19,10 +19,12 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextClock;
 import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.BindingAdapter;
 import androidx.fragment.app.Fragment;
+
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.DefaultLoadControl;
 import com.google.android.exoplayer2.ExoPlaybackException;
@@ -76,6 +78,7 @@ import com.uni.julio.supertv.utils.DataManager;
 import com.uni.julio.supertv.utils.Dialogs;
 import com.uni.julio.supertv.utils.Tracking;
 import com.uni.julio.supertv.view.SpeedTestActivity;
+
 import java.net.CookieHandler;
 import java.net.CookieManager;
 import java.net.CookiePolicy;
@@ -83,7 +86,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-public class VideoPlayFragment extends Fragment implements View.OnClickListener, ExoPlayer.EventListener,  PlaybackControlView.VisibilityListener{
+public class VideoPlayFragment extends Fragment implements View.OnClickListener, ExoPlayer.EventListener, PlaybackControlView.VisibilityListener {
     public static final String DRM_SCHEME_UUID_EXTRA = "drm_scheme_uuid";
     public static final String DRM_LICENSE_URL = "drm_license_url";
     public static final String DRM_KEY_REQUEST_PROPERTIES = "drm_key_request_properties";
@@ -99,6 +102,7 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
     public static final String SECONDS_TO_START_EXTRA = "seconds_to_start";
     private static final DefaultBandwidthMeter BANDWIDTH_METER = new DefaultBandwidthMeter();
     private static final CookieManager DEFAULT_COOKIE_MANAGER;
+
     static {
         DEFAULT_COOKIE_MANAGER = new CookieManager();
         DEFAULT_COOKIE_MANAGER.setCookiePolicy(CookiePolicy.ACCEPT_ORIGINAL_SERVER);
@@ -133,6 +137,7 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
     private int episodePosition = -1;
     private int seasonPosition = -1;
     private MediaSource mediaSource;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -146,21 +151,21 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
         Intent intent = getActivity().getIntent();
         seasonPosition = intent.getIntExtra("seasonPosition", -1);
         episodePosition = intent.getIntExtra("episodePosition", -1);
-        this.title=intent.getStringExtra("title") == null ? "" :intent.getStringExtra("title") + ((seasonPosition == -1) ? "": " S" + (seasonPosition+1)) + ((seasonPosition == -1 || episodePosition == -1? "":" E"+ (episodePosition +1)));
+        this.title = intent.getStringExtra("title") == null ? "" : intent.getStringExtra("title") + ((seasonPosition == -1) ? "" : " S" + (seasonPosition + 1)) + ((seasonPosition == -1 || episodePosition == -1 ? "" : " E" + (episodePosition + 1)));
     }
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        View rootPlayerView= inflater.inflate(R.layout.videofragment_normal, container, false);
-        debugRootView =  rootPlayerView.findViewById(R.id.controls_root);
-        top_bar =  rootPlayerView.findViewById(R.id.top_bar);
-        progressBarView =rootPlayerView.findViewById(R.id.player_view_progress_bar);
-        titleText =  rootPlayerView.findViewById(R.id.titleText);
-        debugTextView =  rootPlayerView.findViewById(R.id.debug_text_view);
+        View rootPlayerView = inflater.inflate(R.layout.videofragment_normal, container, false);
+        debugRootView = rootPlayerView.findViewById(R.id.controls_root);
+        top_bar = rootPlayerView.findViewById(R.id.top_bar);
+        progressBarView = rootPlayerView.findViewById(R.id.player_view_progress_bar);
+        titleText = rootPlayerView.findViewById(R.id.titleText);
+        debugTextView = rootPlayerView.findViewById(R.id.debug_text_view);
         hideNoChannelText = rootPlayerView.findViewById(R.id.no_channel_text);
-        retryButton =  rootPlayerView.findViewById(R.id.retry_button);
+        retryButton = rootPlayerView.findViewById(R.id.retry_button);
         channel_icon = rootPlayerView.findViewById(R.id.channel_icon);
         // mediaRouteButton = rootPlayerView.findViewById(R.id.media_route_button);
         // CastButtonFactory.setUpMediaRouteButton(LiveTvApplication.getAppContext(),mediaRouteButton);
@@ -169,27 +174,26 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
         retryButton.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
-                if(hasFocus) {
+                if (hasFocus) {
                     v.setSelected(true);
-                }
-                else {
+                } else {
                     v.setSelected(false);
                 }
             }
         });
 
-        simpleExoPlayerView =  rootPlayerView.findViewById(R.id.player_view);
-        progressBarView =  rootPlayerView.findViewById(R.id.player_view_progress_bar);
+        simpleExoPlayerView = rootPlayerView.findViewById(R.id.player_view);
+        progressBarView = rootPlayerView.findViewById(R.id.player_view_progress_bar);
         simpleExoPlayerView.setControllerVisibilityListener(this);
         simpleExoPlayerView.requestFocus();
 
         if (!isLiveTV) {
             hideNoChannelText.setVisibility(View.GONE);
-        }else{
+        } else {
             hideNoChannelText.setVisibility(View.VISIBLE);
             top_bar.setVisibility(View.GONE);
         }
-        if(hidePlayback){
+        if (hidePlayback) {
             debugRootView.setVisibility(View.GONE);
             progressBarView.setVisibility(View.GONE);
             simpleExoPlayerView.setUseController(false);
@@ -198,7 +202,7 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
         simpleExoPlayerView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                if(liveTVToggleListener != null)
+                if (liveTVToggleListener != null)
                     liveTVToggleListener.onToggleUI(true);
                 return false;
             }
@@ -206,71 +210,75 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
         return rootPlayerView;
     }
 
-    public void hidePlayBack(){
+    public void hidePlayBack() {
         this.hidePlayback = true;
     }
 
-    private void unMute(){
-        if(player != null)
+    private void unMute() {
+        if (player != null)
             player.setVolume(1000f);
     }
-    private  void mute(){
-        if(player != null)
+
+    private void mute() {
+        if (player != null)
             player.setVolume(0f);
     }
-    public void toggleMute(){
-        if(player != null && player.getVolume() == 0L)
-        {
+
+    public void toggleMute() {
+        if (player != null && player.getVolume() == 0L) {
             unMute();
-        }else{
+        } else {
             mute();
         }
     }
-    public void toggleTitle(){
 
-        if(top_bar.getVisibility() == View.VISIBLE)
-        {
+    public void toggleTitle() {
+
+        if (top_bar.getVisibility() == View.VISIBLE) {
             top_bar.setVisibility(View.GONE);
-        }
-        else{
+        } else {
             top_bar.setVisibility(View.VISIBLE);
         }
 
     }
-    private void hideWhenForward(){
+
+    private void hideWhenForward() {
         top_bar.setVisibility(View.GONE);
     }
 
-    public void setLiveTVToggleListener(LiveTVToggleUIListener liveTVToggleListener){
+    public void setLiveTVToggleListener(LiveTVToggleUIListener liveTVToggleListener) {
         this.liveTVToggleListener = liveTVToggleListener;
     }
 
     @Override
-    public void onStart(){
+    public void onStart() {
         super.onStart();
         initializePlayer();
     }
+
     @Override
-    public void onResume(){
+    public void onResume() {
         super.onResume();
     }
 
     @Override
-    public void onPause(){
+    public void onPause() {
         super.onPause();
         releasePlayer();
     }
+
     @Override
     public void onStop() {
         super.onStop();
         releasePlayer();
     }
+
     public void onNewIntent(Intent intent) {
         releasePlayer();
         isTimelineStatic = false;
         seasonPosition = intent.getIntExtra("seasonPosition", -1);
-        episodePosition = intent.getIntExtra("episodePosition" , -1);
-        this.title=intent.getStringExtra("title") == null ? "" :intent.getStringExtra("title") + ((seasonPosition == -1) ? "": " S" + (seasonPosition+1)) + ((seasonPosition == -1 || episodePosition == -1? "":" E"+ (episodePosition +1)));
+        episodePosition = intent.getIntExtra("episodePosition", -1);
+        this.title = intent.getStringExtra("title") == null ? "" : intent.getStringExtra("title") + ((seasonPosition == -1) ? "" : " S" + (seasonPosition + 1)) + ((seasonPosition == -1 || episodePosition == -1 ? "" : " E" + (episodePosition + 1)));
         BindingAdapters.loadImage(channel_icon, intent.getStringExtra("icon_url"));
         Tracking.getInstance().setAction(this.title);
         Tracking.getInstance().track();
@@ -278,7 +286,7 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
     }
 
     private void releasePlayer() {
-        try{
+        try {
             if (player != null) {
                 debugViewHelper.stop();
                 debugViewHelper = null;
@@ -288,7 +296,7 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
                 Timeline timeline = player.getCurrentTimeline();
                 if (!timeline.isEmpty() && timeline.getWindow(playerWindow, window).isSeekable) {
                     playerPosition = player.getCurrentPosition();
-                    DataManager.getInstance().saveDataLong("seconds"+movieId,playerPosition);
+                    DataManager.getInstance().saveDataLong("seconds" + movieId, playerPosition);
                 }
                 player.release();
                 player = null;
@@ -296,7 +304,7 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
                 trackSelectionHelper = null;
                 eventLogger = null;
             }
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -304,10 +312,11 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
 
     @Override
     public void onVisibilityChange(int visibility) {
-        if(!isLiveTV)
+        if (!isLiveTV)
             debugRootView.setVisibility(visibility);
         top_bar.setVisibility(visibility);
     }
+
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
@@ -317,44 +326,45 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
             getActivity().finish();
         }
     }
+
     public void dispatchKeyEvent() {
-        if(simpleExoPlayerView == null) return;
+        if (simpleExoPlayerView == null) return;
         simpleExoPlayerView.showController();
     }
-    public void doForwardVideo()
-    {
+
+    public void doForwardVideo() {
 
         if (player == null)
             return;
         long pos = player.getCurrentPosition();
         pos += 15000; // milliseconds
-        player.seekTo(seasonPosition == -1 || episodePosition == -1 ? 0:episodePosition, pos);
+        player.seekTo(seasonPosition == -1 || episodePosition == -1 ? 0 : episodePosition, pos);
         hideWhenForward();
     }
 
-    public void doRewindVideo()
-    {
+    public void doRewindVideo() {
         if (player == null)
             return;
         long pos = player.getCurrentPosition();
         pos -= 5000; // milliseconds
-        player.seekTo(seasonPosition == -1 || episodePosition == -1 ? 0:episodePosition, pos);
+        player.seekTo(seasonPosition == -1 || episodePosition == -1 ? 0 : episodePosition, pos);
         hideWhenForward();
     }
+
     public void playPause() {
         if (player == null)
             return;
-        if(player.getPlayWhenReady())
+        if (player.getPlayWhenReady())
             player.setPlayWhenReady(false);
         else
             player.setPlayWhenReady(true);
     }
 
-    public void hideNoChannel(){
+    public void hideNoChannel() {
         hideNoChannelText.setVisibility(View.GONE);
     }
 
-    public void showNoChannel(){
+    public void showNoChannel() {
         isLiveTV = true;
     }
 
@@ -371,20 +381,23 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
             }
         }
     }
+
     private void showToast(int messageId) {
         showToast(getResources().getString(messageId));
     }
-    private void showToast(String message){
+
+    private void showToast(String message) {
 
     }
-    private void initializePlayer(){
-        try{
+
+    private void initializePlayer() {
+        try {
             Intent intent = getActivity().getIntent();
             //SuperTV add progressbar here
             movieId = intent.getIntExtra(MOVIE_ID_EXTRA, -1);
             int mainCategory = intent.getIntExtra("mainCategoryId", -1);
             playerPosition = C.TIME_UNSET;
-            playerPosition = mainCategory == 4 ? 0L : intent.getLongExtra(SECONDS_TO_START_EXTRA,0L);
+            playerPosition = mainCategory == 4 ? 0L : intent.getLongExtra(SECONDS_TO_START_EXTRA, 0L);
             if (player == null) {
                 boolean preferExtensionDecoders = intent.getBooleanExtra(PREFER_EXTENSION_DECODERS, false);
                 UUID drmSchemeUuid = intent.hasExtra(DRM_SCHEME_UUID_EXTRA)
@@ -445,8 +458,8 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
                 Uri[] uris;
                 String[] extensions;
                 if (ACTION_VIEW.equals(action)) {
-                    uris = new Uri[] {intent.getData()};
-                    extensions = new String[] {intent.getStringExtra(EXTENSION_EXTRA)};
+                    uris = new Uri[]{intent.getData()};
+                    extensions = new String[]{intent.getStringExtra(EXTENSION_EXTRA)};
                 } else if (ACTION_VIEW_LIST.equals(action)) {
                     String[] uriStrings = intent.getStringArrayExtra(URI_LIST_EXTRA);
                     uris = new Uri[uriStrings.length];
@@ -473,19 +486,18 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
 
                 //SuperTV add subtitles from SRT file
                 String subsURL = intent.getStringExtra("subsURL");
-                if(!TextUtils.isEmpty(subsURL)) {
+                if (!TextUtils.isEmpty(subsURL)) {
                     Format textFormat = Format.createTextSampleFormat(null, MimeTypes.APPLICATION_SUBRIP, null, Format.NO_VALUE, Format.NO_VALUE, getString(R.string.tag_esp_srt), null);
                     MediaSource textMediaSource = new SingleSampleMediaSource(Uri.parse(subsURL), mediaDataSourceFactory, textFormat, C.TIME_UNSET);
                     MediaSource mediaSourceWithText = new MergingMediaSource(mediaSource, textMediaSource);
 
                     player.prepare(mediaSourceWithText, !isTimelineStatic, !isTimelineStatic);
-                }
-                else {
+                } else {
                     player.prepare(mediaSource, !isTimelineStatic, !isTimelineStatic);
                 }
-                if(player != null)
-                    player.seekTo(seasonPosition == -1 || episodePosition == -1 ? 0:episodePosition, 0);
-                if(mainCategory != 4 && intent.getIntExtra("type",1) != 2 && playerPosition != 0L) {//eventso
+                if (player != null)
+                    player.seekTo(seasonPosition == -1 || episodePosition == -1 ? 0 : episodePosition, 0);
+                if (mainCategory != 4 && intent.getIntExtra("type", 1) != 2 && playerPosition != 0L) {//eventso
                     Dialogs.showTwoButtonsDialog((AppCompatActivity) this.getActivity(), R.string.accept, R.string.cancel, R.string.from_start, new DialogListener() {
                         @TargetApi(Build.VERSION_CODES.M)
                         @Override
@@ -497,38 +509,40 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
 
                         @Override
                         public void onCancel() {
-                            if(player != null)
-                            player.seekTo(seasonPosition == -1 || episodePosition == -1 ? 0:episodePosition, 0);
+                            if (player != null)
+                                player.seekTo(seasonPosition == -1 || episodePosition == -1 ? 0 : episodePosition, 0);
                         }
 
                         @Override
                         public void onDismiss() {
-                            if(player != null)
-                            player.seekTo(seasonPosition == -1 || episodePosition == -1 ? 0:episodePosition, 0);
+                            if (player != null)
+                                player.seekTo(seasonPosition == -1 || episodePosition == -1 ? 0 : episodePosition, 0);
                         }
                     });
                 }
                 playerNeedsSource = false;
                 updateButtonVisibilities();
             }
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
     private DataSource.Factory buildDataSourceFactory(boolean useBandwidthMeter) {
         return ((LiveTvApplication) getActivity().getApplication())
                 .buildDataSourceFactory(useBandwidthMeter ? BANDWIDTH_METER : null);
     }
-    public boolean isAvailable()
-    {
+
+    public boolean isAvailable() {
         GoogleApiAvailability availability = GoogleApiAvailability.getInstance();
         int resultCode = availability.isGooglePlayServicesAvailable(LiveTvApplication.getAppContext());
-        if(resultCode == ConnectionResult.SERVICE_VERSION_UPDATE_REQUIRED){
+        if (resultCode == ConnectionResult.SERVICE_VERSION_UPDATE_REQUIRED) {
             return false;
-        }else{
+        } else {
             return true;
         }
     }
+
     private DrmSessionManager<FrameworkMediaCrypto> buildDrmSessionManager(UUID uuid,
                                                                            String licenseUrl, Map<String, String> keyRequestProperties) throws UnsupportedDrmException {
         if (Util.SDK_INT < 18) {
@@ -539,7 +553,7 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
                     buildHttpDataSourceFactory(false), keyRequestProperties);
             return new StreamingDrmSessionManager<>(uuid,
                     FrameworkMediaDrm.newInstance(uuid), drmCallback, null, mainHandler, eventLogger);
-        }catch (Exception e){
+        } catch (Exception e) {
             return null;
         }
 
@@ -568,7 +582,7 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
 
     private void updateButtonVisibilities() {
         titleText.setText(this.title);
-        if(isLiveTV) return;
+        if (isLiveTV) return;
         debugRootView.removeAllViews();
         retryButton.setVisibility(playerNeedsSource ? View.VISIBLE : View.GONE);
         debugRootView.addView(retryButton);
@@ -585,15 +599,14 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
         for (int i = 0; i < mappedTrackInfo.length; i++) {
             TrackGroupArray trackGroups = mappedTrackInfo.getTrackGroups(i);
             if (trackGroups.length != 0) {
-                if(player.getRendererType(i) != C.TRACK_TYPE_VIDEO) {//SuperTV
+                if (player.getRendererType(i) != C.TRACK_TYPE_VIDEO) {//SuperTV
                     Button button = new Button(getActivity());
                     button.setOnFocusChangeListener(new View.OnFocusChangeListener() {
                         @Override
                         public void onFocusChange(View v, boolean hasFocus) {
-                            if(hasFocus) {
+                            if (hasFocus) {
                                 v.setSelected(true);
-                            }
-                            else {
+                            } else {
                                 v.setSelected(false);
                             }
                         }
@@ -616,7 +629,7 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
                     button.setText(label);
                     button.setTag(i);
                     button.setFocusable(true);
-                    button.setPadding(2,2,2,2);
+                    button.setPadding(2, 2, 2, 2);
                     button.setOnClickListener(this);
                     debugRootView.addView(button, debugRootView.getChildCount() - 1);
                 }
@@ -624,27 +637,26 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
         }
 
     }
+
     private HttpDataSource.Factory buildHttpDataSourceFactory(boolean useBandwidthMeter) {
         return ((LiveTvApplication) getActivity().getApplication())
                 .buildHttpDataSourceFactory(useBandwidthMeter ? BANDWIDTH_METER : null);
     }
+
     @Override
     public void onPlayerStateChanged(boolean playWhenReady, int playbackState) {
         ;//Log.d("liveTV","onPlayerStateChanged "+playWhenReady+"  state "+playbackState);
         if (playbackState == ExoPlayer.STATE_ENDED) {
 
-        }
-        else if (playbackState == ExoPlayer.STATE_BUFFERING) {
+        } else if (playbackState == ExoPlayer.STATE_BUFFERING) {
             progressBarView.setVisibility(View.VISIBLE);
-        }
-        else {
+        } else {
 //        if (playbackState == ExoPlayer.STATE_READY) {
             progressBarView.setVisibility(View.GONE);
         }
         Tracking.getInstance().setAction((this.title));
         updateButtonVisibilities();
     }
-
 
 
     @Override
@@ -672,8 +684,7 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
                 }
             }
         }
-        if(e.getCause() instanceof BehindLiveWindowException)
-        {
+        if (e.getCause() instanceof BehindLiveWindowException) {
             player.prepare(mediaSource, !isTimelineStatic, !isTimelineStatic);
             return;
         }
@@ -689,10 +700,10 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
 
     @Override
     public void onPositionDiscontinuity() {
-        if(player != null){
+        if (player != null) {
             episodePosition = player.getCurrentWindowIndex();
             Intent intent = getActivity().getIntent();
-            this.title=intent.getStringExtra("title") == null ? "" :intent.getStringExtra("title") + ((seasonPosition == -1) ? "": " S" + (seasonPosition+1)) + ((seasonPosition == -1 || episodePosition == -1? "":" E"+ (episodePosition +1)));
+            this.title = intent.getStringExtra("title") == null ? "" : intent.getStringExtra("title") + ((seasonPosition == -1) ? "" : " S" + (seasonPosition + 1)) + ((seasonPosition == -1 || episodePosition == -1 ? "" : " E" + (episodePosition + 1)));
             Tracking.getInstance().track();
         }
 
@@ -726,23 +737,23 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
     }
 
     private void showControls() {
-        if(!isLiveTV)
+        if (!isLiveTV)
             debugRootView.setVisibility(View.VISIBLE);
         top_bar.setVisibility(View.VISIBLE);
     }
 
     private void showToastError() {
-        if(liveTVToggleListener != null)
+        if (liveTVToggleListener != null)
             liveTVToggleListener.onToggleUI(true);
-        Dialogs.showTwoButtonsDialog(getActivity(),R.string.ok_dialog,R.string.cancel,R.string.generic_video_loading_message, new DialogListener() {
+        Dialogs.showTwoButtonsDialog(getActivity(), R.string.ok_dialog, R.string.cancel, R.string.generic_video_loading_message, new DialogListener() {
 
             @Override
             public void onAccept() {
-                try{
+                try {
                     this.onDismiss();
                     startActivity(new Intent(getActivity(), SpeedTestActivity.class));
                     getActivity().finish();
-                }catch (Exception e){
+                } catch (Exception e) {
 
                 }
             }

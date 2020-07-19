@@ -1,6 +1,7 @@
 package com.uni.julio.supertv.view;
 
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -9,12 +10,15 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.KeyEvent;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
+
+import com.uni.julio.supertv.LiveTvApplication;
 import com.uni.julio.supertv.R;
 import com.uni.julio.supertv.listeners.DialogListener;
 import com.uni.julio.supertv.utils.Connectivity;
@@ -41,6 +45,81 @@ public class SplashActivity extends BaseActivity implements SplashViewModelContr
     protected Lifecycle.View getLifecycleView() {
         return this;
     }
+
+    @Override
+    public void onLoginError(String errorFound) {
+        switch (errorFound) {
+            case "103":
+            case "104":
+                showErrorMessage(getString(R.string.login_error_change_device), errorFound);
+                break;
+            case "105":
+                showErrorMessage(getString(R.string.login_error_usr_pss_incorrect), errorFound);
+                break;
+            case "106":
+                showErrorMessage(getString(R.string.login_error_device_not_registered), errorFound);
+                break;
+            case "107":
+                showErrorMessage(getString(R.string.login_error_expired), errorFound);
+                break;
+            case "108": {
+               showErrorMessage(getString(R.string.login_error_change_account).replace("{ID}", Device.getIdentifier()), errorFound);
+            }
+            break;
+            case "109": {
+                showErrorMessage(getString(R.string.login_error_demo), errorFound);
+            }
+            break;
+            case "110": {
+                showErrorMessage(getString(R.string.ip_limitation), errorFound);
+            }
+            break;
+            default:
+                showErrorMessage("Estimado "+ LiveTvApplication.getUser().getName()+", su cuenta a sido desactivada, porfavor comunicate con tu vendedor.", errorFound);
+                break;
+        }
+    }
+
+    public void showErrorMessage(String message, final String error_found) {
+
+        if(Connectivity.isConnected()) {
+            Dialogs.showOneButtonDialog(this, getString(R.string.attention), message, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    switch (error_found) {
+                        case "103":
+                        case "104":
+                        case "105":
+                        case "106":
+                        case "107":
+                        case "108":
+                        case "109":
+                            launchActivity(LoginActivity.class);
+                            finishActivity();
+                            break;
+                        default:
+                            closeApp();
+                    }
+                    //onLoginCompleted(false);
+                }
+            });
+        }
+        else {
+            noInternetConnection(new DialogInterface.OnClickListener(){
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    closeApp();
+                }
+            });
+        }
+
+    }
+
+    public void closeApp(){
+        finishAffinity();
+        System.exit(0);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -268,6 +347,7 @@ public class SplashActivity extends BaseActivity implements SplashViewModelContr
                 finishActivity();
             }
             else{
+
                 noInternetConnection(new DialogInterface.OnClickListener(){
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

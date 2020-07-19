@@ -917,11 +917,11 @@ public final class R {
         public static final int abc_shareactionprovider_share_with_application = 0x7f120019;
         public static final int abc_toolbar_collapse_description = 0x7f12001a;
         public static final int expand_button_title = 0x7f12009b;
-        public static final int search_menu_title = 0x7f12015f;
-        public static final int status_bar_notification_info_overflow = 0x7f120169;
-        public static final int summary_collapsed_preference_list = 0x7f12016b;
-        public static final int v7_preference_off = 0x7f12018a;
-        public static final int v7_preference_on = 0x7f12018b;
+        public static final int search_menu_title = 0x7f120160;
+        public static final int status_bar_notification_info_overflow = 0x7f12016a;
+        public static final int summary_collapsed_preference_list = 0x7f12016c;
+        public static final int v7_preference_off = 0x7f12018b;
+        public static final int v7_preference_on = 0x7f12018c;
     }
     public static final class style {
         private style() {}

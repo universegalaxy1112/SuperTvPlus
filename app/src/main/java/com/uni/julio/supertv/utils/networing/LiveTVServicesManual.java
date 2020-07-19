@@ -143,7 +143,6 @@ public class LiveTVServicesManual {
                 public void onCompleted(String response) {
                     stringRequestListener.onCompleted(response);
                 }
-
                 public void onError() {
                     stringRequestListener.onError();
                 }

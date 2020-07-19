@@ -75,6 +75,7 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
     private TextView length;
     private TextView description;
     private CardView hd;
+    private boolean isInit = true;
     public MoviesMenuTVFragment() {
     }
 
@@ -209,7 +210,11 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
                 NetManager.getInstance().retrieveMoviesForSubCategory(VideoStreamManager.getInstance().getMainCategory(this.mainCategoryId), mCategoriesList.get(1), this, 30);
                 loadStart = 2;
             }
-            loadData(loadStart);
+            if(isInit)
+            {
+                loadData(loadStart);
+                isInit = false;
+            }
 
         }catch (Exception e){
             e.printStackTrace();

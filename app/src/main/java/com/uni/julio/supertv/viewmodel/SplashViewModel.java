@@ -1,6 +1,7 @@
 package com.uni.julio.supertv.viewmodel;
 
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.os.Handler;
 import android.text.TextUtils;
 import android.util.Log;
@@ -9,11 +10,13 @@ import androidx.annotation.NonNull;
 
 import com.google.gson.Gson;
 import com.uni.julio.supertv.LiveTvApplication;
+import com.uni.julio.supertv.R;
 import com.uni.julio.supertv.listeners.DownloaderListener;
 import com.uni.julio.supertv.listeners.StringRequestListener;
 import com.uni.julio.supertv.model.User;
 import com.uni.julio.supertv.utils.DataManager;
 import com.uni.julio.supertv.utils.Device;
+import com.uni.julio.supertv.utils.Dialogs;
 import com.uni.julio.supertv.utils.networing.Downloader;
 import com.uni.julio.supertv.utils.networing.NetManager;
 
@@ -80,6 +83,19 @@ public class SplashViewModel implements SplashViewModelContract.ViewModel, Strin
             try {
 
                 JSONObject jsonObject = new JSONObject(response);
+
+                if (jsonObject.has("android_version")) {
+                    Log.d("version",Device.getVersionInstalled());
+                    String a=Device.getVersionInstalled().replaceAll("\\.", "");
+                    String b=jsonObject.getString("android_version");
+                    if (!jsonObject.getString("android_version").equals("")&&!Device.getVersionInstalled().replaceAll("\\.", "").equals(jsonObject.getString("android_version"))) {
+                        this.viewCallback.onCheckForUpdateCompleted(true, jsonObject.getString("link_android") + "/android" + jsonObject.getString("android_version") + ".apk");
+                        return;
+                    }
+                    this.viewCallback.onCheckForUpdateCompleted(false, null);
+                    return;
+                }
+
                 if (jsonObject.has("status") && "1".equals(jsonObject.getString("status"))) {
                     String userAgent =  jsonObject.getString("user-agent");
                     if (!jsonObject.isNull("pin")) {
@@ -97,18 +113,12 @@ public class SplashViewModel implements SplashViewModelContract.ViewModel, Strin
                         viewCallback.onLoginCompleted(true);
                         return;
                     }
-                }
-                if (jsonObject.has("android_version")) {
-                    Log.d("version",Device.getVersionInstalled());
-                    String a=Device.getVersionInstalled().replaceAll("\\.", "");
-                    String b=jsonObject.getString("android_version");
-                    if (!jsonObject.getString("android_version").equals("")&&!Device.getVersionInstalled().replaceAll("\\.", "").equals(jsonObject.getString("android_version"))) {
-                        this.viewCallback.onCheckForUpdateCompleted(true, jsonObject.getString("link_android") + "/android" + jsonObject.getString("android_version") + ".apk");
-                        return;
-                    }
-                    this.viewCallback.onCheckForUpdateCompleted(false, null);
+                }else{
+                    String errorFound = jsonObject.getString("error_found");
+                    viewCallback.onLoginError(errorFound);
                     return;
                 }
+
             } catch (JSONException e) {
 //                e.printStackTrace();
             }
@@ -121,6 +131,7 @@ public class SplashViewModel implements SplashViewModelContract.ViewModel, Strin
     public void onError() {
         viewCallback.onLoginCompleted(false);
     }
+
     public void checkForUpdate() {
         this.netManager.performCheckForUpdate(this);
     }

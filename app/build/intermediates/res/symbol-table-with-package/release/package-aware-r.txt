@@ -8372,6 +8372,7 @@ string login_error_change_device
 string login_error_change_device_error
 string login_error_change_device_success
 string login_error_demo
+string login_error_device_not_registered
 string login_error_expired
 string login_error_generic
 string login_error_no_authorized

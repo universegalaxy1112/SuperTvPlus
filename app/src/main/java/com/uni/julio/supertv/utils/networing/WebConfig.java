@@ -1,7 +1,7 @@
 package com.uni.julio.supertv.utils.networing;
 
 public class WebConfig {
-    private static final String domain = "https://supertvplus.com/";
+    private static final String domain = "https://supertvplus.com";
     public static final String baseURL              = "https://supertvplus.com/Wm7TSJNObuIB1Y1G/";
     public static final String GetCodeURL = "https://supertvplus.com/dtYjAcIdG7NYBhITjmA/Connect/loginCode.php?request_code";
     public static final String getCategoriesForYear = "https://supertvplus.com/dtYjAcIdG7NYBhITjmA/Connect/movie_category_year.php";

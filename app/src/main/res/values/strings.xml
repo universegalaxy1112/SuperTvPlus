@@ -117,7 +117,7 @@
     <string name="login_error_already_registered">Este dispositivo ya está registrado a otro usuario.</string>
     <string name="login_error_no_authorized">Este dispositivo no está autorizado.</string>
     <string name="login_error_usr_pss_incorrect">Usuario o contraseña incorrectos.</string>
-    <string name="login_error_generic">No se pudo iniciar sesión [CODE].</string>
+    <string name="login_error_generic">No se pudo iniciar sesión.</string>
     <string name="login_error_nosession">No se pudo iniciar sesión.</string>
 
     <string name="login_error_demo">Las cuentas de demostración no pueden ser usadas en Android. Por favor comunícate con el Administrador para solicitar una cuenta real.</string>
@@ -126,6 +126,7 @@
     <string name="login_error_change_account">Este dispositivo está ligado a otra cuenta. \nPor favor comunícate con tu Administrador con el siguiente identificador:\n{ID}</string>
     <!--<string name="login_error_change_device">Esta cuenta está ligada con otro dispositivo, desea cambiar a éste?</string>-->
     <string name="login_error_change_device">Esta cuenta está ligada con otro dispositivo. \nPor favor comunícate con tu Administrador con el siguiente identificador:\n{ID}</string>
+    <string name="login_error_device_not_registered">This device is not registered.</string>
     <string name="login_error_change_device_success">Se ha desligado la cuenta con el antigüo dispositivo, por favor inicia sesión de nuevo.</string>
     <string name="login_error_change_device_error">Hubo un error desligando la cuenta, por favor intente de nuevo. Si el error persiste, por favor contacta al administrador.</string>
     <string name="login_error_expired">El tiempo de suscripción de tu cuenta ha expirado, por favor comunicate con tu proveedor para activarla de nuevo.</string>

@@ -84,7 +84,7 @@ boolean denyAll = false;
                             return;
                          }
                     } else {
-                        DataManager.getInstance().saveData("theUser", "");
+                        //DataManager.getInstance().saveData("theUser", "");
                         String errorFound = jsonObject.getString("error_found");
                         switch (errorFound) {
                             case "103":
@@ -96,12 +96,14 @@ boolean denyAll = false;
                                         android.os.Process.killProcess(android.os.Process.myPid());
                                     }
                                 });
-//
                                 break;
                             case "105":
                                 mPassView.setText("");
                                 mPassView.requestFocus();
                                 showErrorMessage(getString(R.string.login_error_usr_pss_incorrect));
+                                break;
+                            case "106":
+                                showErrorMessage(getString(R.string.login_error_device_not_registered));
                                 break;
                             case "107":
                                 showErrorMessage(getString(R.string.login_error_expired));
@@ -138,7 +140,7 @@ boolean denyAll = false;
                             }
                             break;
                             default:
-                                showErrorMessage(getString(R.string.login_error_generic).replace("CODE", errorFound));
+                                showErrorMessage("Estimado "+ LiveTvApplication.getUser().getName()+", su cuenta a sido desactivada, porfavor comunicate con tu vendedor.");
                                 break;
                         }
                         return;
@@ -147,7 +149,7 @@ boolean denyAll = false;
 //                e.printStackTrace();
                 }
             }
-        DataManager.getInstance().saveData("theUser", "");
+        //DataManager.getInstance().saveData("theUser", "");
     }
     private void startMain(){
         Intent launchIntent = new Intent(this, MainActivity.class);

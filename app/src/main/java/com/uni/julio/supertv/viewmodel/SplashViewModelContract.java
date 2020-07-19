@@ -11,6 +11,7 @@ public interface SplashViewModelContract {
 
         void onDownloadUpdateError(int i);
         void onLoginCompleted(boolean success);
+        void onLoginError(String errorFound);
     }
 
     //this will have methods that the activity/fragment will call from the ViewModel
