@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -148,12 +149,12 @@ public class MovieDetailsViewModel implements MovieDetailsViewModelContract.View
         if(mainCategoryId == 4) { //eventos
             hidePlayFromStart = true;
         }
-        if(hidePlayFromStart) {
+       /* if(hidePlayFromStart) {
             isSeen = new ObservableBoolean(false);
         }
         else {
             isSeen = new ObservableBoolean(videoStreamManager.isLocalSeen(String.valueOf(movie.getContentId())));
-        }
+        }*/
         isHD=movie.getStreamUrl()==null||movie.getStreamUrl().equals("null")||movie.getStreamUrl().equals("")?new ObservableBoolean(true):new ObservableBoolean(false);
         isSD=(movie.getSDUrl()==null||movie.getSDUrl().equals("null")||movie.getSDUrl().equals(""))?new ObservableBoolean(true):new ObservableBoolean(false);
         isTrailer=movie.getTrailerUrl()==null||movie.getTrailerUrl().equals("null")||movie.getTrailerUrl().equals("")?new ObservableBoolean(true):new ObservableBoolean(false);
@@ -246,15 +247,16 @@ public class MovieDetailsViewModel implements MovieDetailsViewModelContract.View
             onPlay(2);
     }
     private void onPlay(int type) {
-        if(!videoStreamManager.getSeenMovies().contains(String.valueOf(mMovie.getContentId()))) {
+       /* if(!videoStreamManager.getSeenMovies().contains(String.valueOf(mMovie.getContentId()))) {
             videoStreamManager.setLocalSeen(String.valueOf(mMovie.getContentId()));
             if(!hidePlayFromStart) {
                 isSeen.set(true);
             }
-            addRecentMovies(mMovie);
             isSeen.notifyChange();
             DataManager.getInstance().saveData("seenMovies", videoStreamManager.getSeenMovies());
-        }
+        }*/
+        addRecentMovies(mMovie);
+
         viewCallback.onPlaySelected(mMovie, type);
     }
     public void onClickFavorite(View view) {
@@ -312,7 +314,21 @@ public class MovieDetailsViewModel implements MovieDetailsViewModelContract.View
         }
     }
     private void addRecentMovies(Movie movie) {
-        String serieType = "";
+
+        NetManager.getInstance().addRecent(Integer.toString(movie.getCategoryType()), Integer.toString(movie.getContentId()), new StringRequestListener() {
+            @Override
+            public void onCompleted(String response) {
+                Log.i("TAG", "success log recent");
+
+            }
+
+            @Override
+            public void onError() {
+                Log.i("TAG", "fail log recent");
+
+            }
+        });
+        /*String serieType = "";
         if (videoStreamManager.getMainCategory(mMainCategoryId).getModelType().equals(ModelTypes.MOVIE_CATEGORIES)) {
             serieType = "recentMovies";
         } else if(videoStreamManager.getMainCategory(mMainCategoryId).getModelType().equals(ModelTypes.ENTERTAINMENT_CATEGORIES)){
@@ -344,7 +360,7 @@ public class MovieDetailsViewModel implements MovieDetailsViewModelContract.View
                 movieList.add(0, movie);
                 DataManager.getInstance().saveData(serieType, new Gson().toJson( movieList));
             }
-        }
+        }*/
     }
 
 

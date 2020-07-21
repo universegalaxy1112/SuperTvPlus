@@ -44,25 +44,25 @@ public class NetManager {
 
     private static NetManager m_NetMInstante;
     private final RequestQueue queue;
-    private RequestQueue searchQueue ;
+    private RequestQueue searchQueue;
 
     //    private final ImageLoader mImageLoader;
 
     public static NetManager getInstance() {
-        if(m_NetMInstante == null) {
+        if (m_NetMInstante == null) {
             m_NetMInstante = new NetManager();
         }
         return m_NetMInstante;
     }
 
     private NetManager() {
-         ;//Log.d("NetManager", "NetManager constructor");
+        ;//Log.d("NetManager", "NetManager constructor");
 
         queue = Volley.newRequestQueue(LiveTvApplication.getAppContext());
-        searchQueue= Volley.newRequestQueue(LiveTvApplication.getAppContext());
+        searchQueue = Volley.newRequestQueue(LiveTvApplication.getAppContext());
     }
 
-    public  void cancelAll() {
+    public void cancelAll() {
 
         NetManager.this.queue.cancelAll(new RequestQueue.RequestFilter() {
             public boolean apply(Request<?> request) {
@@ -78,7 +78,7 @@ public class NetManager {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                         stringRequestListener.onCompleted(response);
+                        stringRequestListener.onCompleted(response);
                     }
                 },
                 new Response.ErrorListener() {
@@ -94,6 +94,7 @@ public class NetManager {
     public String makeSyncStringRequest(String url) {
         return makeSyncStringRequest(url, 20);
     }
+
     public String makeSearchStringRequest(String url, int timeOutSeconds) {
         RequestFuture<String> future = RequestFuture.newFuture();
         UTF8StringRequest stringRequest = new UTF8StringRequest(0, url, future, future);
@@ -104,11 +105,12 @@ public class NetManager {
         });
         this.searchQueue.add(stringRequest);
         try {
-            return  future.get( timeOutSeconds, TimeUnit.SECONDS);
+            return future.get(timeOutSeconds, TimeUnit.SECONDS);
         } catch (Exception e) {
             return null;
         }
     }
+
     public String makeSyncStringRequest(String url, int timeOutSeconds) {
         RequestFuture<String> future = RequestFuture.newFuture();
         UTF8StringRequest stringRequest = new UTF8StringRequest(Request.Method.GET, url, future, future);
@@ -117,13 +119,14 @@ public class NetManager {
         try {
             return future.get(timeOutSeconds, TimeUnit.SECONDS);
         } catch (Exception e) {
-           e.printStackTrace();
+            e.printStackTrace();
         }
         return null;
     }
+
     public void performLogin(String usr, String pss, final StringRequestListener stringRequestListener) {
 //        Log.i("NetManager", "performLogin ");
-        LiveTVServicesManual.performLogin(usr,pss, stringRequestListener)
+        LiveTVServicesManual.performLogin(usr, pss, stringRequestListener)
                 .delay(2, TimeUnit.SECONDS, Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Subscriber<Boolean>() {
@@ -143,14 +146,60 @@ public class NetManager {
                     }
                 });
     }
-    public void getCastDevices(MovieDetailsViewModelContract.View viewcallback){
+
+    public void addRecent(String type, String cve, final StringRequestListener stringRequestListener) {
+        LiveTVServicesManual.addRecent(type, cve, stringRequestListener)
+                .delay(2, TimeUnit.SECONDS, Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Subscriber<Boolean>() {
+                    @Override
+                    public void onCompleted() {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onNext(Boolean result) {
+
+                    }
+                });
+    }
+
+    public void addFavorite(String type, String cve, String action, final StringRequestListener stringRequestListener) {
+        LiveTVServicesManual.addFavorite(type, cve, action, stringRequestListener)
+                .delay(2, TimeUnit.SECONDS, Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Subscriber<Boolean>() {
+                    @Override
+                    public void onCompleted() {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onNext(Boolean result) {
+
+                    }
+                });
+    }
+
+    public void getCastDevices(MovieDetailsViewModelContract.View viewcallback) {
         CastDevice castDevice = new CastDevice();
         castDevice.setName("New");
         viewcallback.onDeviceLoaded(castDevice);
 
     }
-    public void getMessages(String user,StringRequestListener stringRequestListener){
-        LiveTVServicesManual.getMessages(user,stringRequestListener).delay(2,TimeUnit.SECONDS, Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
+
+    public void getMessages(String user, StringRequestListener stringRequestListener) {
+        LiveTVServicesManual.getMessages(user, stringRequestListener).delay(2, TimeUnit.SECONDS, Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Subscriber<Boolean>() {
                     @Override
                     public void onCompleted() {
@@ -166,9 +215,9 @@ public class NetManager {
                 });
     }
 
-    public void performLoginCode(String user,String code,String device_id, StringRequestListener stringRequestListener) {
-        LiveTVServicesManual.performLoginCode(user,code,device_id, stringRequestListener).delay(2, TimeUnit.SECONDS, Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread()).subscribe( new Subscriber<Boolean>() {
+    public void performLoginCode(String user, String code, String device_id, StringRequestListener stringRequestListener) {
+        LiveTVServicesManual.performLoginCode(user, code, device_id, stringRequestListener).delay(2, TimeUnit.SECONDS, Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread()).subscribe(new Subscriber<Boolean>() {
             public void onCompleted() {
 
             }
@@ -183,7 +232,7 @@ public class NetManager {
 
 
     public void performCheckForUpdate(StringRequestListener stringRequestListener) {
-        LiveTVServicesManual.performCheckForUpdate(stringRequestListener).delay(2, TimeUnit.SECONDS, Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(  new Subscriber<Boolean>() {
+        LiveTVServicesManual.performCheckForUpdate(stringRequestListener).delay(2, TimeUnit.SECONDS, Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(new Subscriber<Boolean>() {
             public void onCompleted() {
             }
 
@@ -194,6 +243,7 @@ public class NetManager {
             }
         });
     }
+
     public void retrieveLiveTVPrograms(final MainCategory mainCategory, final LoadProgramsForLiveTVCategoryResponseListener liveTVCategoryResponseListener) {
         LiveTVServicesManual.getLiveTVCategories(mainCategory)
                 .subscribe(new Subscriber<List<LiveTVCategory>>() {
@@ -210,10 +260,9 @@ public class NetManager {
 
                     @Override
                     public void onNext(final List<LiveTVCategory> liveTVCategories) {
-                        if(liveTVCategories == null || liveTVCategories.size() == 0) {
-                           liveTVCategoryResponseListener.onError();
-                        }
-                        else {
+                        if (liveTVCategories == null || liveTVCategories.size() == 0) {
+                            liveTVCategoryResponseListener.onError();
+                        } else {
                             List<Observable<LiveTVCategory>> observableList = new ArrayList<>();
                             for (final LiveTVCategory cat : liveTVCategories) {
                                 ;//Log.d("liveTV", "NetManager liveTVCategories : " + cat.getCatName());
@@ -288,26 +337,27 @@ public class NetManager {
                         movieCategory.setErrorLoading(true);
                         listener.onMoviesForCategoryCompletedError(movieCategory);
                     }
+
                     @Override
                     public void onNext(List<? extends VideoStream> movies) {
-                        if(movies != null ) {
-                            for(VideoStream video : movies) {
-                                if(video instanceof Serie) {
+                        if (movies != null) {
+                            for (VideoStream video : movies) {
+                                if (video instanceof Serie) {
                                     ((Serie) video).setMovieCategoryIdOwner(movieCategory.getId());
-                                }
-                                else if(video instanceof Movie){
+                                } else if (video instanceof Movie) {
                                     ((Movie) video).setMovieCategoryIdOwner(movieCategory.getId());
                                 }
                             }
                             movieCategory.setMovieList(movies);
-                           listener.onMoviesForCategoryCompleted(movieCategory);
-                        }else{
+                            listener.onMoviesForCategoryCompleted(movieCategory);
+                        } else {
                             listener.onMoviesForCategoryCompletedError(movieCategory);
                         }
-                        }
+                    }
                 });
     }
-     public void retrieveSeasons(final Serie serie, final LoadSeasonsForSerieResponseListener seriesListener) {
+
+    public void retrieveSeasons(final Serie serie, final LoadSeasonsForSerieResponseListener seriesListener) {
 
         //Log.i("NetManager", "retrieveSeasons");
 
@@ -330,6 +380,7 @@ public class NetManager {
                     }
                 });
     }
+
     public void retrieveEpisodesForSerie(final Serie serie, final Season season, final LoadEpisodesForSerieResponseListener episodesForSerieResponseListener) {
 
         //Log.i("NetManager", "retrieveEpisodesForSerie");
@@ -347,6 +398,7 @@ public class NetManager {
                         //   ;//Log.d("liveTV", "error episodes is "+e.getMessage());
                         episodesForSerieResponseListener.onError();
                     }
+
                     @Override
                     public void onNext(List<? extends VideoStream> movies) {
                         season.setEpisodeList(movies);

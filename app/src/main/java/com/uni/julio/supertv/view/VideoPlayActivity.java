@@ -1,7 +1,5 @@
 package com.uni.julio.supertv.view;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;

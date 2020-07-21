@@ -222,7 +222,7 @@ public class SearchViewModel implements SearchViewModelContract.ViewModel, Movie
     private void onPlaySelectedDirect(Movie movie, int mainCategoryId) {
         int movieId = movie.getContentId();
         String[] uris = {movie.getStreamUrl()};
-        String[] extensions = {movie.getStreamUrl().substring(movie.getStreamUrl().replace(".mkv.mkv", ".mkv").replace(".mp4.mp4", ".mp4").lastIndexOf(".") + 1)};
+        String[] extensions = {movie.getStreamUrl().substring(movie.getStreamUrl()/*.replace(".mkv.mkv", ".mkv").replace(".mp4.mp4", ".mp4")*/.lastIndexOf(".") + 1)};
         Intent launchIntent = new Intent(mContext, VideoPlayActivity.class);
         launchIntent.putExtra(VideoPlayFragment.URI_LIST_EXTRA, uris)
                 .putExtra(VideoPlayFragment.EXTENSION_LIST_EXTRA, extensions)

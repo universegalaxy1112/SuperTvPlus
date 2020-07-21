@@ -1,7 +1,7 @@
-#Thu Jul 09 01:47:39 CST 2020
-base.0=E\:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperUniBackUp\\app\\build\\intermediates\\transforms\\dexMerger\\release\\0
+#Tue Jul 21 05:13:04 CST 2020
+base.0=E\:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperUniBackUp\\app\\build\\intermediates\\dex\\release\\out\\classes.dex
 path.1=classes2.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=E\:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperUniBackUp\\app\\build\\intermediates\\transforms\\dexMerger\\release\\0
+base.1=E\:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperUniBackUp\\app\\build\\intermediates\\dex\\release\\out\\classes2.dex

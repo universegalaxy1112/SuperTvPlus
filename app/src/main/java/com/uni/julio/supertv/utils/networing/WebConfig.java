@@ -12,12 +12,14 @@ public class WebConfig {
     public static final String likeURL = "https://supertvplus.com/dtYjAcIdG7NYBhITjmA/Connect/like.php?movieId={MOVIEID}&like={LIKE}&dislike={DISLIKE}&userId={USERID}";
     public static final String getLikeURL = "https://supertvplus.com/dtYjAcIdG7NYBhITjmA/Connect/getLike.php?movieId={MOVIEID}&userId={USERID}";
     public static final String loginURL             = domain + "/dtYjAcIdG7NYBhITjmA/Connect/login.php?user={USER}&pass={PASS}&device_id={DEVICE_ID}&model={MODEL}&fw={FW}&country={COUNTRY}&istv={ISTV}";
-    public static final String liveTVCategoriesURL          = domain + "dtYjAcIdG7NYBhITjmA/Connect/live_categorias.php";
+    public static final String liveTVCategoriesURL          = domain + "/dtYjAcIdG7NYBhITjmA/Connect/live_categorias.php";
     public static final String liveTVChannelsURL            = domain + "/dtYjAcIdG7NYBhITjmA/Connect/live_canales.php?cve={CAT_ID}";
     public static final String updateURL = "https://supertvplus.com/dtYjAcIdG7NYBhITjmA/Connect/upgrade_version.php?new_version";
     public static final String videoSearchURL = "https://supertvplus.com/dtYjAcIdG7NYBhITjmA/Connect/searchVideo.php?type={TYPE}&pattern={PATTERN}";
     public static final String getMoviesYear = "https://supertvplus.com/dtYjAcIdG7NYBhITjmA/Connect/movie_year.php?year={YEAR}";
     public static final String reportUrl = baseURL + "reportar.php?cve={CVE}&tipo={TIPO}&user={USER}&act={ACT}";
     public static final String orderUrl = baseURL + "order_title.php?tipo={TIPO}&user={USER}&titulo={TITLE}";
+    public static final String addRecent = baseURL + "view_recent.php?tipo={TIPO}&user={USER}&cve={CVE}";
+    public static final String addFavorite = baseURL + "add_favorites.php?tipo={TIPO}&user={USER}&cve={CVE}&action={ACTION}";
 
 }

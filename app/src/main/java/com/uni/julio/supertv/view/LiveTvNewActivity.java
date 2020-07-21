@@ -125,7 +125,7 @@ public class LiveTvNewActivity extends BaseActivity  implements LiveProgramSelec
     @Override
     public void onLiveProgramSelected(LiveProgram liveProgram, int programPosition) {
         String[] uris = new String[] {liveProgram.getStreamUrl()};
-        String movieUrl = liveProgram.getStreamUrl().replace(".mkv.mkv", ".mkv").replace(".mp4.mp4", ".mp4");
+        String movieUrl = liveProgram.getStreamUrl()/*.replace(".mkv.mkv", ".mkv").replace(".mp4.mp4", ".mp4")*/;
         String extension = liveProgram.getStreamUrl().substring(movieUrl.lastIndexOf(".") + 1);
         String[] extensions = new String[] {extension};
         Intent launchIntent = new Intent(this, VideoPlayActivity.class);

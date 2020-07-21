@@ -23,8 +23,6 @@ public class ActivityLivetvnewBindingImpl extends ActivityLivetvnewBinding  {
     }
     // views
     @NonNull
-    private final android.widget.FrameLayout mboundView0;
-    @NonNull
     private final android.widget.TextView mboundView5;
     // variables
     // values
@@ -45,6 +43,7 @@ public class ActivityLivetvnewBindingImpl extends ActivityLivetvnewBinding  {
             , (com.uni.julio.supertv.helper.TVRecyclerView) bindings[11]
             , (android.widget.LinearLayout) bindings[8]
             , (de.hdodenhof.circleimageview.CircleImageView) bindings[1]
+            , (android.widget.FrameLayout) bindings[0]
             , (android.widget.LinearLayout) bindings[6]
             , (com.uni.julio.supertv.helper.TVRecyclerView) bindings[10]
             , (android.widget.TextView) bindings[3]
@@ -52,10 +51,9 @@ public class ActivityLivetvnewBindingImpl extends ActivityLivetvnewBinding  {
             );
         this.epg.setTag(null);
         this.markImg.setTag(null);
-        this.mboundView0 = (android.widget.FrameLayout) bindings[0];
-        this.mboundView0.setTag(null);
         this.mboundView5 = (android.widget.TextView) bindings[5];
         this.mboundView5.setTag(null);
+        this.parent.setTag(null);
         this.playerContainer.setTag(null);
         this.subTitle.setTag(null);
         this.title.setTag(null);

@@ -151,10 +151,13 @@ public class ParserJSonFile {
                         break;
                     //case ModelTypes.LIVE_TV_CATEGORIES:
                 }
-                if(movieCategory.contains("Movies"))
+                if(movieCategory.contains("Top Movies"))
                     movie = new Movie();
-                else if(movieCategory.contains("Series"))
+                else if(movieCategory.contains("Top Series"))
                     movie = new Serie();
+                else if(movieCategory.equals("Infantil")) {
+                    movie = new Movie();
+                }
                 movie.setPosition(i);
                 fillObject(movie, videoArray.getJSONObject(i));
                 dataArray.add(movie);
@@ -196,8 +199,8 @@ public class ParserJSonFile {
             if(json_obj.has("tipo"))
                 obj.setCategoryType(json_obj.getInt("tipo"));
 
-            if(VideoStreamManager.getInstance().getSeenMovies().contains(String.valueOf(obj.getContentId())))
-                obj.setSeen(true);
+            /*if(VideoStreamManager.getInstance().getSeenMovies().contains(String.valueOf(obj.getContentId())))
+                obj.setSeen(true);*/
             if(VideoStreamManager.getInstance().getFavoriteMovies().contains(String.valueOf(obj.getContentId())))
                 obj.setFavorite(true);
 

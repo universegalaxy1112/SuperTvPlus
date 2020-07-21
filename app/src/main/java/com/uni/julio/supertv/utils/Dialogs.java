@@ -166,7 +166,42 @@ public class Dialogs {
     public static void showTwoButtonsDialog(Context activity, int message, final DialogListener dialogListener) {
         showTwoButtonsDialog(activity, R.string.accept,R.string.cancel, message, dialogListener);
     }
-
+    public static void showTwoButtonsDialog(Context activity, int accept, int cancel,  String message, final DialogListener dialogListener) {
+        if(activity == LiveTvApplication.appContext){
+            MaterialDialog dialg=new MaterialDialog.Builder(activity)
+                    .content(message)
+                    .positiveText(accept)
+                    .onPositive(new MaterialDialog.SingleButtonCallback() {
+                        @Override
+                        public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                            dialog.dismiss();
+                            dialogListener.onAccept();
+                        }
+                    })
+                    .canceledOnTouchOutside(false)
+                    .theme(Theme.LIGHT)
+                    .negativeText(cancel)
+                    .onNegative(new MaterialDialog.SingleButtonCallback() {
+                        @Override
+                        public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                            dialog.dismiss();
+                            dialogListener.onCancel();
+                        }
+                    })
+                    .backgroundColor(activity.getResources().getColor(R.color.white))
+                    .positiveColorRes(R.color.netflix_red)
+                    .negativeColorRes(R.color.netflix_red)
+                    .contentColorRes(R.color.bg_general)
+                    .show();
+            View ne=dialg.getActionButton(DialogAction.POSITIVE);
+            View po=dialg.getActionButton(DialogAction.NEGATIVE);
+            ne.setBackground(activity.getResources().getDrawable(R.drawable.dialog_btn_background));
+            po.setBackground(activity.getResources().getDrawable(R.drawable.dialog_btn_background));
+            ne.setPadding(16,4,16,4);
+            po.setPadding(16,4,16,4);
+            po.requestFocus();
+        }
+    }
     public static void showTwoButtonsDialog(Context activity, int accept, int cancel, int message, final DialogListener dialogListener) {
         if(activity == LiveTvApplication.appContext){
             MaterialDialog dialg=new MaterialDialog.Builder(activity)

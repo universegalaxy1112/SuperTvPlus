@@ -29,8 +29,8 @@ public class VideoStreamManager {
         liveTVCategoriesList = new ArrayList<>();
         localFavorites = new HashSet<>();
         localFavorites.addAll(DataManager.getInstance().getStringSet("favoriteMoviesTotal"));
-        localSeen = new HashSet<>();
-        localSeen.addAll(DataManager.getInstance().getStringSet("seenMovies"));
+       /* localSeen = new HashSet<>();
+        localSeen.addAll(DataManager.getInstance().getStringSet("seenMovies"));*/
     }
 
     public static VideoStreamManager getInstance() {

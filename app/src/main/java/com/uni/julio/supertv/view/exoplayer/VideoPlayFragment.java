@@ -82,6 +82,7 @@ import com.uni.julio.supertv.view.SpeedTestActivity;
 import java.net.CookieHandler;
 import java.net.CookieManager;
 import java.net.CookiePolicy;
+import java.net.URLDecoder;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -387,7 +388,29 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
     }
 
     private void showToast(String message) {
+        Dialogs.showTwoButtonsDialog(getActivity(), R.string.ok_dialog, R.string.cancel, message, new DialogListener() {
 
+            @Override
+            public void onAccept() {
+                try {
+                    this.onDismiss();
+                    /*startActivity(new Intent(getActivity(), SpeedTestActivity.class));
+                    getActivity().finish();*/
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onCancel() {
+
+            }
+
+            @Override
+            public void onDismiss() {
+
+            }
+        });
     }
 
     private void initializePlayer() {
@@ -457,21 +480,27 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
                 String action = intent.getAction();
                 Uri[] uris;
                 String[] extensions;
+                String[] subtitles;
+                String[] uriStrings = intent.getStringArrayExtra(URI_LIST_EXTRA);
+                String[] subtitleStrings = intent.getStringArrayExtra("subsURL");
+                subtitles = new String[subtitleStrings == null ? 0 : subtitleStrings.length];
                 if (ACTION_VIEW.equals(action)) {
                     uris = new Uri[]{intent.getData()};
                     extensions = new String[]{intent.getStringExtra(EXTENSION_EXTRA)};
                 } else if (ACTION_VIEW_LIST.equals(action)) {
-                    String[] uriStrings = intent.getStringArrayExtra(URI_LIST_EXTRA);
-                    uris = new Uri[uriStrings.length];
-                    for (int i = 0; i < uriStrings.length; i++) {
-                        uris[i] = Uri.parse(uriStrings[i]);
+
+                    uris = new Uri[uriStrings == null ? 0 : uriStrings.length];
+                    for (int i = 0; i < (uriStrings == null ? 0 : uriStrings.length); i++) {
+                        uris[i] = Uri.parse(URLDecoder.decode(uriStrings[i], "UTF-8"));
+                        if(subtitles.length > i && subtitleStrings[i] != null)
+                            subtitles[i] = (URLDecoder.decode(subtitleStrings[i], "UTF-8"));
                     }
                     extensions = intent.getStringArrayExtra(EXTENSION_LIST_EXTRA);
                     if (extensions == null) {
-                        extensions = new String[uriStrings.length];
+                        extensions = new String[uriStrings == null ? 0 : uriStrings.length];
                     }
                 } else {
-                    showToast(getString(R.string.unexpected_intent_action));
+                    //showToast(getString(R.string.unexpected_intent_action));
                     return;
                 }
                 if (Util.maybeRequestReadExternalStoragePermission(getActivity(), uris)) {
@@ -481,20 +510,16 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
                 MediaSource[] mediaSources = new MediaSource[uris.length];
                 for (int i = 0; i < uris.length; i++) {
                     mediaSources[i] = buildMediaSource(uris[i], extensions[i]);
+
+                    if(subtitles.length > i && !TextUtils.isEmpty(subtitles[i])) {
+                        Format textFormat = Format.createTextSampleFormat(null, MimeTypes.APPLICATION_SUBRIP, null, Format.NO_VALUE, Format.NO_VALUE, getString(R.string.tag_esp_srt), null);
+                        MediaSource textMediaSource = new SingleSampleMediaSource(Uri.parse(subtitles[i]), mediaDataSourceFactory, textFormat, C.TIME_UNSET);
+                        mediaSources[i] = new MergingMediaSource(mediaSources[i], textMediaSource);
+                    }
                 }
+
                 mediaSource = mediaSources.length == 1 ? mediaSources[0] : new ConcatenatingMediaSource(mediaSources);
-
-                //SuperTV add subtitles from SRT file
-                String subsURL = intent.getStringExtra("subsURL");
-                if (!TextUtils.isEmpty(subsURL)) {
-                    Format textFormat = Format.createTextSampleFormat(null, MimeTypes.APPLICATION_SUBRIP, null, Format.NO_VALUE, Format.NO_VALUE, getString(R.string.tag_esp_srt), null);
-                    MediaSource textMediaSource = new SingleSampleMediaSource(Uri.parse(subsURL), mediaDataSourceFactory, textFormat, C.TIME_UNSET);
-                    MediaSource mediaSourceWithText = new MergingMediaSource(mediaSource, textMediaSource);
-
-                    player.prepare(mediaSourceWithText, !isTimelineStatic, !isTimelineStatic);
-                } else {
-                    player.prepare(mediaSource, !isTimelineStatic, !isTimelineStatic);
-                }
+                player.prepare(mediaSource, !isTimelineStatic, !isTimelineStatic);
                 if (player != null)
                     player.seekTo(seasonPosition == -1 || episodePosition == -1 ? 0 : episodePosition, 0);
                 if (mainCategory != 4 && intent.getIntExtra("type", 1) != 2 && playerPosition != 0L) {//eventso
@@ -691,8 +716,9 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
 
         if (errorString != null) {
             showToast(errorString);
+        } else {
+            showToastError();
         }
-        showToastError();
         playerNeedsSource = true;
         updateButtonVisibilities();
         showControls();

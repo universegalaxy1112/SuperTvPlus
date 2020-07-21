@@ -45,33 +45,35 @@ public class MultiSeasonDetailActivity extends BaseActivity implements EpisodeDe
     protected Lifecycle.ViewModel getViewModel() {
         return movieDetailsViewModel;
     }
+
     @Override
     protected Lifecycle.View getLifecycleView() {
         return this;
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        try{
-            Bundle extra=getIntent().getExtras();
-            if(extra != null) {
-                mainCategoryId=extra.getInt("mainCategoryId",-1);
+        try {
+            Bundle extra = getIntent().getExtras();
+            if (extra != null) {
+                mainCategoryId = extra.getInt("mainCategoryId", -1);
                 serie = new Gson().fromJson(extra.getString("serie"), Serie.class);
             }
-            movieDetailsViewModel=new EpisodeDetailsViewModel(this,mainCategoryId);
-            activityMultiSeasonDetailBinding= DataBindingUtil.setContentView(this, R.layout.activity_multi_season_detail);
-            showMovieDetails(serie,mainCategoryId);
-        }catch (Exception e){
+            movieDetailsViewModel = new EpisodeDetailsViewModel(this, mainCategoryId);
+            activityMultiSeasonDetailBinding = DataBindingUtil.setContentView(this, R.layout.activity_multi_season_detail);
+            showMovieDetails(serie, mainCategoryId);
+        } catch (Exception e) {
             Dialogs.showOneButtonDialog(getActivity(), R.string.exception_title, R.string.exception_content, new DialogInterface.OnClickListener() {
                 @Override
-                public void onClick(DialogInterface dialog, int which)
-                {
+                public void onClick(DialogInterface dialog, int which) {
                     getActivity().finish();
                 }
             });
         }
 
-     }
+    }
+
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
@@ -87,73 +89,76 @@ public class MultiSeasonDetailActivity extends BaseActivity implements EpisodeDe
         super.onStart();
 
     }
+
     public void onPlaySelected(Movie movie, final int type, int seasonPosition) {
         final int movieId = movie.getContentId();
-        List<?extends VideoStream> episodes = serie.getSeason(seasonPosition).getEpisodeList();
-        String[] uris= new String[episodes.size()];
+        List<? extends VideoStream> episodes = serie.getSeason(seasonPosition).getEpisodeList();
+        String[] uris = new String[episodes.size()];
         String[] extensions = new String[episodes.size()];
-        String subtitleUrl = null;
+        String[] subtitles = new String[episodes.size()];
         String title = null;
         long secondsToPlay = 0;
-        String movieUrl = movie.getStreamUrl().replace(".mkv.mkv", ".mkv").replace(".mp4.mp4", ".mp4");
+        String movieUrl = movie.getStreamUrl()/*.replace(".mkv.mkv", ".mkv").replace(".mp4.mp4", ".mp4")*/;
         String extension = movie.getStreamUrl().substring(movieUrl.lastIndexOf(".") + 1);
-        for(int i = 0 ; i < episodes.size(); i++  ){
+        for (int i = 0; i < episodes.size(); i++) {
             extensions[i] = extension;
-            switch (type){
+            subtitles[i] = ((Episode)episodes.get(0)).getSubtitleUrl();
+
+            switch (type) {
                 case 0:
                     uris[i] = episodes.get(i).getStreamUrl();
                     break;
                 case 1:
-                    if(episodes.get(i).getSDUrl()==null){
+                    if (episodes.get(i).getSDUrl() == null) {
                         uris[i] = episodes.get(i).getStreamUrl();
-                    }
-                    else{
+                    } else {
                         uris[i] = episodes.get(i).getSDUrl();
                     }
                     break;
                 case 2:
-                    if(episodes.get(i).getSDUrl()==null){
+                    if (episodes.get(i).getSDUrl() == null) {
                         uris[i] = episodes.get(i).getStreamUrl();
-                    }
-                    else{
+                    } else {
                         uris[i] = episodes.get(i).getTrailerUrl();
                     }
                     break;
                 default:
             }
-            subtitleUrl= movie.getSubtitleUrl();
             title = serie.getTitle();
-            secondsToPlay=DataManager.getInstance().getLong("seconds" + movieId,0L);
+            secondsToPlay = DataManager.getInstance().getLong("seconds" + movieId, 0L);
         }
 
-         playVideo(uris,extensions, movieId, secondsToPlay, type,subtitleUrl,title, seasonPosition, movie.getPosition());
-    }
- private void playVideo(String[] uris, String[] extensions, int movieId, long secondsToPlay, int type, String subTitleUrl, String title,  int seasonPosition, int episodePosition){
-     Intent launchIntent = new Intent(this, VideoPlayActivity.class);
-     launchIntent.putExtra(VideoPlayFragment.URI_LIST_EXTRA, uris)
-             .putExtra(VideoPlayFragment.EXTENSION_LIST_EXTRA, extensions)
-             .putExtra(VideoPlayFragment.MOVIE_ID_EXTRA, movieId)
-             .putExtra(VideoPlayFragment.SECONDS_TO_START_EXTRA, secondsToPlay)
-             .putExtra("mainCategoryId", mainCategoryId)
-             .putExtra("type", type)
-             .putExtra("title", title)
-             .putExtra("seasonPosition", seasonPosition)
-             .putExtra("episodePosition", episodePosition)
-             .putExtra("subsURL", subTitleUrl)
-             .setAction(VideoPlayFragment.ACTION_VIEW_LIST);
-     hideProgressDialog();
-     ActivityCompat.startActivityForResult(this, launchIntent,100
-             ,null);
-     getActivity().overridePendingTransition(R.anim.right_in, R.anim.left_out);
- }
-    @Override
-    public void showMovieDetails(Serie serie, int maincategory) {
-        movieDetailsViewModel.showMovieDetails(serie,activityMultiSeasonDetailBinding,maincategory, this);
+        playVideo(uris, extensions, movieId, secondsToPlay, type, subtitles, title, seasonPosition, movie.getPosition());
     }
 
-@Override
-    public void showCustomProgress(){
-        if(customProgressDialog == null) customProgressDialog = new CustomProgressDialog(this, getString(R.string.wait));
+    private void playVideo(String[] uris, String[] extensions, int movieId, long secondsToPlay, int type, String[] subTitleUrl, String title, int seasonPosition, int episodePosition) {
+        Intent launchIntent = new Intent(this, VideoPlayActivity.class);
+        launchIntent.putExtra(VideoPlayFragment.URI_LIST_EXTRA, uris)
+                .putExtra(VideoPlayFragment.EXTENSION_LIST_EXTRA, extensions)
+                .putExtra(VideoPlayFragment.MOVIE_ID_EXTRA, movieId)
+                .putExtra(VideoPlayFragment.SECONDS_TO_START_EXTRA, secondsToPlay)
+                .putExtra("mainCategoryId", mainCategoryId)
+                .putExtra("type", type)
+                .putExtra("title", title)
+                .putExtra("seasonPosition", seasonPosition)
+                .putExtra("episodePosition", episodePosition)
+                .putExtra("subsURL", subTitleUrl)
+                .setAction(VideoPlayFragment.ACTION_VIEW_LIST);
+        hideProgressDialog();
+        ActivityCompat.startActivityForResult(this, launchIntent, 100
+                , null);
+        getActivity().overridePendingTransition(R.anim.right_in, R.anim.left_out);
+    }
+
+    @Override
+    public void showMovieDetails(Serie serie, int maincategory) {
+        movieDetailsViewModel.showMovieDetails(serie, activityMultiSeasonDetailBinding, maincategory, this);
+    }
+
+    @Override
+    public void showCustomProgress() {
+        if (customProgressDialog == null)
+            customProgressDialog = new CustomProgressDialog(this, getString(R.string.wait));
         customProgressDialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
             @Override
             public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
@@ -167,8 +172,9 @@ public class MultiSeasonDetailActivity extends BaseActivity implements EpisodeDe
         });
         customProgressDialog.show();
     }
-    public void hideProgressDialog(){
-        if(customProgressDialog != null && LiveTvApplication.appContext instanceof MultiSeasonDetailActivity && customProgressDialog.isShowing())
+
+    public void hideProgressDialog() {
+        if (customProgressDialog != null && LiveTvApplication.appContext instanceof MultiSeasonDetailActivity && customProgressDialog.isShowing())
             customProgressDialog.dismiss();
     }
 
@@ -176,17 +182,18 @@ public class MultiSeasonDetailActivity extends BaseActivity implements EpisodeDe
     public void onLoaded() {
         hideProgressDialog();
     }
+
     @Override
-    public void onError(){
+    public void onError() {
         hideProgressDialog();
-        if(Connectivity.isConnected()) {
+        if (Connectivity.isConnected()) {
             Dialogs.showOneButtonDialog(getActivity(), R.string.generic_error_title, R.string.generic_loading_message, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     finishActivity();
                 }
             });
-        }else {
+        } else {
             noInternetConnection(new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {

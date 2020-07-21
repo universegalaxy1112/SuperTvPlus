@@ -100,7 +100,7 @@ public class OneSeasonDetailActivity extends BaseActivity implements MovieDetail
                 break;
             default:
         }
-        String movieUrl = uris[0].replace(".mkv.mkv", ".mkv").replace(".mp4.mp4", ".mp4");
+        String movieUrl = uris[0]/*.replace(".mkv.mkv", ".mkv").replace(".mp4.mp4", ".mp4")*/;
         uris[0]=movieUrl;
         String extension = uris[0].substring(movieUrl.lastIndexOf(".") + 1);
          String[] extensions = new String[] {extension};

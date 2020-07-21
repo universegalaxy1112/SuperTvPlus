@@ -41,9 +41,9 @@ public class FetchJSonFileSync {
         try {
             String subCatURL = getSubCategoriesUrl(mainCategory);
             String dataFromServer = NetManager.getInstance().makeSyncStringRequest(subCatURL);
-                if(dataFromServer != null && dataFromServer.contains("\"Settings\",")){
-                    dataFromServer = dataFromServer.replace("\"Settings\",","");
-                }
+            if (dataFromServer != null && dataFromServer.contains("\"Settings\",")) {
+                dataFromServer = dataFromServer.replace("\"Settings\",", "");
+            }
             return ParserJSonFile.getParsedSubCategories(dataFromServer, mainCategory.getId());
         } catch (JSONException e) {
             e.printStackTrace();
@@ -55,7 +55,7 @@ public class FetchJSonFileSync {
         try {
             String dataFromServer = "";
 
-            if(movieCategory.toLowerCase().contains("vistas") && movieCategory.toLowerCase().contains("recientes")) {
+           /* if(movieCategory.toLowerCase().contains("vistas") && movieCategory.toLowerCase().contains("recientes")) {
                 String recentMovies = "";
                 switch(mainCategory) {//main category
                     case ModelTypes.MOVIE_CATEGORIES:
@@ -81,39 +81,38 @@ public class FetchJSonFileSync {
                 else {
                     return new ArrayList<>();
                 }
-            }else if(movieCategory.toLowerCase().contains("favorite")) {
+            }else */
+            if (movieCategory.toLowerCase().contains("favorite")) {
                 String favoriteMovies = "";
-                switch(mainCategory) {//main category
+                switch (mainCategory) {//main category
                     case ModelTypes.MOVIE_CATEGORIES:
-                        favoriteMovies = DataManager.getInstance().getString("favoriteMovies","");
+                        favoriteMovies = DataManager.getInstance().getString("favoriteMovies", "");
                         break;
                     case ModelTypes.ENTERTAINMENT_CATEGORIES:
-                        favoriteMovies = DataManager.getInstance().getString("favoriteEntertainment","");
+                        favoriteMovies = DataManager.getInstance().getString("favoriteEntertainment", "");
                         break;
                     case ModelTypes.SERIES_CATEGORIES:
-                        favoriteMovies = DataManager.getInstance().getString("favoriteSerie","");
+                        favoriteMovies = DataManager.getInstance().getString("favoriteSerie", "");
                         break;
                     case ModelTypes.SERIES_KIDS_CATEGORIES:
-                        favoriteMovies = DataManager.getInstance().getString("favoriteKids","");
+                        favoriteMovies = DataManager.getInstance().getString("favoriteKids", "");
                         break;
                     case ModelTypes.KARAOKE_CATEGORIES:
-                        favoriteMovies = DataManager.getInstance().getString("favoriteKara","");
+                        favoriteMovies = DataManager.getInstance().getString("favoriteKara", "");
                         break;
                 }
 
-                if(!TextUtils.isEmpty(favoriteMovies)) {
-                    dataFromServer = "{\"Videos\": "+favoriteMovies + "}";
-                }
-                else {
+                if (!TextUtils.isEmpty(favoriteMovies)) {
+                    dataFromServer = "{\"Videos\": " + favoriteMovies + "}";
+                } else {
                     return new ArrayList<>();
                 }
-            }
-            else {
+            } else {
                 String moviesForCatURL = getMoviesForCategoryUrl(mainCategory, movieCategory);
-                    dataFromServer = NetManager.getInstance().makeSyncStringRequest(moviesForCatURL, timeOut);
+                dataFromServer = NetManager.getInstance().makeSyncStringRequest(moviesForCatURL, timeOut);
             }
-            if(dataFromServer != null)
-            return ParserJSonFile.getParsedMovies(mainCategory, movieCategory, dataFromServer);
+            if (dataFromServer != null)
+                return ParserJSonFile.getParsedMovies(mainCategory, movieCategory, dataFromServer);
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -147,9 +146,9 @@ public class FetchJSonFileSync {
     public List<LiveProgram> retrieveProgramsForLiveTVCategory(LiveTVCategory liveTVCategory) {
         User user = LiveTvApplication.getUser();
         String password = user.getPassword();
-         try {
+        try {
             String moviesForCatURL = getProgramsForLiveTVCategoryUrl(liveTVCategory);
-            String dataFromServer = NetManager.getInstance().makeSyncStringRequest(moviesForCatURL+"&s=" + password);
+            String dataFromServer = NetManager.getInstance().makeSyncStringRequest(moviesForCatURL + "&s=" + password);
             return ParserJSonFile.getParsedProgramsForLiveTVCategory(liveTVCategory, dataFromServer);
         } catch (JSONException e) {
             e.printStackTrace();
@@ -163,7 +162,7 @@ public class FetchJSonFileSync {
     }
 
     private String getProgramsForLiveTVCategoryUrl(LiveTVCategory liveTVCategory) {
-        return WebConfig.liveTVChannelsURL.replace("{CAT_ID}",liveTVCategory.getId()+"");
+        return WebConfig.liveTVChannelsURL.replace("{CAT_ID}", liveTVCategory.getId() + "");
 //        return "https://superteve.com/android/API/live_canales.php?cve=" + liveTVCategory.getId();
     }
 
@@ -177,6 +176,7 @@ public class FetchJSonFileSync {
 
         return mainCategory.getModelType().equals(ModelTypes.MOVIES_YEAR) ? WebConfig.getCategoriesForYear : WebConfig.baseURL + tmpURL;
     }
+
     public List<? extends VideoStream> retrieveSearchMovies(MainCategory mainCategory, String pattern, int timeOut) {
         int type = -1;
         try {
@@ -208,57 +208,60 @@ public class FetchJSonFileSync {
     private String getMoviesForCategoryUrl(String mainCategory, String movieCategory) {
 
         String tmpURL = "";
-        try{
+        try {
             String mainCategoryEncoded = URLEncoder.encode(movieCategory, "utf-8");
-            switch(mainCategory) {//main category
+            switch (mainCategory) {//main category
                 case ModelTypes.MOVIE_CATEGORIES:
-                    tmpURL = "/movies.php?CATEGORY="+mainCategoryEncoded;
+                    tmpURL = "/movies.php?CATEGORY=" + mainCategoryEncoded;
                     break;
                 case ModelTypes.SERIES_CATEGORIES:
-                    tmpURL = "/series.php?cat="+mainCategoryEncoded+"&tipo=2";
+                    tmpURL = "/series.php?cat=" + mainCategoryEncoded + "&tipo=2";
                     break;
                 case ModelTypes.SERIES_KIDS_CATEGORIES:
-                    tmpURL = "/series.php?cat="+mainCategoryEncoded+"&tipo=3";
+                    tmpURL = "/series.php?cat=" + mainCategoryEncoded + "&tipo=3";
                     break;
                 case ModelTypes.EVENTS_CATEGORIES:
-                    tmpURL = "/eventos.php?cat="+mainCategoryEncoded;
+                    tmpURL = "/eventos.php?cat=" + mainCategoryEncoded;
                     break;
                 case ModelTypes.ADULTS_CATEGORIES:
-                    tmpURL = "/adultos.php?cat="+mainCategoryEncoded;
+                    tmpURL = "/adultos.php?cat=" + mainCategoryEncoded;
                     break;
                 case ModelTypes.LIVE_TV_CATEGORIES:
                     break;
                 case ModelTypes.KARAOKE_CATEGORIES:
-                    tmpURL = "/karaoke.php?cat="+mainCategoryEncoded;
+                    tmpURL = "/karaoke.php?cat=" + mainCategoryEncoded;
                     break;
                 case ModelTypes.MUSIC_CATEGORIES:
                     break;
                 case ModelTypes.ENTERTAINMENT_CATEGORIES:
-                    tmpURL = "/entertainment.php?cat="+mainCategoryEncoded;
+                    tmpURL = "/entertainment.php?cat=" + mainCategoryEncoded;
                     break;
             }
-            if(ModelTypes.TOP_MOVIES.equals(mainCategory) && movieCategory.contains("Movies"))
+
+            if (ModelTypes.TOP_MOVIES.equals(mainCategory) && movieCategory.contains("Top Movies"))
                 tmpURL = "/getTopMovies.php?";
-            else if(ModelTypes.TOP_MOVIES.equals(mainCategory) && movieCategory.contains("Series"))
+            else if (ModelTypes.TOP_MOVIES.equals(mainCategory) && movieCategory.contains("Top Series"))
                 tmpURL = "/getTopSeries.php?";
+            else if(movieCategory.equals("Infantil")) {
+                tmpURL = "/movies.php?CATEGORY=" + mainCategoryEncoded;
+            }
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
 
         User user = LiveTvApplication.getUser();
         String password = user.getPassword();
-        if(ModelTypes.TOP_MOVIES.equals(mainCategory))
+        if (ModelTypes.TOP_MOVIES.equals(mainCategory))
             return WebConfig.baseURL + tmpURL + "s=" + password;
-        else if(ModelTypes.MOVIES_YEAR.equals(mainCategory))
+        else if (ModelTypes.MOVIES_YEAR.equals(mainCategory))
             return WebConfig.getMoviesYear.replace("{YEAR}", movieCategory);
         else
-            return WebConfig.baseURL + tmpURL + "&s=" + password;
-
+            return WebConfig.baseURL + tmpURL + "&s=" + password + "&cve=" + user.getName();
     }
 
     private String getMoviesForSerieUrl(Serie serie, int season) {
         String tmpURL = "/capitulos_temporada.php";
-             tmpURL += "?cve="+ serie.getContentId() + "&temporada=Temporada%20"+ season;
-         return WebConfig.baseURL + tmpURL;
+        tmpURL += "?cve=" + serie.getContentId() + "&temporada=Temporada%20" + season;
+        return WebConfig.baseURL + tmpURL;
     }
 }

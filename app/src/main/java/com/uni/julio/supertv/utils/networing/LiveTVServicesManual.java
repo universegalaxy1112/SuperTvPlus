@@ -2,6 +2,7 @@ package com.uni.julio.supertv.utils.networing;
 
 import android.os.Build;
 import android.text.TextUtils;
+import android.util.Log;
 
 import androidx.annotation.RequiresApi;
 
@@ -27,7 +28,8 @@ import rx.schedulers.Schedulers;
 //import com.livetv.android.utils.networking.parser.FetchJSonFile;
 
 public class LiveTVServicesManual {
-    public static Observable<Boolean> performLogin (final String usr, final String pss, final StringRequestListener stringRequestListener) {
+
+    public static Observable<Boolean> performLogin(final String usr, final String pss, final StringRequestListener stringRequestListener) {
 
         return Observable.create(new Observable.OnSubscribe<Boolean>() {
             @RequiresApi(api = Build.VERSION_CODES.M)
@@ -41,6 +43,37 @@ public class LiveTVServicesManual {
                 .unsubscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread());
     }
+
+    static Observable<Boolean> addRecent(final String type, final String cve, final StringRequestListener stringRequestListener) {
+
+        return Observable.create(new Observable.OnSubscribe<Boolean>() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public void call(Subscriber<? super Boolean> subscriber) {
+                subscriber.onNext(recentRequest(type, cve, stringRequestListener));
+                subscriber.onCompleted();
+            }
+        })
+                .subscribeOn(Schedulers.computation())
+                .unsubscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread());
+    }
+
+    public static Observable<Boolean> addFavorite(final String type, final String cve, final String action, final StringRequestListener stringRequestListener) {
+
+        return Observable.create(new Observable.OnSubscribe<Boolean>() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public void call(Subscriber<? super Boolean> subscriber) {
+                subscriber.onNext(favoriteRequest(type, cve, action, stringRequestListener));
+                subscriber.onCompleted();
+            }
+        })
+                .subscribeOn(Schedulers.computation())
+                .unsubscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread());
+    }
+
     public static Observable<List<LiveTVCategory>> getLiveTVCategories(final MainCategory category) {
         return Observable.create(new Observable.OnSubscribe<List<LiveTVCategory>>() {
             @Override
@@ -48,25 +81,27 @@ public class LiveTVServicesManual {
                 subscriber.onNext(retrieveLiveTVCategories(category));
                 subscriber.onCompleted();
             }
-        })      .subscribeOn(Schedulers.computation())
+        }).subscribeOn(Schedulers.computation())
                 .unsubscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread());
     }
+
     private static List<? extends VideoStream> retrieveEpisodesForSerie(Serie serie, Integer season) {
         FetchJSonFileSync fetch = new FetchJSonFileSync();
         return fetch.retrieveMoviesForSerie(serie, season);
     }
+
     private static List<LiveTVCategory> retrieveLiveTVCategories(MainCategory category) {
         FetchJSonFileSync fetch = new FetchJSonFileSync();
         return fetch.retrieveLiveTVCategories(category);
     }
-    @RequiresApi(api = Build.VERSION_CODES.M)
+
     private static boolean loginRequest(String usr, String pss, final StringRequestListener stringRequestListener) {
         String loginUrl;
-         try {
-               loginUrl = WebConfig.loginURL
-                    .replace("{USER}",usr)
-                    .replace("{PASS}",pss)
+        try {
+            loginUrl = WebConfig.loginURL
+                    .replace("{USER}", usr)
+                    .replace("{PASS}", pss)
                     .replace("{DEVICE_ID}", Device.getIdentifier())
                     .replace("{MODEL}", URLEncoder.encode(Device.getModel(), "UTF-8"))
                     .replace("{FW}", URLEncoder.encode(Device.getFW(), "UTF-8"))
@@ -75,13 +110,39 @@ public class LiveTVServicesManual {
         } catch (Exception e) {
             loginUrl = "";
         }
-//        Log.d("liveTV","PerformLogin + "+ loginUrl);
-        if(!TextUtils.isEmpty(loginUrl)) {
+        if (!TextUtils.isEmpty(loginUrl)) {
 
             NetManager.getInstance().makeStringRequest(loginUrl, new StringRequestListener() {
                 @Override
                 public void onCompleted(String response) {
                     stringRequestListener.onCompleted(response);
+                }
+
+                @Override
+                public void onError() {
+                    stringRequestListener.onError();
+                }
+            });
+        }
+        return true;
+    }
+
+    private static boolean recentRequest(String type, String cve, final StringRequestListener stringRequestListener) {
+        String addRecentUrl;
+        try {
+             addRecentUrl = WebConfig.addRecent.replace("{USER}", LiveTvApplication.getUser() == null ? "" : LiveTvApplication.getUser().getName())
+                    .replace("{TIPO}", type)
+                    .replace("{CVE}", cve);
+        } catch (Exception e) {
+            addRecentUrl = "";
+        }
+
+        if (!TextUtils.isEmpty(addRecentUrl)) {
+            NetManager.getInstance().makeStringRequest(addRecentUrl, new StringRequestListener() {
+                @Override
+                public void onCompleted(String response) {
+                    stringRequestListener.onCompleted(response);
+
                 }
                 @Override
                 public void onError() {
@@ -91,27 +152,57 @@ public class LiveTVServicesManual {
         }
         return true;
     }
-    public static Observable<Boolean> performLoginCode(final String user,final String code, final String device_id,final StringRequestListener stringRequestListener) {
-        return Observable.create( new Observable.OnSubscribe<Boolean>() {
+
+    private static boolean favoriteRequest(String type, String cve, String action, final StringRequestListener stringRequestListener) {
+        String addRecentUrl;
+        try {
+            addRecentUrl = WebConfig.addFavorite.replace("{USER}", LiveTvApplication.getUser() == null ? "" : LiveTvApplication.getUser().getName())
+                    .replace("{TIPO}", type)
+                    .replace("{CVE}", cve)
+                    .replace("{ACTION}", action);
+        } catch (Exception e) {
+            addRecentUrl = "";
+        }
+
+        if (!TextUtils.isEmpty(addRecentUrl)) {
+            NetManager.getInstance().makeStringRequest(addRecentUrl, new StringRequestListener() {
+                @Override
+                public void onCompleted(String response) {
+                    stringRequestListener.onCompleted(response);
+
+                }
+                @Override
+                public void onError() {
+                    stringRequestListener.onError();
+                }
+            });
+        }
+        return true;
+    }
+
+    static Observable<Boolean> performLoginCode(final String user, final String code, final String device_id, final StringRequestListener stringRequestListener) {
+        return Observable.create(new Observable.OnSubscribe<Boolean>() {
             public void call(Subscriber<? super Boolean> subscriber) {
-                subscriber.onNext(Boolean.valueOf(LiveTVServicesManual.loginCodeRequest(user,code,device_id, stringRequestListener)));
+                subscriber.onNext(Boolean.valueOf(LiveTVServicesManual.loginCodeRequest(user, code, device_id, stringRequestListener)));
                 subscriber.onCompleted();
             }
-        }) .subscribeOn(Schedulers.computation())
+        }).subscribeOn(Schedulers.computation())
                 .unsubscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread());
     }
-    public static Observable<Boolean> getMessages(final String user, final StringRequestListener stringRequestListener) {
-        return Observable.create( new Observable.OnSubscribe<Boolean>() {
+
+    static Observable<Boolean> getMessages(final String user, final StringRequestListener stringRequestListener) {
+        return Observable.create(new Observable.OnSubscribe<Boolean>() {
             public void call(Subscriber<? super Boolean> subscriber) {
-                subscriber.onNext(Boolean.valueOf(LiveTVServicesManual.messageRequest(user,stringRequestListener)));
+                subscriber.onNext(Boolean.valueOf(LiveTVServicesManual.messageRequest(user, stringRequestListener)));
                 subscriber.onCompleted();
             }
-        }) .subscribeOn(Schedulers.computation())
+        }).subscribeOn(Schedulers.computation())
                 .unsubscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread());
     }
-    public static boolean messageRequest(String user,final StringRequestListener stringRequestListener){
-        String messageUrl=WebConfig.getMessage;
-        try{
+
+    private static boolean messageRequest(String user, final StringRequestListener stringRequestListener) {
+        String messageUrl = WebConfig.getMessage;
+        try {
             NetManager.getInstance().makeStringRequest(messageUrl.replace("{USER}", user), new StringRequestListener() {
                 @Override
                 public void onCompleted(String response) {
@@ -123,26 +214,28 @@ public class LiveTVServicesManual {
                     stringRequestListener.onError();
                 }
             });
-        }catch (Exception e){
+        } catch (Exception e) {
             stringRequestListener.onError();
         }
         return true;
     }
-    public static boolean loginCodeRequest(String user,String code, String device_id,final StringRequestListener stringRequestListener) {
+
+    public static boolean loginCodeRequest(String user, String code, String device_id, final StringRequestListener stringRequestListener) {
         String loginCodeUrl;
         try {
             loginCodeUrl = WebConfig.LoginSplash.replace("{USER}", user)
-                                                .replace("{PASS}",code)
-                                                .replace("{DEVICE_ID}",device_id)
-                                                .replace("{ISTV}", Device.treatAsBox ? "1" : "0");
+                    .replace("{PASS}", code)
+                    .replace("{DEVICE_ID}", device_id)
+                    .replace("{ISTV}", Device.treatAsBox ? "1" : "0");
         } catch (Exception e) {
             loginCodeUrl = "";
         }
-         if (!TextUtils.isEmpty(loginCodeUrl)) {
+        if (!TextUtils.isEmpty(loginCodeUrl)) {
             NetManager.getInstance().makeStringRequest(loginCodeUrl, new StringRequestListener() {
                 public void onCompleted(String response) {
                     stringRequestListener.onCompleted(response);
                 }
+
                 public void onError() {
                     stringRequestListener.onError();
                 }
@@ -152,7 +245,7 @@ public class LiveTVServicesManual {
     }
 
     public static Observable<Boolean> performGetCode(final StringRequestListener stringRequestListener) {
-        return Observable.create(  new Observable.OnSubscribe<Boolean>() {
+        return Observable.create(new Observable.OnSubscribe<Boolean>() {
             public void call(Subscriber<? super Boolean> subscriber) {
                 subscriber.onNext(Boolean.valueOf(LiveTVServicesManual.getCodeRequest(stringRequestListener)));
                 subscriber.onCompleted();
@@ -179,7 +272,7 @@ public class LiveTVServicesManual {
 
 
     public static Observable<List<? extends VideoStream>> searchVideo(final MainCategory mainCategory, final String pattern, final int timeOut) {
-        return Observable.create(  new Observable.OnSubscribe<List<? extends VideoStream>>() {
+        return Observable.create(new Observable.OnSubscribe<List<? extends VideoStream>>() {
             public void call(Subscriber<? super List<? extends VideoStream>> subscriber) {
                 subscriber.onNext(LiveTVServicesManual.fetchSearchVideo(mainCategory, pattern, timeOut));
                 subscriber.onCompleted();
@@ -196,7 +289,7 @@ public class LiveTVServicesManual {
 
     public static Observable<Integer> getSeasonsForSerie(final Serie serie) {
 
-        return Observable.create( new Observable.OnSubscribe<Integer>() {
+        return Observable.create(new Observable.OnSubscribe<Integer>() {
             @Override
             public void call(Subscriber<? super Integer> subscriber) {
                 subscriber.onNext(retrieveSeasonsForSerie(serie));
@@ -214,12 +307,12 @@ public class LiveTVServicesManual {
         try {
             seasons = Integer.parseInt(serie.getSeasonCountText().replaceAll("[^0-9]", ""));
             ;//Log.d("liveTV","retrieveSeasonsForSerie + "+ seasons);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             seasons = 0;
         }
         return seasons;
     }
+
     public static Observable<LiveTVCategory> getProgramsForLiveTVCategory(final LiveTVCategory liveTVCategory) {
 
         return Observable.create(new Observable.OnSubscribe<LiveTVCategory>() {
@@ -245,6 +338,7 @@ public class LiveTVServicesManual {
         FetchJSonFileSync fetch = new FetchJSonFileSync();
         return fetch.retrieveProgramsForLiveTVCategory(liveTVCategory);
     }
+
     public static Observable<List<? extends VideoStream>> getMoviesForSubCat(final String mainCategory, final String movieCategory, final int timeOut) {
 
         return Observable.create(new Observable.OnSubscribe<List<? extends VideoStream>>() {
@@ -258,20 +352,23 @@ public class LiveTVServicesManual {
                 .unsubscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread());
     }
+
     private static List<? extends VideoStream> retrieveMoviesForSubCat(String mainCategory, String movieCategory, int timeOut) {
         FetchJSonFileSync fetch = new FetchJSonFileSync();
         return fetch.retrieveMovies(mainCategory, movieCategory, timeOut);
     }
+
     public static Observable<Boolean> performCheckForUpdate(final StringRequestListener stringRequestListener) {
-        return Observable.create( new Observable.OnSubscribe<Boolean>() {
+        return Observable.create(new Observable.OnSubscribe<Boolean>() {
             public void call(Subscriber<? super Boolean> subscriber) {
                 subscriber.onNext(checkForUpdateRequest(stringRequestListener));
                 subscriber.onCompleted();
             }
         }).subscribeOn(Schedulers.computation())
-          .unsubscribeOn(Schedulers.io())
-          .observeOn(AndroidSchedulers.mainThread());
+                .unsubscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread());
     }
+
     public static boolean checkForUpdateRequest(final StringRequestListener stringRequestListener) {
         String checkForUpdateUrl = WebConfig.updateURL;
         if (!TextUtils.isEmpty(checkForUpdateUrl)) {
@@ -287,6 +384,7 @@ public class LiveTVServicesManual {
         }
         return true;
     }
+
     public static Observable<List<MovieCategory>> getSubCategories(final MainCategory category) {
         return Observable.create(new Observable.OnSubscribe<List<MovieCategory>>() {
             @Override
@@ -299,13 +397,15 @@ public class LiveTVServicesManual {
                 .unsubscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread());
     }
+
     private static List<MovieCategory> retrieveSubCategories(MainCategory category) {
         FetchJSonFileSync fetch = new FetchJSonFileSync();
         return fetch.retrieveSubCategories(category);
     }
+
     public static Observable<List<? extends VideoStream>> getEpisodesForSerie(final Serie serie, final Integer season) {
 
-        return Observable.create( new Observable.OnSubscribe<List<? extends VideoStream>>() {
+        return Observable.create(new Observable.OnSubscribe<List<? extends VideoStream>>() {
             @Override
             public void call(Subscriber<? super List<? extends VideoStream>> subscriber) {
                 subscriber.onNext(retrieveEpisodesForSerie(serie, season));

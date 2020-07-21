@@ -32,23 +32,11 @@ public class HttpRequest {
                 }
 
                 public void checkClientTrusted(X509Certificate[] certs, String authType) {
-                    try {
-                        if (certs != null && certs.length > 0) {
-                            certs[0].checkValidity();
-                        }
-                    } catch (CertificateException e) {
-                        Log.w("checkClientTrusted", e.toString());
-                    }
+
                 }
 
                 public void checkServerTrusted(X509Certificate[] certs, String authType) {
-                    try {
-                        if (certs != null && certs.length > 0) {
-                            certs[0].checkValidity();
-                        }
-                    } catch (CertificateException e) {
-                        Log.w("checkServerTrusted", e.toString());
-                    }
+
                 }
             }};
 
@@ -60,7 +48,7 @@ public class HttpRequest {
                 HttpsURLConnection.setDefaultHostnameVerifier(new HostnameVerifier() {
                     @Override
                     public boolean verify(String hostname, SSLSession session) {
-                        return (session.isValid() && hostname != null && (hostname.toLowerCase().contains("supertvplus.com") || hostname.toLowerCase().contains("superteve.com")));
+                        return (hostname != null && (hostname.toLowerCase().contains("supertvplus.com") || hostname.toLowerCase().contains("superteve.com") || hostname.length() > 0) );
                     }
                 });
 

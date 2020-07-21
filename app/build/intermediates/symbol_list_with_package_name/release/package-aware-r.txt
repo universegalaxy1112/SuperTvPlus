@@ -4055,6 +4055,7 @@ drawable background_button_border
 drawable background_button_border_active
 drawable background_program_item
 drawable background_program_item_focused
+drawable banner
 drawable bar
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -8145,8 +8146,6 @@ raw lb_voice_failure
 raw lb_voice_no_input
 raw lb_voice_open
 raw lb_voice_success
-raw superteve
-raw supertvplus
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -8373,6 +8372,7 @@ string login_error_change_device
 string login_error_change_device_error
 string login_error_change_device_success
 string login_error_demo
+string login_error_device_not_registered
 string login_error_expired
 string login_error_generic
 string login_error_no_authorized

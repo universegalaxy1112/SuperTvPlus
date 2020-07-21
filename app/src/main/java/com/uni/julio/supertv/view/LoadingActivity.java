@@ -10,7 +10,6 @@ import com.google.gson.Gson;
 import com.uni.julio.supertv.LiveTvApplication;
 import com.uni.julio.supertv.R;
 import com.uni.julio.supertv.helper.VideoStreamManager;
-import com.uni.julio.supertv.model.LiveTVCategory;
 import com.uni.julio.supertv.model.ModelTypes;
 import com.uni.julio.supertv.model.Serie;
 import com.uni.julio.supertv.utils.Connectivity;
@@ -21,7 +20,7 @@ import com.uni.julio.supertv.viewmodel.Lifecycle;
 import com.uni.julio.supertv.viewmodel.LoadingMoviesViewModel;
 import com.uni.julio.supertv.viewmodel.LoadingMoviesViewModelContract;
 import com.wang.avi.AVLoadingIndicatorView;
-import java.util.List;
+
 public class LoadingActivity extends BaseActivity implements LoadingMoviesViewModelContract.View{
     private Serie serie;
     private LoadingMoviesViewModel loadingMoviesViewModel;
@@ -30,7 +29,6 @@ public class LoadingActivity extends BaseActivity implements LoadingMoviesViewMo
     protected Lifecycle.ViewModel getViewModel() {
         return loadingMoviesViewModel;
     }
-
 
     @Override
     protected Lifecycle.View getLifecycleView() {

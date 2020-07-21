@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -260,10 +261,10 @@ public class EpisodeDetailsViewModel implements EpisodeDetailsViewModelContract.
     private void setProperty(){
         if(mMainCategoryId == 4)  //eventos
             hidePlayFromStart = true;
-        if(hidePlayFromStart)
+        /*if(hidePlayFromStart)
             isSeen = new ObservableBoolean(false);
         else
-            isSeen = new ObservableBoolean(videoStreamManager.isLocalSeen(String.valueOf(mMovie.getContentId())));
+            isSeen = new ObservableBoolean(videoStreamManager.isLocalSeen(String.valueOf(mMovie.getContentId())));*/
         isFavorite = new ObservableBoolean(videoStreamManager.isLocalFavorite(String.valueOf(mMovie.getContentId())));
         isHD=mMovie.getStreamUrl()==null||mMovie.getStreamUrl().equals("null")||mMovie.getStreamUrl().equals("")?new ObservableBoolean(true):new ObservableBoolean(false);
         isSD=mMovie.getSDUrl()==null||mMovie.getSDUrl().equals("null")||mMovie.getSDUrl().equals("")?new ObservableBoolean(true):new ObservableBoolean(false);
@@ -347,13 +348,13 @@ public class EpisodeDetailsViewModel implements EpisodeDetailsViewModelContract.
         onPlay(1);
     }
     private void onPlay(int type) {
-        if(!videoStreamManager.getSeenMovies().contains(String.valueOf(mMovie.getContentId()))) {
+       /* if(!videoStreamManager.getSeenMovies().contains(String.valueOf(mMovie.getContentId()))) {
             videoStreamManager.setLocalSeen(String.valueOf(mMovie.getContentId()));
             if(!hidePlayFromStart) {
                 isSeen.set(true);
             }
         }
-        isSeen.notifyChange();
+        isSeen.notifyChange();*/
         addRecentSerie();
         DataManager.getInstance().saveData("seenMovies", videoStreamManager.getSeenMovies());
         viewCallback.onPlaySelected(mMovie, type, seasonPosition);
@@ -364,8 +365,18 @@ public class EpisodeDetailsViewModel implements EpisodeDetailsViewModelContract.
             String lastSelectedSerie = DataManager.getInstance().getString("lastSerieSelected", null);
             if (lastSelectedSerie != null) {
                 Serie serie = new Gson().fromJson(lastSelectedSerie, Serie.class);
+                NetManager.getInstance().addRecent(Integer.toString(serie.getCategoryType()), Integer.toString(serie.getContentId()), new StringRequestListener() {
+                    @Override
+                    public void onCompleted(String response) {
+                        Log.i("TAG", "success log recent");
+                    }
 
-                String recentSeries;
+                    @Override
+                    public void onError() {
+                        Log.i("TAG", "fail log recent");
+                    }
+                });
+                /*String recentSeries;
 
                 String serieType;
                 if (videoStreamManager.getMainCategory(mMainCategoryId).getModelType() == ModelTypes.SERIES_CATEGORIES) {
@@ -401,7 +412,7 @@ public class EpisodeDetailsViewModel implements EpisodeDetailsViewModelContract.
                         serieList.add(0, serie);
                         DataManager.getInstance().saveData(serieType, new Gson().toJson(serieList));
                     }
-                }
+                }*/
             }
         }catch(Exception e) {
             e.printStackTrace();
