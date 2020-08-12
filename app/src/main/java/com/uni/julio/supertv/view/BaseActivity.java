@@ -4,6 +4,7 @@ package com.uni.julio.supertv.view;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;

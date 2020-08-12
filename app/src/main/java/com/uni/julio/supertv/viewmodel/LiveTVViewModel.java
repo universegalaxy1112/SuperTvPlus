@@ -90,17 +90,24 @@ public class LiveTVViewModel implements LiveTVViewModelContract.ViewModel, LiveP
     }
     public void minimize(View view){
         if(!isFullscreen) return;
+
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(activityLiveBinding.exoPlayerVirtual.getMeasuredWidth(), activityLiveBinding.exoPlayerVirtual.getMeasuredHeight());
         int margin = (int)(mContext.getResources().getDisplayMetrics().density*16);
         layoutParams.setMargins(margin,margin,20,20);
         activityLiveBinding.exoPlayer.setLayoutParams(layoutParams);
         activityLiveBinding.exoPlayer.findViewById(R.id.top_bar).setVisibility(View.GONE);
+        activityLiveBinding.exoPlayer.findViewById(R.id.detail_bar).setVisibility(View.GONE);
         isFullscreen = false;
         showPrograms();
     }
 
-    public void fullScreen(View view){
-        if(isFullscreen) return;
+    public void fullScreen(VideoPlayFragment fragment){
+        if(isFullscreen) {
+            if(fragment != null) {
+                fragment.toggleDetail();
+            }
+            return;
+        }
         DisplayMetrics displayMetrics = new DisplayMetrics();
         ((AppCompatActivity)mContext).getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
 
@@ -113,6 +120,8 @@ public class LiveTVViewModel implements LiveTVViewModelContract.ViewModel, LiveP
         activityLiveBinding.liveCategoryRecycler.setVisibility(View.GONE);
         isFullscreen = true;
     }
+
+
 
     public void showCategories(View view) {
         if(isFullscreen) return;

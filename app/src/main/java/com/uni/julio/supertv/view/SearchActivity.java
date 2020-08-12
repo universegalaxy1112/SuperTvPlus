@@ -37,6 +37,7 @@ import com.uni.julio.supertv.viewmodel.SearchViewModelContract;
 public class SearchActivity extends BaseActivity implements SearchViewModelContract.View {
     private SearchViewModel searchViewModel;
     private ActivitySearchBinding activitySearchBinding;
+
     @Override
     protected Lifecycle.ViewModel getViewModel() {
         return searchViewModel;
@@ -51,35 +52,35 @@ public class SearchActivity extends BaseActivity implements SearchViewModelContr
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        try{
+        try {
             String query = "";
             Bundle extras = getActivity().getIntent().getExtras();
-            if(extras != null) {
+            if (extras != null) {
                 selectedType = (ModelTypes.SelectedType) extras.get("selectedType");
-                mainCategoryId = extras.getInt("mainCategoryId",0);
-                movieCategoryId = extras.getInt("movieCategoryId",0);
-                query=extras.getString("query","");
+                mainCategoryId = extras.getInt("mainCategoryId", 0);
+                movieCategoryId = extras.getInt("movieCategoryId", 0);
+                query = extras.getString("query", "");
             }
 
-            searchViewModel=new SearchViewModel(this, mainCategoryId);
-            activitySearchBinding= DataBindingUtil.setContentView(this, R.layout.activity_search);
+            searchViewModel = new SearchViewModel(this, mainCategoryId);
+            activitySearchBinding = DataBindingUtil.setContentView(this, R.layout.activity_search);
             activitySearchBinding.setSearchFM(searchViewModel);
-            Toolbar toolbar=activitySearchBinding.toolbar;
-            toolbar.setTitle(VideoStreamManager.getInstance().getMainCategory(mainCategoryId).getCatName()+"->"+query);
+            Toolbar toolbar = activitySearchBinding.toolbar;
+            toolbar.setTitle(VideoStreamManager.getInstance().getMainCategory(mainCategoryId).getCatName() + "->" + query);
             setSupportActionBar(toolbar);
-            if(getSupportActionBar() != null){
+            if (getSupportActionBar() != null) {
                 getSupportActionBar().setDisplayHomeAsUpEnabled(true);
                 getSupportActionBar().setDisplayShowHomeEnabled(true);
             }
-            if(Device.treatAsBox){
+            if (Device.treatAsBox) {
                 findViewById(R.id.appBarLayout).setVisibility(View.GONE);
             }
-            boolean searchSerie=false;
-            if((mainCategoryId == 1 || mainCategoryId == 2) && selectedType == ModelTypes.SelectedType.MAIN_CATEGORY) {
+            boolean searchSerie = false;
+            if ((mainCategoryId == 1 || mainCategoryId == 2) && selectedType == ModelTypes.SelectedType.MAIN_CATEGORY) {
                 searchSerie = true;
             }
-            if(query.equals("") && Device.treatAsBox){
-                (activitySearchBinding.editPassword).setOnEditorActionListener(new EditText.OnEditorActionListener(){
+            if (query.equals("") && Device.treatAsBox) {
+                (activitySearchBinding.editPassword).setOnEditorActionListener(new EditText.OnEditorActionListener() {
 
                     @Override
                     public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -90,7 +91,7 @@ public class SearchActivity extends BaseActivity implements SearchViewModelContr
                                         event.getKeyCode() == KeyEvent.KEYCODE_ENTER) {
                             if (event == null || !event.isShiftPressed()) {
                                 hideKeyboard();
-                                searchViewModel.showMovieList(activitySearchBinding,activitySearchBinding.searchRecycler,v.getText().toString(),true);
+                                searchViewModel.showMovieList(activitySearchBinding, activitySearchBinding.searchRecycler, v.getText().toString(), true);
                                 return true;
                             }
                         }
@@ -98,23 +99,22 @@ public class SearchActivity extends BaseActivity implements SearchViewModelContr
                     }
                 });
                 activitySearchBinding.editPassword.requestFocus();
-            }
-            else{
+            } else {
                 activitySearchBinding.editPassword.setVisibility(View.GONE);
-                searchViewModel.showMovieList(activitySearchBinding,activitySearchBinding.searchRecycler,query,searchSerie);
+                searchViewModel.showMovieList(activitySearchBinding, activitySearchBinding.searchRecycler, query, searchSerie);
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             Dialogs.showOneButtonDialog(getActivity(), R.string.exception_title, R.string.exception_content, new DialogInterface.OnClickListener() {
                 @Override
-                public void onClick(DialogInterface dialog, int which)
-                {
+                public void onClick(DialogInterface dialog, int which) {
                     getActivity().finish();
                 }
             });
         }
-     }
-    public  void hideKeyboard() {
+    }
+
+    public void hideKeyboard() {
         InputMethodManager imm = (InputMethodManager) getSystemService(AppCompatActivity.INPUT_METHOD_SERVICE);
         //Find the currently focused view, so we can grab the correct window token from it.
         View view = getCurrentFocus();
@@ -122,9 +122,10 @@ public class SearchActivity extends BaseActivity implements SearchViewModelContr
         if (view == null) {
             view = new View(this);
         }
-        if(imm != null)
+        if (imm != null)
             imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
+
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
@@ -133,6 +134,7 @@ public class SearchActivity extends BaseActivity implements SearchViewModelContr
         }
         return false;
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
@@ -140,7 +142,8 @@ public class SearchActivity extends BaseActivity implements SearchViewModelContr
         }
         return super.onOptionsItemSelected(item);
     }
-    public boolean onCreateOptionsMenu(Menu menu){
+
+    public boolean onCreateOptionsMenu(Menu menu) {
 
         return true;
     }

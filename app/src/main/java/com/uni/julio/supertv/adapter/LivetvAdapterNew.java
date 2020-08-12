@@ -128,6 +128,7 @@ public class LivetvAdapterNew extends TVRecyclerViewAdapter<LivetvAdapterNew.MyV
             super(context, itemView);
             viewDataBinding= DataBindingUtil.bind(itemView);
         }
+
         ViewDataBinding getViewDataBinding(){
             return viewDataBinding;
         }

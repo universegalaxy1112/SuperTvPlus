@@ -17,8 +17,10 @@ import androidx.fragment.app.FragmentTransaction;
 import com.uni.julio.supertv.LiveTvApplication;
 import com.uni.julio.supertv.R;
 import com.uni.julio.supertv.databinding.ActivityLivetvnewBinding;
+import com.uni.julio.supertv.listeners.DialogListener;
 import com.uni.julio.supertv.listeners.LiveProgramSelectedListener;
 import com.uni.julio.supertv.model.LiveProgram;
+import com.uni.julio.supertv.utils.Dialogs;
 import com.uni.julio.supertv.view.exoplayer.VideoPlayFragment;
 import com.uni.julio.supertv.viewmodel.Lifecycle;
 import com.uni.julio.supertv.viewmodel.LiveTVViewModel;
@@ -92,12 +94,31 @@ public class LiveTvNewActivity extends BaseActivity  implements LiveProgramSelec
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-            finishActivity();
+
+            Dialogs.showTwoButtonsDialog(getActivity(),R.string.ok_dialog,R.string.cancel,R.string.exit_confirm, new DialogListener() {
+
+                @Override
+                public void onAccept() {
+                    finishActivity();
+                }
+
+                @Override
+                public void onCancel() {
+
+                }
+
+                @Override
+                public void onDismiss() {
+
+                }
+            });
+
+
             return true;
         }
 
         if(keyCode==KeyEvent.KEYCODE_DPAD_RIGHT){
-            liveTVViewModel.fullScreen(null);
+            liveTVViewModel.fullScreen(videoPlayFragment);
             return false;
         }
 
@@ -133,6 +154,9 @@ public class LiveTvNewActivity extends BaseActivity  implements LiveProgramSelec
                 .putExtra(VideoPlayFragment.EXTENSION_LIST_EXTRA, extensions)
                 .putExtra("title",liveProgram.getTitle())
                 .putExtra("icon_url", liveProgram.getIconUrl())
+                .putExtra("topic", liveProgram.getEpg_ahora())
+                .putExtra("description", liveProgram.getDescription())
+                .putExtra("sub_title", liveProgram.getSub_title())
                 .setAction(VideoPlayFragment.ACTION_VIEW_LIST);
         videoPlayFragment = (VideoPlayFragment)getSupportFragmentManager().findFragmentById(R.id.exo_player);
         if(videoPlayFragment == null) return;

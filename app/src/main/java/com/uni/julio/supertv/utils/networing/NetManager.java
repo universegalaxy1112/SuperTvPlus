@@ -1,5 +1,8 @@
 package com.uni.julio.supertv.utils.networing;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -23,11 +26,14 @@ import com.uni.julio.supertv.model.MovieCategory;
 import com.uni.julio.supertv.model.Season;
 import com.uni.julio.supertv.model.Serie;
 import com.uni.julio.supertv.model.VideoStream;
+import com.uni.julio.supertv.service.test.core.base.Connection;
 import com.uni.julio.supertv.utils.Device;
 import com.uni.julio.supertv.viewmodel.MovieDetailsViewModel;
 import com.uni.julio.supertv.viewmodel.MovieDetailsViewModelContract;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -323,10 +329,10 @@ public class NetManager {
                 });
     }
 
-    public void retrieveMoviesForSubCategory(final MainCategory mainCategory, final MovieCategory movieCategory, final LoadMoviesForCategoryResponseListener listener, final int timeOut) {
+    public void retrieveMoviesForSubCategory(final MainCategory mainCategory, final MovieCategory movieCategory, final int offset, final LoadMoviesForCategoryResponseListener listener, final int timeOut) {
 
-        LiveTVServicesManual.getMoviesForSubCat(mainCategory.getModelType(), movieCategory.getCatName(), timeOut)
-                .subscribe(new Subscriber<List<? extends VideoStream>>() {
+        LiveTVServicesManual.getMoviesForSubCat(mainCategory.getModelType(), movieCategory.getCatName(), offset, timeOut)
+                .subscribe(new Subscriber<List<VideoStream>>() {
                     @Override
                     public void onCompleted() {
 
@@ -339,17 +345,21 @@ public class NetManager {
                     }
 
                     @Override
-                    public void onNext(List<? extends VideoStream> movies) {
+                    public void onNext(List<VideoStream> movies) {
                         if (movies != null) {
                             for (VideoStream video : movies) {
                                 if (video instanceof Serie) {
                                     ((Serie) video).setMovieCategoryIdOwner(movieCategory.getId());
+                                    ((Serie) video).setPosition(offset*50 + video.getPosition());
+
                                 } else if (video instanceof Movie) {
                                     ((Movie) video).setMovieCategoryIdOwner(movieCategory.getId());
+                                    ((Movie) video).setPosition(offset*50 + video.getPosition());
                                 }
                             }
-                            movieCategory.setMovieList(movies);
-                            listener.onMoviesForCategoryCompleted(movieCategory);
+                            if(offset == 0) movieCategory.setMovieList(movies);
+                            else  movieCategory.addMovies(movies);
+                            listener.onMoviesForCategoryCompleted(movieCategory, movies, offset);
                         } else {
                             listener.onMoviesForCategoryCompletedError(movieCategory);
                         }
@@ -387,7 +397,7 @@ public class NetManager {
 
 
         LiveTVServicesManual.getEpisodesForSerie(serie, season.getPosition() + 1)
-                .subscribe(new Subscriber<List<? extends VideoStream>>() {
+                .subscribe(new Subscriber<List<VideoStream>>() {
                     @Override
                     public void onCompleted() {
                         //System.out.println("onCompleted retrieveEpisodesForSerie " +serie.getTitle() + "  season "+ season.getPosition());
@@ -400,7 +410,7 @@ public class NetManager {
                     }
 
                     @Override
-                    public void onNext(List<? extends VideoStream> movies) {
+                    public void onNext(List<VideoStream> movies) {
                         season.setEpisodeList(movies);
                         episodesForSerieResponseListener.onEpisodesForSerieCompleted(season);
 //

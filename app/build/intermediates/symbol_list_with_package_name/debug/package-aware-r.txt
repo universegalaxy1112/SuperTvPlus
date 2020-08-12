@@ -5236,6 +5236,7 @@ id center_vertical
 id certificate
 id chains
 id chair_school
+id channel_description
 id channel_icon
 id channel_title
 id channel_title_text
@@ -5547,6 +5548,7 @@ id desktop_classic
 id desktop_mac
 id desktop_tower
 id detail
+id detail_bar
 id detail_tab
 id details
 id details_background_view
@@ -7483,6 +7485,7 @@ id tooth_outline
 id top
 id topPanel
 id top_bar
+id topic
 id tor
 id total_channel
 id total_channel_text

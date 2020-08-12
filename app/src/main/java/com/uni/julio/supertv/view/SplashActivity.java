@@ -29,14 +29,16 @@ import com.uni.julio.supertv.utils.networing.HttpRequest;
 import com.uni.julio.supertv.viewmodel.Lifecycle;
 import com.uni.julio.supertv.viewmodel.SplashViewModel;
 import com.uni.julio.supertv.viewmodel.SplashViewModelContract;
+
 import java.io.File;
 
 public class SplashActivity extends BaseActivity implements SplashViewModelContract.View {
     private boolean isInit = false;
     private SplashViewModel splashViewModel;
-    boolean denyAll=false;
+    boolean denyAll = false;
     public ProgressDialog downloadProgress;
     private String updateLocation;
+
     protected Lifecycle.ViewModel getViewModel() {
         return splashViewModel;
     }
@@ -63,7 +65,7 @@ public class SplashActivity extends BaseActivity implements SplashViewModelContr
                 showErrorMessage(getString(R.string.login_error_expired), errorFound);
                 break;
             case "108": {
-               showErrorMessage(getString(R.string.login_error_change_account).replace("{ID}", Device.getIdentifier()), errorFound);
+                showErrorMessage(getString(R.string.login_error_change_account).replace("{ID}", Device.getIdentifier()), errorFound);
             }
             break;
             case "109": {
@@ -75,14 +77,14 @@ public class SplashActivity extends BaseActivity implements SplashViewModelContr
             }
             break;
             default:
-                showErrorMessage("Estimado "+ LiveTvApplication.getUser().getName()+", su cuenta a sido desactivada, porfavor comunicate con tu vendedor.", errorFound);
+                showErrorMessage("Estimado " + LiveTvApplication.getUser().getName() + ", su cuenta a sido desactivada, porfavor comunicate con tu vendedor.", errorFound);
                 break;
         }
     }
 
     public void showErrorMessage(String message, final String error_found) {
 
-        if(Connectivity.isConnected()) {
+        if (Connectivity.isConnected()) {
             Dialogs.showOneButtonDialog(this, getString(R.string.attention), message, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
@@ -103,9 +105,8 @@ public class SplashActivity extends BaseActivity implements SplashViewModelContr
                     //onLoginCompleted(false);
                 }
             });
-        }
-        else {
-            noInternetConnection(new DialogInterface.OnClickListener(){
+        } else {
+            noInternetConnection(new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     closeApp();
@@ -115,7 +116,7 @@ public class SplashActivity extends BaseActivity implements SplashViewModelContr
 
     }
 
-    public void closeApp(){
+    public void closeApp() {
         finishAffinity();
         System.exit(0);
     }
@@ -138,6 +139,7 @@ public class SplashActivity extends BaseActivity implements SplashViewModelContr
         }
         return false;
     }
+
     @Override
     public void onStart() {
         super.onStart();
@@ -146,10 +148,10 @@ public class SplashActivity extends BaseActivity implements SplashViewModelContr
     @Override
     public void onResume() {
         super.onResume();
-        if(!isInit){
+        if (!isInit) {
             if (getPermissionStatus("android.permission.WRITE_EXTERNAL_STORAGE") != 0) {
                 requestStoragePermission();
-            } else{
+            } else {
                 splashViewModel.checkForUpdate();
                 isInit = true;
             }
@@ -160,15 +162,16 @@ public class SplashActivity extends BaseActivity implements SplashViewModelContr
     public void onCheckForUpdateCompleted(boolean hasNewVersion, String location) {
         this.updateLocation = location;
         if (hasNewVersion) {
-            try{
-                Dialogs.showTwoButtonsDialog( getActivity(),R.string.download , R.string.cancel, R.string.new_version_available,  new DialogListener() {
+            try {
+                Dialogs.showTwoButtonsDialog(getActivity(), R.string.download, R.string.cancel, R.string.new_version_available, new DialogListener() {
                     public void onAccept() {
-                       if (Connectivity.isConnected()) {
+                        if (Connectivity.isConnected()) {
                             downloadUpdate(updateLocation);
                         } else {
                             goToNoConnectionError();
                         }
                     }
+
                     public void onCancel() {
                         splashViewModel.login();
                     }
@@ -178,16 +181,17 @@ public class SplashActivity extends BaseActivity implements SplashViewModelContr
                         splashViewModel.login();
                     }
                 });
-            }catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
-        }else {
+        } else {
             splashViewModel.login();
         }
     }
+
     private void downloadUpdate(String location) {
         if (Connectivity.isConnected()) {
-            downloadProgress = new ProgressDialog(getActivity(),ProgressDialog.THEME_HOLO_LIGHT);
+            downloadProgress = new ProgressDialog(getActivity(), ProgressDialog.THEME_HOLO_LIGHT);
             downloadProgress.setProgressStyle(1);
             downloadProgress.setMessage("Downloading");
             downloadProgress.setIndeterminate(false);
@@ -198,6 +202,7 @@ public class SplashActivity extends BaseActivity implements SplashViewModelContr
         }
         goToNoConnectionError();
     }
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent Data) {
         super.onActivityResult(requestCode, resultCode, Data);
@@ -212,6 +217,7 @@ public class SplashActivity extends BaseActivity implements SplashViewModelContr
             finishActivity();
         }
     }
+
     public int getPermissionStatus(String androidPermissionName) {
         if (ContextCompat.checkSelfPermission(getActivity(), androidPermissionName) == 0) {
             return 0;
@@ -234,7 +240,7 @@ public class SplashActivity extends BaseActivity implements SplashViewModelContr
             accept = R.string.config;
             message = R.string.permission_storage_config;
         }
-        Dialogs.showTwoButtonsDialog( this, accept,  R.string.cancel, message,  new DialogListener() {
+        Dialogs.showTwoButtonsDialog(this, accept, R.string.cancel, message, new DialogListener() {
             @TargetApi(23)
             public void onAccept() {
                 if (!denyAll) {
@@ -270,8 +276,9 @@ public class SplashActivity extends BaseActivity implements SplashViewModelContr
             finishActivity();
         }
     }
+
     public void goToNoConnectionError() {
-        noInternetConnection(new DialogInterface.OnClickListener(){
+        noInternetConnection(new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 launchActivity(LoginActivity.class);
@@ -279,11 +286,11 @@ public class SplashActivity extends BaseActivity implements SplashViewModelContr
             }
         });
     }
+
     @Override
     public void onDownloadUpdateCompleted(String location) {
         this.downloadProgress.dismiss();
-        try
-        {
+        try {
             File file = new File(location);
             Intent intent;
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
@@ -304,16 +311,17 @@ public class SplashActivity extends BaseActivity implements SplashViewModelContr
             intent.putExtra("android.intent.extra.INSTALLER_PACKAGE_NAME", getPackageName());
             finishActivity();
             startActivity(intent);
-        }catch(Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
     Uri getFileUri(Context context, File file) {
         return FileProvider.getUriForFile(context,
                 "com.uni.julio.supertv.fileprovider"
                 , file);
     }
+
     @Override
     public void onDownloadUpdateError(int error) {
         downloadProgress.dismiss();
@@ -337,25 +345,23 @@ public class SplashActivity extends BaseActivity implements SplashViewModelContr
 
     @Override
     public void onLoginCompleted(boolean success) {
-        if(success){
+        if (success) {
             launchActivity(MainActivity.class);
             finishActivity();
-        }
-        else{
-            if(Connectivity.isConnected()){
+        } else {
+            if (Connectivity.isConnected()) {
                 launchActivity(LoginActivity.class);
                 finishActivity();
-            }
-            else{
+            } else {
 
-                noInternetConnection(new DialogInterface.OnClickListener(){
+                noInternetConnection(new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         finishActivity();
                     }
                 });
             }
-         }
+        }
     }
 
 }

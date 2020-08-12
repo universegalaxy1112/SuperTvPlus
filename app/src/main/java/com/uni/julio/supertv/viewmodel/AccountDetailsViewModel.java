@@ -38,7 +38,7 @@ public class AccountDetailsViewModel implements AccountDetailsViewModelContract.
     private List<String> modelList = new ArrayList<>();
     private ActivityAccountBinding activityAccountBinding;
 
-    public AccountDetailsViewModel(AppCompatActivity activity,ActivityAccountBinding activityAccountBinding) {
+    public AccountDetailsViewModel(AppCompatActivity activity, ActivityAccountBinding activityAccountBinding) {
         this.activityAccountBinding = activityAccountBinding;
         isLoading = new ObservableBoolean(false);
 
@@ -62,9 +62,9 @@ public class AccountDetailsViewModel implements AccountDetailsViewModelContract.
         this.viewCallback = null;
     }
 
-   public void onCloseSession(View view) {
+    public void onCloseSession(View view) {
         if (Device.canTreatAsBox()) {
-            Dialogs.showTwoButtonsDialog(this.mActivity,R.string.accept ,  (R.string.cancel),  R.string.end_session_message,  new DialogListener() {
+            Dialogs.showTwoButtonsDialog(this.mActivity, R.string.accept, (R.string.cancel), R.string.end_session_message, new DialogListener() {
                 public void onAccept() {
                     AccountDetailsViewModel.this.onCloseSession();
                 }
@@ -81,27 +81,27 @@ public class AccountDetailsViewModel implements AccountDetailsViewModelContract.
             onCloseSession();
         }
     }
-    private void getModels(){
+
+    private void getModels() {
         if (Connectivity.isConnected()) {
             this.isLoading.set(true);
             final User user = LiveTvApplication.getUser();
             if (user != null) {
-                String url=WebConfig.getMessage.replace("{USER}", user.getName());
+                String url = WebConfig.getMessage.replace("{USER}", user.getName());
                 NetManager.getInstance().makeStringRequest(url, new StringRequestListener() {
                     public void onCompleted(String response) {
                         AccountDetailsViewModel.this.isLoading.set(false);
                         try {
-                            JSONArray jsonArray= new JSONArray(response);
-                            for(int i = 0; i < 3 ; i++) {
-                                if(jsonArray.length() > i) {
+                            JSONArray jsonArray = new JSONArray(response);
+                            for (int i = 0; i < 3; i++) {
+                                if (jsonArray.length() > i) {
                                     modelList.add(jsonArray.getString(i));
-                                    if(i != 0 && user.getDevice().contains(jsonArray.getString(i))) {
+                                    if (i != 0 && user.getDevice().contains(jsonArray.getString(i))) {
                                         String temp = modelList.get(0);
                                         modelList.set(0, modelList.get(i));
                                         modelList.set(i, temp);
                                     }
-                                }
-                                else modelList.add("Not Registered");
+                                } else modelList.add("Not Registered");
                             }
                             activityAccountBinding.device0.setText(modelList.get(0));
                             activityAccountBinding.device1.setText(modelList.get(1));
@@ -111,20 +111,22 @@ public class AccountDetailsViewModel implements AccountDetailsViewModelContract.
                         }
                         //JSONArray jsonArray = new JSONArray(response)
                     }
+
                     public void onError() {
                         AccountDetailsViewModel.this.isLoading.set(false);
                     }
                 });
                 return;
+            }
+            this.viewCallback.onCloseSessionNoInternet();
         }
-        this.viewCallback.onCloseSessionNoInternet();
     }
-    }
+
     public void onCloseSession() {
         if (Connectivity.isConnected()) {
             this.isLoading.set(true);
             if (LiveTvApplication.getUser() != null) {
-                String url=WebConfig.removeUserURL.replace("{USER}", LiveTvApplication.getUser().getName()).replace("{DEVICE_ID}",LiveTvApplication.getUser().getDeviceId());
+                String url = WebConfig.removeUserURL.replace("{USER}", LiveTvApplication.getUser().getName()).replace("{DEVICE_ID}", LiveTvApplication.getUser().getDeviceId());
                 NetManager.getInstance().makeStringRequest(url, new StringRequestListener() {
                     public void onCompleted(String response) {
                         if (response.toLowerCase().contains("success")) {
@@ -143,12 +145,12 @@ public class AccountDetailsViewModel implements AccountDetailsViewModelContract.
         this.viewCallback.onCloseSessionNoInternet();
 
     }
+
     @Override
     public void showAccountDetails() {
-        if(LiveTvApplication.getUser() != null) {
+        if (LiveTvApplication.getUser() != null) {
             this.activityAccountBinding.setUser(LiveTvApplication.getUser());
-        }
-        else {
+        } else {
             viewCallback.onError();
         }
     }

@@ -40,6 +40,7 @@ public class SpeedTestActivity extends AppCompatActivity {
     TextView startButton;
     TextView severSelectButton;
     boolean serverLoaded = false;
+
     @Override
     public void onResume() {
         super.onResume();
@@ -53,21 +54,21 @@ public class SpeedTestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_speedtest1);
 
-        startButton =  findViewById(R.id.startButton);
-        severSelectButton =  findViewById(R.id.selectServer);
+        startButton = findViewById(R.id.startButton);
+        severSelectButton = findViewById(R.id.selectServer);
         severSelectButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(mapValue != null && mapValue.size() > 0) {
-                    try{
-                        Intent launchIntent = new Intent(getBaseContext(),SelectServerActivity.class);
+                if (mapValue != null && mapValue.size() > 0) {
+                    try {
+                        Intent launchIntent = new Intent(getBaseContext(), SelectServerActivity.class);
                         launchIntent.putExtra("SERVERS", mapValue);
-                        startActivityForResult(launchIntent,100);
-                    }catch (Exception e) {
+                        startActivityForResult(launchIntent, 100);
+                    } catch (Exception e) {
                         e.printStackTrace();
                     }
 
-                }else{
+                } else {
                     serverLoaded = false;
                     startButton.setEnabled(true);
                     severSelectButton.setEnabled(true);
@@ -78,7 +79,7 @@ public class SpeedTestActivity extends AppCompatActivity {
         });
         final DecimalFormat dec = new DecimalFormat("#.##");
         tempBlackList = new HashSet<>();
-        try{
+        try {
             getSpeedTestHostsHandler = new GetSpeedTestHostsHandler();
             getSpeedTestHostsHandler.start();
 
@@ -93,10 +94,10 @@ public class SpeedTestActivity extends AppCompatActivity {
 
                     new Thread(new Runnable() {
                         RotateAnimation rotate;
-                        ImageView barImageView =  findViewById(R.id.barImageView);
-                        TextView pingTextView =  findViewById(R.id.pingTextView);
-                        TextView downloadTextView =  findViewById(R.id.downloadTextView);
-                        TextView uploadTextView =  findViewById(R.id.uploadTextView);
+                        ImageView barImageView = findViewById(R.id.barImageView);
+                        TextView pingTextView = findViewById(R.id.pingTextView);
+                        TextView downloadTextView = findViewById(R.id.downloadTextView);
+                        TextView uploadTextView = findViewById(R.id.uploadTextView);
 
                         @Override
                         public void run() {
@@ -123,13 +124,13 @@ public class SpeedTestActivity extends AppCompatActivity {
                                 }
                             }
 
-                            if(getSpeedTestHostsHandler == null) return;
+                            if (getSpeedTestHostsHandler == null) return;
                             mapKey = getSpeedTestHostsHandler.getMapKey();
                             mapValue = getSpeedTestHostsHandler.getMapValue();
                             //Find closest server
                             String uploadAddr = mapKey.get(findServerIndex);
                             final List<String> info = mapValue.get(findServerIndex);
-                            if(!serverLoaded){
+                            if (!serverLoaded) {
                                 showDetail();
                                 return;
                             }
@@ -401,14 +402,15 @@ public class SpeedTestActivity extends AppCompatActivity {
                     }).start();
                 }
             });
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             Toast.makeText(getApplicationContext(), "Unknown Error", Toast.LENGTH_LONG).show();
             finish();
         }
 
     }
-    public void showDetail(){
+
+    public void showDetail() {
         double selfLat = GetSpeedTestHostsHandler.selfLat;
         double selfLon = GetSpeedTestHostsHandler.selfLon;
         Location source = new Location("Source");
@@ -416,7 +418,7 @@ public class SpeedTestActivity extends AppCompatActivity {
         source.setLongitude(selfLon);
         List<String> ls = GetSpeedTestHostsHandler.mapValue.get(findServerIndex);
         Location dest = new Location("Dest");
-        if(ls == null ||  ls.size() < 1) return;
+        if (ls == null || ls.size() < 1) return;
         dest.setLatitude(Double.parseDouble(ls.get(0)));
         dest.setLongitude(Double.parseDouble(ls.get(1)));
         final List<String> info = GetSpeedTestHostsHandler.mapValue.get(findServerIndex);
@@ -440,18 +442,19 @@ public class SpeedTestActivity extends AppCompatActivity {
             }
         });
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == 100){
-            if(data != null)
-            {
-                findServerIndex = data.getIntExtra("serverIndex",0);
+        if (requestCode == 100) {
+            if (data != null) {
+                findServerIndex = data.getIntExtra("serverIndex", 0);
                 showDetail();
             }
 
         }
     }
+
     public int getPositionByRate(double rate) {
         if (rate <= 1) {
             return (int) (rate * 30);

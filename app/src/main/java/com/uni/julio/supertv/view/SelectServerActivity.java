@@ -11,11 +11,13 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
+
 import com.uni.julio.supertv.R;
 import com.uni.julio.supertv.adapter.ServerAdapter;
 import com.uni.julio.supertv.helper.DividerDecoration;
@@ -24,8 +26,10 @@ import com.uni.julio.supertv.listeners.LiveProgramSelectedListener;
 import com.uni.julio.supertv.model.LiveProgram;
 import com.uni.julio.supertv.utils.Device;
 import com.uni.julio.supertv.utils.Dialogs;
+
 import java.util.HashMap;
 import java.util.List;
+
 public class SelectServerActivity extends AppCompatActivity implements LiveProgramSelectedListener {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -42,14 +46,14 @@ public class SelectServerActivity extends AppCompatActivity implements LiveProgr
             Toolbar toolbar = findViewById(R.id.toolbar);
             EditText searchInput = findViewById(R.id.location);
             setSupportActionBar(toolbar);
-            if(getSupportActionBar() != null){
+            if (getSupportActionBar() != null) {
                 getSupportActionBar().setDisplayHomeAsUpEnabled(true);
                 getSupportActionBar().setDisplayShowHomeEnabled(true);
             }
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 toolbar.setElevation(0);
             }
-            if(Device.treatAsBox){
+            if (Device.treatAsBox) {
                 findViewById(R.id.appBarLayout).setVisibility(View.GONE);
             }
             TVRecyclerView serverRv = findViewById(R.id.server_recycler);
@@ -59,7 +63,7 @@ public class SelectServerActivity extends AppCompatActivity implements LiveProgr
             serverRv.setLayoutManager(mLayoutManager);
             serverRv.setAdapter(serverAdapter);
             serverRv.addItemDecoration(new DividerDecoration(this, R.drawable.divider));
-            searchInput.setOnEditorActionListener(new EditText.OnEditorActionListener(){
+            searchInput.setOnEditorActionListener(new EditText.OnEditorActionListener() {
                 @Override
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                     if (actionId == EditorInfo.IME_ACTION_SEARCH ||
@@ -74,11 +78,10 @@ public class SelectServerActivity extends AppCompatActivity implements LiveProgr
                 }
             });
             searchInput.requestFocus();
-        }catch (Exception e){
+        } catch (Exception e) {
             Dialogs.showOneButtonDialog(this, R.string.exception_title, R.string.exception_content, new DialogInterface.OnClickListener() {
                 @Override
-                public void onClick(DialogInterface dialog, int which)
-                {
+                public void onClick(DialogInterface dialog, int which) {
                     finish();
                 }
             });
@@ -86,7 +89,7 @@ public class SelectServerActivity extends AppCompatActivity implements LiveProgr
         }
     }
 
-    public  void hideKeyboard() {
+    public void hideKeyboard() {
         InputMethodManager imm = (InputMethodManager) getSystemService(AppCompatActivity.INPUT_METHOD_SERVICE);
         //Find the currently focused view, so we can grab the correct window token from it.
         View view = getCurrentFocus();
@@ -94,7 +97,7 @@ public class SelectServerActivity extends AppCompatActivity implements LiveProgr
         if (view == null) {
             view = new View(this);
         }
-        if(imm != null)
+        if (imm != null)
             imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 

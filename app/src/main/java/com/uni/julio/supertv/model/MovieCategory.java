@@ -8,7 +8,7 @@ import java.util.Set;
 public class MovieCategory extends BaseCategory {
 
 
-    private List<? extends VideoStream> movieList;
+    private List<VideoStream> movieList;
     private boolean isLoading = false;
     private boolean isLoaded = false;
     private boolean hasErrorLoading = false;
@@ -18,10 +18,11 @@ public class MovieCategory extends BaseCategory {
         movieList = new ArrayList<>();
     }
 
-    public List<? extends VideoStream> getMovieList() { return movieList; }
-    public VideoStream getMovie(int position) { return movieList.get(position); }
-    public void setMovieList(List<? extends VideoStream> list) { movieList = list; }
-
+    public List<VideoStream> getMovieList() { return movieList; }
+    public void setMovieList(List<VideoStream> list) { movieList = list; }
+    public void addMovies(List<VideoStream> list) {
+        movieList.addAll(list);
+    }
     public boolean isLoading() { return isLoading; }
     public void setLoading(boolean loading) { isLoading = loading; }
 

@@ -28,22 +28,19 @@ public class DownloaderBroadcastReceiver extends BroadcastReceiver {
             cursor.moveToFirst();
             int status = cursor.getInt(cursor.getColumnIndex("status"));
             String temp=cursor.getString(cursor.getColumnIndex("local_uri"));
-            String savedFilePath = cursor.getString(cursor.getColumnIndex("local_uri")).replace("file://", "");
+            String temp1 = cursor.getString(cursor.getColumnIndex("local_uri"));
+            String savedFilePath = temp1 == null ? "" : temp1.replace("file://", "");
+            if(temp.equals("")) return;
             switch (status) {
                 case 1:
-                    this.listener.onDownloadError(-1);
-                    return;
                 case 4:
+                case 16:
                     this.listener.onDownloadError(-1);
                     return;
                 case 8:
                     this.listener.onDownloadComplete(savedFilePath);
                     return;
-                case 16:
-                    this.listener.onDownloadError(-1);
-                    return;
                 default:
-                    return;
             }
         }
     }

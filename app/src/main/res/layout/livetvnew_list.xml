@@ -1,6 +1,5 @@
 <!--<?xml version="1.0" encoding="utf-8"?>-->
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
         <variable
             name="liveProgramItem"
@@ -17,7 +16,8 @@
         android:layout_marginBottom="3dp"
         android:focusable="true"
         android:orientation="horizontal"
-        android:onClick="@{livetvAdapter::onClick}">
+        android:onClick="@{livetvAdapter::onClick}"
+        android:baselineAligned="false">
         <LinearLayout
             android:id="@+id/channel_title"
             android:layout_width="0dp"
@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 style = "@style/text.livetv"
                 android:focusable="false"
-                android:text="@{liveProgramItem.title}"
+                android:text="@{liveProgramItem.title.trim()}"
                  />
         </LinearLayout>
         <LinearLayout

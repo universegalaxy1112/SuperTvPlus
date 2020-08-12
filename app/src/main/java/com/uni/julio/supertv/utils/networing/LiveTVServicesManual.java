@@ -86,7 +86,7 @@ public class LiveTVServicesManual {
                 .observeOn(AndroidSchedulers.mainThread());
     }
 
-    private static List<? extends VideoStream> retrieveEpisodesForSerie(Serie serie, Integer season) {
+    private static List<VideoStream> retrieveEpisodesForSerie(Serie serie, Integer season) {
         FetchJSonFileSync fetch = new FetchJSonFileSync();
         return fetch.retrieveMoviesForSerie(serie, season);
     }
@@ -271,9 +271,9 @@ public class LiveTVServicesManual {
     }
 
 
-    public static Observable<List<? extends VideoStream>> searchVideo(final MainCategory mainCategory, final String pattern, final int timeOut) {
-        return Observable.create(new Observable.OnSubscribe<List<? extends VideoStream>>() {
-            public void call(Subscriber<? super List<? extends VideoStream>> subscriber) {
+    public static Observable<List<VideoStream>> searchVideo(final MainCategory mainCategory, final String pattern, final int timeOut) {
+        return Observable.create(new Observable.OnSubscribe<List<VideoStream>>() {
+            public void call(Subscriber<? super List<VideoStream>> subscriber) {
                 subscriber.onNext(LiveTVServicesManual.fetchSearchVideo(mainCategory, pattern, timeOut));
                 subscriber.onCompleted();
             }
@@ -283,7 +283,7 @@ public class LiveTVServicesManual {
     }
 
     /* access modifiers changed from: private */
-    public static List<? extends VideoStream> fetchSearchVideo(MainCategory mainCategory, String pattern, int timeOut) {
+    public static List<VideoStream> fetchSearchVideo(MainCategory mainCategory, String pattern, int timeOut) {
         return new FetchJSonFileSync().retrieveSearchMovies(mainCategory, pattern, timeOut);
     }
 
@@ -339,12 +339,12 @@ public class LiveTVServicesManual {
         return fetch.retrieveProgramsForLiveTVCategory(liveTVCategory);
     }
 
-    public static Observable<List<? extends VideoStream>> getMoviesForSubCat(final String mainCategory, final String movieCategory, final int timeOut) {
+    public static Observable<List<VideoStream>> getMoviesForSubCat(final String mainCategory, final String movieCategory, final int offset, final int timeOut) {
 
-        return Observable.create(new Observable.OnSubscribe<List<? extends VideoStream>>() {
+        return Observable.create(new Observable.OnSubscribe<List<VideoStream>>() {
             @Override
-            public void call(Subscriber<? super List<? extends VideoStream>> subscriber) {
-                subscriber.onNext(retrieveMoviesForSubCat(mainCategory, movieCategory, timeOut));
+            public void call(Subscriber<? super List< VideoStream>> subscriber) {
+                subscriber.onNext(retrieveMoviesForSubCat(mainCategory, movieCategory, offset, timeOut));
                 subscriber.onCompleted();
             }
         })
@@ -353,9 +353,9 @@ public class LiveTVServicesManual {
                 .observeOn(AndroidSchedulers.mainThread());
     }
 
-    private static List<? extends VideoStream> retrieveMoviesForSubCat(String mainCategory, String movieCategory, int timeOut) {
+    private static List<VideoStream> retrieveMoviesForSubCat(String mainCategory, String movieCategory, int offset, int timeOut) {
         FetchJSonFileSync fetch = new FetchJSonFileSync();
-        return fetch.retrieveMovies(mainCategory, movieCategory, timeOut);
+        return fetch.retrieveMovies(mainCategory, movieCategory, offset, timeOut);
     }
 
     public static Observable<Boolean> performCheckForUpdate(final StringRequestListener stringRequestListener) {
@@ -403,11 +403,11 @@ public class LiveTVServicesManual {
         return fetch.retrieveSubCategories(category);
     }
 
-    public static Observable<List<? extends VideoStream>> getEpisodesForSerie(final Serie serie, final Integer season) {
+    public static Observable<List<VideoStream>> getEpisodesForSerie(final Serie serie, final Integer season) {
 
-        return Observable.create(new Observable.OnSubscribe<List<? extends VideoStream>>() {
+        return Observable.create(new Observable.OnSubscribe<List<VideoStream>>() {
             @Override
-            public void call(Subscriber<? super List<? extends VideoStream>> subscriber) {
+            public void call(Subscriber<? super List<VideoStream>> subscriber) {
                 subscriber.onNext(retrieveEpisodesForSerie(serie, season));
                 subscriber.onCompleted();
             }

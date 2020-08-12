@@ -101,7 +101,8 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="4"
-                                android:orientation="vertical">
+                                android:orientation="vertical"
+                                android:baselineAligned="false">
                                 <TextView
                                     android:id="@+id/sub_title"
                                     style="@style/text.livetv_category_program_title"
@@ -109,13 +110,16 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="@dimen/dip_18"
                                     android:focusable="false"
-                                    android:text="@{currentProgram.sub_title}" />
+                                    android:text="@{currentProgram.sub_title}"
+                                    android:textSize="@dimen/sp_12"/>
                                 <TextView
                                     android:id="@+id/epg"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="@dimen/dip_4"
                                     android:focusable="false"
+                                    android:ellipsize="end"
+                                    android:padding="2dp"
                                     android:text="@{currentProgram.description}"
                                     android:textColor="@color/light_grey"
                                     android:textSize="@dimen/sp_11" />

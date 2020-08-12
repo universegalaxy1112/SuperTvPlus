@@ -113,6 +113,7 @@ public class LivetvnewListBindingImpl extends LivetvnewListBinding  {
         }
         android.view.View.OnClickListener livetvAdapterOnClickAndroidViewViewOnClickListener = null;
         java.lang.String liveProgramItemEpgDespues = null;
+        java.lang.String liveProgramItemTitleTrim = null;
         java.lang.String liveProgramItemEpgAhora = null;
         java.lang.String liveProgramItemTitle = null;
         com.uni.julio.supertv.adapter.LivetvAdapterNew livetvAdapter = mLivetvAdapter;
@@ -139,12 +140,18 @@ public class LivetvnewListBindingImpl extends LivetvnewListBinding  {
                     // read liveProgramItem.title
                     liveProgramItemTitle = liveProgramItem.getTitle();
                 }
+
+
+                if (liveProgramItemTitle != null) {
+                    // read liveProgramItem.title.trim()
+                    liveProgramItemTitleTrim = liveProgramItemTitle.trim();
+                }
         }
         // batch finished
         if ((dirtyFlags & 0x6L) != 0) {
             // api target 1
 
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.channelTitleText, liveProgramItemTitle);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.channelTitleText, liveProgramItemTitleTrim);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.nextProgramText, liveProgramItemEpgDespues);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.nowPlayingText, liveProgramItemEpgAhora);
         }

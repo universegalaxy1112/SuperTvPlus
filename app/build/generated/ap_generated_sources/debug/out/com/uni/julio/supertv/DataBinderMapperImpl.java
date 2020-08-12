@@ -28,6 +28,7 @@ import com.uni.julio.supertv.databinding.LivetvnewListBindingImpl;
 import com.uni.julio.supertv.databinding.MultiseasonRowBindingImpl;
 import com.uni.julio.supertv.databinding.MultiseasonRowBindingLandImpl;
 import com.uni.julio.supertv.databinding.VideoListRowBindingImpl;
+import com.uni.julio.supertv.databinding.VideoListRowBindingV23Impl;
 import com.uni.julio.supertv.databinding.VideoListSectionBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
@@ -217,6 +218,9 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           if ("layout/video_list_row_0".equals(tag)) {
             return new VideoListRowBindingImpl(component, view);
           }
+          if ("layout-v23/video_list_row_0".equals(tag)) {
+            return new VideoListRowBindingV23Impl(component, view);
+          }
           throw new IllegalArgumentException("The tag for video_list_row is invalid. Received: " + tag);
         }
         case  LAYOUT_VIDEOLISTSECTION: {
@@ -298,7 +302,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(23);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(24);
 
     static {
       sKeys.put("layout-land/activity_account_0", com.uni.julio.supertv.R.layout.activity_account);
@@ -323,6 +327,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/multiseason_row_0", com.uni.julio.supertv.R.layout.multiseason_row);
       sKeys.put("layout-land/multiseason_row_0", com.uni.julio.supertv.R.layout.multiseason_row);
       sKeys.put("layout/video_list_row_0", com.uni.julio.supertv.R.layout.video_list_row);
+      sKeys.put("layout-v23/video_list_row_0", com.uni.julio.supertv.R.layout.video_list_row);
       sKeys.put("layout/video_list_section_0", com.uni.julio.supertv.R.layout.video_list_section);
     }
   }

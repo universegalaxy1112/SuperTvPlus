@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.afollestad.materialdialogs.Theme;
+import com.bumptech.glide.Glide;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 import com.google.gson.Gson;
@@ -61,7 +62,7 @@ public class EpisodeDetailsViewModel implements EpisodeDetailsViewModelContract.
     private EpisodeDetailsViewModelContract.View viewCallback;
     private VideoStreamManager videoStreamManager;
     private Context mContext;
-    private List<? extends VideoStream>  movieList;
+    private List<VideoStream>  movieList;
     public ObservableBoolean isFavorite;
     private ObservableBoolean isSeen;
     public ObservableBoolean isHD;
@@ -112,12 +113,14 @@ public class EpisodeDetailsViewModel implements EpisodeDetailsViewModelContract.
         ImageView fondoImage=movieDetailsBinding.fondoUrl;
         try{
             if(!TextUtils.isEmpty(serie.getHDFondoUrl()) && !serie.getHDFondoUrl().equals(" ") && !serie.getHDFondoUrl().equals("")) {
-                Picasso.get().load(serie.getHDFondoUrl()).placeholder(R.drawable.placeholder).into(fondoImage, new Callback.EmptyCallback() {
+                Glide.with(fondoImage).load(serie.getHDFondoUrl()).centerCrop().placeholder(R.drawable.placeholder).into(fondoImage);
+
+               /* Picasso.get().load(serie.getHDFondoUrl()).placeholder(R.drawable.placeholder).into(fondoImage, new Callback.EmptyCallback() {
                     @Override
                     public void onSuccess(){
 
                     }
-                });
+                });*/
             }
 
         }catch (IllegalArgumentException e){
@@ -168,7 +171,7 @@ public class EpisodeDetailsViewModel implements EpisodeDetailsViewModelContract.
     public void showSeasonList(int seasonposition){
         seasonPosition = seasonposition;
         season=serie.getSeason(seasonposition);
-        List<Episode> episodeList=(List<Episode>)season.getEpisodeList();
+        List<VideoStream> episodeList=(List<VideoStream>)season.getEpisodeList();
         boolean needsRedraw=true;
         if(episodeList == null||episodeList.size()==0){
             if(!season.isLoading()){
@@ -330,7 +333,7 @@ public class EpisodeDetailsViewModel implements EpisodeDetailsViewModelContract.
         List<Season> seasons;
         seasons=this.serie.getSeasons();
         for(Season season:seasons){
-            List<? extends VideoStream>  movieList=season.getEpisodeList();
+            List<VideoStream>  movieList=season.getEpisodeList();
             for(VideoStream movie:movieList){
                if(videoStreamManager.isLocalFavorite(String.valueOf(movie.getContentId()))) return true;
             }

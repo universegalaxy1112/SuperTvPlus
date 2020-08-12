@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import androidx.databinding.BindingAdapter;
 
+import com.bumptech.glide.Glide;
 import com.squareup.picasso.Picasso;
 import com.uni.julio.supertv.LiveTvApplication;
 import com.uni.julio.supertv.R;
@@ -92,10 +93,12 @@ public class BindingAdapters {
 //            retrieveImage(url, imageView);
 //            Picasso.with(imageView.getContext()).load(R.drawable.imageview_placeholder).placeholder(R.drawable.imageview_placeholder).into(imageView);
             if(imageView.getId() == R.id.mark_img || imageView.getId() == R.id.channel_icon){
-                Picasso.get().load(url).placeholder(R.drawable.channel).into(imageView);
+                //Picasso.get().load(url).placeholder(R.drawable.channel).into(imageView);
+                Glide.with(imageView).load(url).centerCrop().placeholder(R.drawable.channel).into(imageView);
             }
             else{
-                Picasso.get().load(url).placeholder(R.drawable.placeholder).into(imageView);
+                //Picasso.get().load(url).placeholder(R.drawable.placeholder).into(imageView);
+                Glide.with(imageView).load(url).centerCrop().placeholder(R.drawable.placeholder).into(imageView);
             }
         }
     }

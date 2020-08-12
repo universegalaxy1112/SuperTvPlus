@@ -92,7 +92,7 @@ public class MultiSeasonDetailActivity extends BaseActivity implements EpisodeDe
 
     public void onPlaySelected(Movie movie, final int type, int seasonPosition) {
         final int movieId = movie.getContentId();
-        List<? extends VideoStream> episodes = serie.getSeason(seasonPosition).getEpisodeList();
+        List<VideoStream> episodes = serie.getSeason(seasonPosition).getEpisodeList();
         String[] uris = new String[episodes.size()];
         String[] extensions = new String[episodes.size()];
         String[] subtitles = new String[episodes.size()];
@@ -102,7 +102,7 @@ public class MultiSeasonDetailActivity extends BaseActivity implements EpisodeDe
         String extension = movie.getStreamUrl().substring(movieUrl.lastIndexOf(".") + 1);
         for (int i = 0; i < episodes.size(); i++) {
             extensions[i] = extension;
-            subtitles[i] = ((Episode)episodes.get(0)).getSubtitleUrl();
+            subtitles[i] = ((Episode) episodes.get(0)).getSubtitleUrl();
 
             switch (type) {
                 case 0:

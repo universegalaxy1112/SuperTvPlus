@@ -34,13 +34,14 @@ import com.uni.julio.supertv.view.exoplayer.VideoPlayFragment;
 
 import java.util.List;
 
-public class MoviesMenuViewModel implements MoviesMenuViewModelContract.ViewModel,  MovieSelectedListener, ShowAsGridListener {
+public class MoviesMenuViewModel implements MoviesMenuViewModelContract.ViewModel, MovieSelectedListener, ShowAsGridListener {
 
     public ObservableBoolean isConnected;
     private MoviesMenuViewModelContract.View viewCallback;
     private Context mContext;
     private MoviesCategoryAdapter moviesCategoryAdapter;
     private int mainCategoryPosition = 0;
+
     public MoviesMenuViewModel(Context context) {
         isConnected = new ObservableBoolean(Connectivity.isConnected());
         mContext = context;
@@ -48,7 +49,7 @@ public class MoviesMenuViewModel implements MoviesMenuViewModelContract.ViewMode
 
     @Override
     public void onViewResumed() {
-        if(moviesCategoryAdapter != null) {
+        if (moviesCategoryAdapter != null) {
             moviesCategoryAdapter.onResume();
         }
     }
@@ -66,10 +67,10 @@ public class MoviesMenuViewModel implements MoviesMenuViewModelContract.ViewMode
 
     @Override
     public void showMovieLists(TVRecyclerView categoriesRecyclerview, int mainCategoryPosition) {
-        if(!Device.canTreatAsBox()) categoriesRecyclerview.setIsAutoProcessFocus(false);
+        if (!Device.canTreatAsBox()) categoriesRecyclerview.setIsAutoProcessFocus(false);
 
         List<MovieCategory> mMoviesList = VideoStreamManager.getInstance().getMainCategory(mainCategoryPosition).getMovieCategories();
-        moviesCategoryAdapter =new MoviesCategoryAdapter(mContext, mMoviesList, mainCategoryPosition,this,this);
+        moviesCategoryAdapter = new MoviesCategoryAdapter(mContext, mMoviesList, mainCategoryPosition, this, this);
         this.mainCategoryPosition = mainCategoryPosition;
         GridLayoutManager mLayoutManager = new GridLayoutManager(mContext, 1);
         mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
@@ -79,7 +80,7 @@ public class MoviesMenuViewModel implements MoviesMenuViewModelContract.ViewMode
 
 
     private void addRecentSerie(Serie serie) {
-         DataManager.getInstance().saveData("lastSerieSelected",new Gson().toJson(serie));
+        DataManager.getInstance().saveData("lastSerieSelected", new Gson().toJson(serie));
     }
 
     @Override
@@ -127,7 +128,7 @@ public class MoviesMenuViewModel implements MoviesMenuViewModelContract.ViewMode
                 .putExtra("subsURL", movie.getSubtitleUrl())
                 .putExtra("title", movie.getTitle())
                 .setAction(VideoPlayFragment.ACTION_VIEW_LIST);
-        ActivityCompat.startActivityForResult((AppCompatActivity)mContext, launchIntent,100
-                ,null);
+        ActivityCompat.startActivityForResult((AppCompatActivity) mContext, launchIntent, 100
+                , null);
     }
 }

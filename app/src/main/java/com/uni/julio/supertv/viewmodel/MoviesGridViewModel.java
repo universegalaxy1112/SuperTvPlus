@@ -10,6 +10,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.databinding.ObservableBoolean;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
+
 import com.google.gson.Gson;
 import com.uni.julio.supertv.LiveTvApplication;
 import com.uni.julio.supertv.R;
@@ -66,24 +67,24 @@ public class MoviesGridViewModel implements MoviesGridViewModelContract.ViewMode
     }
 
 
-     @Override
+    @Override
     public void showMovieList(TVRecyclerView moviesGridRV, int mainCategoryPosition, int movieCategoryPosition) {
-        this.mMainCategoryPosition=mainCategoryPosition;
-        List<Movie> movies = new ArrayList<>();
-        if(VideoStreamManager.getInstance().getMainCategory(mainCategoryPosition) != null && videoStreamManager.getMainCategory(mainCategoryPosition).getMovieCategories().size() > movieCategoryPosition){
-            movies = (List<Movie>)(videoStreamManager.getMainCategory(mainCategoryPosition).getMovieCategories().get(movieCategoryPosition).getMovieList());
+        this.mMainCategoryPosition = mainCategoryPosition;
+        List<VideoStream> movies = new ArrayList<>();
+        if (VideoStreamManager.getInstance().getMainCategory(mainCategoryPosition) != null && videoStreamManager.getMainCategory(mainCategoryPosition).getMovieCategories().size() > movieCategoryPosition) {
+            movies = (videoStreamManager.getMainCategory(mainCategoryPosition).getMovieCategories().get(movieCategoryPosition).getMovieList());
         }
-        GridViewAdapter moreVideoAdapter=new GridViewAdapter(mContext,moviesGridRV,movies,this);
-        mLayoutManager=new GridLayoutManager(mContext,Integer.parseInt(mContext.getString(R.string.more_video)));
+        GridViewAdapter moreVideoAdapter = new GridViewAdapter(mContext, moviesGridRV, movies, mainCategoryPosition, movieCategoryPosition, this);
+        mLayoutManager = new GridLayoutManager(mContext, Integer.parseInt(mContext.getString(R.string.more_video)));
         mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         moviesGridRV.setLayoutManager(mLayoutManager);
         moviesGridRV.setAdapter(moreVideoAdapter);
-     if (moviesGridRV.getItemDecorationCount() == 0) {
-         moviesGridRV.addItemDecoration(new RecyclerViewItemDecoration(mContext.getResources().getInteger(R.integer.recycler_decoration_padding),
-                 mContext.getResources().getInteger(R.integer.recycler_decoration_padding),
-                 mContext.getResources().getInteger(R.integer.recycler_decoration_padding),
-                 mContext.getResources().getInteger(R.integer.recycler_decoration_padding)));
-     }
+        if (moviesGridRV.getItemDecorationCount() == 0) {
+            moviesGridRV.addItemDecoration(new RecyclerViewItemDecoration(mContext.getResources().getInteger(R.integer.recycler_decoration_padding),
+                    mContext.getResources().getInteger(R.integer.recycler_decoration_padding),
+                    mContext.getResources().getInteger(R.integer.recycler_decoration_padding),
+                    mContext.getResources().getInteger(R.integer.recycler_decoration_padding)));
+        }
     }
 
 
@@ -127,12 +128,12 @@ public class MoviesGridViewModel implements MoviesGridViewModelContract.ViewMode
                 .putExtra("subsURL", movie.getSubtitleUrl())
                 .putExtra("title", movie.getTitle())
                 .setAction(VideoPlayFragment.ACTION_VIEW_LIST);
-        ActivityCompat.startActivityForResult((AppCompatActivity)mContext, launchIntent,100
-                ,null);
+        ActivityCompat.startActivityForResult((AppCompatActivity) mContext, launchIntent, 100
+                , null);
     }
 
     private void addRecentSerie(Serie serie) {
         //just save the Serie in localPreferences, for future use
-        DataManager.getInstance().saveData("lastSerieSelected",new Gson().toJson(serie));
+        DataManager.getInstance().saveData("lastSerieSelected", new Gson().toJson(serie));
     }
 }

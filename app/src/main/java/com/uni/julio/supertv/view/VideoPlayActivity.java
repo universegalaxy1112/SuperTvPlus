@@ -1,10 +1,12 @@
 package com.uni.julio.supertv.view;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
+
 import com.uni.julio.supertv.R;
 import com.uni.julio.supertv.listeners.LiveTVToggleUIListener;
 import com.uni.julio.supertv.view.exoplayer.VideoPlayFragment;
@@ -34,10 +36,11 @@ public class VideoPlayActivity extends BaseActivity implements LiveTVToggleUILis
         }
     };*/
 
-    private  boolean isReceiverRegistered = false;
-    private  boolean isPipMode = false;
+    private boolean isReceiverRegistered = false;
+    private boolean isPipMode = false;
     private VideoPlayFragment videoPlayFragment;
     private FrameLayout frameLayout;
+
     @Override
     protected Lifecycle.ViewModel getViewModel() {
         return null;
@@ -53,23 +56,27 @@ public class VideoPlayActivity extends BaseActivity implements LiveTVToggleUILis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_play);
     }
+
     @Override
-    public void onStart(){
+    public void onStart() {
         super.onStart();
         Intent intent = getIntent();
-        mainCategoryId = intent.getIntExtra("mainCategoryId",0);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        videoPlayFragment=new VideoPlayFragment();
-        if(mainCategoryId == 4 || intent.getIntExtra("type", 0) == 2 )
+        mainCategoryId = intent.getIntExtra("mainCategoryId", 0);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        videoPlayFragment = new VideoPlayFragment();
+        if (mainCategoryId == 4 || intent.getIntExtra("type", 0) == 2)
             videoPlayFragment.hidePlayBack();
         videoPlayFragment.setLiveTVToggleListener(this);
         getSupportFragmentManager()
                 .beginTransaction()
-                .add(R.id.video_container,videoPlayFragment).commit();
+                .add(R.id.video_container, videoPlayFragment).commit();
     }
+
     @Override
-    public void onResume(){
+    public void onResume() {
         super.onResume();
        /* if(isPipMode)
         {
@@ -87,8 +94,9 @@ public class VideoPlayActivity extends BaseActivity implements LiveTVToggleUILis
         /*if(mainCategoryId != 4)
         videoPlayFragment.useController();*/
     }
+
     @Override
-    public void onDestroy(){
+    public void onDestroy() {
         super.onDestroy();
        /* if(isReceiverRegistered)
         {
@@ -113,18 +121,20 @@ public class VideoPlayActivity extends BaseActivity implements LiveTVToggleUILis
     }
 
     @Override
-    public void onPause(){
+    public void onPause() {
         super.onPause();
         /*if(!isPipMode){
             videoPlayFragment.mute();
             sendBroadcast(new Intent("unMute"));
         }*/
     }
+
     @Override
     public void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         videoPlayFragment.onNewIntent(intent);
     }
+
     /* @RequiresApi(api = Build.VERSION_CODES.O)
      private void enterPIPMode(){
          *//*registerReceiver(mute, new IntentFilter("mute"));
@@ -165,7 +175,7 @@ public class VideoPlayActivity extends BaseActivity implements LiveTVToggleUILis
 */
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if(keyCode == KeyEvent.KEYCODE_BACK){
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
            /* PackageManager packageManager = getPackageManager();
             if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.O && packageManager.hasSystemFeature(PackageManager.FEATURE_PICTURE_IN_PICTURE)){
                 enterPIPMode();
@@ -175,35 +185,35 @@ public class VideoPlayActivity extends BaseActivity implements LiveTVToggleUILis
             finishActivity();
             return false;
         }
-        if(keyCode==KeyEvent.KEYCODE_DPAD_LEFT){
+        if (keyCode == KeyEvent.KEYCODE_DPAD_LEFT) {
             videoPlayFragment.dispatchKeyEvent();
             return false;
         }
-        if(keyCode==KeyEvent.KEYCODE_DPAD_UP){
+        if (keyCode == KeyEvent.KEYCODE_DPAD_UP) {
             // videoPlayFragment.toggleMute();
             sendBroadcast(new Intent("toggle"));
 
             videoPlayFragment.dispatchKeyEvent();
             return false;
         }
-        if(keyCode==KeyEvent.KEYCODE_DPAD_RIGHT){
+        if (keyCode == KeyEvent.KEYCODE_DPAD_RIGHT) {
             videoPlayFragment.dispatchKeyEvent();
             return false;
         }
-        if(keyCode==KeyEvent.KEYCODE_DPAD_CENTER){
+        if (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) {
             videoPlayFragment.toggleTitle();
             videoPlayFragment.dispatchKeyEvent();
             return false;
         }
-        if(keyCode==KeyEvent.KEYCODE_MEDIA_FAST_FORWARD||keyCode==KeyEvent.KEYCODE_FORWARD||keyCode==272||keyCode==274||keyCode==KeyEvent.KEYCODE_BUTTON_R1||keyCode==KeyEvent.KEYCODE_BUTTON_R2||keyCode==KeyEvent.KEYCODE_RIGHT_BRACKET ){
+        if (keyCode == KeyEvent.KEYCODE_MEDIA_FAST_FORWARD || keyCode == KeyEvent.KEYCODE_FORWARD || keyCode == 272 || keyCode == 274 || keyCode == KeyEvent.KEYCODE_BUTTON_R1 || keyCode == KeyEvent.KEYCODE_BUTTON_R2 || keyCode == KeyEvent.KEYCODE_RIGHT_BRACKET) {
             videoPlayFragment.doForwardVideo();
             return true;
         }
-        if(keyCode==KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE){
+        if (keyCode == KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE) {
             videoPlayFragment.playPause();
             return true;
         }
-        if(keyCode==KeyEvent.KEYCODE_MEDIA_REWIND){
+        if (keyCode == KeyEvent.KEYCODE_MEDIA_REWIND) {
             videoPlayFragment.doRewindVideo();
             return true;
         }
@@ -211,14 +221,15 @@ public class VideoPlayActivity extends BaseActivity implements LiveTVToggleUILis
         super.dispatchKeyEvent(event);*/
         return false;
     }
+
     @Override
     public void onToggleUI(boolean show) {
         //videoPlayFragment.toggleMute();
-        if(mainCategoryId == 4 || getIntent().getIntExtra("type", 0) == 2)
+        if (mainCategoryId == 4 || getIntent().getIntExtra("type", 0) == 2)
             videoPlayFragment.toggleTitle();
         try {
             //sendBroadcast(new Intent("toggle"));
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

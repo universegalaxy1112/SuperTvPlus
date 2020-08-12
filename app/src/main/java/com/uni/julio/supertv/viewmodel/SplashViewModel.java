@@ -25,12 +25,13 @@ import org.json.JSONObject;
 
 public class SplashViewModel implements SplashViewModelContract.ViewModel, StringRequestListener, DownloaderListener {
 
-//    public boolean isConnected;
+    //    public boolean isConnected;
     private NetManager netManager;
     private SplashViewModelContract.View viewCallback;
     private User user;
-     public SplashViewModel(SplashViewModelContract.View splash) {
-        this.viewCallback= splash;
+
+    public SplashViewModel(SplashViewModelContract.View splash) {
+        this.viewCallback = splash;
         netManager = NetManager.getInstance();
     }
 
@@ -55,40 +56,39 @@ public class SplashViewModel implements SplashViewModelContract.ViewModel, Strin
         String usr = "";
         String password = "";
         String id = "";
-        String theUser = DataManager.getInstance().getString("theUser","");
+        String theUser = DataManager.getInstance().getString("theUser", "");
 
-        if(!TextUtils.isEmpty(theUser)) {
+        if (!TextUtils.isEmpty(theUser)) {
             user = new Gson().fromJson(theUser, User.class);
             LiveTvApplication.user = user;
             usr = user.getName();
             password = user.getPassword();
             id = user.getDeviceId();
         }
-        if(TextUtils.isEmpty(usr) || TextUtils.isEmpty(password) || TextUtils.isEmpty(id)) {
+        if (TextUtils.isEmpty(usr) || TextUtils.isEmpty(password) || TextUtils.isEmpty(id)) {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     viewCallback.onLoginCompleted(false);
                 }
             }, 2000);
-        }
-        else {
-            netManager.performLoginCode(usr,password,id,this);
+        } else {
+            netManager.performLoginCode(usr, password, id, this);
         }
     }
 
     @Override
     public void onCompleted(String response) {
-        if(!TextUtils.isEmpty(response)) {
+        if (!TextUtils.isEmpty(response)) {
             try {
 
                 JSONObject jsonObject = new JSONObject(response);
 
                 if (jsonObject.has("android_version")) {
-                    Log.d("version",Device.getVersionInstalled());
-                    String a=Device.getVersionInstalled().replaceAll("\\.", "");
-                    String b=jsonObject.getString("android_version");
-                    if (!jsonObject.getString("android_version").equals("")&&!Device.getVersionInstalled().replaceAll("\\.", "").equals(jsonObject.getString("android_version"))) {
+                    Log.d("version", Device.getVersionInstalled());
+                    String a = Device.getVersionInstalled().replaceAll("\\.", "");
+                    String b = jsonObject.getString("android_version");
+                    if (!jsonObject.getString("android_version").equals("") && !Device.getVersionInstalled().replaceAll("\\.", "").equals(jsonObject.getString("android_version"))) {
                         this.viewCallback.onCheckForUpdateCompleted(true, jsonObject.getString("link_android") + "/android" + jsonObject.getString("android_version") + ".apk");
                         return;
                     }
@@ -97,23 +97,23 @@ public class SplashViewModel implements SplashViewModelContract.ViewModel, Strin
                 }
 
                 if (jsonObject.has("status") && "1".equals(jsonObject.getString("status"))) {
-                    String userAgent =  jsonObject.getString("user-agent");
+                    String userAgent = jsonObject.getString("user-agent");
                     if (!jsonObject.isNull("pin")) {
                         DataManager.getInstance().saveData("adultsPassword", jsonObject.getString("pin"));
                     }
-                    if(!TextUtils.isEmpty(userAgent)) {
+                    if (!TextUtils.isEmpty(userAgent)) {
                         user.setUser_agent(userAgent);
-                        user.setExpiration_date( jsonObject.getString("expire_date"));
+                        user.setExpiration_date(jsonObject.getString("expire_date"));
                         user.setDevice(Device.getModel() + " - " + Device.getFW());
                         user.setVersion(Device.getVersion());
                         user.setAdultos(jsonObject.getInt("adultos"));
                         user.setDeviceId(Device.getIdentifier());
-                        DataManager.getInstance().saveData("theUser",new Gson().toJson(user));
-                        DataManager.getInstance().saveData("device_num",jsonObject.getString("device_num"));
+                        DataManager.getInstance().saveData("theUser", new Gson().toJson(user));
+                        DataManager.getInstance().saveData("device_num", jsonObject.getString("device_num"));
                         viewCallback.onLoginCompleted(true);
                         return;
                     }
-                }else{
+                } else {
                     String errorFound = jsonObject.getString("error_found");
                     viewCallback.onLoginError(errorFound);
                     return;
@@ -139,6 +139,7 @@ public class SplashViewModel implements SplashViewModelContract.ViewModel, Strin
     public void downloadUpdate(String location, ProgressDialog progress) {
         Downloader.getInstance().performDownload(location, progress, this);
     }
+
     public void onDownloadError(int error) {
         this.viewCallback.onDownloadUpdateError(error);
     }

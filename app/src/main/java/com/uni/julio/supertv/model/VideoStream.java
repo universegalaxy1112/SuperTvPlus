@@ -1,7 +1,7 @@
 package com.uni.julio.supertv.model;
 
 //base class for other models
-public abstract class VideoStream  {//implements Cloneable {
+public abstract class VideoStream {//implements Cloneable {
     private int ContentId = 0;
     private String ContentType = "";
     private String Title = "";
@@ -19,6 +19,7 @@ public abstract class VideoStream  {//implements Cloneable {
     public String getSearchTitle() {
         return searchTitle;
     }
+
     public void setSearchTitle(String searchTitle) {
         this.searchTitle = searchTitle;
     }
@@ -26,6 +27,7 @@ public abstract class VideoStream  {//implements Cloneable {
     public int getContentId() {
         return ContentId;
     }
+
     public void setContentId(int contentId) {
         this.ContentId = contentId;
     }
@@ -33,6 +35,7 @@ public abstract class VideoStream  {//implements Cloneable {
     public String getContentType() {
         return ContentType;
     }
+
     public void setContentType(String contentType) {
         this.ContentType = contentType;
     }
@@ -40,6 +43,7 @@ public abstract class VideoStream  {//implements Cloneable {
     public String getTitle() {
         return Title;
     }
+
     public void setTitle(String title) {
         this.Title = title;
     }
@@ -47,9 +51,11 @@ public abstract class VideoStream  {//implements Cloneable {
     public String getStreamUrl() {
         return StreamUrl;
     }
+
     public String getSDUrl() {
         return StreamUrl2;
     }
+
     public String getTrailerUrl() {
         return Trailerurl;
     }
@@ -58,15 +64,22 @@ public abstract class VideoStream  {//implements Cloneable {
     public void setStreamUrl(String streamUrl) {
         StreamUrl = streamUrl;
     }
+
     public void setSDUrl(String sdUrl) {
         StreamUrl2 = sdUrl;
     }
+
     public void setTrailerUrl(String trailerUrl) {
         Trailerurl = trailerUrl;
     }
 
-    public int getPosition() { return position; }
-    public void setPosition(int position) { this.position = position; }
+    public int getPosition() {
+        return position;
+    }
+
+    public void setPosition(int position) {
+        this.position = position;
+    }
 
     public boolean contains(String searchString) {
 //Log.d("liveTV", "Search for "+searchString+ " should add? "+getTitle().toLowerCase().contains(searchString.toLowerCase()));
@@ -76,6 +89,7 @@ public abstract class VideoStream  {//implements Cloneable {
     public boolean isHDBranded() {
         return HDBranded;
     }
+
     public void setHDBranded(boolean HDBranded) {
         this.HDBranded = HDBranded;
     }
@@ -83,6 +97,7 @@ public abstract class VideoStream  {//implements Cloneable {
     public boolean isSeen() {
         return seen;
     }
+
     public void setSeen(boolean seen) {
         this.seen = seen;
     }
@@ -90,6 +105,7 @@ public abstract class VideoStream  {//implements Cloneable {
     public boolean isFavorite() {
         return favorite;
     }
+
     public void setFavorite(boolean favorite) {
         this.favorite = favorite;
     }
@@ -101,6 +117,7 @@ public abstract class VideoStream  {//implements Cloneable {
         VideoStream that = (VideoStream) o;
         return this.getContentId() == that.getContentId();
     }
+
     public int getCategoryType() {
         return tipo;
     }

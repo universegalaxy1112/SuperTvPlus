@@ -51,7 +51,7 @@ public class FetchJSonFileSync {
         return null;
     }
 
-    public List<? extends VideoStream> retrieveMovies(String mainCategory, String movieCategory, int timeOut) {
+    public List<VideoStream> retrieveMovies(String mainCategory, String movieCategory, int offset, int timeOut) {
         try {
             String dataFromServer = "";
 
@@ -77,8 +77,7 @@ public class FetchJSonFileSync {
 
                 if(!TextUtils.isEmpty(recentMovies)) {
                     dataFromServer = "{\"Videos\": "+recentMovies + "}";
-                }
-                else {
+                } else {
                     return new ArrayList<>();
                 }
             }else */
@@ -108,7 +107,7 @@ public class FetchJSonFileSync {
                     return new ArrayList<>();
                 }
             } else {
-                String moviesForCatURL = getMoviesForCategoryUrl(mainCategory, movieCategory);
+                String moviesForCatURL = getMoviesForCategoryUrl(mainCategory, movieCategory, offset);
                 dataFromServer = NetManager.getInstance().makeSyncStringRequest(moviesForCatURL, timeOut);
             }
             if (dataFromServer != null)
@@ -119,7 +118,7 @@ public class FetchJSonFileSync {
         return null;
     }
 
-    public List<? extends VideoStream> retrieveMoviesForSerie(Serie serie, int season) {
+    public List<VideoStream> retrieveMoviesForSerie(Serie serie, int season) {
         try {
             String moviesForSerieURL = getMoviesForSerieUrl(serie, season);
             String dataFromServer = NetManager.getInstance().makeSyncStringRequest(moviesForSerieURL);
@@ -177,7 +176,7 @@ public class FetchJSonFileSync {
         return mainCategory.getModelType().equals(ModelTypes.MOVIES_YEAR) ? WebConfig.getCategoriesForYear : WebConfig.baseURL + tmpURL;
     }
 
-    public List<? extends VideoStream> retrieveSearchMovies(MainCategory mainCategory, String pattern, int timeOut) {
+    public List<VideoStream> retrieveSearchMovies(MainCategory mainCategory, String pattern, int timeOut) {
         int type = -1;
         try {
             String modelType = mainCategory.getModelType();
@@ -205,7 +204,7 @@ public class FetchJSonFileSync {
         }
     }
 
-    private String getMoviesForCategoryUrl(String mainCategory, String movieCategory) {
+    private String getMoviesForCategoryUrl(String mainCategory, String movieCategory, int offset) {
 
         String tmpURL = "";
         try {
@@ -252,11 +251,11 @@ public class FetchJSonFileSync {
         User user = LiveTvApplication.getUser();
         String password = user.getPassword();
         if (ModelTypes.TOP_MOVIES.equals(mainCategory))
-            return WebConfig.baseURL + tmpURL + "s=" + password;
+            return WebConfig.baseURL + tmpURL + "s=" + password + "&offset="+ offset;
         else if (ModelTypes.MOVIES_YEAR.equals(mainCategory))
-            return WebConfig.getMoviesYear.replace("{YEAR}", movieCategory);
+            return WebConfig.getMoviesYear.replace("{YEAR}", movieCategory) + "&offset="+ offset;
         else
-            return WebConfig.baseURL + tmpURL + "&s=" + password + "&cve=" + user.getName();
+            return WebConfig.baseURL + tmpURL + "&s=" + password + "&cve=" + user.getName() + "&offset="+ offset;
     }
 
     private String getMoviesForSerieUrl(Serie serie, int season) {

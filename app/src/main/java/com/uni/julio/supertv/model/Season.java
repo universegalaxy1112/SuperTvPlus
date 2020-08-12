@@ -8,7 +8,7 @@ import java.util.Set;
 public class Season {
 
 //    private int seasons;
-    private List<? extends VideoStream> episodeList;
+    private List<VideoStream> episodeList;
 
     public Season() {
         episodeList = new ArrayList<>();
@@ -17,9 +17,9 @@ public class Season {
     private int position = -1;
     private String name;
 
-    public List<? extends VideoStream> getEpisodeList() { return episodeList; }
+    public List<VideoStream> getEpisodeList() { return episodeList; }
     public VideoStream getEpisode(int position) { return episodeList.get(position); }
-    public void setEpisodeList(List<? extends VideoStream> list) { episodeList = list; }
+    public void setEpisodeList(List<VideoStream> list) { episodeList = list; }
 
     public boolean isLoading() { return isLoading; }
     public void setLoading(boolean loading) { isLoading = loading; }

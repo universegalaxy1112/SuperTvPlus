@@ -95,16 +95,16 @@ public class ParserJSonFile {
         return dataArray;
     }
 
-    public static List<? extends VideoStream> getParsedMoviesForSerie(Serie serie, String data) throws JSONException {
+    public static List<VideoStream> getParsedMoviesForSerie(Serie serie, String data) throws JSONException {
 
 //        seenMovies = DataManager.getInstance().getStringSet("seenMovies");
 //        favoriteMovies = DataManager.getInstance().getStringSet("favoriteMovies");
 
-        String JSON_ARRAY_VAR = "";
-        List<VideoStream> dataArray = new ArrayList<>();
+        String JSON_ARRAY_VAR;
+        List<VideoStream> dataArray;
 
         JSONObject videosJson = new JSONObject(data);
-        JSONArray videoArray = null;
+        JSONArray videoArray;
         JSON_ARRAY_VAR = "Capitulos";
         videoArray = videosJson.getJSONArray(JSON_ARRAY_VAR);
 
@@ -121,26 +121,20 @@ public class ParserJSonFile {
         return dataArray;
     }
 
-    public static List<? extends VideoStream> getParsedMovies(String mainCategory, String movieCategory, String data) throws JSONException,NullPointerException {
+    public static List<VideoStream> getParsedMovies(String mainCategory, String movieCategory, String data) throws JSONException,NullPointerException {
 
-        String JSON_ARRAY_VAR = "";
-        List<VideoStream> dataArray = new ArrayList<>();
+        String JSON_ARRAY_VAR;
+        List<VideoStream> dataArray;
             JSONObject videosJson = new JSONObject(data);
-            JSONArray videoArray = null;
+            JSONArray videoArray;
             JSON_ARRAY_VAR = "Videos";
             videoArray = videosJson.getJSONArray(JSON_ARRAY_VAR);
 
             dataArray = new ArrayList<>();
-            VideoStream movie = null;
+            VideoStream movie;
             for (int i = 0; i < videoArray.length(); i++) {
 
                 switch (mainCategory) {
-                    case ModelTypes.MOVIE_CATEGORIES:
-                    case ModelTypes.ENTERTAINMENT_CATEGORIES:
-                    case ModelTypes.EVENTS_CATEGORIES:
-                    case ModelTypes.ADULTS_CATEGORIES:
-                        movie = new Movie();
-                        break;
                     case ModelTypes.SERIES_CATEGORIES:
                     case ModelTypes.SERIES_KIDS_CATEGORIES:
                     case ModelTypes.KARAOKE_CATEGORIES:

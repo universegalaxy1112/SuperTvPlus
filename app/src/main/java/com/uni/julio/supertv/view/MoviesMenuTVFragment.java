@@ -15,6 +15,7 @@ import android.view.View.OnClickListener;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.cardview.widget.CardView;
@@ -34,9 +35,11 @@ import androidx.leanback.widget.RowHeaderPresenter;
 import androidx.leanback.widget.RowPresenter;
 
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.SimpleTarget;
+import com.bumptech.glide.request.transition.Transition;
 import com.google.gson.Gson;
-import com.squareup.picasso.Picasso;
-import com.squareup.picasso.Target;
+
 import com.uni.julio.supertv.LiveTvApplication;
 import com.uni.julio.supertv.R;
 import com.uni.julio.supertv.adapter.CustomListRow;
@@ -81,7 +84,7 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
     private int currentRow = 0;
     private long previousTime = 0L;
     private boolean isDblClick = false;
-
+    private DisplayMetrics mMetrics;
     public MoviesMenuTVFragment() {
     }
 
@@ -154,7 +157,7 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
                     long diff = c.getTimeInMillis() - previousTime;
                     if(diff < 500) {
                         isDblClick = true;
-                        forceRetrieve(currentRow);
+                        forceRetrieve(currentRow, 0);
                     } else {
                         isDblClick = false;
                     }
@@ -172,7 +175,9 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
                                 extras.putInt("mainCategoryId", mainCategoryId);
                                 extras.putInt("movieCategoryId", (int) listRow.getId());
                             }
+
                             launchActivity(MoreVideoActivity.class, extras);
+                            getActivity().finish();
                         }
                     }
                 }, 1000);
@@ -188,7 +193,7 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
             this.mBackgroundManager = BackgroundManager.getInstance(Objects.requireNonNull(getActivity()));
             this.mBackgroundManager.attach(getActivity().getWindow());
             this.mBackgroundManager.setColor(ContextCompat.getColor(getActivity(), R.color.detail_background));
-            DisplayMetrics mMetrics = new DisplayMetrics();
+            mMetrics = new DisplayMetrics();
             getActivity().getWindowManager().getDefaultDisplay().getMetrics(mMetrics);
         } catch (Exception e) {
             e.printStackTrace();
@@ -221,9 +226,9 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
         }
         if (!mCategoriesList.get(row).isLoaded() && !mCategoriesList.get(row).isLoading()) {
             mCategoriesList.get(row).setLoading(true);
-            NetManager.getInstance().retrieveMoviesForSubCategory(VideoStreamManager.getInstance().getMainCategory(this.mainCategoryId), mCategoriesList.get(row), this, 30);
+            NetManager.getInstance().retrieveMoviesForSubCategory(VideoStreamManager.getInstance().getMainCategory(this.mainCategoryId), mCategoriesList.get(row), 0,this, 30);
         } else if (!mCategoriesList.get(row).isLoading() && !mCategoriesList.get(row).isCategoryDisplayed()) {
-            loadRow(mCategoriesList.get(row));
+            loadRow(mCategoriesList.get(row), null, 0 );
         }
     }
 
@@ -234,11 +239,11 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
             mCategoriesList = VideoStreamManager.getInstance().getMainCategory(this.mainCategoryId).getMovieCategories();
             int loadStart = 0;
             if (mCategoriesList.size() > 0 && mCategoriesList.get(0).getCatName().equals("Favorite")) {
-                forceRetrieve(0);
+                forceRetrieve(0, 0);
                 loadStart = 1;
             }
             if (mCategoriesList.size() > 1 && mCategoriesList.get(1).getCatName().equals("Vistas Recientes")) {
-                forceRetrieve(1);
+                forceRetrieve(1, 0);
                 loadStart = 2;
             }
             if (isInit) {
@@ -260,12 +265,12 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
         isDblClick = false;
     }
 
-    private void forceRetrieve(int row) {
+    private void forceRetrieve(int row, int offset) {
         if (mCategoriesList.size() > row)
-            NetManager.getInstance().retrieveMoviesForSubCategory(VideoStreamManager.getInstance().getMainCategory(this.mainCategoryId), mCategoriesList.get(row), this, 30);
+            NetManager.getInstance().retrieveMoviesForSubCategory(VideoStreamManager.getInstance().getMainCategory(this.mainCategoryId), mCategoriesList.get(row), offset, this, 30);
     }
 
-    private void loadRow(final MovieCategory category) {
+    private void loadRow(final MovieCategory category, final List<VideoStream> movies, final int offset) {
 
         try {
             if (getActivity() != null)
@@ -274,16 +279,23 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
                     public void run() {
                         category.setCategoryDisplayed(true);
                         HeaderItem header = new HeaderItem(category.getId(), category.getCatName());
-                        List<? extends VideoStream> movieList = category.getMovieList();
-                        ArrayObjectAdapter listRowAdapter = new ArrayObjectAdapter(new MoviesPresenter(getActivity()));
+                        List<VideoStream> movieList = category.getMovieList();
+                        MoviesPresenter moviesPresenter = new MoviesPresenter(getActivity());
+                        moviesPresenter.setParams(category, mainCategoryId, MoviesMenuTVFragment.this);
+                        ArrayObjectAdapter listRowAdapter = new ArrayObjectAdapter(moviesPresenter);
                         listRowAdapter.addAll(0, movieList);
                         CustomListRow r = new CustomListRow(header, listRowAdapter);
                         r.setId(category.getId());
                         for (int i = 0; i < mRowsAdapter.size(); i++) {
                             if (((ListRow) mRowsAdapter.get(i)).getId() == category.getId()) {
                                 if (mRowsAdapter.get(i) != null) {
-                                    mRowsAdapter.remove(mRowsAdapter.get(i));
-                                    break;
+                                    if(offset == 0) {
+                                        mRowsAdapter.remove(mRowsAdapter.get(i));
+                                        break;
+                                    } else {
+                                        ((ArrayObjectAdapter)(((CustomListRow) mRowsAdapter.get(i)).getAdapter())).addAll(offset*50, movies);
+                                        return;
+                                    }
                                 }
                             }
                         }
@@ -296,12 +308,12 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
         }
     }
 
-    public void onMoviesForCategoryCompleted(MovieCategory movieCategory) {
+    public void onMoviesForCategoryCompleted(MovieCategory movieCategory, List<VideoStream> movies, int offset) {
         movieCategory.setLoaded(true);
         if (!movieCategory.hasErrorLoading()) {
             movieCategory.setLoading(false);
             movieCategory.setErrorLoading(false);
-            loadRow(movieCategory);
+            loadRow(movieCategory, movies, offset);
         }
     }
 
@@ -371,32 +383,38 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
     }
 
     private final class ItemViewSelectedListener implements OnItemViewSelectedListener {
-        @SuppressLint("CutPasteId")
+
         @Override
         public void onItemSelected(Presenter.ViewHolder itemViewHolder, Object item,
                                    RowPresenter.ViewHolder rowViewHolder, Row row) {
             try {
+
+                currentRow = (int) row.getId();
+
                 if (item instanceof Movie && !(((Movie) item).getPosition() == -1)) {
                     setPreviewDetails(item);
                     MoviesMenuTVFragment.this.updateBackground(((Movie) item).getHDFondoUrl());
                 }
 
-                currentRow = (int) row.getId();
                 int target = Math.min(mCategoriesList.size(), (int) row.getId() + 10);
-                for (int i = (int) row.getId() + 1; i < target; i++) {
+                for (int i = currentRow + 1; i < target; i++) {
                     if (!mCategoriesList.get(i).isCategoryDisplayed() && !mCategoriesList.get(i).isLoading())
                         load(i);
                 }
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
 
         }
+
     }
 
     private void setPreviewDetails(final Object item) {
+
         if (getActivity() != null)
             getActivity().runOnUiThread(new Runnable() {
+
                 @Override
                 public void run() {
                     if (title != null) {
@@ -422,9 +440,11 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
     }
 
     private void updateBackground(final String uri) {
+
         try {
+
             if (getActivity() != null)
-                getActivity().runOnUiThread(new Runnable() {
+                /*getActivity().runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         Target target = new Target() {
@@ -443,7 +463,15 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
                         };
                         Picasso.get().load(uri).placeholder(R.drawable.placeholder).into(target);
                     }
-                });
+                });*/
+
+            Glide.with(this).load(uri).centerCrop().into(new SimpleTarget<Drawable>(this.mMetrics.widthPixels, this.mMetrics.heightPixels) {
+                @Override
+                public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
+                    MoviesMenuTVFragment.this.mBackgroundManager.setDrawable(resource);
+
+                }
+            });
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -42,6 +42,7 @@ import com.uni.julio.supertv.view.LoadingActivity;
 import com.uni.julio.supertv.view.OneSeasonDetailActivity;
 import com.uni.julio.supertv.view.VideoPlayActivity;
 import com.uni.julio.supertv.view.exoplayer.VideoPlayFragment;
+
 import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.List;
@@ -59,12 +60,13 @@ public class SearchViewModel implements SearchViewModelContract.ViewModel, Movie
     private SearchViewModelContract.View viewCallback;
     private Context mContext;
     private GridLayoutManager mLayoutManager;
-    private List<? extends VideoStream> movies;
+    private List<VideoStream> movies;
     private int columns = 3;
     private Pattern pattern;
     private GridViewAdapter moreVideoAdapter;
     public ObservableBoolean isLoading;
     private EditText editText;
+
     public SearchViewModel(Context context, int mainCategory) {
         isConnected = new ObservableBoolean(Connectivity.isConnected());
         mContext = context;
@@ -100,42 +102,44 @@ public class SearchViewModel implements SearchViewModelContract.ViewModel, Movie
         columns = 3;
         movies = new ArrayList<>();
         this.editText = activitySearchBinding.editPassword;
-        moreVideoAdapter=new GridViewAdapter(mContext,moviesGridRV,movies,this);
-        mLayoutManager=new GridLayoutManager(mContext,Integer.parseInt(mContext.getString(R.string.more_video)));
+        moreVideoAdapter = new GridViewAdapter(mContext, moviesGridRV, movies, mMainCategory.getId(), -1, this);
+        mLayoutManager = new GridLayoutManager(mContext, Integer.parseInt(mContext.getString(R.string.more_video)));
         mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         moviesGridRV.setLayoutManager(mLayoutManager);
         moviesGridRV.setAdapter(moreVideoAdapter);
         if (moviesGridRV.getItemDecorationCount() == 0) {
             moviesGridRV.addItemDecoration(
                     new RecyclerViewItemDecoration(mContext.getResources().getInteger(R.integer.recycler_decoration_padding),
-                    mContext.getResources().getInteger(R.integer.recycler_decoration_padding),
-                    mContext.getResources().getInteger(R.integer.recycler_decoration_padding),
-                    mContext.getResources().getInteger(R.integer.recycler_decoration_padding)));
+                            mContext.getResources().getInteger(R.integer.recycler_decoration_padding),
+                            mContext.getResources().getInteger(R.integer.recycler_decoration_padding),
+                            mContext.getResources().getInteger(R.integer.recycler_decoration_padding)));
         }
         activitySearchBinding.noResult.setVisibility(View.GONE);
-        LiveTVServicesManual.searchVideo(mMainCategory,removeSpecialChars(query),45)
+        LiveTVServicesManual.searchVideo(mMainCategory, removeSpecialChars(query), 45)
                 .delay(2, TimeUnit.SECONDS, Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Subscriber<List<? extends VideoStream>>() {
+                .subscribe(new Subscriber<List<VideoStream>>() {
                     @Override
                     public void onCompleted() {
 
                     }
+
                     @Override
                     public void onError(Throwable e) {
-                        Log.d("error","error");
+                        Log.d("error", "error");
                         isLoading.set(false);
                         Toast.makeText(mContext, R.string.time_out, Toast.LENGTH_SHORT).show();
                         activitySearchBinding.noResult.setVisibility(View.VISIBLE);
                         hideKeyboard();
                     }
+
                     @Override
-                    public void onNext(List<? extends VideoStream> videos) {
+                    public void onNext(List<VideoStream> videos) {
                         isLoading.set(false);
                         movies = videos;
-                        if(movies.size() < 1){
+                        if (movies.size() < 1) {
                             activitySearchBinding.noResult.setVisibility(View.VISIBLE);
-                            Dialogs.showTwoButtonsDialog(mContext,R.string.ok_dialog,R.string.cancel,R.string.title_order_message, new DialogListener() {
+                            Dialogs.showTwoButtonsDialog(mContext, R.string.ok_dialog, R.string.cancel, R.string.title_order_message, new DialogListener() {
 
                                 @Override
                                 public void onAccept() {
@@ -159,12 +163,14 @@ public class SearchViewModel implements SearchViewModelContract.ViewModel, Movie
                 });
 
     }
-    private void hideKeyboard(){
+
+    private void hideKeyboard() {
         editText.clearFocus();
     }
+
     @Override
     public void onConfigurationChanged() {
-        if(mLayoutManager != null) {
+        if (mLayoutManager != null) {
             columns = 3;//default portrait
 
             mLayoutManager.setSpanCount(columns);
@@ -173,10 +179,10 @@ public class SearchViewModel implements SearchViewModelContract.ViewModel, Movie
 
     private void addRecentSerie(Serie serie) {
         //just save the Serie in localPreferences, for future use
-        DataManager.getInstance().saveData("lastSerieSelected",new Gson().toJson(serie));
+        DataManager.getInstance().saveData("lastSerieSelected", new Gson().toJson(serie));
     }
 
-    private void sendOrder(String query){
+    private void sendOrder(String query) {
         String reportUrl = WebConfig.orderUrl.replace("{USER}", LiveTvApplication.getUser() == null ? "" : LiveTvApplication.getUser().getName())
                 .replace("{TIPO}", Integer.toString(mMainCategory.getId()))
                 .replace("{TITLE}", query);
@@ -185,6 +191,7 @@ public class SearchViewModel implements SearchViewModelContract.ViewModel, Movie
             public void onCompleted(String response) {
                 Toast.makeText(mContext, "Thanks for requesting. We will add it as soon as possible!", Toast.LENGTH_SHORT).show();
             }
+
             @Override
             public void onError() {
                 Toast.makeText(mContext, "Failed to send request! Please check your network connection.", Toast.LENGTH_SHORT).show();
@@ -194,7 +201,7 @@ public class SearchViewModel implements SearchViewModelContract.ViewModel, Movie
 
     @Override
     public void onMovieSelected(VideoStream movie) {
-        if(movie instanceof Serie) {
+        if (movie instanceof Serie) {
             addRecentSerie((Serie) movie);
             Bundle extras = new Bundle();
             extras.putSerializable("selectedType", ModelTypes.SelectedType.SERIES);
@@ -203,19 +210,18 @@ public class SearchViewModel implements SearchViewModelContract.ViewModel, Movie
             Intent launchIntent = new Intent(mContext, LoadingActivity.class);
             launchIntent.putExtras(extras);
             mContext.startActivity(launchIntent);
-        }
-        else {
-                if(mMainCategory.getId() == 4 || mMainCategory.getId() == 7){
-                    onPlaySelectedDirect((Movie)movie,mMainCategory.getId());
-                }else{
-                    Bundle extras = new Bundle();
-                    extras.putString("movie", new Gson().toJson(movie));
-                    extras.putInt("mainCategoryId", mMainCategory.getId());
-                    Intent launchIntent = new Intent(mContext, OneSeasonDetailActivity.class);
-                    launchIntent.putExtras(extras);
-                    ActivityCompat.startActivityForResult((AppCompatActivity)mContext, launchIntent,100,
-                            null);
-                }
+        } else {
+            if (mMainCategory.getId() == 4 || mMainCategory.getId() == 7) {
+                onPlaySelectedDirect((Movie) movie, mMainCategory.getId());
+            } else {
+                Bundle extras = new Bundle();
+                extras.putString("movie", new Gson().toJson(movie));
+                extras.putInt("mainCategoryId", mMainCategory.getId());
+                Intent launchIntent = new Intent(mContext, OneSeasonDetailActivity.class);
+                launchIntent.putExtras(extras);
+                ActivityCompat.startActivityForResult((AppCompatActivity) mContext, launchIntent, 100,
+                        null);
+            }
         }
     }
 
@@ -233,8 +239,8 @@ public class SearchViewModel implements SearchViewModelContract.ViewModel, Movie
                 .putExtra("subsURL", movie.getSubtitleUrl())
                 .putExtra("title", movie.getTitle())
                 .setAction(VideoPlayFragment.ACTION_VIEW_LIST);
-        ActivityCompat.startActivityForResult((AppCompatActivity)mContext, launchIntent,100
-                ,null);
+        ActivityCompat.startActivityForResult((AppCompatActivity) mContext, launchIntent, 100
+                , null);
     }
 
 }

@@ -19,8 +19,8 @@ android {
         applicationId "com.uni.julio.supertv"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 11
-        versionName "3.0.3"
+        versionCode 15
+        versionName "3.0.4"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -64,6 +64,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-crashlytics:17.0.0'
     implementation 'net.steamcrafted:materialiconlib:1.1.5'
     implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.codesgood:justifiedtextview:1.1.0'
+
     implementation fileTree(dir: "libs", include: ["*.jar"])
 /*    implementation 'com.google.android.exoplayer:exoplayer-core:2.9.5'
     implementation 'com.google.android.exoplayer:exoplayer-dash:2.9.5'

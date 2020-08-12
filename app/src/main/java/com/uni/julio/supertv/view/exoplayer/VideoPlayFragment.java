@@ -25,6 +25,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.BindingAdapter;
 import androidx.fragment.app.Fragment;
 
+import com.codesgood.views.JustifiedTextView;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.DefaultLoadControl;
 import com.google.android.exoplayer2.ExoPlaybackException;
@@ -115,6 +116,10 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
     private SimpleExoPlayerView simpleExoPlayerView;
     private LinearLayout debugRootView;
     private ConstraintLayout top_bar;
+    private LinearLayout detail_bar;
+    private JustifiedTextView description;
+    private JustifiedTextView sub_title;
+    private TextView topic;
     private TextView titleText;
     private TextView debugTextView;
     private TextView hideNoChannelText;
@@ -130,6 +135,7 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
     private boolean isTimelineStatic;
     private boolean hidePlayback = false;
     private boolean isLiveTV = false;
+    private boolean isFullscreen = false;
     private long playerPosition;
     private int movieId;
     private String title = "";
@@ -162,11 +168,15 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
         View rootPlayerView = inflater.inflate(R.layout.videofragment_normal, container, false);
         debugRootView = rootPlayerView.findViewById(R.id.controls_root);
         top_bar = rootPlayerView.findViewById(R.id.top_bar);
+        detail_bar = rootPlayerView.findViewById(R.id.detail_bar);
         progressBarView = rootPlayerView.findViewById(R.id.player_view_progress_bar);
         titleText = rootPlayerView.findViewById(R.id.titleText);
         debugTextView = rootPlayerView.findViewById(R.id.debug_text_view);
         hideNoChannelText = rootPlayerView.findViewById(R.id.no_channel_text);
         retryButton = rootPlayerView.findViewById(R.id.retry_button);
+        description = rootPlayerView.findViewById(R.id.channel_description);
+        sub_title = rootPlayerView.findViewById(R.id.sub_title);
+        topic = rootPlayerView.findViewById(R.id.topic);
         channel_icon = rootPlayerView.findViewById(R.id.channel_icon);
         // mediaRouteButton = rootPlayerView.findViewById(R.id.media_route_button);
         // CastButtonFactory.setUpMediaRouteButton(LiveTvApplication.getAppContext(),mediaRouteButton);
@@ -190,6 +200,7 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
 
         if (!isLiveTV) {
             hideNoChannelText.setVisibility(View.GONE);
+            detail_bar.setVisibility(View.GONE);
         } else {
             hideNoChannelText.setVisibility(View.VISIBLE);
             top_bar.setVisibility(View.GONE);
@@ -243,8 +254,17 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
 
     }
 
+    public void toggleDetail() {
+        if (detail_bar.getVisibility() == View.VISIBLE) {
+            detail_bar.setVisibility(View.GONE);
+        } else {
+            detail_bar.setVisibility(View.VISIBLE);
+        }
+    }
+
     private void hideWhenForward() {
         top_bar.setVisibility(View.GONE);
+        detail_bar.setVisibility(View.GONE);
     }
 
     public void setLiveTVToggleListener(LiveTVToggleUIListener liveTVToggleListener) {
@@ -281,6 +301,28 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
         episodePosition = intent.getIntExtra("episodePosition", -1);
         this.title = intent.getStringExtra("title") == null ? "" : intent.getStringExtra("title") + ((seasonPosition == -1) ? "" : " S" + (seasonPosition + 1)) + ((seasonPosition == -1 || episodePosition == -1 ? "" : " E" + (episodePosition + 1)));
         BindingAdapters.loadImage(channel_icon, intent.getStringExtra("icon_url"));
+        if(description != null) {
+            String description_text = intent.getStringExtra("description");
+            if(description_text == null || description_text.equals("")) {
+                description.setVisibility(View.GONE);
+            } else {
+                description.setVisibility(View.VISIBLE);
+                description.setText(intent.getStringExtra("description"));
+            }
+        }
+
+        if(sub_title != null) {
+            String sub_text = intent.getStringExtra("sub_title");
+            if(sub_text == null || sub_text.equals("")) {
+                sub_title.setVisibility(View.GONE);
+            } else {
+                sub_title.setVisibility(View.VISIBLE);
+                sub_title.setText(sub_text);
+            }
+        }
+
+        if(topic != null)
+            topic.setText(intent.getStringExtra("topic") == null ? "" : intent.getStringExtra("topic"));
         Tracking.getInstance().setAction(this.title);
         Tracking.getInstance().track();
         getActivity().setIntent(intent);
@@ -315,7 +357,10 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
     public void onVisibilityChange(int visibility) {
         if (!isLiveTV)
             debugRootView.setVisibility(visibility);
-        top_bar.setVisibility(visibility);
+        if(!isLiveTV || isFullscreen) {
+            top_bar.setVisibility(visibility);
+           // detail_bar.setVisibility(visibility);
+        }
     }
 
     @Override
@@ -765,7 +810,11 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
     private void showControls() {
         if (!isLiveTV)
             debugRootView.setVisibility(View.VISIBLE);
-        top_bar.setVisibility(View.VISIBLE);
+        else {
+            //detail_bar.setVisibility(View.VISIBLE);
+            top_bar.setVisibility(View.VISIBLE);
+        }
+
     }
 
     private void showToastError() {

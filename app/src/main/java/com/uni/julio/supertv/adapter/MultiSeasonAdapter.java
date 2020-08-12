@@ -94,7 +94,7 @@ public class MultiSeasonAdapter extends RecyclerView.Adapter<MultiSeasonAdapter.
         holder.getViewDataBinding().executePendingBindings();
     }
 
-    public void updateMovies(List<? extends VideoStream> objects) {
+    public void updateMovies(List<VideoStream> objects) {
         mMovies = objects;
         postAndNotifyAdapter();
     }

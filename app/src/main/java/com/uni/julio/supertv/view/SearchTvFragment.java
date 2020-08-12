@@ -15,6 +15,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -33,9 +34,10 @@ import androidx.leanback.widget.Row;
 import androidx.leanback.widget.RowPresenter;
 import androidx.leanback.widget.SpeechRecognitionCallback;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.SimpleTarget;
+import com.bumptech.glide.request.transition.Transition;
 import com.google.gson.Gson;
-import com.squareup.picasso.Picasso;
-import com.squareup.picasso.Target;
 import com.uni.julio.supertv.LiveTvApplication;
 import com.uni.julio.supertv.R;
 import com.uni.julio.supertv.adapter.MoviesPresenter;
@@ -64,7 +66,7 @@ import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
-public class SearchTvFragment extends SearchSupportFragment implements  SearchSupportFragment.SearchResultProvider {
+public class SearchTvFragment extends SearchSupportFragment implements SearchSupportFragment.SearchResultProvider {
     private static final int REQUEST_RECORD_AUDIO_STATE = 4;
     private static final int REQUEST_SPEECH = 16;
     private boolean denyAll = false;
@@ -72,9 +74,10 @@ public class SearchTvFragment extends SearchSupportFragment implements  SearchSu
     private MainCategory mMainCategory;
     private ArrayObjectAdapter mRowsAdapter;
     protected int mainCategoryId;
-    public List<? extends VideoStream> movies;
+    public List<VideoStream> movies;
     private Pattern pattern;
     protected ModelTypes.SelectedType selectedType;
+    private DisplayMetrics mMetrics;
 
     private final class ItemViewClickedListener implements OnItemViewClickedListener {
         private ItemViewClickedListener() {
@@ -226,38 +229,40 @@ public class SearchTvFragment extends SearchSupportFragment implements  SearchSu
     @Override
     public boolean onQueryTextSubmit(final String query) {
         Objects.requireNonNull(getActivity()).findViewById(R.id.progressBar).setVisibility(View.VISIBLE);
-        LiveTVServicesManual.searchVideo(mMainCategory,removeSpecialChars(query),45)
+        LiveTVServicesManual.searchVideo(mMainCategory, removeSpecialChars(query), 45)
                 .delay(2, TimeUnit.SECONDS, Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Subscriber<List<? extends VideoStream>>() {
+                .subscribe(new Subscriber<List<VideoStream>>() {
                     @Override
                     public void onCompleted() {
 
                     }
+
                     @Override
                     public void onError(Throwable e) {
-                        try{
-                            if(getActivity() != null) {
+                        try {
+                            if (getActivity() != null) {
                                 Objects.requireNonNull(getActivity()).findViewById(R.id.progressBar).setVisibility(View.GONE);
-                                Log.d("error","error");
+                                Log.d("error", "error");
                                 Toast.makeText(getActivity(), R.string.time_out, Toast.LENGTH_SHORT).show();
                                 hideKeyboard();
 
                             }
 
-                        }catch (Exception exception) {
+                        } catch (Exception exception) {
                             exception.printStackTrace();
                         }
 
                     }
+
                     @Override
-                    public void onNext(List<? extends VideoStream> videos) {
+                    public void onNext(List<VideoStream> videos) {
                         hideKeyboard();
-                        if(getActivity() != null) {
+                        if (getActivity() != null) {
                             Objects.requireNonNull(getActivity()).findViewById(R.id.progressBar).setVisibility(View.GONE);
                             movies = videos;
-                            if(movies.size() < 1){
-                                Dialogs.showTwoButtonsDialog(getActivity(), R.string.ok_dialog,R.string.cancel,R.string.title_order_message, new DialogListener() {
+                            if (movies.size() < 1) {
+                                Dialogs.showTwoButtonsDialog(getActivity(), R.string.ok_dialog, R.string.cancel, R.string.title_order_message, new DialogListener() {
 
                                     @Override
                                     public void onAccept() {
@@ -278,18 +283,18 @@ public class SearchTvFragment extends SearchSupportFragment implements  SearchSu
                             }
                             SearchTvFragment.this.mRowsAdapter.clear();
                             SearchTvFragment.this.movies = videos;
-                            ArrayObjectAdapter listRowAdapter = new ArrayObjectAdapter( new MoviesPresenter(SearchTvFragment.this.getActivity().getApplicationContext()));
+                            ArrayObjectAdapter listRowAdapter = new ArrayObjectAdapter(new MoviesPresenter(SearchTvFragment.this.getActivity().getApplicationContext()));
                             listRowAdapter.addAll(0, SearchTvFragment.this.movies);
                             SearchTvFragment.this.mRowsAdapter.add(new ListRow(new HeaderItem("Resultados"), listRowAdapter));
                         }
                     }
                 });
-            return false;
+        return false;
     }
 
     private void hideKeyboard() {
 
-        if(getActivity() != null){
+        if (getActivity() != null) {
             InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(AppCompatActivity.INPUT_METHOD_SERVICE);
             //Find the currently focused view, so we can grab the correct window token from it.
             View view = getActivity().getCurrentFocus();
@@ -297,7 +302,7 @@ public class SearchTvFragment extends SearchSupportFragment implements  SearchSu
             if (view == null) {
                 view = new View(getActivity());
             }
-            if(imm != null)
+            if (imm != null)
                 imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
 
@@ -305,15 +310,15 @@ public class SearchTvFragment extends SearchSupportFragment implements  SearchSu
 
     @Override
     public void onPause() {
-        try{
+        try {
             super.onPause();
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
     }
 
-    private void sendOrder(String query){
+    private void sendOrder(String query) {
         String reportUrl = WebConfig.orderUrl.replace("{USER}", LiveTvApplication.getUser() == null ? "" : LiveTvApplication.getUser().getName())
                 .replace("{TIPO}", Integer.toString(mMainCategory.getId()))
                 .replace("{TITLE}", query);
@@ -322,6 +327,7 @@ public class SearchTvFragment extends SearchSupportFragment implements  SearchSu
             public void onCompleted(String response) {
                 Toast.makeText(getActivity(), "Thanks for requesting. We will add it as soon as possible!", Toast.LENGTH_SHORT).show();
             }
+
             @Override
             public void onError() {
                 Toast.makeText(getActivity(), "Failed to send request! Please check your network connection.", Toast.LENGTH_SHORT).show();
@@ -342,7 +348,7 @@ public class SearchTvFragment extends SearchSupportFragment implements  SearchSu
             accept = R.string.config;
             message = R.string.permission_audio_config;
         }
-        Dialogs.showTwoButtonsDialog(getActivity(), accept,  R.string.cancel, message,  new DialogListener() {
+        Dialogs.showTwoButtonsDialog(getActivity(), accept, R.string.cancel, message, new DialogListener() {
             @RequiresApi(api = Build.VERSION_CODES.M)
             public void onAccept() {
                 if (!SearchTvFragment.this.denyAll) {
@@ -417,10 +423,11 @@ public class SearchTvFragment extends SearchSupportFragment implements  SearchSu
     private boolean hasResults() {
         return this.mRowsAdapter.size() > 0;
     }
+
     private void updateBackground(final String uri) {
         try {
             if (getActivity() != null)
-                getActivity().runOnUiThread(new Runnable() {
+                /*getActivity().runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         Target target = new Target() {
@@ -439,8 +446,14 @@ public class SearchTvFragment extends SearchSupportFragment implements  SearchSu
                         };
                         Picasso.get().load(uri).placeholder(R.drawable.placeholder).into(target);
                     }
-                });
+                });*/
+                Glide.with(this).load(uri).centerCrop().into(new SimpleTarget<Drawable>(this.mMetrics.widthPixels, this.mMetrics.heightPixels) {
+                    @Override
+                    public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
+                        SearchTvFragment.this.mBackgroundManager.setDrawable(resource);
 
+                    }
+                });
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -449,13 +462,13 @@ public class SearchTvFragment extends SearchSupportFragment implements  SearchSu
     }
 
     private void prepareBackgroundManager() {
-        try{
+        try {
             this.mBackgroundManager = BackgroundManager.getInstance(Objects.requireNonNull(getActivity()));
             this.mBackgroundManager.attach(getActivity().getWindow());
             this.mBackgroundManager.setColor(ContextCompat.getColor(getActivity(), R.color.detail_background));
-            DisplayMetrics mMetrics = new DisplayMetrics();
+            mMetrics = new DisplayMetrics();
             getActivity().getWindowManager().getDefaultDisplay().getMetrics(mMetrics);
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
