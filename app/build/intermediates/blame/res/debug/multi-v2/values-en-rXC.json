@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperTV Plus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rXC\\values-en-rXC.xml",
+            "outputFile": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rXC\\values-en-rXC.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\56307b9ec4b47daab36d9fe43c924645\\mediarouter-1.1.0\\res\\values-en-rXC\\values-en-rXC.xml",

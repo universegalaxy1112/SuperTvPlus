@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperTV Plus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lo\\values-lo.xml",
+            "outputFile": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lo\\values-lo.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\211c86005e2c5efb3829f475e6964f4c\\jetified-play-services-base-17.1.0\\res\\values-lo\\values.xml",

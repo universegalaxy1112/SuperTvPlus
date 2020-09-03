@@ -2,484 +2,485 @@
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.uni.julio.supertv"
 4    android:versionCode="15"
-5    android:versionName="3.0.4" >
+5    android:versionName="3.0.5" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml
+8-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml
+9-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:6:5-67
-11-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:6:22-64
-12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:7:5-79
-12-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:7:22-76
-13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-13-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:8:5-81
-13-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:8:22-78
-14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-14-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:9:5-80
-14-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:9:22-77
-15    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
-15-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:10:5-82
-15-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:10:22-80
-16
-17    <uses-feature
-17-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:12:5-13:36
-18        android:name="android.hardware.touchscreen"
-18-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:12:19-62
-19        android:required="false" />
-19-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:13:9-33
-20    <uses-feature
-20-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:14:5-15:36
-21        android:name="android.software.leanback"
-21-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:14:19-59
-22        android:required="false" />
-22-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:15:9-33
-23    <uses-feature
-23-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:16:5-18:20
-24        android:name="android.hardware.wifi"
-24-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:16:19-55
-25        android:required="false" >
-25-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:17:9-33
-26    </uses-feature>
-27    <uses-feature
-27-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:19:5-20:35
-28        android:name="android.hardware.camera"
-28-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:19:19-57
-29        android:required="false" />
-29-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:20:9-33
-30    <uses-feature
-30-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:21:5-22:35
-31        android:name="android.hardware.microphone"
-31-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:21:19-61
-32        android:required="false" />
-32-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:22:9-33
-33    <uses-feature
-33-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:23:5-24:35
-34        android:name="android.hardware.sensor"
-34-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:23:19-57
-35        android:required="false" />
-35-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:24:9-33
-36
-37    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- This permission is required to start foreground services in Android P. -->
-37-->[com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\2d147606356db1495b0641ca98815b2c\jetified-android-searchbox-0.0.1\AndroidManifest.xml:12:5-71
-37-->[com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\2d147606356db1495b0641ca98815b2c\jetified-android-searchbox-0.0.1\AndroidManifest.xml:12:22-68
-38    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-38-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:7:5-77
-38-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:7:22-74
-39    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-39-->[com.google.android.gms:play-services-measurement-api:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b7df0d06013e6362e46df1a980af3a2f\jetified-play-services-measurement-api-17.4.1\AndroidManifest.xml:24:5-68
-39-->[com.google.android.gms:play-services-measurement-api:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b7df0d06013e6362e46df1a980af3a2f\jetified-play-services-measurement-api-17.4.1\AndroidManifest.xml:24:22-65
-40    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-40-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:26:5-82
-40-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:26:22-79
-41    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-41-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:26:5-110
-41-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:26:22-107
-42
-43    <uses-feature android:glEsVersion="0x00020000" />
-43-->[:extension-vp9] E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\release\AndroidManifest.xml:24:5-54
-43-->[:extension-vp9] E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\release\AndroidManifest.xml:24:19-51
-44
-45    <application
-45-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:26:5-134:27
-46        android:name="com.uni.julio.supertv.LiveTvApplication"
-46-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:27:9-42
-47        android:allowBackup="true"
-47-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:28:9-35
-48        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-48-->[androidx.core:core:1.2.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\aa79bf92cf99ba299403e8345ff22e66\core-1.2.0\AndroidManifest.xml:24:18-86
-49        android:banner="@drawable/banner"
-49-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:29:9-42
-50        android:icon="@mipmap/ic_launcher"
-50-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:33:9-43
-51        android:label="@string/app_name"
-51-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:30:9-41
-52        android:logo="@drawable/banner"
-52-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:34:9-40
-53        android:networkSecurityConfig="@xml/network_security_config"
-53-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:31:9-69
-54        android:roundIcon="@mipmap/ic_launcher"
-54-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:32:9-48
-55        android:supportsRtl="true"
-55-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:35:9-35
-56        android:theme="@style/AppTheme" >
-56-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:36:9-40
-57        <provider
-57-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:37:9-47:20
-58            android:name="androidx.core.content.FileProvider"
-58-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:38:13-62
-59            android:authorities="com.uni.julio.supertv.fileprovider"
-59-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:39:13-69
-60            android:exported="false"
-60-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:40:13-37
-61            android:grantUriPermissions="true" >
-61-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:41:13-47
-62            <meta-data
-62-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:43:13-46:52
-63                android:name="android.support.FILE_PROVIDER_PATHS"
-63-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:44:17-67
-64                android:resource="@xml/filepaths" />
-64-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:45:17-50
-65        </provider>
-66
-67        <activity
-67-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:50:9-53:52
-68            android:name="com.uni.julio.supertv.view.MoviesTvActivity"
-68-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:51:13-50
-69            android:screenOrientation="landscape"
-69-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:52:13-50
-70            android:theme="@style/Theme.Leanback" />
-70-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:53:13-50
-71        <activity
-71-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:55:9-58:52
-72            android:name="com.uni.julio.supertv.view.SearchTvActivity"
-72-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:56:13-50
-73            android:screenOrientation="landscape"
-73-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:57:13-50
-74            android:theme="@style/Theme.Leanback" />
-74-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:58:13-50
-75        <activity
-75-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:60:9-62:65
-76            android:name="com.uni.julio.supertv.view.AccountActivity"
-76-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:61:13-49
-77            android:theme="@style/SuperTvDefault.NoActionBar" />
-77-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:62:13-62
-78        <activity
-78-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:64:9-70:65
-79            android:name="com.uni.julio.supertv.view.VideoPlayActivity"
-79-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:65:13-51
-80            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
-80-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:66:13-91
-81            android:resizeableActivity="true"
-81-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:68:13-46
-82            android:screenOrientation="landscape"
-82-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:67:13-50
-83            android:supportsPictureInPicture="true"
-83-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:69:13-52
-84            android:theme="@style/SuperTvDefault.NoActionBar" />
-84-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:70:13-62
-85        <activity
-85-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:72:9-74:65
-86            android:name="com.uni.julio.supertv.view.SearchActivity"
-86-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:73:13-48
-87            android:theme="@style/SuperTvDefault.NoActionBar" />
-87-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:74:13-62
-88        <activity
-88-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:75:9-77:65
-89            android:name="com.uni.julio.supertv.view.LoadingActivity"
-89-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:76:13-49
-90            android:theme="@style/SuperTvDefault.NoActionBar" />
-90-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:77:13-62
-91        <activity
-91-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:78:9-80:65
-92            android:name="com.uni.julio.supertv.view.LoginActivity"
-92-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:79:13-47
-93            android:theme="@style/SuperTvDefault.NoActionBar" />
-93-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:80:13-62
-94        <activity
-94-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:81:9-83:65
-95            android:name="com.uni.julio.supertv.view.MultiSeasonDetailActivity"
-95-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:82:13-59
-96            android:theme="@style/SuperTvDefault.NoActionBar" />
-96-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:83:13-62
-97        <activity
-97-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:84:9-87:65
-98            android:name="com.uni.julio.supertv.view.exoplayer.VideoPlayFragment"
-98-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:85:13-61
-99            android:screenOrientation="landscape"
-99-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:86:13-50
-100            android:theme="@style/SuperTvDefault.NoActionBar" />
-100-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:87:13-62
-101        <activity
-101-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:89:9-93:65
-102            android:name="com.uni.julio.supertv.view.LiveTvNewActivity"
-102-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:90:13-51
-103            android:configChanges="keyboard|keyboardHidden|navigation"
-103-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:91:13-71
-104            android:screenOrientation="landscape"
-104-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:92:13-50
-105            android:theme="@style/SuperTvDefault.NoActionBar" />
-105-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:93:13-62
-106        <activity
-106-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:94:9-96:65
-107            android:name="com.uni.julio.supertv.view.MoviesActivity"
-107-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:95:13-48
-108            android:theme="@style/SuperTvDefault.NoActionBar" />
-108-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:96:13-62
-109        <activity
-109-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:97:9-100:65
-110            android:name="com.uni.julio.supertv.view.OneSeasonDetailActivity"
-110-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:98:13-57
-111            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
-111-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:99:13-91
-112            android:theme="@style/SuperTvDefault.NoActionBar" />
-112-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:100:13-62
-113        <activity
-113-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:101:9-103:65
-114            android:name="com.uni.julio.supertv.view.MoreVideoActivity"
-114-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:102:13-51
-115            android:theme="@style/SuperTvDefault.NoActionBar" />
-115-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:103:13-62
-116        <activity
-116-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:104:9-106:65
-117            android:name="com.uni.julio.supertv.view.SpeedTestActivity"
-117-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:105:13-51
-118            android:theme="@style/SuperTvDefault.NoActionBar" />
-118-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:106:13-62
-119        <activity
-119-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:108:9-110:65
-120            android:name="com.uni.julio.supertv.view.SelectServerActivity"
-120-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:109:13-54
-121            android:theme="@style/SuperTvDefault.NoActionBar" />
-121-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:110:13-62
-122        <activity
-122-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:111:9-117:20
-123            android:name="com.uni.julio.supertv.view.MainActivity"
-123-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:112:13-46
-124            android:theme="@style/SuperTvDefault.NoActionBar" >
-124-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:113:13-62
-125            <meta-data
-125-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:114:13-116:54
-126                android:name="android.app.searchable"
-126-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:115:17-54
-127                android:resource="@xml/searchable" />
-127-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:116:17-51
-128        </activity>
-129        <activity
-129-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:119:9-133:20
-130            android:name="com.uni.julio.supertv.view.SplashActivity"
-130-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:120:13-48
-131            android:configChanges="keyboard|keyboardHidden|orientation"
-131-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:121:13-72
-132            android:theme="@style/SuperTvDefault.NoActionBar" >
-132-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:122:13-62
-133            <intent-filter>
-133-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:123:13-128:29
-134                <action android:name="android.intent.action.MAIN" />
-134-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:124:17-69
-134-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:124:25-66
-135
-136                <category android:name="android.intent.category.LAUNCHER" />
-136-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:125:17-77
-136-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:125:27-74
-137
-138                <action android:name="android.settings.SETTINGS" />
-138-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:126:17-68
-138-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:126:25-65
-139
-140                <category android:name="android.intent.category.DEFAULT" />
-140-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:127:17-75
-140-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:127:27-73
-141            </intent-filter>
-142            <intent-filter>
-142-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:129:13-132:29
-143                <action android:name="android.intent.action.MAIN" />
-143-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:124:17-69
-143-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:124:25-66
-144
-145                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-145-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:131:17-86
-145-->E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:131:27-83
-146            </intent-filter>
-147        </activity>
-148
-149        <receiver
-149-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:10:9-12:40
-150            android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"
-150-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:11:13-91
-151            android:exported="false" />
-151-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:12:13-37
-152
-153        <service
-153-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:14:9-16:40
-154            android:name="com.google.android.gms.cast.framework.media.MediaNotificationService"
-154-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:15:13-96
-155            android:exported="false" />
-155-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:16:13-37
-156        <service
-156-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:17:9-19:40
-157            android:name="com.google.android.gms.cast.framework.ReconnectionService"
-157-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:18:13-85
-158            android:exported="false" />
-158-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:19:13-37
-159        <!--
-160             FirebaseMessagingService performs security checks at runtime,
-161             but set to not exported to explicitly avoid allowing another app to call it.
-162        -->
-163        <service
-163-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:28:9-34:19
-164            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-164-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:29:13-82
-165            android:exported="false" >
-165-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:30:13-37
-166            <intent-filter android:priority="-500" >
-166-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:31:13-33:29
-166-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:31:28-51
-167                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-167-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:32:17-78
-167-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:32:25-75
-168            </intent-filter>
-169        </service>
-170        <service
-170-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:35:9-41:19
-171            android:name="com.google.firebase.components.ComponentDiscoveryService"
-171-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:36:13-84
-172            android:directBootAware="true"
-172-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a6e6caa507d1e740009ffe397e4d3ddf\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
-173            android:exported="false" >
-173-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:37:13-37
-174            <meta-data
-174-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:38:13-40:85
-175                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-175-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:39:17-119
-176                android:value="com.google.firebase.components.ComponentRegistrar" />
-176-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:40:17-82
-177            <meta-data
-177-->[com.google.firebase:firebase-crashlytics:17.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e7572fc881b5d2f840b8fc090fce848c\jetified-firebase-crashlytics-17.0.0\AndroidManifest.xml:16:13-18:85
-178                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
-178-->[com.google.firebase:firebase-crashlytics:17.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e7572fc881b5d2f840b8fc090fce848c\jetified-firebase-crashlytics-17.0.0\AndroidManifest.xml:17:17-115
-179                android:value="com.google.firebase.components.ComponentRegistrar" />
-179-->[com.google.firebase:firebase-crashlytics:17.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e7572fc881b5d2f840b8fc090fce848c\jetified-firebase-crashlytics-17.0.0\AndroidManifest.xml:18:17-82
-180            <meta-data
-180-->[com.google.android.gms:play-services-measurement-api:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b7df0d06013e6362e46df1a980af3a2f\jetified-play-services-measurement-api-17.4.1\AndroidManifest.xml:30:13-32:85
-181                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-181-->[com.google.android.gms:play-services-measurement-api:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b7df0d06013e6362e46df1a980af3a2f\jetified-play-services-measurement-api-17.4.1\AndroidManifest.xml:31:17-139
-182                android:value="com.google.firebase.components.ComponentRegistrar" />
-182-->[com.google.android.gms:play-services-measurement-api:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b7df0d06013e6362e46df1a980af3a2f\jetified-play-services-measurement-api-17.4.1\AndroidManifest.xml:32:17-82
-183            <meta-data
-183-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:32:13-34:85
-184                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-184-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:33:17-96
-185                android:value="com.google.firebase.components.ComponentRegistrar" />
-185-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:34:17-82
-186            <meta-data
-186-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\46612f2d0bd4033ff4435224ed0c7203\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
-187                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-187-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\46612f2d0bd4033ff4435224ed0c7203\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
-188                android:value="com.google.firebase.components.ComponentRegistrar" />
-188-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\46612f2d0bd4033ff4435224ed0c7203\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
-189            <meta-data
-189-->[com.google.firebase:firebase-installations:16.3.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\f4b25fc96c94c828440d387fabb1e7dd\jetified-firebase-installations-16.3.0\AndroidManifest.xml:17:13-19:85
-190                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-190-->[com.google.firebase:firebase-installations:16.3.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\f4b25fc96c94c828440d387fabb1e7dd\jetified-firebase-installations-16.3.0\AndroidManifest.xml:18:17-127
-191                android:value="com.google.firebase.components.ComponentRegistrar" />
-191-->[com.google.firebase:firebase-installations:16.3.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\f4b25fc96c94c828440d387fabb1e7dd\jetified-firebase-installations-16.3.0\AndroidManifest.xml:19:17-82
-192        </service>
-193
-194        <receiver
-194-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:37:9-44:20
-195            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-195-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:38:13-78
-196            android:exported="true"
-196-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:39:13-36
-197            android:permission="com.google.android.c2dm.permission.SEND" >
-197-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:40:13-73
-198            <intent-filter>
-198-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:41:13-43:29
-199                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-199-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:42:17-81
-199-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:42:25-78
-200            </intent-filter>
-201        </receiver>
-202
-203        <activity
-203-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\211c86005e2c5efb3829f475e6964f4c\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-204            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-204-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\211c86005e2c5efb3829f475e6964f4c\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-205            android:exported="false"
-205-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\211c86005e2c5efb3829f475e6964f4c\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-206            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-206-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\211c86005e2c5efb3829f475e6964f4c\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-207
-208        <receiver
-208-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:29:9-33:20
-209            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-209-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:30:13-85
-210            android:enabled="true"
-210-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:31:13-35
-211            android:exported="false" >
-211-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:32:13-37
-212        </receiver>
-213
-214        <service
-214-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:35:9-38:40
-215            android:name="com.google.android.gms.measurement.AppMeasurementService"
-215-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:36:13-84
-216            android:enabled="true"
-216-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:37:13-35
-217            android:exported="false" />
-217-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:38:13-37
-218        <service
-218-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:39:9-43:72
-219            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-219-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:40:13-87
-220            android:enabled="true"
-220-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:41:13-35
-221            android:exported="false"
-221-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:42:13-37
-222            android:permission="android.permission.BIND_JOB_SERVICE" />
-222-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:43:13-69
-223
-224        <provider
-224-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a6e6caa507d1e740009ffe397e4d3ddf\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
-225            android:name="com.google.firebase.provider.FirebaseInitProvider"
-225-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a6e6caa507d1e740009ffe397e4d3ddf\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-226            android:authorities="com.uni.julio.supertv.firebaseinitprovider"
-226-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a6e6caa507d1e740009ffe397e4d3ddf\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
-227            android:exported="false"
-227-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a6e6caa507d1e740009ffe397e4d3ddf\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
-228            android:initOrder="100" />
-228-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a6e6caa507d1e740009ffe397e4d3ddf\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
-229
-230        <meta-data
-230-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\adc16d81f03717bbf2fcb3e12ea026bc\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
-231            android:name="com.google.android.gms.version"
-231-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\adc16d81f03717bbf2fcb3e12ea026bc\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
-232            android:value="@integer/google_play_services_version" />
-232-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\adc16d81f03717bbf2fcb3e12ea026bc\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
-233
-234        <provider
-234-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\daa649e97fc20ef298bb3e96a2057c36\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-235            android:name="com.squareup.picasso.PicassoProvider"
-235-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\daa649e97fc20ef298bb3e96a2057c36\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-236            android:authorities="com.uni.julio.supertv.com.squareup.picasso"
-236-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\daa649e97fc20ef298bb3e96a2057c36\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-237            android:exported="false" />
-237-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\daa649e97fc20ef298bb3e96a2057c36\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
-238
-239        <service
-239-->[com.google.android.datatransport:transport-backend-cct:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d131a3c9522a4097c1e12425f5c72429\jetified-transport-backend-cct-2.2.1\AndroidManifest.xml:29:9-35:19
-240            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-240-->[com.google.android.datatransport:transport-backend-cct:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d131a3c9522a4097c1e12425f5c72429\jetified-transport-backend-cct-2.2.1\AndroidManifest.xml:30:13-103
-241            android:exported="false" >
-241-->[com.google.android.datatransport:transport-backend-cct:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d131a3c9522a4097c1e12425f5c72429\jetified-transport-backend-cct-2.2.1\AndroidManifest.xml:31:13-37
-242            <meta-data
-242-->[com.google.android.datatransport:transport-backend-cct:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d131a3c9522a4097c1e12425f5c72429\jetified-transport-backend-cct-2.2.1\AndroidManifest.xml:32:13-34:39
-243                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-243-->[com.google.android.datatransport:transport-backend-cct:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d131a3c9522a4097c1e12425f5c72429\jetified-transport-backend-cct-2.2.1\AndroidManifest.xml:33:17-94
-244                android:value="cct" />
-244-->[com.google.android.datatransport:transport-backend-cct:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d131a3c9522a4097c1e12425f5c72429\jetified-transport-backend-cct-2.2.1\AndroidManifest.xml:34:17-36
-245        </service>
-246        <service
-246-->[com.google.android.datatransport:transport-runtime:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\ce41a9c409ca7360e38e6b632df4583f\jetified-transport-runtime-2.2.1\AndroidManifest.xml:26:9-30:19
-247            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-247-->[com.google.android.datatransport:transport-runtime:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\ce41a9c409ca7360e38e6b632df4583f\jetified-transport-runtime-2.2.1\AndroidManifest.xml:27:13-117
-248            android:exported="false"
-248-->[com.google.android.datatransport:transport-runtime:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\ce41a9c409ca7360e38e6b632df4583f\jetified-transport-runtime-2.2.1\AndroidManifest.xml:28:13-37
-249            android:permission="android.permission.BIND_JOB_SERVICE" >
-249-->[com.google.android.datatransport:transport-runtime:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\ce41a9c409ca7360e38e6b632df4583f\jetified-transport-runtime-2.2.1\AndroidManifest.xml:29:13-69
-250        </service>
-251
-252        <receiver
-252-->[com.google.android.datatransport:transport-runtime:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\ce41a9c409ca7360e38e6b632df4583f\jetified-transport-runtime-2.2.1\AndroidManifest.xml:32:9-34:40
-253            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-253-->[com.google.android.datatransport:transport-runtime:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\ce41a9c409ca7360e38e6b632df4583f\jetified-transport-runtime-2.2.1\AndroidManifest.xml:33:13-132
-254            android:exported="false" />
-254-->[com.google.android.datatransport:transport-runtime:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\ce41a9c409ca7360e38e6b632df4583f\jetified-transport-runtime-2.2.1\AndroidManifest.xml:34:13-37
-255    </application>
-256
-257</manifest>
+11-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:6:5-67
+11-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+12-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:7:5-70
+12-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:7:22-68
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:8:5-79
+13-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:8:22-76
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:9:5-81
+14-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:9:22-78
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:10:5-80
+15-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:10:22-77
+16    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+16-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:11:5-82
+16-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:11:22-80
+17
+18    <uses-feature
+18-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:13:5-14:36
+19        android:name="android.hardware.touchscreen"
+19-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:13:19-62
+20        android:required="false" />
+20-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:14:9-33
+21    <uses-feature
+21-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:15:5-16:36
+22        android:name="android.software.leanback"
+22-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:15:19-59
+23        android:required="false" />
+23-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:16:9-33
+24    <uses-feature
+24-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:17:5-19:20
+25        android:name="android.hardware.wifi"
+25-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:17:19-55
+26        android:required="false" >
+26-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:18:9-33
+27    </uses-feature>
+28    <uses-feature
+28-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:20:5-21:35
+29        android:name="android.hardware.camera"
+29-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:20:19-57
+30        android:required="false" />
+30-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:21:9-33
+31    <uses-feature
+31-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:22:5-23:35
+32        android:name="android.hardware.microphone"
+32-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:22:19-61
+33        android:required="false" />
+33-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:23:9-33
+34    <uses-feature
+34-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:24:5-25:35
+35        android:name="android.hardware.sensor"
+35-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:24:19-57
+36        android:required="false" />
+36-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:25:9-33
+37
+38    <!-- This permission is required to start foreground services in Android P. -->
+39    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+39-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:7:5-77
+39-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:7:22-74
+40    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+40-->[com.google.android.gms:play-services-measurement-api:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b7df0d06013e6362e46df1a980af3a2f\jetified-play-services-measurement-api-17.4.1\AndroidManifest.xml:24:5-68
+40-->[com.google.android.gms:play-services-measurement-api:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b7df0d06013e6362e46df1a980af3a2f\jetified-play-services-measurement-api-17.4.1\AndroidManifest.xml:24:22-65
+41    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+41-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:26:5-82
+41-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:26:22-79
+42    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+42-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:26:5-110
+42-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:26:22-107
+43
+44    <uses-feature android:glEsVersion="0x00020000" />
+44-->[:extension-vp9] D:\workspace\2020\8_Aug\alsdream\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\release\AndroidManifest.xml:24:5-54
+44-->[:extension-vp9] D:\workspace\2020\8_Aug\alsdream\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\release\AndroidManifest.xml:24:19-51
+45
+46    <application
+46-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:27:5-135:27
+47        android:name="com.uni.julio.supertv.LiveTvApplication"
+47-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:28:9-42
+48        android:allowBackup="true"
+48-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:29:9-35
+49        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+49-->[androidx.core:core:1.2.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\aa79bf92cf99ba299403e8345ff22e66\core-1.2.0\AndroidManifest.xml:24:18-86
+50        android:banner="@drawable/banner"
+50-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:30:9-42
+51        android:icon="@mipmap/ic_launcher"
+51-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:34:9-43
+52        android:label="@string/app_name"
+52-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:31:9-41
+53        android:logo="@drawable/banner"
+53-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:35:9-40
+54        android:networkSecurityConfig="@xml/network_security_config"
+54-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:32:9-69
+55        android:roundIcon="@mipmap/ic_launcher"
+55-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:33:9-48
+56        android:supportsRtl="true"
+56-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:36:9-35
+57        android:theme="@style/AppTheme" >
+57-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:37:9-40
+58        <provider
+58-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:38:9-48:20
+59            android:name="androidx.core.content.FileProvider"
+59-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:39:13-62
+60            android:authorities="com.uni.julio.supertv.fileprovider"
+60-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:40:13-69
+61            android:exported="false"
+61-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:41:13-37
+62            android:grantUriPermissions="true" >
+62-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:42:13-47
+63            <meta-data
+63-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:44:13-47:52
+64                android:name="android.support.FILE_PROVIDER_PATHS"
+64-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:45:17-67
+65                android:resource="@xml/filepaths" />
+65-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:46:17-50
+66        </provider>
+67
+68        <activity
+68-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:51:9-54:52
+69            android:name="com.uni.julio.supertv.view.MoviesTvActivity"
+69-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:52:13-50
+70            android:screenOrientation="landscape"
+70-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:53:13-50
+71            android:theme="@style/Theme.Leanback" />
+71-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:54:13-50
+72        <activity
+72-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:56:9-59:52
+73            android:name="com.uni.julio.supertv.view.SearchTvActivity"
+73-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:57:13-50
+74            android:screenOrientation="landscape"
+74-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:58:13-50
+75            android:theme="@style/Theme.Leanback" />
+75-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:59:13-50
+76        <activity
+76-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:61:9-63:65
+77            android:name="com.uni.julio.supertv.view.AccountActivity"
+77-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:62:13-49
+78            android:theme="@style/SuperTvDefault.NoActionBar" />
+78-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:63:13-62
+79        <activity
+79-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:65:9-71:65
+80            android:name="com.uni.julio.supertv.view.VideoPlayActivity"
+80-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:66:13-51
+81            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+81-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:67:13-91
+82            android:resizeableActivity="true"
+82-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:69:13-46
+83            android:screenOrientation="landscape"
+83-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:68:13-50
+84            android:supportsPictureInPicture="true"
+84-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:70:13-52
+85            android:theme="@style/SuperTvDefault.NoActionBar" />
+85-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:71:13-62
+86        <activity
+86-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:73:9-75:65
+87            android:name="com.uni.julio.supertv.view.SearchActivity"
+87-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:74:13-48
+88            android:theme="@style/SuperTvDefault.NoActionBar" />
+88-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:75:13-62
+89        <activity
+89-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:76:9-78:65
+90            android:name="com.uni.julio.supertv.view.LoadingActivity"
+90-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:77:13-49
+91            android:theme="@style/SuperTvDefault.NoActionBar" />
+91-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:78:13-62
+92        <activity
+92-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:79:9-81:65
+93            android:name="com.uni.julio.supertv.view.LoginActivity"
+93-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:80:13-47
+94            android:theme="@style/SuperTvDefault.NoActionBar" />
+94-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:81:13-62
+95        <activity
+95-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:82:9-84:65
+96            android:name="com.uni.julio.supertv.view.MultiSeasonDetailActivity"
+96-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:83:13-59
+97            android:theme="@style/SuperTvDefault.NoActionBar" />
+97-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:84:13-62
+98        <activity
+98-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:85:9-88:65
+99            android:name="com.uni.julio.supertv.view.exoplayer.VideoPlayFragment"
+99-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:86:13-61
+100            android:screenOrientation="landscape"
+100-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:87:13-50
+101            android:theme="@style/SuperTvDefault.NoActionBar" />
+101-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:88:13-62
+102        <activity
+102-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:90:9-94:65
+103            android:name="com.uni.julio.supertv.view.LiveTvNewActivity"
+103-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:91:13-51
+104            android:configChanges="keyboard|keyboardHidden|navigation"
+104-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:92:13-71
+105            android:screenOrientation="landscape"
+105-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:93:13-50
+106            android:theme="@style/SuperTvDefault.NoActionBar" />
+106-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:94:13-62
+107        <activity
+107-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:95:9-97:65
+108            android:name="com.uni.julio.supertv.view.MoviesActivity"
+108-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:96:13-48
+109            android:theme="@style/SuperTvDefault.NoActionBar" />
+109-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:97:13-62
+110        <activity
+110-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:98:9-101:65
+111            android:name="com.uni.julio.supertv.view.OneSeasonDetailActivity"
+111-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:99:13-57
+112            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+112-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:100:13-91
+113            android:theme="@style/SuperTvDefault.NoActionBar" />
+113-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:101:13-62
+114        <activity
+114-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:102:9-104:65
+115            android:name="com.uni.julio.supertv.view.MoreVideoActivity"
+115-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:103:13-51
+116            android:theme="@style/SuperTvDefault.NoActionBar" />
+116-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:104:13-62
+117        <activity
+117-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:105:9-107:65
+118            android:name="com.uni.julio.supertv.view.SpeedTestActivity"
+118-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:106:13-51
+119            android:theme="@style/SuperTvDefault.NoActionBar" />
+119-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:107:13-62
+120        <activity
+120-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:109:9-111:65
+121            android:name="com.uni.julio.supertv.view.SelectServerActivity"
+121-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:110:13-54
+122            android:theme="@style/SuperTvDefault.NoActionBar" />
+122-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:111:13-62
+123        <activity
+123-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:112:9-118:20
+124            android:name="com.uni.julio.supertv.view.MainActivity"
+124-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:113:13-46
+125            android:theme="@style/SuperTvDefault.NoActionBar" >
+125-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:114:13-62
+126            <meta-data
+126-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:115:13-117:54
+127                android:name="android.app.searchable"
+127-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:116:17-54
+128                android:resource="@xml/searchable" />
+128-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:117:17-51
+129        </activity>
+130        <activity
+130-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:120:9-134:20
+131            android:name="com.uni.julio.supertv.view.SplashActivity"
+131-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:121:13-48
+132            android:configChanges="keyboard|keyboardHidden|orientation"
+132-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:122:13-72
+133            android:theme="@style/SuperTvDefault.NoActionBar" >
+133-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:123:13-62
+134            <intent-filter>
+134-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:124:13-129:29
+135                <action android:name="android.intent.action.MAIN" />
+135-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:125:17-69
+135-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:125:25-66
+136
+137                <category android:name="android.intent.category.LAUNCHER" />
+137-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:126:17-77
+137-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:126:27-74
+138
+139                <action android:name="android.settings.SETTINGS" />
+139-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:127:17-68
+139-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:127:25-65
+140
+141                <category android:name="android.intent.category.DEFAULT" />
+141-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:128:17-75
+141-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:128:27-73
+142            </intent-filter>
+143            <intent-filter>
+143-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:130:13-133:29
+144                <action android:name="android.intent.action.MAIN" />
+144-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:125:17-69
+144-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:125:25-66
+145
+146                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+146-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:132:17-86
+146-->D:\workspace\2020\8_Aug\alsdream\app\src\main\AndroidManifest.xml:132:27-83
+147            </intent-filter>
+148        </activity>
+149
+150        <receiver
+150-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:10:9-12:40
+151            android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"
+151-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:11:13-91
+152            android:exported="false" />
+152-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:12:13-37
+153
+154        <service
+154-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:14:9-16:40
+155            android:name="com.google.android.gms.cast.framework.media.MediaNotificationService"
+155-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:15:13-96
+156            android:exported="false" />
+156-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:16:13-37
+157        <service
+157-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:17:9-19:40
+158            android:name="com.google.android.gms.cast.framework.ReconnectionService"
+158-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:18:13-85
+159            android:exported="false" />
+159-->[com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:19:13-37
+160        <!--
+161             FirebaseMessagingService performs security checks at runtime,
+162             but set to not exported to explicitly avoid allowing another app to call it.
+163        -->
+164        <service
+164-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:28:9-34:19
+165            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+165-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:29:13-82
+166            android:exported="false" >
+166-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:30:13-37
+167            <intent-filter android:priority="-500" >
+167-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:31:13-33:29
+167-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:31:28-51
+168                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+168-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:32:17-78
+168-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:32:25-75
+169            </intent-filter>
+170        </service>
+171        <service
+171-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:35:9-41:19
+172            android:name="com.google.firebase.components.ComponentDiscoveryService"
+172-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:36:13-84
+173            android:directBootAware="true"
+173-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a6e6caa507d1e740009ffe397e4d3ddf\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+174            android:exported="false" >
+174-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:37:13-37
+175            <meta-data
+175-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:38:13-40:85
+176                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+176-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:39:17-119
+177                android:value="com.google.firebase.components.ComponentRegistrar" />
+177-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fb931f38ac0e11d5fc1caef03149a76a\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:40:17-82
+178            <meta-data
+178-->[com.google.firebase:firebase-crashlytics:17.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e7572fc881b5d2f840b8fc090fce848c\jetified-firebase-crashlytics-17.0.0\AndroidManifest.xml:16:13-18:85
+179                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+179-->[com.google.firebase:firebase-crashlytics:17.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e7572fc881b5d2f840b8fc090fce848c\jetified-firebase-crashlytics-17.0.0\AndroidManifest.xml:17:17-115
+180                android:value="com.google.firebase.components.ComponentRegistrar" />
+180-->[com.google.firebase:firebase-crashlytics:17.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e7572fc881b5d2f840b8fc090fce848c\jetified-firebase-crashlytics-17.0.0\AndroidManifest.xml:18:17-82
+181            <meta-data
+181-->[com.google.android.gms:play-services-measurement-api:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b7df0d06013e6362e46df1a980af3a2f\jetified-play-services-measurement-api-17.4.1\AndroidManifest.xml:30:13-32:85
+182                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+182-->[com.google.android.gms:play-services-measurement-api:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b7df0d06013e6362e46df1a980af3a2f\jetified-play-services-measurement-api-17.4.1\AndroidManifest.xml:31:17-139
+183                android:value="com.google.firebase.components.ComponentRegistrar" />
+183-->[com.google.android.gms:play-services-measurement-api:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b7df0d06013e6362e46df1a980af3a2f\jetified-play-services-measurement-api-17.4.1\AndroidManifest.xml:32:17-82
+184            <meta-data
+184-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:32:13-34:85
+185                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+185-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:33:17-96
+186                android:value="com.google.firebase.components.ComponentRegistrar" />
+186-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:34:17-82
+187            <meta-data
+187-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\46612f2d0bd4033ff4435224ed0c7203\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+188                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+188-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\46612f2d0bd4033ff4435224ed0c7203\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+189                android:value="com.google.firebase.components.ComponentRegistrar" />
+189-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\46612f2d0bd4033ff4435224ed0c7203\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+190            <meta-data
+190-->[com.google.firebase:firebase-installations:16.3.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\f4b25fc96c94c828440d387fabb1e7dd\jetified-firebase-installations-16.3.0\AndroidManifest.xml:17:13-19:85
+191                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+191-->[com.google.firebase:firebase-installations:16.3.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\f4b25fc96c94c828440d387fabb1e7dd\jetified-firebase-installations-16.3.0\AndroidManifest.xml:18:17-127
+192                android:value="com.google.firebase.components.ComponentRegistrar" />
+192-->[com.google.firebase:firebase-installations:16.3.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\f4b25fc96c94c828440d387fabb1e7dd\jetified-firebase-installations-16.3.0\AndroidManifest.xml:19:17-82
+193        </service>
+194
+195        <receiver
+195-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:37:9-44:20
+196            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+196-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:38:13-78
+197            android:exported="true"
+197-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:39:13-36
+198            android:permission="com.google.android.c2dm.permission.SEND" >
+198-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:40:13-73
+199            <intent-filter>
+199-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:41:13-43:29
+200                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+200-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:42:17-81
+200-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:42:25-78
+201            </intent-filter>
+202        </receiver>
+203
+204        <activity
+204-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\211c86005e2c5efb3829f475e6964f4c\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+205            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+205-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\211c86005e2c5efb3829f475e6964f4c\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+206            android:exported="false"
+206-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\211c86005e2c5efb3829f475e6964f4c\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+207            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+207-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\211c86005e2c5efb3829f475e6964f4c\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+208
+209        <receiver
+209-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:29:9-33:20
+210            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+210-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:30:13-85
+211            android:enabled="true"
+211-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:31:13-35
+212            android:exported="false" >
+212-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:32:13-37
+213        </receiver>
+214
+215        <service
+215-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:35:9-38:40
+216            android:name="com.google.android.gms.measurement.AppMeasurementService"
+216-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:36:13-84
+217            android:enabled="true"
+217-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:37:13-35
+218            android:exported="false" />
+218-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:38:13-37
+219        <service
+219-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:39:9-43:72
+220            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+220-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:40:13-87
+221            android:enabled="true"
+221-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:41:13-35
+222            android:exported="false"
+222-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:42:13-37
+223            android:permission="android.permission.BIND_JOB_SERVICE" />
+223-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\89525e6704c4ed4d71338896ec26e630\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:43:13-69
+224
+225        <provider
+225-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a6e6caa507d1e740009ffe397e4d3ddf\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+226            android:name="com.google.firebase.provider.FirebaseInitProvider"
+226-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a6e6caa507d1e740009ffe397e4d3ddf\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+227            android:authorities="com.uni.julio.supertv.firebaseinitprovider"
+227-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a6e6caa507d1e740009ffe397e4d3ddf\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+228            android:exported="false"
+228-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a6e6caa507d1e740009ffe397e4d3ddf\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+229            android:initOrder="100" />
+229-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a6e6caa507d1e740009ffe397e4d3ddf\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+230
+231        <meta-data
+231-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\adc16d81f03717bbf2fcb3e12ea026bc\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
+232            android:name="com.google.android.gms.version"
+232-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\adc16d81f03717bbf2fcb3e12ea026bc\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
+233            android:value="@integer/google_play_services_version" />
+233-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\adc16d81f03717bbf2fcb3e12ea026bc\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
+234
+235        <provider
+235-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\daa649e97fc20ef298bb3e96a2057c36\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+236            android:name="com.squareup.picasso.PicassoProvider"
+236-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\daa649e97fc20ef298bb3e96a2057c36\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+237            android:authorities="com.uni.julio.supertv.com.squareup.picasso"
+237-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\daa649e97fc20ef298bb3e96a2057c36\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+238            android:exported="false" />
+238-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\daa649e97fc20ef298bb3e96a2057c36\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+239
+240        <service
+240-->[com.google.android.datatransport:transport-backend-cct:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d131a3c9522a4097c1e12425f5c72429\jetified-transport-backend-cct-2.2.1\AndroidManifest.xml:29:9-35:19
+241            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+241-->[com.google.android.datatransport:transport-backend-cct:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d131a3c9522a4097c1e12425f5c72429\jetified-transport-backend-cct-2.2.1\AndroidManifest.xml:30:13-103
+242            android:exported="false" >
+242-->[com.google.android.datatransport:transport-backend-cct:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d131a3c9522a4097c1e12425f5c72429\jetified-transport-backend-cct-2.2.1\AndroidManifest.xml:31:13-37
+243            <meta-data
+243-->[com.google.android.datatransport:transport-backend-cct:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d131a3c9522a4097c1e12425f5c72429\jetified-transport-backend-cct-2.2.1\AndroidManifest.xml:32:13-34:39
+244                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+244-->[com.google.android.datatransport:transport-backend-cct:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d131a3c9522a4097c1e12425f5c72429\jetified-transport-backend-cct-2.2.1\AndroidManifest.xml:33:17-94
+245                android:value="cct" />
+245-->[com.google.android.datatransport:transport-backend-cct:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d131a3c9522a4097c1e12425f5c72429\jetified-transport-backend-cct-2.2.1\AndroidManifest.xml:34:17-36
+246        </service>
+247        <service
+247-->[com.google.android.datatransport:transport-runtime:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\ce41a9c409ca7360e38e6b632df4583f\jetified-transport-runtime-2.2.1\AndroidManifest.xml:26:9-30:19
+248            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+248-->[com.google.android.datatransport:transport-runtime:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\ce41a9c409ca7360e38e6b632df4583f\jetified-transport-runtime-2.2.1\AndroidManifest.xml:27:13-117
+249            android:exported="false"
+249-->[com.google.android.datatransport:transport-runtime:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\ce41a9c409ca7360e38e6b632df4583f\jetified-transport-runtime-2.2.1\AndroidManifest.xml:28:13-37
+250            android:permission="android.permission.BIND_JOB_SERVICE" >
+250-->[com.google.android.datatransport:transport-runtime:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\ce41a9c409ca7360e38e6b632df4583f\jetified-transport-runtime-2.2.1\AndroidManifest.xml:29:13-69
+251        </service>
+252
+253        <receiver
+253-->[com.google.android.datatransport:transport-runtime:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\ce41a9c409ca7360e38e6b632df4583f\jetified-transport-runtime-2.2.1\AndroidManifest.xml:32:9-34:40
+254            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+254-->[com.google.android.datatransport:transport-runtime:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\ce41a9c409ca7360e38e6b632df4583f\jetified-transport-runtime-2.2.1\AndroidManifest.xml:33:13-132
+255            android:exported="false" />
+255-->[com.google.android.datatransport:transport-runtime:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\ce41a9c409ca7360e38e6b632df4583f\jetified-transport-runtime-2.2.1\AndroidManifest.xml:34:13-37
+256    </application>
+257
+258</manifest>

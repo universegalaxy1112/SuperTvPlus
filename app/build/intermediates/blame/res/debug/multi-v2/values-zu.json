@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperTV Plus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zu\\values-zu.xml",
+            "outputFile": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zu\\values-zu.xml",
             "map": [
+                {
+                    "source": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-zu\\values-zu.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,145,225,303,369,458,536",
+                        "endColumns": "89,79,77,65,88,77,64",
+                        "endOffsets": "140,220,298,364,453,531,596"
+                    },
+                    "to": {
+                        "startLines": "89,90,91,92,93,94,95",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "10110,10200,10280,10358,10424,10513,10591",
+                        "endColumns": "89,79,77,65,88,77,64",
+                        "endOffsets": "10195,10275,10353,10419,10508,10586,10651"
+                    }
+                },
                 {
                     "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\3e4942f6d165ba1aa1b3a4f1423cb0a5\\jetified-play-services-cast-18.1.0\\res\\values-zu\\values.xml",
                     "from": {
@@ -86,23 +103,6 @@
                         "startOffsets": "8551",
                         "endColumns": "190",
                         "endOffsets": "8737"
-                    }
-                },
-                {
-                    "source": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperTV Plus\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-zu\\values-zu.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,145,225,303,369,458,536",
-                        "endColumns": "89,79,77,65,88,77,64",
-                        "endOffsets": "140,220,298,364,453,531,596"
-                    },
-                    "to": {
-                        "startLines": "89,90,91,92,93,94,95",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "10110,10200,10280,10358,10424,10513,10591",
-                        "endColumns": "89,79,77,65,88,77,64",
-                        "endOffsets": "10195,10275,10353,10419,10508,10586,10651"
                     }
                 },
                 {

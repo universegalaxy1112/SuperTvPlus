@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperTV Plus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lv\\values-lv.xml",
+            "outputFile": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lv\\values-lv.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\6b2e65966ee4ea269b35d972aa743866\\jetified-play-services-cast-framework-18.1.0\\res\\values-lv\\values.xml",
@@ -89,23 +89,6 @@
                     }
                 },
                 {
-                    "source": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperTV Plus\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-lv\\values-lv.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,133,211,282,351,438,514",
-                        "endColumns": "77,77,70,68,86,75,67",
-                        "endOffsets": "128,206,277,346,433,509,577"
-                    },
-                    "to": {
-                        "startLines": "89,90,91,92,93,94,95",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "10347,10425,10503,10574,10643,10730,10806",
-                        "endColumns": "77,77,70,68,86,75,67",
-                        "endOffsets": "10420,10498,10569,10638,10725,10801,10869"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\ec5e6e2955220c701878d0af5c37581e\\preference-1.0.0\\res\\values-lv\\values-lv.xml",
                     "from": {
                         "startLines": "2,3,4,5",
@@ -137,6 +120,23 @@
                         "startOffsets": "8717",
                         "endColumns": "224",
                         "endOffsets": "8937"
+                    }
+                },
+                {
+                    "source": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-lv\\values-lv.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,133,211,282,351,438,514",
+                        "endColumns": "77,77,70,68,86,75,67",
+                        "endOffsets": "128,206,277,346,433,509,577"
+                    },
+                    "to": {
+                        "startLines": "89,90,91,92,93,94,95",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "10347,10425,10503,10574,10643,10730,10806",
+                        "endColumns": "77,77,70,68,86,75,67",
+                        "endOffsets": "10420,10498,10569,10638,10725,10801,10869"
                     }
                 },
                 {

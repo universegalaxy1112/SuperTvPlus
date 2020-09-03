@@ -65,11 +65,8 @@ public class SearchTvActivity extends FragmentActivity {
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            finish();
-            return true;
-        }
-
+        super.onKeyDown(keyCode, event);
+        fragment.onKeyDown(keyCode, event);
         return false;
     }
 }

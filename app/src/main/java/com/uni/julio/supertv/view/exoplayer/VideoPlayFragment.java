@@ -569,7 +569,6 @@ public class VideoPlayFragment extends Fragment implements View.OnClickListener,
                     player.seekTo(seasonPosition == -1 || episodePosition == -1 ? 0 : episodePosition, 0);
                 if (mainCategory != 4 && intent.getIntExtra("type", 1) != 2 && playerPosition != 0L) {//eventso
                     Dialogs.showTwoButtonsDialog((AppCompatActivity) this.getActivity(), R.string.accept, R.string.cancel, R.string.from_start, new DialogListener() {
-                        @TargetApi(Build.VERSION_CODES.M)
                         @Override
                         public void onAccept() {
                             if (playerPosition != C.TIME_UNSET && player != null) {

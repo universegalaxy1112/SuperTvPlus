@@ -3,13 +3,14 @@
     package="com.uni.julio.supertv"
     android:targetSandboxVersion="2"
     android:versionCode="15"
-    android:versionName="3.0.4" >
+    android:versionName="3.0.5" >
 
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="29" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -35,7 +36,7 @@
         android:name="android.hardware.sensor"
         android:required="false" />
 
-    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- This permission is required to start foreground services in Android P. -->
+    <!-- This permission is required to start foreground services in Android P. -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />

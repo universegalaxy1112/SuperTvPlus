@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:2:1-136:12
-INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:2:1-136:12
-INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:2:1-136:12
-INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:2:1-136:12
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
+INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
+INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
+INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
 MERGED from [androidx.databinding:databinding-adapters:3.6.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\819672f120572f14a54329160bcec20b\databinding-adapters-3.6.4\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:3.6.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\460cf8380a94abd6b16e8bdf6cd02869\databinding-runtime-3.6.4\AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\2d147606356db1495b0641ca98815b2c\jetified-android-searchbox-0.0.1\AndroidManifest.xml:2:1-20:12
@@ -71,11 +71,11 @@ MERGED from [com.wang.avi:library:2.1.3] C:\Users\Cosmic\.gradle\caches\transfor
 MERGED from [com.github.afollestad.material-dialogs:core:0.8.5.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\0b9351d2943fc63f9fe45bbb3cc51313\jetified-core-0.8.5.6\AndroidManifest.xml:2:1-15:12
 MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\560bb048a7bcd4a9e1d89fbe5915e568\jetified-circleimageview-3.0.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.recommendation:recommendation:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\c08e87754507834eefb94d0a8b4658c1\recommendation-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [:extension-ffmpeg] E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\ExoPlayer-release-v2\extensions\ffmpeg\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-24:12
-MERGED from [:extension-flac] E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\ExoPlayer-release-v2\extensions\flac\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-24:12
-MERGED from [:extension-opus] E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\ExoPlayer-release-v2\extensions\opus\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-24:12
-MERGED from [:extension-vp9] E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-26:12
-MERGED from [:library-all] E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\ExoPlayer-release-v2\library\all\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-24:12
+MERGED from [:extension-ffmpeg] D:\workspace\2020\8_Aug\SupertvPlus\ExoPlayer-release-v2\extensions\ffmpeg\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-24:12
+MERGED from [:extension-flac] D:\workspace\2020\8_Aug\SupertvPlus\ExoPlayer-release-v2\extensions\flac\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-24:12
+MERGED from [:extension-opus] D:\workspace\2020\8_Aug\SupertvPlus\ExoPlayer-release-v2\extensions\opus\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-24:12
+MERGED from [:extension-vp9] D:\workspace\2020\8_Aug\SupertvPlus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-26:12
+MERGED from [:library-all] D:\workspace\2020\8_Aug\SupertvPlus\ExoPlayer-release-v2\library\all\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:viewbinding:3.6.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a19ddb9491bc9f30f8e6197ee8fa07d4\jetified-viewbinding-3.6.4\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\aba1f6da20449707c9f5c673da41d99c\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b449cfbfac50ceae52f098d0c857b390\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -101,27 +101,27 @@ MERGED from [net.steamcrafted:materialiconlib:1.1.5] C:\Users\Cosmic\.gradle\cac
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e4f3e9e1069c6f38d0943877bdbad518\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.codesgood:justifiedtextview:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\667cc9af3266ea5e9f4a31509ce6d966\jetified-justifiedtextview-1.1.0\AndroidManifest.xml:2:1-14:12
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a2860e7cb1e7cdbc2dd748bf66b6b5f4\jetified-transport-api-2.2.0\AndroidManifest.xml:15:1-22:12
-INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:2:1-136:12
-INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:2:1-136:12
-INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:2:1-136:12
+INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
+INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
+INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
 	package
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:4:5-36
-		INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml
-		INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:4:5-36
+		INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:2:1-136:12
-		INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
+		INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:2:1-136:12
-		INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
+		INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:6:5-67
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:6:5-67
 MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\2d147606356db1495b0641ca98815b2c\jetified-android-searchbox-0.0.1\AndroidManifest.xml:11:5-67
 MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\2d147606356db1495b0641ca98815b2c\jetified-android-searchbox-0.0.1\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-crashlytics:17.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e7572fc881b5d2f840b8fc090fce848c\jetified-firebase-crashlytics-17.0.0\AndroidManifest.xml:10:5-67
@@ -141,9 +141,15 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.4.1] C:
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d131a3c9522a4097c1e12425f5c72429\jetified-transport-backend-cct-2.2.1\AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d131a3c9522a4097c1e12425f5c72429\jetified-transport-backend-cct-2.2.1\AndroidManifest.xml:26:5-67
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:7:5-70
+MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\2d147606356db1495b0641ca98815b2c\jetified-android-searchbox-0.0.1\AndroidManifest.xml:12:5-71
+MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\2d147606356db1495b0641ca98815b2c\jetified-android-searchbox-0.0.1\AndroidManifest.xml:12:5-71
+	android:name
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:7:22-68
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:7:5-79
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:8:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b7df0d06013e6362e46df1a980af3a2f\jetified-play-services-measurement-api-17.4.1\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:17.4.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b7df0d06013e6362e46df1a980af3a2f\jetified-play-services-measurement-api-17.4.1\AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9b6b749ea4fe5f72c954587f4d38ed24\jetified-firebase-iid-20.1.7\AndroidManifest.xml:22:5-79
@@ -161,57 +167,57 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.1] C:\Us
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\ce41a9c409ca7360e38e6b632df4583f\jetified-transport-runtime-2.2.1\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\ce41a9c409ca7360e38e6b632df4583f\jetified-transport-runtime-2.2.1\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:7:22-76
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:8:22-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:8:5-81
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:8:22-78
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:9:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:9:5-80
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:10:5-80
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:9:22-77
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:10:22-77
 uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:10:5-82
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:11:5-82
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:10:22-80
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:11:22-80
 uses-feature#android.hardware.touchscreen
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:12:5-13:36
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:13:5-14:36
 	android:required
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:13:9-33
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:14:9-33
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:12:19-62
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:13:19-62
 uses-feature#android.software.leanback
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:14:5-15:36
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:15:5-16:36
 	android:required
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:15:9-33
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:16:9-33
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:14:19-59
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:15:19-59
 uses-feature#android.hardware.wifi
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:16:5-18:20
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:17:5-19:20
 	android:required
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:17:9-33
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:18:9-33
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:16:19-55
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:17:19-55
 uses-feature#android.hardware.camera
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:19:5-20:35
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:20:5-21:35
 	android:required
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:20:9-33
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:21:9-33
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:19:19-57
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:20:19-57
 uses-feature#android.hardware.microphone
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:21:5-22:35
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:22:5-23:35
 	android:required
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:22:9-33
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:23:9-33
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:21:19-61
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:22:19-61
 uses-feature#android.hardware.sensor
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:23:5-24:35
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:24:5-25:35
 	android:required
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:24:9-33
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:25:9-33
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:23:19-57
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:24:19-57
 application
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:26:5-134:27
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:27:5-135:27
 MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\2d147606356db1495b0641ca98815b2c\jetified-android-searchbox-0.0.1\AndroidManifest.xml:14:5-18:19
 MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\2d147606356db1495b0641ca98815b2c\jetified-android-searchbox-0.0.1\AndroidManifest.xml:14:5-18:19
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\567d6714299105df922f222771becb57\material-1.1.0\AndroidManifest.xml:22:5-20
@@ -289,203 +295,203 @@ MERGED from [com.codesgood:justifiedtextview:1.1.0] C:\Users\Cosmic\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.2.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\aa79bf92cf99ba299403e8345ff22e66\core-1.2.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:35:9-35
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:36:9-35
 	android:label
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:30:9-41
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:31:9-41
 	android:roundIcon
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:32:9-48
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:33:9-48
 	android:icon
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:33:9-43
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:34:9-43
 	android:allowBackup
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:28:9-35
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:29:9-35
 	android:banner
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:29:9-42
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:30:9-42
 	android:theme
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:36:9-40
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:37:9-40
 	android:networkSecurityConfig
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:31:9-69
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:32:9-69
 	android:logo
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:34:9-40
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:35:9-40
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:27:9-42
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:28:9-42
 provider#androidx.core.content.FileProvider
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:37:9-47:20
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:38:9-48:20
 	android:grantUriPermissions
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:41:13-47
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:42:13-47
 	android:authorities
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:39:13-69
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:40:13-69
 	android:exported
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:40:13-37
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:41:13-37
 	tools:replace
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:42:13-48
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:43:13-48
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:38:13-62
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:39:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:43:13-46:52
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:44:13-47:52
 	android:resource
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:45:17-50
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:46:17-50
 	tools:replace
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:46:17-49
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:47:17-49
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:44:17-67
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:45:17-67
 activity#com.uni.julio.supertv.view.MoviesTvActivity
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:50:9-53:52
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:51:9-54:52
 	android:screenOrientation
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:52:13-50
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:53:13-50
 	android:theme
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:53:13-50
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:54:13-50
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:51:13-50
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:52:13-50
 activity#com.uni.julio.supertv.view.SearchTvActivity
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:55:9-58:52
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:56:9-59:52
 	android:screenOrientation
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:57:13-50
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:58:13-50
 	android:theme
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:58:13-50
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:59:13-50
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:56:13-50
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:57:13-50
 activity#com.uni.julio.supertv.view.AccountActivity
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:60:9-62:65
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:61:9-63:65
 	android:theme
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:62:13-62
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:63:13-62
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:61:13-49
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:62:13-49
 activity#com.uni.julio.supertv.view.VideoPlayActivity
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:64:9-70:65
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:65:9-71:65
 	android:screenOrientation
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:67:13-50
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:68:13-50
 	android:supportsPictureInPicture
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:69:13-52
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:70:13-52
 	android:resizeableActivity
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:68:13-46
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:69:13-46
 	android:configChanges
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:66:13-91
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:67:13-91
 	android:theme
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:70:13-62
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:71:13-62
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:65:13-51
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:66:13-51
 activity#com.uni.julio.supertv.view.SearchActivity
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:72:9-74:65
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:73:9-75:65
 	android:theme
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:74:13-62
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:75:13-62
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:73:13-48
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:74:13-48
 activity#com.uni.julio.supertv.view.LoadingActivity
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:75:9-77:65
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:76:9-78:65
 	android:theme
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:77:13-62
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:78:13-62
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:76:13-49
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:77:13-49
 activity#com.uni.julio.supertv.view.LoginActivity
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:78:9-80:65
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:79:9-81:65
 	android:theme
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:80:13-62
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:81:13-62
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:79:13-47
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:80:13-47
 activity#com.uni.julio.supertv.view.MultiSeasonDetailActivity
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:81:9-83:65
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:82:9-84:65
 	android:theme
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:83:13-62
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:84:13-62
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:82:13-59
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:83:13-59
 activity#com.uni.julio.supertv.view.exoplayer.VideoPlayFragment
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:84:9-87:65
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:85:9-88:65
 	android:screenOrientation
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:86:13-50
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:87:13-50
 	android:theme
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:87:13-62
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:88:13-62
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:85:13-61
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:86:13-61
 activity#com.uni.julio.supertv.view.LiveTvNewActivity
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:89:9-93:65
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:90:9-94:65
 	android:screenOrientation
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:92:13-50
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:93:13-50
 	android:configChanges
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:91:13-71
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:92:13-71
 	android:theme
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:93:13-62
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:94:13-62
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:90:13-51
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:91:13-51
 activity#com.uni.julio.supertv.view.MoviesActivity
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:94:9-96:65
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:95:9-97:65
 	android:theme
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:96:13-62
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:97:13-62
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:95:13-48
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:96:13-48
 activity#com.uni.julio.supertv.view.OneSeasonDetailActivity
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:97:9-100:65
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:98:9-101:65
 	android:configChanges
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:99:13-91
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:100:13-91
 	android:theme
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:100:13-62
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:101:13-62
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:98:13-57
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:99:13-57
 activity#com.uni.julio.supertv.view.MoreVideoActivity
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:101:9-103:65
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:102:9-104:65
 	android:theme
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:103:13-62
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:104:13-62
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:102:13-51
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:103:13-51
 activity#com.uni.julio.supertv.view.SpeedTestActivity
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:104:9-106:65
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:105:9-107:65
 	android:theme
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:106:13-62
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:107:13-62
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:105:13-51
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:106:13-51
 activity#com.uni.julio.supertv.view.SelectServerActivity
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:108:9-110:65
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:109:9-111:65
 	android:theme
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:110:13-62
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:111:13-62
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:109:13-54
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:110:13-54
 activity#com.uni.julio.supertv.view.MainActivity
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:111:9-117:20
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:112:9-118:20
 	android:theme
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:113:13-62
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:114:13-62
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:112:13-46
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:113:13-46
 meta-data#android.app.searchable
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:114:13-116:54
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:115:13-117:54
 	android:resource
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:116:17-51
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:117:17-51
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:115:17-54
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:116:17-54
 activity#com.uni.julio.supertv.view.SplashActivity
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:119:9-133:20
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:120:9-134:20
 	android:configChanges
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:121:13-72
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:122:13-72
 	android:theme
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:122:13-62
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:123:13-62
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:120:13-48
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:121:13-48
 intent-filter#action:name:android.intent.action.MAIN+action:name:android.settings.SETTINGS+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.LAUNCHER
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:123:13-128:29
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:124:13-129:29
 action#android.intent.action.MAIN
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:124:17-69
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:125:17-69
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:124:25-66
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:125:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:125:17-77
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:126:17-77
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:125:27-74
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:126:27-74
 action#android.settings.SETTINGS
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:126:17-68
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:127:17-68
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:126:25-65
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:127:25-65
 category#android.intent.category.DEFAULT
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:127:17-75
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:128:17-75
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:127:27-73
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:128:27-73
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LEANBACK_LAUNCHER
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:129:13-132:29
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:130:13-133:29
 category#android.intent.category.LEANBACK_LAUNCHER
-ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:131:17-86
+ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:132:17-86
 	android:name
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml:131:27-83
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml:132:27-83
 uses-sdk
-INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml
-INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml
+INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml
+INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:databinding-adapters:3.6.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\819672f120572f14a54329160bcec20b\databinding-adapters-3.6.4\AndroidManifest.xml:22:5-44
 MERGED from [androidx.databinding:databinding-adapters:3.6.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\819672f120572f14a54329160bcec20b\databinding-adapters-3.6.4\AndroidManifest.xml:22:5-44
 MERGED from [androidx.databinding:databinding-runtime:3.6.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\460cf8380a94abd6b16e8bdf6cd02869\databinding-runtime-3.6.4\AndroidManifest.xml:22:5-44
@@ -620,16 +626,16 @@ MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Cosmic\.gradle\caches\
 MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\560bb048a7bcd4a9e1d89fbe5915e568\jetified-circleimageview-3.0.1\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.recommendation:recommendation:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\c08e87754507834eefb94d0a8b4658c1\recommendation-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recommendation:recommendation:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\c08e87754507834eefb94d0a8b4658c1\recommendation-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [:extension-ffmpeg] E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\ExoPlayer-release-v2\extensions\ffmpeg\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
-MERGED from [:extension-ffmpeg] E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\ExoPlayer-release-v2\extensions\ffmpeg\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
-MERGED from [:extension-flac] E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\ExoPlayer-release-v2\extensions\flac\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
-MERGED from [:extension-flac] E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\ExoPlayer-release-v2\extensions\flac\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
-MERGED from [:extension-opus] E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\ExoPlayer-release-v2\extensions\opus\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
-MERGED from [:extension-opus] E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\ExoPlayer-release-v2\extensions\opus\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
-MERGED from [:extension-vp9] E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
-MERGED from [:extension-vp9] E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
-MERGED from [:library-all] E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\ExoPlayer-release-v2\library\all\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
-MERGED from [:library-all] E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\ExoPlayer-release-v2\library\all\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:extension-ffmpeg] D:\workspace\2020\8_Aug\SupertvPlus\ExoPlayer-release-v2\extensions\ffmpeg\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:extension-ffmpeg] D:\workspace\2020\8_Aug\SupertvPlus\ExoPlayer-release-v2\extensions\ffmpeg\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:extension-flac] D:\workspace\2020\8_Aug\SupertvPlus\ExoPlayer-release-v2\extensions\flac\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:extension-flac] D:\workspace\2020\8_Aug\SupertvPlus\ExoPlayer-release-v2\extensions\flac\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:extension-opus] D:\workspace\2020\8_Aug\SupertvPlus\ExoPlayer-release-v2\extensions\opus\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:extension-opus] D:\workspace\2020\8_Aug\SupertvPlus\ExoPlayer-release-v2\extensions\opus\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:extension-vp9] D:\workspace\2020\8_Aug\SupertvPlus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:extension-vp9] D:\workspace\2020\8_Aug\SupertvPlus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:library-all] D:\workspace\2020\8_Aug\SupertvPlus\ExoPlayer-release-v2\library\all\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:library-all] D:\workspace\2020\8_Aug\SupertvPlus\ExoPlayer-release-v2\library\all\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.databinding:viewbinding:3.6.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a19ddb9491bc9f30f8e6197ee8fa07d4\jetified-viewbinding-3.6.4\AndroidManifest.xml:20:5-44
 MERGED from [androidx.databinding:viewbinding:3.6.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a19ddb9491bc9f30f8e6197ee8fa07d4\jetified-viewbinding-3.6.4\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\aba1f6da20449707c9f5c673da41d99c\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
@@ -680,22 +686,18 @@ MERGED from [com.codesgood:justifiedtextview:1.1.0] C:\Users\Cosmic\.gradle\cach
 MERGED from [com.codesgood:justifiedtextview:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\667cc9af3266ea5e9f4a31509ce6d966\jetified-justifiedtextview-1.1.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a2860e7cb1e7cdbc2dd748bf66b6b5f4\jetified-transport-api-2.2.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a2860e7cb1e7cdbc2dd748bf66b6b5f4\jetified-transport-api-2.2.0\AndroidManifest.xml:18:5-20:41
-INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml
-INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml
+INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml
+INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.github.afollestad.material-dialogs:core:0.8.5.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\0b9351d2943fc63f9fe45bbb3cc51313\jetified-core-0.8.5.6\AndroidManifest.xml:11:9-72
 	android:targetSdkVersion
-		INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml
-		INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml
-		ADDED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml
-		INJECTED from E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\app\src\main\AndroidManifest.xml
-uses-permission#android.permission.RECORD_AUDIO
-ADDED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\2d147606356db1495b0641ca98815b2c\jetified-android-searchbox-0.0.1\AndroidManifest.xml:12:5-71
-	android:name
-		ADDED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\2d147606356db1495b0641ca98815b2c\jetified-android-searchbox-0.0.1\AndroidManifest.xml:12:22-68
+		INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml
+		ADDED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\2020\8_Aug\SupertvPlus\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.FOREGROUND_SERVICE
 ADDED from [com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6b2e65966ee4ea269b35d972aa743866\jetified-play-services-cast-framework-18.1.0\AndroidManifest.xml:7:5-77
 	android:name
@@ -885,9 +887,9 @@ ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches
 	android:name
 		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\daa649e97fc20ef298bb3e96a2057c36\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
 uses-feature#0x00020000
-ADDED from [:extension-vp9] E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:5-54
+ADDED from [:extension-vp9] D:\workspace\2020\8_Aug\SupertvPlus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:5-54
 	android:glEsVersion
-		ADDED from [:extension-vp9] E:\workspace\2019\10_Oct\AndroidTV\Github\SuperTV Plus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:19-51
+		ADDED from [:extension-vp9] D:\workspace\2020\8_Aug\SupertvPlus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:19-51
 service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
 ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d131a3c9522a4097c1e12425f5c72429\jetified-transport-backend-cct-2.2.1\AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\ce41a9c409ca7360e38e6b632df4583f\jetified-transport-runtime-2.2.1\AndroidManifest.xml:36:9-38:40

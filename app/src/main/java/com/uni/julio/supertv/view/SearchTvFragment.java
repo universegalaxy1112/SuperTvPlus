@@ -4,13 +4,19 @@ import android.annotation.SuppressLint;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.speech.SpeechRecognizer;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
@@ -78,6 +84,7 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
     private Pattern pattern;
     protected ModelTypes.SelectedType selectedType;
     private DisplayMetrics mMetrics;
+    private boolean isKeyboardShowing = false;
 
     private final class ItemViewClickedListener implements OnItemViewClickedListener {
         private ItemViewClickedListener() {
@@ -129,7 +136,6 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
     }
 
     private final class ItemViewSelectedListener implements OnItemViewSelectedListener {
-        @SuppressLint("CutPasteId")
         @Override
         public void onItemSelected(Presenter.ViewHolder itemViewHolder, Object item,
                                    RowPresenter.ViewHolder rowViewHolder, Row row) {
@@ -146,6 +152,42 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
 
     private void addRecentSerie(Serie serie) {
         DataManager.getInstance().saveData("lastSerieSelected", new Gson().toJson(serie));
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
+
+        container.getViewTreeObserver().addOnGlobalLayoutListener(
+                new ViewTreeObserver.OnGlobalLayoutListener() {
+                    @Override
+                    public void onGlobalLayout() {
+
+                        Rect r = new Rect();
+                        container.getWindowVisibleDisplayFrame(r);
+                        int screenHeight = container.getRootView().getHeight();
+
+                        // r.bottom is the position above soft keypad or device button.
+                        // if keypad is shown, the r.bottom is smaller than that before.
+                        int keypadHeight = screenHeight - r.bottom;
+                        if (keypadHeight > screenHeight * 0.15) { // 0.15 ratio is perhaps enough to determine keypad height.
+                            // keyboard is opened
+                            if (!isKeyboardShowing) {
+                                isKeyboardShowing = true;
+                               // onKeyboardVisibilityChanged(true)
+                            }
+                        }
+                        else {
+                            // keyboard is closed
+                            if (isKeyboardShowing) {
+                                isKeyboardShowing = false;
+                                //onKeyboardVisibilityChanged(false)
+                            }
+                        }
+                    }
+        });
+
+        return super.onCreateView(inflater, container, savedInstanceState);
+
     }
 
     public void onCreate(Bundle savedInstanceState) {
@@ -184,21 +226,28 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
         setSearchResultProvider(this);
         setOnItemViewSelectedListener(new ItemViewSelectedListener());
         setOnItemViewClickedListener(new ItemViewClickedListener());
-        if (getPermissionStatus() == 0) {
+        if (getPermissionStatus() != 0) {
             setupAudioRecognition();
-        }
-
-    }
-
-
-    @Override
-    public void startRecognition() {
-        if (getPermissionStatus() == 0) {
-            super.startRecognition();
         } else {
             requestRecordAudioPermission();
         }
     }
+
+
+   /* @Override
+    public void startRecognition() {
+        if(!SpeechRecognizer.isRecognitionAvailable(getActivity())) return;
+        try {
+            if (getPermissionStatus() == 0) {
+                super.startRecognition();
+            } else {
+                requestRecordAudioPermission();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }*/
 
     public void closeKeyboard() {
         Objects.requireNonNull(getActivity()).getWindow().setSoftInputMode(2);
@@ -349,7 +398,6 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
             message = R.string.permission_audio_config;
         }
         Dialogs.showTwoButtonsDialog(getActivity(), accept, R.string.cancel, message, new DialogListener() {
-            @RequiresApi(api = Build.VERSION_CODES.M)
             public void onAccept() {
                 if (!SearchTvFragment.this.denyAll) {
                     DataManager.getInstance().saveData("audioPermissionRequested", Boolean.TRUE);
@@ -390,21 +438,23 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
                     return;
                 }
                 return;
-            case 4169:
+            /*case 4169:
+                if(!SpeechRecognizer.isRecognitionAvailable(getActivity())) return;
                 if (getPermissionStatus() == 0) {
                     setupAudioRecognition();
                     return;
                 }
-                return;
+                return;*/
             default:
         }
     }
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        if (requestCode == REQUEST_RECORD_AUDIO_STATE && getPermissionStatus() == 0) {
+        /*if (requestCode == REQUEST_RECORD_AUDIO_STATE && getPermissionStatus() == 0) {
+            if(!SpeechRecognizer.isRecognitionAvailable(getActivity())) return;
             setupAudioRecognition();
-        }
+        }*/
     }
 
     private void setupAudioRecognition() {
@@ -472,6 +522,14 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
             e.printStackTrace();
         }
 
+    }
+
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode != KeyEvent.KEYCODE_BACK || isKeyboardShowing) {
+            return false;
+        }
+        getActivity().finish();
+        return true;
     }
 }
 

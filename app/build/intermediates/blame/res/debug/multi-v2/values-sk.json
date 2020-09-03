@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperTV Plus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sk\\values-sk.xml",
+            "outputFile": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sk\\values-sk.xml",
             "map": [
-                {
-                    "source": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperTV Plus\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-sk\\values-sk.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,139,212,284,352,437,513",
-                        "endColumns": "83,72,71,67,84,75,68",
-                        "endOffsets": "134,207,279,347,432,508,577"
-                    },
-                    "to": {
-                        "startLines": "89,90,91,92,93,94,95",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "10064,10148,10221,10293,10361,10446,10522",
-                        "endColumns": "83,72,71,67,84,75,68",
-                        "endOffsets": "10143,10216,10288,10356,10441,10517,10586"
-                    }
-                },
                 {
                     "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\02121151c94aeaad45e8f5150aa69ea4\\appcompat-1.1.0\\res\\values-sk\\values-sk.xml",
                     "from": {
@@ -86,6 +69,23 @@
                         "startOffsets": "10679",
                         "endColumns": "103",
                         "endOffsets": "10778"
+                    }
+                },
+                {
+                    "source": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-sk\\values-sk.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,139,212,284,352,437,513",
+                        "endColumns": "83,72,71,67,84,75,68",
+                        "endOffsets": "134,207,279,347,432,508,577"
+                    },
+                    "to": {
+                        "startLines": "89,90,91,92,93,94,95",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "10064,10148,10221,10293,10361,10446,10522",
+                        "endColumns": "83,72,71,67,84,75,68",
+                        "endOffsets": "10143,10216,10288,10356,10441,10517,10586"
                     }
                 },
                 {

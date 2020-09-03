@@ -66,9 +66,9 @@ public class ParserJSonFile {
 
                 tmpObj = videoArray.getJSONObject(i);
 //            movieCat.setId(i);
-                liveTvCat.setId(Integer.valueOf(tmpObj.getString("cve")));
+                liveTvCat.setId(Integer.parseInt(tmpObj.getString("cve")));
                 liveTvCat.setCatName(tmpObj.getString("nombre"));
-                liveTvCat.setTotalChannels(Integer.valueOf(tmpObj.getString("total_canales")));
+                liveTvCat.setTotalChannels(Integer.parseInt(tmpObj.getString("total_canales")));
                 liveTvCat.setPosition(i);
                 dataArray.add(liveTvCat);
             }
@@ -234,7 +234,7 @@ public class ParserJSonFile {
                 if (json_obj.has("Watched"))
                     movie.setWatched(json_obj.getBoolean("Watched"));
                 if (json_obj.has("Length")) {
-                    if(TextUtils.isEmpty(json_obj.getString("Length"))||json_obj.getString("Length").equals("null")) {
+                    if(TextUtils.isEmpty(json_obj.getString("Length")) || json_obj.getString("Length").equals("null")) {
                         movie.setLength(0);
                     }
                     else {
@@ -302,7 +302,7 @@ public class ParserJSonFile {
                 if(json_obj.has("Watched"))
                     movie.setWatched(json_obj.getBoolean("Watched"));
                 if(json_obj.has("Length")) {
-                    if(TextUtils.isEmpty(json_obj.getString("Length"))) {
+                    if(TextUtils.isEmpty(json_obj.getString("Length")) || json_obj.getString("Length").equals("null")) {
                         movie.setLength(0);
                     }
                     else {
@@ -357,7 +357,7 @@ public class ParserJSonFile {
                 if (json_obj.has("Watched"))
                     movie.setWatched(json_obj.getBoolean("Watched"));
                 if (json_obj.has("Length")) {
-                    if(TextUtils.isEmpty(json_obj.getString("Length"))) {
+                    if(TextUtils.isEmpty(json_obj.getString("Length")) || json_obj.getString("Length").equals("null")) {
                         movie.setLength(0);
                     }
                     else {

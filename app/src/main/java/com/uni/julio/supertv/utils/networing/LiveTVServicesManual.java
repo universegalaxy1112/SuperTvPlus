@@ -4,8 +4,6 @@ import android.os.Build;
 import android.text.TextUtils;
 import android.util.Log;
 
-import androidx.annotation.RequiresApi;
-
 import com.uni.julio.supertv.LiveTvApplication;
 import com.uni.julio.supertv.listeners.StringRequestListener;
 import com.uni.julio.supertv.model.LiveProgram;
@@ -32,7 +30,6 @@ public class LiveTVServicesManual {
     public static Observable<Boolean> performLogin(final String usr, final String pss, final StringRequestListener stringRequestListener) {
 
         return Observable.create(new Observable.OnSubscribe<Boolean>() {
-            @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void call(Subscriber<? super Boolean> subscriber) {
                 subscriber.onNext(loginRequest(usr, pss, stringRequestListener));
@@ -47,7 +44,6 @@ public class LiveTVServicesManual {
     static Observable<Boolean> addRecent(final String type, final String cve, final StringRequestListener stringRequestListener) {
 
         return Observable.create(new Observable.OnSubscribe<Boolean>() {
-            @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void call(Subscriber<? super Boolean> subscriber) {
                 subscriber.onNext(recentRequest(type, cve, stringRequestListener));
@@ -62,7 +58,6 @@ public class LiveTVServicesManual {
     public static Observable<Boolean> addFavorite(final String type, final String cve, final String action, final StringRequestListener stringRequestListener) {
 
         return Observable.create(new Observable.OnSubscribe<Boolean>() {
-            @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void call(Subscriber<? super Boolean> subscriber) {
                 subscriber.onNext(favoriteRequest(type, cve, action, stringRequestListener));

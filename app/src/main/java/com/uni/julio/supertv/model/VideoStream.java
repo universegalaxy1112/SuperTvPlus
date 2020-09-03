@@ -41,7 +41,7 @@ public abstract class VideoStream {//implements Cloneable {
     }
 
     public String getTitle() {
-        return Title;
+        return Title.trim();
     }
 
     public void setTitle(String title) {

@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Process;
 import android.view.KeyEvent;
 import android.widget.Switch;
 import android.widget.Toast;
@@ -164,6 +165,7 @@ public class SplashActivity extends BaseActivity implements SplashViewModelContr
         if (hasNewVersion) {
             try {
                 Dialogs.showTwoButtonsDialog(getActivity(), R.string.download, R.string.cancel, R.string.new_version_available, new DialogListener() {
+
                     public void onAccept() {
                         if (Connectivity.isConnected()) {
                             downloadUpdate(updateLocation);
@@ -255,11 +257,14 @@ public class SplashActivity extends BaseActivity implements SplashViewModelContr
 
             public void onCancel() {
                 finishActivity();
+                Process.killProcess(Process.myPid());
             }
 
             @Override
             public void onDismiss() {
                 finishActivity();
+                Process.killProcess(Process.myPid());
+
             }
         });
     }

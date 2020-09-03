@@ -53,7 +53,12 @@ public class Downloader {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            request.setDescription(res.getString(R.string.downloading)).setTitle(res.getString(R.string.app_name)).setVisibleInDownloadsUi(true).setAllowedOverRoaming(false).setAllowedNetworkTypes(3).setDestinationInExternalFilesDir(this.context, Environment.DIRECTORY_DOWNLOADS, "update.apk");
+            request.setDescription(res.getString(R.string.downloading))
+                    .setTitle(res.getString(R.string.app_name))
+                    .setVisibleInDownloadsUi(true)
+                    .setAllowedOverRoaming(false)
+                    .setAllowedNetworkTypes(3)
+                    .setDestinationInExternalFilesDir(this.context, Environment.DIRECTORY_DOWNLOADS, "update.apk");
              this.myDownloadReference = this.mDownloadManager.enqueue(request);
             IntentFilter iFilter = new IntentFilter("android.intent.action.DOWNLOAD_COMPLETE");
             this.receiverDownloadComplete = new DownloaderBroadcastReceiver(this.mDownloadManager, this.myDownloadReference, listener);

@@ -89,7 +89,7 @@ public class MoviesRecyclerAdapter extends TVRecyclerViewAdapter<MoviesRecyclerA
         holder.getViewDataBinding().getRoot().setTag(position);
         holder.getViewDataBinding().setVariable(com.uni.julio.supertv.BR.moviesAdapter, this);
         int size = mMovies.size();
-        int offset = ((int) (size / 50));
+        int offset = ((int) (size / 50.00));
         if (movieCategoryId == -1) return;
         MainCategory mainCategory = VideoStreamManager.getInstance().getMainCategory(mainCategoryId);
         MovieCategory movieCategory = mainCategory.getMovieCategory(movieCategoryId);

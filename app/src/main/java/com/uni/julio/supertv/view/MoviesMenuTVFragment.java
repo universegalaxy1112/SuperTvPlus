@@ -104,11 +104,24 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
         super.onStop();
     }
 
-    private void launchActivity(Class classToLaunch, Bundle extras) {
+    private void launchActivity(Class classToLaunch, Bundle extras, int requestCode) {
         Intent launchIntent = new Intent(getActivity(), classToLaunch);
         launchIntent.putExtras(extras);
-        startActivityForResult(launchIntent, 100);
+        startActivityForResult(launchIntent, requestCode);
         Objects.requireNonNull(getActivity()).overridePendingTransition(R.anim.right_in, R.anim.left_out);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == 100) {
+            mRowsAdapter.clear();
+            for (int i = 0; i < mCategoriesList.size(); i++) {
+                mCategoriesList.get(i).setCategoryDisplayed(false);
+            }
+            isInit = true;
+        }
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -142,7 +155,7 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
                     extras.putSerializable("selectedType", MoviesMenuTVFragment.this.selectedType);
                     extras.putInt("mainCategoryId", MoviesMenuTVFragment.this.mainCategoryId);
                     extras.putInt("movieCategoryId", MoviesMenuTVFragment.this.movieCategoryId);
-                    launchActivity(SearchTvActivity.class, extras);
+                    launchActivity(SearchTvActivity.class, extras, 0);
                 }
             });
 
@@ -175,9 +188,8 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
                                 extras.putInt("mainCategoryId", mainCategoryId);
                                 extras.putInt("movieCategoryId", (int) listRow.getId());
                             }
-
-                            launchActivity(MoreVideoActivity.class, extras);
-                            getActivity().finish();
+                            launchActivity(MoreVideoActivity.class, extras, 100);
+                           // getActivity().finish();
                         }
                     }
                 }, 1000);
@@ -346,7 +358,7 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
                 extras.putInt("mainCategoryId", MoviesMenuTVFragment.this.mainCategoryId);
                 extras.putString("serie", new Gson().toJson(serie));
                 DataManager.getInstance().saveData("lastSerieSelected", new Gson().toJson(serie));
-                launchActivity(LoadingActivity.class, extras);
+                launchActivity(LoadingActivity.class, extras, 0);
             } else if (item instanceof Movie) {
                 Movie movie = (Movie) item;
                 Bundle extras2 = new Bundle();
@@ -356,7 +368,7 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
                     } else {
                         extras2.putString("movie", new Gson().toJson(movie));
                         extras2.putInt("mainCategoryId", MoviesMenuTVFragment.this.mainCategoryId);
-                        launchActivity(OneSeasonDetailActivity.class, extras2);
+                        launchActivity(OneSeasonDetailActivity.class, extras2, 0);
                         Objects.requireNonNull(getActivity()).overridePendingTransition(R.anim.right_in, R.anim.left_out);
                     }
                 }

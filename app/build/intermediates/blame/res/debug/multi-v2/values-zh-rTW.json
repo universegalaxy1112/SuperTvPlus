@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperTV Plus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
+            "outputFile": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
             "map": [
-                {
-                    "source": "E:\\workspace\\2019\\10_Oct\\AndroidTV\\Github\\SuperTV Plus\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-zh-rTW\\values-zh-rTW.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,191,255,318,388,453",
-                        "endColumns": "69,65,63,62,69,64,62",
-                        "endOffsets": "120,186,250,313,383,448,511"
-                    },
-                    "to": {
-                        "startLines": "89,90,91,92,93,94,95",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "8930,9000,9066,9130,9193,9263,9328",
-                        "endColumns": "69,65,63,62,69,64,62",
-                        "endOffsets": "8995,9061,9125,9188,9258,9323,9386"
-                    }
-                },
                 {
                     "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\ec5e6e2955220c701878d0af5c37581e\\preference-1.0.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "from": {
@@ -120,6 +103,23 @@
                         "startOffsets": "13421,13514,13606,13699,13796,13900,13986,14065,14152,14246,14339,14429,14517,14605,14703,14801,14882,14962,15042,15132,15222,15311,15406,15488",
                         "endColumns": "92,91,92,96,103,85,78,86,93,92,89,87,87,97,97,80,79,79,89,89,88,94,81,88",
                         "endOffsets": "13509,13601,13694,13791,13895,13981,14060,14147,14241,14334,14424,14512,14600,14698,14796,14877,14957,15037,15127,15217,15306,15401,15483,15572"
+                    }
+                },
+                {
+                    "source": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-zh-rTW\\values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,191,255,318,388,453",
+                        "endColumns": "69,65,63,62,69,64,62",
+                        "endOffsets": "120,186,250,313,383,448,511"
+                    },
+                    "to": {
+                        "startLines": "89,90,91,92,93,94,95",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "8930,9000,9066,9130,9193,9263,9328",
+                        "endColumns": "69,65,63,62,69,64,62",
+                        "endOffsets": "8995,9061,9125,9188,9258,9323,9386"
                     }
                 },
                 {
