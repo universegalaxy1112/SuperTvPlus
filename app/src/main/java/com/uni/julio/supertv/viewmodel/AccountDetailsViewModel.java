@@ -1,5 +1,6 @@
 package com.uni.julio.supertv.viewmodel;
 
+import android.app.ProgressDialog;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -14,17 +15,20 @@ import com.uni.julio.supertv.LiveTvApplication;
 import com.uni.julio.supertv.R;
 import com.uni.julio.supertv.databinding.ActivityAccountBinding;
 import com.uni.julio.supertv.listeners.DialogListener;
+import com.uni.julio.supertv.listeners.DownloaderListener;
 import com.uni.julio.supertv.listeners.StringRequestListener;
 import com.uni.julio.supertv.model.User;
 import com.uni.julio.supertv.utils.Connectivity;
 import com.uni.julio.supertv.utils.DataManager;
 import com.uni.julio.supertv.utils.Device;
 import com.uni.julio.supertv.utils.Dialogs;
+import com.uni.julio.supertv.utils.networing.Downloader;
 import com.uni.julio.supertv.utils.networing.NetManager;
 import com.uni.julio.supertv.utils.networing.WebConfig;
 
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -153,5 +157,50 @@ public class AccountDetailsViewModel implements AccountDetailsViewModelContract.
         } else {
             viewCallback.onError();
         }
+    }
+
+    @Override
+    public void checkForUpdate(View view) {
+        /*NetManager.getInstance().performCheckForUpdate(new StringRequestListener() {
+            @Override
+            public void onCompleted(String response) {
+                if (!TextUtils.isEmpty(response)) {
+                    try {
+                        JSONObject jsonObject = new JSONObject(response);
+
+                        if (jsonObject.has("android_version")) {
+                            if (!Device.getVersionInstalled().replaceAll("\\.", "").equals(jsonObject.getString("android_version"))) {
+                                AccountDetailsViewModel.this.viewCallback.onCheckForUpdateCompleted(true, jsonObject.getString("link_android") + "/android" + jsonObject.getString("android_version") + ".apk");
+                                return;
+                            }
+                            AccountDetailsViewModel.this.viewCallback.onCheckForUpdateCompleted(false, null);
+                            return;
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+
+            @Override
+            public void onError() {
+
+            }
+        });*/
+    }
+
+    @Override
+    public void downloadUpdate(String str, ProgressDialog progressDialog) {
+        Downloader.getInstance().performDownload(str, progressDialog, new DownloaderListener() {
+            @Override
+            public void onDownloadComplete(String str) {
+                AccountDetailsViewModel.this.viewCallback.onDownloadUpdateCompleted(str);
+            }
+
+            @Override
+            public void onDownloadError(int i) {
+
+            }
+        });
     }
 }

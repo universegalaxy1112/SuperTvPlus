@@ -1,22 +1,22 @@
 [
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\activity_oneseason_detail.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\app\\src\\main\\res\\layout-land\\activity_oneseason_detail.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\multiseason_row.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout-land\\multiseason_row.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\activity_multi_season_detail.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\app\\src\\main\\res\\layout-land\\activity_multi_season_detail.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\activity_oneseason_detail.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout-land\\activity_oneseason_detail.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\multiseason_row.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\app\\src\\main\\res\\layout-land\\multiseason_row.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\activity_multi_season_detail.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout-land\\activity_multi_season_detail.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\activity_main.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\app\\src\\main\\res\\layout-land\\activity_main.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\activity_account.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout-land\\activity_account.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\activity_account.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\app\\src\\main\\res\\layout-land\\activity_account.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\activity_main.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout-land\\activity_main.xml"
     }
 ]

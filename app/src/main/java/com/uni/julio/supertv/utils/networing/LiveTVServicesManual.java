@@ -16,8 +16,10 @@ import com.uni.julio.supertv.utils.Device;
 import com.uni.julio.supertv.utils.networing.parser.FetchJSonFileSync;
 
 import java.net.URLEncoder;
+import java.util.LinkedHashMap;
 import java.util.List;
 
+import retrofit2.Call;
 import rx.Observable;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
@@ -226,6 +228,7 @@ public class LiveTVServicesManual {
             loginCodeUrl = "";
         }
         if (!TextUtils.isEmpty(loginCodeUrl)) {
+
             NetManager.getInstance().makeStringRequest(loginCodeUrl, new StringRequestListener() {
                 public void onCompleted(String response) {
                     stringRequestListener.onCompleted(response);

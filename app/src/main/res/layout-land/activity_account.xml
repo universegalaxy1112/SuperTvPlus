@@ -307,6 +307,25 @@
                                 />
                         </RelativeLayout>
                     </androidx.cardview.widget.CardView>
+                    <!--<androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/transparent"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="@dimen/dip_12"
+                        app:cardUseCompatPadding="true"
+                        >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/play_text"
+                                android:text="Update"
+                                android:onClick="@{accountDetailsVM::checkForUpdate}"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>-->
 
                 </LinearLayout>
 

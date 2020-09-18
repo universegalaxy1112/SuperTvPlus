@@ -315,7 +315,7 @@ public class EpisodeDetailsViewModel implements EpisodeDetailsViewModelContract.
             }
         }
         else{
-             List<Serie> series=new Gson().fromJson(favoriteSeries,new TypeToken<List<Serie>>(){}.getType());
+             List<Serie> series=new Gson().fromJson(favoriteSeries, new TypeToken<List<Serie>>(){}.getType());
             if(checkNeedAdd()){
                 for(Serie serie1:series){
                     if(serie1.getContentId()==serie.getContentId()) return ;

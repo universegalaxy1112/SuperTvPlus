@@ -23,7 +23,7 @@ import com.uni.julio.supertv.utils.networing.NetManager;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class SplashViewModel implements SplashViewModelContract.ViewModel, StringRequestListener, DownloaderListener {
+public class SplashViewModel implements SplashViewModelContract.ViewModel, StringRequestListener {
 
     //    public boolean isConnected;
     private NetManager netManager;
@@ -84,17 +84,6 @@ public class SplashViewModel implements SplashViewModelContract.ViewModel, Strin
 
                 JSONObject jsonObject = new JSONObject(response);
 
-                if (jsonObject.has("android_version")) {
-                    Log.d("version", Device.getVersionInstalled());
-                    String a = Device.getVersionInstalled().replaceAll("\\.", "");
-                    String b = jsonObject.getString("android_version");
-                    if (!jsonObject.getString("android_version").equals("") && !Device.getVersionInstalled().replaceAll("\\.", "").equals(jsonObject.getString("android_version"))) {
-                        this.viewCallback.onCheckForUpdateCompleted(true, jsonObject.getString("link_android") + "/android" + jsonObject.getString("android_version") + ".apk");
-                        return;
-                    }
-                    this.viewCallback.onCheckForUpdateCompleted(false, null);
-                    return;
-                }
 
                 if (jsonObject.has("status") && "1".equals(jsonObject.getString("status"))) {
                     String userAgent = jsonObject.getString("user-agent");
@@ -132,19 +121,6 @@ public class SplashViewModel implements SplashViewModelContract.ViewModel, Strin
         viewCallback.onLoginCompleted(false);
     }
 
-    public void checkForUpdate() {
-        this.netManager.performCheckForUpdate(this);
-    }
 
-    public void downloadUpdate(String location, ProgressDialog progress) {
-        Downloader.getInstance().performDownload(location, progress, this);
-    }
 
-    public void onDownloadError(int error) {
-        this.viewCallback.onDownloadUpdateError(error);
-    }
-
-    public void onDownloadComplete(String location) {
-        this.viewCallback.onDownloadUpdateCompleted(location);
-    }
 }

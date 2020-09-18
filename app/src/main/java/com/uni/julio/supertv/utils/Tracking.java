@@ -52,9 +52,11 @@ public class Tracking implements StringRequestListener, OnClickListener {
     }
 
     public void onStart() {
-        this.isTracking = true;
-        this.handler.removeCallbacks(trackingThread);
-        this.handler.postDelayed(trackingThread,0);
+        if (!this.isTracking) {
+            this.isTracking = true;
+            this.handler.removeCallbacks(trackingThread);
+            this.handler.post(this.trackingThread);
+        }
     }
 
     public void track() {

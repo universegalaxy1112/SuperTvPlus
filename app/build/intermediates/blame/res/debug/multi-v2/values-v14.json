@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\workspace\\2020\\8_Aug\\SupertvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+            "outputFile": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\0b9351d2943fc63f9fe45bbb3cc51313\\jetified-core-0.8.5.6\\res\\values-v14\\values-v14.xml",
+                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\f8eb33fc6671eb9dd4fb8ac2dae95e0d\\jetified-core-0.8.5.6\\res\\values-v14\\values-v14.xml",
                     "from": {
                         "startLines": "2,9",
                         "startColumns": "4,4",

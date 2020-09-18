@@ -58,7 +58,7 @@ public class Device {
             treatAsBox = true;
         }
         String model = Build.MODEL;
-        if(model != null && (model.toLowerCase().contains("tx3") || model.toLowerCase().contains("t95") || model.toLowerCase().contains("mxq") || model.toLowerCase().contains("mbox"))) {
+        if(model != null && (model.toLowerCase().contains("tx3") || model.toLowerCase().contains("t95") || model.toLowerCase().contains("mqx") || model.toLowerCase().contains("mbox") || model.toLowerCase().contains("mxq") || model.toLowerCase().contains("p281"))) {
             treatAsBox = true;
         }
 

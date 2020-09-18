@@ -52,7 +52,7 @@ public class LiveTvApplication extends MultiDexApplication implements StringRequ
     }
 
     public void performLogin(){
-        if( appContext != null && !(appContext instanceof SplashActivity) && LiveTvApplication.getUser() != null){
+        if( appContext != null && !(appContext instanceof SplashActivity) && !(appContext instanceof LoginActivity) && LiveTvApplication.getUser() != null){
             NetManager.getInstance().performLoginCode(LiveTvApplication.getUser().getName(),LiveTvApplication.getUser().getPassword(), LiveTvApplication.getUser().getDeviceId(),this);
         }
     }
