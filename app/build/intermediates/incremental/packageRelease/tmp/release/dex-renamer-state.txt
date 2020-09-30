@@ -1,0 +1,7 @@
+#Thu Sep 24 03:52:31 CST 2020
+base.0=D\:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=D\:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes2.dex

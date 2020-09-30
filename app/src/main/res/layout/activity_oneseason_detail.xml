@@ -7,10 +7,10 @@
     <data>
         <variable
             name="movieDetailsVM"
-            type="com.uni.julio.supertv.viewmodel.MovieDetailsViewModel" />
+            type="com.uni.julio.superplus.viewmodel.MovieDetailsViewModel" />
         <variable
             name="movieDetailItem"
-            type="com.uni.julio.supertv.model.Movie" />
+            type="com.uni.julio.superplus.model.Movie" />
     </data>
 
     <LinearLayout

@@ -7,10 +7,10 @@
     <data>
         <variable
             name="movieDetailsVM"
-            type="com.uni.julio.supertv.viewmodel.EpisodeDetailsViewModel" />
+            type="com.uni.julio.superplus.viewmodel.EpisodeDetailsViewModel" />
         <variable
             name="movieDetailItem"
-            type="com.uni.julio.supertv.model.Movie" />
+            type="com.uni.julio.superplus.model.Movie" />
     </data>
 
     <LinearLayout
@@ -420,7 +420,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
-            <com.uni.julio.supertv.helper.TVRecyclerView
+            <com.uni.julio.superplus.helper.TVRecyclerView
                 android:id="@+id/recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

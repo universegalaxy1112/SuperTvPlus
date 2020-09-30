@@ -3,10 +3,10 @@
     <data>
         <variable
             name="liveProgramItem"
-            type="com.uni.julio.supertv.model.LiveProgram" />
+            type="com.uni.julio.superplus.model.LiveProgram" />
         <variable
             name="livetvAdapter"
-            type="com.uni.julio.supertv.adapter.LivetvAdapterNew" />
+            type="com.uni.julio.superplus.adapter.LivetvAdapterNew" />
 
     </data>
     <LinearLayout

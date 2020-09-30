@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.uni.julio.supertv">
+    package="com.uni.julio.superplus">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
@@ -25,7 +25,7 @@
         android:required="false"/>
 
     <application
-        android:name=".LiveTvApplication"
+        android:name="com.uni.julio.superplus.LiveTvApplication"
         android:allowBackup="true"
         android:banner="@drawable/banner"
         android:label="@string/app_name"
@@ -37,7 +37,7 @@
         android:theme="@style/AppTheme">
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.uni.julio.supertv.fileprovider"
+            android:authorities="com.uni.julio.superplus.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true"
             tools:replace="android:authorities">
@@ -49,21 +49,21 @@
 
 
         <activity
-            android:name=".view.MoviesTvActivity"
+            android:name="com.uni.julio.superplus.view.MoviesTvActivity"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.Leanback"/>
 
         <activity
-            android:name=".view.SearchTvActivity"
+            android:name="com.uni.julio.superplus.view.SearchTvActivity"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.Leanback"/>
 
         <activity
-            android:name=".view.AccountActivity"
+            android:name="com.uni.julio.superplus.view.AccountActivity"
             android:theme="@style/SuperTvDefault.NoActionBar" />
 
         <activity
-            android:name=".view.VideoPlayActivity"
+            android:name="com.uni.julio.superplus.view.VideoPlayActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:screenOrientation="landscape"
             android:resizeableActivity="true"
@@ -71,46 +71,46 @@
             android:theme="@style/SuperTvDefault.NoActionBar" />
 
         <activity
-            android:name=".view.SearchActivity"
+            android:name="com.uni.julio.superplus.view.SearchActivity"
             android:theme="@style/SuperTvDefault.NoActionBar" />
         <activity
-            android:name=".view.LoadingActivity"
+            android:name="com.uni.julio.superplus.view.LoadingActivity"
             android:theme="@style/SuperTvDefault.NoActionBar" />
         <activity
-            android:name=".view.LoginActivity"
+            android:name="com.uni.julio.superplus.view.LoginActivity"
             android:theme="@style/SuperTvDefault.NoActionBar" />
         <activity
-            android:name=".view.MultiSeasonDetailActivity"
+            android:name="com.uni.julio.superplus.view.MultiSeasonDetailActivity"
             android:theme="@style/SuperTvDefault.NoActionBar" />
         <activity
-            android:name=".view.exoplayer.VideoPlayFragment"
+            android:name="com.uni.julio.superplus.view.exoplayer.VideoPlayFragment"
             android:screenOrientation="landscape"
             android:theme="@style/SuperTvDefault.NoActionBar" />
 
         <activity
-            android:name=".view.LiveTvNewActivity"
+            android:name="com.uni.julio.superplus.view.LiveTvNewActivity"
             android:configChanges="keyboard|keyboardHidden|navigation"
             android:screenOrientation="landscape"
             android:theme="@style/SuperTvDefault.NoActionBar" />
         <activity
-            android:name=".view.MoviesActivity"
+            android:name="com.uni.julio.superplus.view.MoviesActivity"
             android:theme="@style/SuperTvDefault.NoActionBar" />
         <activity
-            android:name=".view.OneSeasonDetailActivity"
+            android:name="com.uni.julio.superplus.view.OneSeasonDetailActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:theme="@style/SuperTvDefault.NoActionBar" />
         <activity
-            android:name=".view.MoreVideoActivity"
+            android:name="com.uni.julio.superplus.view.MoreVideoActivity"
             android:theme="@style/SuperTvDefault.NoActionBar" />
         <activity
-            android:name=".view.SpeedTestActivity"
+            android:name="com.uni.julio.superplus.view.SpeedTestActivity"
             android:theme="@style/SuperTvDefault.NoActionBar" />
 
         <activity
-            android:name=".view.SelectServerActivity"
+            android:name="com.uni.julio.superplus.view.SelectServerActivity"
             android:theme="@style/SuperTvDefault.NoActionBar" />
         <activity
-            android:name=".view.MainActivity"
+            android:name="com.uni.julio.superplus.view.MainActivity"
             android:theme="@style/SuperTvDefault.NoActionBar">
             <meta-data
                 android:name="android.app.searchable"
@@ -118,7 +118,7 @@
         </activity>
 
         <activity
-            android:name=".view.SplashActivity"
+            android:name="com.uni.julio.superplus.view.SplashActivity"
             android:configChanges="keyboard|keyboardHidden|orientation"
             android:theme="@style/SuperTvDefault.NoActionBar">
             <intent-filter>
