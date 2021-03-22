@@ -79,7 +79,7 @@ public final class CssParserTest extends InstrumentationTestCase {
   }
 
   public void testParseMethodSimpleInput() {
-    String styleBlock1 = " ::cue { color : black; background-color: PapayaWhip }";
+    String styleBlock1 = " ::cue { color : black; livetv_bg_middle-color: PapayaWhip }";
     WebvttCssStyle expectedStyle = new WebvttCssStyle();
     expectedStyle.setFontColor(0xFF000000);
     expectedStyle.setBackgroundColor(0xFFFFEFD5);
@@ -90,14 +90,14 @@ public final class CssParserTest extends InstrumentationTestCase {
     expectedStyle.setFontColor(0xFF000000);
     assertParserProduces(expectedStyle, styleBlock2);
 
-    String styleBlock3 = " \n::cue {\n background-color\n:#00fFFe}";
+    String styleBlock3 = " \n::cue {\n livetv_bg_middle-color\n:#00fFFe}";
     expectedStyle = new WebvttCssStyle();
     expectedStyle.setBackgroundColor(0xFF00FFFE);
     assertParserProduces(expectedStyle, styleBlock3);
   }
 
   public void testMultiplePropertiesInBlock() {
-    String styleBlock = "::cue(#id){text-decoration:underline; background-color:green;"
+    String styleBlock = "::cue(#id){text-decoration:underline; livetv_bg_middle-color:green;"
         + "color:red; font-family:Courier; font-weight:bold}";
     WebvttCssStyle expectedStyle = new WebvttCssStyle();
     expectedStyle.setTargetId("id");
@@ -111,7 +111,7 @@ public final class CssParserTest extends InstrumentationTestCase {
   }
 
   public void testRgbaColorExpression() {
-    String styleBlock = "::cue(#rgb){background-color: rgba(\n10/* Ugly color */,11\t, 12\n,.1);"
+    String styleBlock = "::cue(#rgb){livetv_bg_middle-color: rgba(\n10/* Ugly color */,11\t, 12\n,.1);"
         + "color:rgb(1,1,\n1)}";
     WebvttCssStyle expectedStyle = new WebvttCssStyle();
     expectedStyle.setTargetId("rgb");

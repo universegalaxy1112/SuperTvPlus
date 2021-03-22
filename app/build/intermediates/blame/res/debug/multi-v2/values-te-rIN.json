@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-te-rIN\\values-te-rIN.xml",
+            "outputFile": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-te-rIN\\values-te-rIN.xml",
             "map": [
                 {
-                    "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-te-rIN\\values-te-rIN.xml",
+                    "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-te-rIN\\values-te-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",

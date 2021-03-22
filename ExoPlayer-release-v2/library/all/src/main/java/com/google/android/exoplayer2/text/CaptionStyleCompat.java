@@ -78,7 +78,7 @@ public final class CaptionStyleCompat {
   public final int foregroundColor;
 
   /**
-   * The preferred background color.
+   * The preferred livetv_bg_middle color.
    */
   public final int backgroundColor;
 

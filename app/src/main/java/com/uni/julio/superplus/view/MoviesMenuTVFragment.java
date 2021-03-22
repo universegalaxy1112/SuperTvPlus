@@ -123,7 +123,6 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
         }
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         try {
@@ -135,7 +134,7 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
             setAdapter(this.mRowsAdapter);
         } catch (Exception e) {
             e.printStackTrace();
-            Dialogs.showOneButtonDialog(getActivity(), R.string.exception_title, R.string.exception_content, new DialogInterface.OnClickListener() {
+            Dialogs.showOneButtonDialog(getActivity(), R.string.something_wrong_title, R.string.something_wrong, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     Objects.requireNonNull(getActivity()).finish();
@@ -211,7 +210,6 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
         }
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void setupUIElements() {
         setTitle("Movies");
         setHeadersState(1);
@@ -264,7 +262,7 @@ public class MoviesMenuTVFragment extends BrowseSupportFragment implements LoadM
 
         } catch (Exception e) {
             e.printStackTrace();
-            Dialogs.showOneButtonDialog(getActivity(), R.string.exception_title, R.string.exception_content, new DialogInterface.OnClickListener() {
+            Dialogs.showOneButtonDialog(getActivity(), R.string.something_wrong_title, R.string.something_wrong, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     Objects.requireNonNull(getActivity()).finish();

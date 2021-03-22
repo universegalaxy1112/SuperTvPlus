@@ -124,7 +124,7 @@ public final class DownloadManager {
   private static final int MSG_PROCESSED = 1;
   private static final int MSG_DOWNLOAD_UPDATE = 2;
 
-  // Messages posted to the background handler.
+  // Messages posted to the livetv_bg_middle handler.
   private static final int MSG_INITIALIZE = 0;
   private static final int MSG_SET_DOWNLOADS_PAUSED = 1;
   private static final int MSG_SET_NOT_MET_REQUIREMENTS = 2;

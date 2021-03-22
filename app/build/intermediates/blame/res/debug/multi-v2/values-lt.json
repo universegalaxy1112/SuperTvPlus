@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lt\\values-lt.xml",
+            "outputFile": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lt\\values-lt.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\eefaec7fbb6a4af62cf7ada5e808ca96\\jetified-firebase-messaging-20.1.7\\res\\values-lt\\values.xml",
+                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\bd1dd6b4fdcae2df2e7c108d8bfd301d\\jetified-play-services-basement-17.1.0\\res\\values-lt\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "217",
+                        "endOffsets": "464"
+                    },
+                    "to": {
+                        "startLines": "79",
+                        "startColumns": "4",
+                        "startOffsets": "8488",
+                        "endColumns": "217",
+                        "endOffsets": "8701"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\472641b163a7bfb92a510179aaaaf383\\jetified-firebase-messaging-20.1.7\\res\\values-lt\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -18,23 +35,6 @@
                         "startOffsets": "10688",
                         "endColumns": "105",
                         "endOffsets": "10789"
-                    }
-                },
-                {
-                    "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-lt\\values-lt.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,135,209,282,349,432,506",
-                        "endColumns": "79,73,72,66,82,73,68",
-                        "endOffsets": "130,204,277,344,427,501,570"
-                    },
-                    "to": {
-                        "startLines": "89,90,91,92,93,94,95",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "10079,10159,10233,10306,10373,10456,10530",
-                        "endColumns": "79,73,72,66,82,73,68",
-                        "endOffsets": "10154,10228,10301,10368,10451,10525,10594"
                     }
                 },
                 {
@@ -55,23 +55,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\b51c9b291bc6eec00b822628f4ab52da\\jetified-play-services-basement-17.1.0\\res\\values-lt\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "217",
-                        "endOffsets": "464"
-                    },
-                    "to": {
-                        "startLines": "79",
-                        "startColumns": "4",
-                        "startOffsets": "8488",
-                        "endColumns": "217",
-                        "endOffsets": "8701"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\3565b3fcc90db095c2532f39be483830\\mediarouter-1.1.0\\res\\values-lt\\values-lt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25",
@@ -86,6 +69,23 @@
                         "startOffsets": "15126,15233,15348,15466,15583,15704,15802,15888,15986,16093,16192,16289,16381,16477,16592,16710,16800,16884,16972,17078,17183,17288,17393,17480",
                         "endColumns": "106,114,117,116,120,97,85,97,106,98,96,91,95,114,117,89,83,87,105,104,104,104,86,96",
                         "endOffsets": "15228,15343,15461,15578,15699,15797,15883,15981,16088,16187,16284,16376,16472,16587,16705,16795,16879,16967,17073,17178,17283,17388,17475,17572"
+                    }
+                },
+                {
+                    "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-lt\\values-lt.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,135,209,282,349,432,506",
+                        "endColumns": "79,73,72,66,82,73,68",
+                        "endOffsets": "130,204,277,344,427,501,570"
+                    },
+                    "to": {
+                        "startLines": "89,90,91,92,93,94,95",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "10079,10159,10233,10306,10373,10456,10530",
+                        "endColumns": "79,73,72,66,82,73,68",
+                        "endOffsets": "10154,10228,10301,10368,10451,10525,10594"
                     }
                 },
                 {

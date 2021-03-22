@@ -58,7 +58,7 @@ public class MultiSeasonDetailActivity extends BaseActivity implements EpisodeDe
             activityMultiSeasonDetailBinding = DataBindingUtil.setContentView(this, R.layout.activity_multi_season_detail);
             showMovieDetails(serie, mainCategoryId);
         } catch (Exception e) {
-            Dialogs.showOneButtonDialog(getActivity(), R.string.exception_title, R.string.exception_content, new DialogInterface.OnClickListener() {
+            Dialogs.showOneButtonDialog(getActivity(), R.string.something_wrong_title, R.string.something_wrong, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     getActivity().finish();

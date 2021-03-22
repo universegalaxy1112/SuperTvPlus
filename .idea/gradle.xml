@@ -17,8 +17,6 @@
             <option value="$PROJECT_DIR$/ExoPlayer-release-v2/extensions/opus" />
             <option value="$PROJECT_DIR$/ExoPlayer-release-v2/extensions/vp9" />
             <option value="$PROJECT_DIR$/ExoPlayer-release-v2/library/all" />
-            <option value="$PROJECT_DIR$/ExoPlayer-release-v2/testutils" />
-            <option value="$PROJECT_DIR$/ExoPlayer-release-v2/testutils_robolectric" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>

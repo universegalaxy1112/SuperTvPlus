@@ -35,17 +35,26 @@ public class LoadingActivity extends BaseActivity implements LoadingMoviesViewMo
         return this;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle extras = getIntent().getExtras();
-        if(extras != null) {
-            selectedType = (ModelTypes.SelectedType) extras.get("selectedType");
-            mainCategoryId = extras.getInt("mainCategoryId",-1);
-            serie = new Gson().fromJson(extras.getString("serie"), Serie.class);
+        try {
+            if(extras != null) {
+                selectedType = (ModelTypes.SelectedType) extras.get("selectedType");
+                mainCategoryId = extras.getInt("mainCategoryId",-1);
+                serie = new Gson().fromJson(extras.getString("serie"), Serie.class);
+            }
+            loadingMoviesViewModel = new LoadingMoviesViewModel();
+        } catch (Exception e) {
+            Dialogs.showOneButtonDialog(getActivity(), R.string.something_wrong_title, R.string.something_wrong, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    getActivity().finish();
+                }
+            });
         }
-        loadingMoviesViewModel = new LoadingMoviesViewModel();
+
     }
     private boolean isInit = false;
     @Override

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ne\\values-ne.xml",
+            "outputFile": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ne\\values-ne.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\3565b3fcc90db095c2532f39be483830\\mediarouter-1.1.0\\res\\values-ne\\values-ne.xml",
@@ -38,24 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\eefaec7fbb6a4af62cf7ada5e808ca96\\jetified-firebase-messaging-20.1.7\\res\\values-ne\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "207",
-                        "endColumns": "99",
-                        "endOffsets": "306"
-                    },
-                    "to": {
-                        "startLines": "90",
-                        "startColumns": "4",
-                        "startOffsets": "10280",
-                        "endColumns": "103",
-                        "endOffsets": "10379"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\b51c9b291bc6eec00b822628f4ab52da\\jetified-play-services-basement-17.1.0\\res\\values-ne\\values.xml",
+                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\bd1dd6b4fdcae2df2e7c108d8bfd301d\\jetified-play-services-basement-17.1.0\\res\\values-ne\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -154,6 +137,23 @@
                         "startOffsets": "7368,7485,7675,7811,7930,8160,8298,8438,8795,9034,9154,9349,9488,9695,9877,9973,10075",
                         "endColumns": "116,189,135,118,229,137,139,133,238,119,194,138,206,181,95,101,120",
                         "endOffsets": "7480,7670,7806,7925,8155,8293,8433,8567,9029,9149,9344,9483,9690,9872,9968,10070,10191"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\472641b163a7bfb92a510179aaaaf383\\jetified-firebase-messaging-20.1.7\\res\\values-ne\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "207",
+                        "endColumns": "99",
+                        "endOffsets": "306"
+                    },
+                    "to": {
+                        "startLines": "90",
+                        "startColumns": "4",
+                        "startOffsets": "10280",
+                        "endColumns": "103",
+                        "endOffsets": "10379"
                     }
                 },
                 {

@@ -55,24 +55,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\eefaec7fbb6a4af62cf7ada5e808ca96\\jetified-firebase-messaging-20.1.7\\res\\values-or\\values.xml",
+                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\5a3b5061b70fc032e06907586d1fcc5e\\core-1.2.0\\res\\values-or\\values-or.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "207",
-                        "endColumns": "102",
-                        "endOffsets": "309"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "89",
+                        "startLines": "154",
                         "startColumns": "4",
-                        "startOffsets": "10065",
-                        "endColumns": "106",
-                        "endOffsets": "10167"
+                        "startOffsets": "17170",
+                        "endColumns": "100",
+                        "endOffsets": "17266"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\b51c9b291bc6eec00b822628f4ab52da\\jetified-play-services-basement-17.1.0\\res\\values-or\\values.xml",
+                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\bd1dd6b4fdcae2df2e7c108d8bfd301d\\jetified-play-services-basement-17.1.0\\res\\values-or\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -89,20 +89,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\5a3b5061b70fc032e06907586d1fcc5e\\core-1.2.0\\res\\values-or\\values-or.xml",
+                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\472641b163a7bfb92a510179aaaaf383\\jetified-firebase-messaging-20.1.7\\res\\values-or\\values.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "207",
+                        "endColumns": "102",
+                        "endOffsets": "309"
                     },
                     "to": {
-                        "startLines": "154",
+                        "startLines": "89",
                         "startColumns": "4",
-                        "startOffsets": "17170",
-                        "endColumns": "100",
-                        "endOffsets": "17266"
+                        "startOffsets": "10065",
+                        "endColumns": "106",
+                        "endOffsets": "10167"
                     }
                 },
                 {

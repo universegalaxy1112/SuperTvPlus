@@ -1,11 +1,11 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.uni.julio.superplus"
-4    android:versionCode="15"
-5    android:versionName="3.0.5" >
+4    android:versionCode="16"
+5    android:versionName="3.0.6" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="21"
+8        android:minSdkVersion="19"
 8-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
 9-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
@@ -312,33 +312,33 @@
 162             but set to not exported to explicitly avoid allowing another app to call it.
 163        -->
 164        <service
-164-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:28:9-34:19
+164-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:28:9-34:19
 165            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-165-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:29:13-82
+165-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:29:13-82
 166            android:exported="false" >
-166-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:30:13-37
+166-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:30:13-37
 167            <intent-filter android:priority="-500" >
-167-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:31:13-33:29
-167-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:31:28-51
+167-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:31:13-33:29
+167-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:31:28-51
 168                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-168-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:32:17-78
-168-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:32:25-75
+168-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:32:17-78
+168-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:32:25-75
 169            </intent-filter>
 170        </service>
 171        <service
-171-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:35:9-41:19
+171-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:35:9-41:19
 172            android:name="com.google.firebase.components.ComponentDiscoveryService"
-172-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:36:13-84
+172-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:36:13-84
 173            android:directBootAware="true"
-173-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:35:13-43
+173-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:35:13-43
 174            android:exported="false" >
-174-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:37:13-37
+174-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:37:13-37
 175            <meta-data
-175-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:38:13-40:85
+175-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:38:13-40:85
 176                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-176-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:39:17-119
+176-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:39:17-119
 177                android:value="com.google.firebase.components.ComponentRegistrar" />
-177-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:40:17-82
+177-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:40:17-82
 178            <meta-data
 178-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e64708330b37d0630cbafa02b57432bb\firebase-iid-20.1.7\AndroidManifest.xml:32:13-34:85
 179                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
@@ -426,63 +426,63 @@
 223-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\4954fc2300ad7bc55ac91423f09c28ee\play-services-measurement-17.5.0\AndroidManifest.xml:43:13-69
 224
 225        <provider
-225-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:26:9-31:39
+225-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:26:9-31:39
 226            android:name="com.google.firebase.provider.FirebaseInitProvider"
-226-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:27:13-77
+226-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:27:13-77
 227            android:authorities="com.uni.julio.superplus.firebaseinitprovider"
-227-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:28:13-72
+227-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:28:13-72
 228            android:directBootAware="true"
-228-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:29:13-43
+228-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:29:13-43
 229            android:exported="false"
-229-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:30:13-37
+229-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:30:13-37
 230            android:initOrder="100" />
-230-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:31:13-36
+230-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:31:13-36
 231
 232        <meta-data
-232-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b51c9b291bc6eec00b822628f4ab52da\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
+232-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\bd1dd6b4fdcae2df2e7c108d8bfd301d\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
 233            android:name="com.google.android.gms.version"
-233-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b51c9b291bc6eec00b822628f4ab52da\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
+233-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\bd1dd6b4fdcae2df2e7c108d8bfd301d\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
 234            android:value="@integer/google_play_services_version" />
-234-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b51c9b291bc6eec00b822628f4ab52da\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
+234-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\bd1dd6b4fdcae2df2e7c108d8bfd301d\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
 235
 236        <provider
-236-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d0695166756356d037e141b6d8765fd0\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+236-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e1b550f246b390462462e4731002116f\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
 237            android:name="com.squareup.picasso.PicassoProvider"
-237-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d0695166756356d037e141b6d8765fd0\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+237-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e1b550f246b390462462e4731002116f\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
 238            android:authorities="com.uni.julio.superplus.com.squareup.picasso"
-238-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d0695166756356d037e141b6d8765fd0\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+238-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e1b550f246b390462462e4731002116f\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
 239            android:exported="false" />
-239-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d0695166756356d037e141b6d8765fd0\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+239-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e1b550f246b390462462e4731002116f\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
 240
 241        <service
-241-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:29:9-35:19
+241-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:29:9-35:19
 242            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-242-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:30:13-103
+242-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:30:13-103
 243            android:exported="false" >
-243-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:31:13-37
+243-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:31:13-37
 244            <meta-data
-244-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:32:13-34:39
+244-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:32:13-34:39
 245                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-245-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:33:17-94
+245-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:33:17-94
 246                android:value="cct" />
-246-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:34:17-36
+246-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:34:17-36
 247        </service>
 248        <service
-248-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:26:9-30:19
+248-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:26:9-30:19
 249            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-249-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:27:13-117
+249-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:27:13-117
 250            android:exported="false"
-250-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:28:13-37
+250-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:28:13-37
 251            android:permission="android.permission.BIND_JOB_SERVICE" >
-251-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:29:13-69
+251-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:29:13-69
 252        </service>
 253
 254        <receiver
-254-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:32:9-34:40
+254-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:32:9-34:40
 255            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-255-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:33:13-132
+255-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:33:13-132
 256            android:exported="false" />
-256-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:34:13-37
+256-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:34:13-37
 257    </application>
 258
 259</manifest>

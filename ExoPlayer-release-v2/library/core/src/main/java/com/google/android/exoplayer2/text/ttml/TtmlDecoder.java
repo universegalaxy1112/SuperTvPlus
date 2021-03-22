@@ -454,7 +454,7 @@ public final class TtmlDecoder extends SimpleSubtitleDecoder {
           try {
             style.setBackgroundColor(ColorParser.parseTtmlColor(attributeValue));
           } catch (IllegalArgumentException e) {
-            Log.w(TAG, "Failed parsing background value: " + attributeValue);
+            Log.w(TAG, "Failed parsing livetv_bg_middle value: " + attributeValue);
           }
           break;
         case TtmlNode.ATTR_TTS_COLOR:

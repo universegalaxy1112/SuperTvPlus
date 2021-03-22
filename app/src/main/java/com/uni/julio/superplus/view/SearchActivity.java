@@ -96,7 +96,7 @@ public class SearchActivity extends BaseActivity implements SearchViewModelContr
             }
         } catch (Exception e) {
             e.printStackTrace();
-            Dialogs.showOneButtonDialog(getActivity(), R.string.exception_title, R.string.exception_content, new DialogInterface.OnClickListener() {
+            Dialogs.showOneButtonDialog(getActivity(), R.string.something_wrong_title, R.string.something_wrong, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     getActivity().finish();

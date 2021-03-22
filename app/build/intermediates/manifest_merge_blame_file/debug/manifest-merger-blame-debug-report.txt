@@ -5,67 +5,67 @@
 5    android:versionName="3.0.5" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="21"
-8-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml
+8        android:minSdkVersion="19"
+8-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml
+9-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:6:5-67
-11-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:6:22-64
+11-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:6:5-67
+11-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:6:22-64
 12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-12-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:7:5-70
-12-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:7:22-68
+12-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:7:5-70
+12-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:7:22-68
 13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:8:5-79
-13-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:8:22-76
+13-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:8:5-79
+13-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:8:22-76
 14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-14-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:9:5-81
-14-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:9:22-78
+14-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:9:5-81
+14-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:9:22-78
 15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:10:5-80
-15-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:10:22-77
+15-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:10:5-80
+15-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:10:22-77
 16    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
-16-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:11:5-82
-16-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:11:22-80
+16-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:11:5-82
+16-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:11:22-80
 17
 18    <uses-feature
-18-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:13:5-14:36
+18-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:13:5-14:36
 19        android:name="android.hardware.touchscreen"
-19-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:13:19-62
+19-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:13:19-62
 20        android:required="false" />
-20-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:14:9-33
+20-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:14:9-33
 21    <uses-feature
-21-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:15:5-16:36
+21-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:15:5-16:36
 22        android:name="android.software.leanback"
-22-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:15:19-59
+22-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:15:19-59
 23        android:required="false" />
-23-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:16:9-33
+23-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:16:9-33
 24    <uses-feature
-24-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:17:5-19:20
+24-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:17:5-19:20
 25        android:name="android.hardware.wifi"
-25-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:17:19-55
+25-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:17:19-55
 26        android:required="false" >
-26-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:18:9-33
+26-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:18:9-33
 27    </uses-feature>
 28    <uses-feature
-28-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:20:5-21:35
+28-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:20:5-21:35
 29        android:name="android.hardware.camera"
-29-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:20:19-57
+29-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:20:19-57
 30        android:required="false" />
-30-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:21:9-33
+30-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:21:9-33
 31    <uses-feature
-31-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:22:5-23:35
+31-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:22:5-23:35
 32        android:name="android.hardware.microphone"
-32-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:22:19-61
+32-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:22:19-61
 33        android:required="false" />
-33-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:23:9-33
+33-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:23:9-33
 34    <uses-feature
-34-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:24:5-25:35
+34-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:24:5-25:35
 35        android:name="android.hardware.sensor"
-35-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:24:19-57
+35-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:24:19-57
 36        android:required="false" />
-36-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:25:9-33
+36-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:25:9-33
 37
 38    <!-- This permission is required to start foreground services in Android P. -->
 39    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -82,211 +82,211 @@
 42-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\4954fc2300ad7bc55ac91423f09c28ee\play-services-measurement-17.5.0\AndroidManifest.xml:26:22-107
 43
 44    <uses-feature android:glEsVersion="0x00020000" />
-44-->[:extension-vp9] D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:5-54
-44-->[:extension-vp9] D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:19-51
+44-->[:extension-vp9] D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:5-54
+44-->[:extension-vp9] D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:19-51
 45
 46    <application
-46-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:27:5-135:27
+46-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:27:5-135:27
 47        android:name="com.uni.julio.superplus.LiveTvApplication"
-47-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:28:9-65
+47-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:28:9-65
 48        android:allowBackup="true"
-48-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:29:9-35
+48-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:29:9-35
 49        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 49-->[androidx.core:core:1.2.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5a3b5061b70fc032e06907586d1fcc5e\core-1.2.0\AndroidManifest.xml:24:18-86
 50        android:banner="@drawable/banner"
-50-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:30:9-42
+50-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:30:9-42
 51        android:debuggable="true"
 52        android:icon="@mipmap/ic_launcher"
-52-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:34:9-43
+52-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:34:9-43
 53        android:label="@string/app_name"
-53-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:31:9-41
+53-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:31:9-41
 54        android:logo="@drawable/banner"
-54-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:35:9-40
+54-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:35:9-40
 55        android:networkSecurityConfig="@xml/network_security_config"
-55-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:32:9-69
+55-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:32:9-69
 56        android:roundIcon="@mipmap/ic_launcher"
-56-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:33:9-48
+56-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:33:9-48
 57        android:supportsRtl="true"
-57-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:36:9-35
+57-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:36:9-35
 58        android:testOnly="true"
 59        android:theme="@style/AppTheme" >
-59-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:37:9-40
+59-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:37:9-40
 60        <provider
-60-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:38:9-48:20
+60-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:38:9-48:20
 61            android:name="androidx.core.content.FileProvider"
-61-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:39:13-62
+61-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:39:13-62
 62            android:authorities="com.uni.julio.superplus.fileprovider"
-62-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:40:13-71
+62-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:40:13-71
 63            android:exported="false"
-63-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:41:13-37
+63-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:41:13-37
 64            android:grantUriPermissions="true" >
-64-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:42:13-47
+64-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:42:13-47
 65            <meta-data
-65-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:44:13-47:52
+65-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:44:13-47:52
 66                android:name="android.support.FILE_PROVIDER_PATHS"
-66-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:45:17-67
+66-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:45:17-67
 67                android:resource="@xml/filepaths" />
-67-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:46:17-50
+67-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:46:17-50
 68        </provider>
 69
 70        <activity
-70-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:51:9-54:52
+70-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:51:9-54:52
 71            android:name="com.uni.julio.superplus.view.MoviesTvActivity"
-71-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:52:13-73
+71-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:52:13-73
 72            android:screenOrientation="landscape"
-72-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:53:13-50
+72-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:53:13-50
 73            android:theme="@style/Theme.Leanback" />
-73-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:54:13-50
+73-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:54:13-50
 74        <activity
-74-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:56:9-59:52
+74-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:56:9-59:52
 75            android:name="com.uni.julio.superplus.view.SearchTvActivity"
-75-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:57:13-73
+75-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:57:13-73
 76            android:screenOrientation="landscape"
-76-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:58:13-50
+76-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:58:13-50
 77            android:theme="@style/Theme.Leanback" />
-77-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:59:13-50
+77-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:59:13-50
 78        <activity
-78-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:61:9-63:65
+78-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:61:9-63:65
 79            android:name="com.uni.julio.superplus.view.AccountActivity"
-79-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:62:13-72
+79-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:62:13-72
 80            android:theme="@style/SuperTvDefault.NoActionBar" />
-80-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:63:13-62
+80-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:63:13-62
 81        <activity
-81-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:65:9-71:65
+81-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:65:9-71:65
 82            android:name="com.uni.julio.superplus.view.VideoPlayActivity"
-82-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:66:13-74
+82-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:66:13-74
 83            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
-83-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:67:13-91
+83-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:67:13-91
 84            android:resizeableActivity="true"
-84-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:69:13-46
+84-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:69:13-46
 85            android:screenOrientation="landscape"
-85-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:68:13-50
+85-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:68:13-50
 86            android:supportsPictureInPicture="true"
-86-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:70:13-52
+86-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:70:13-52
 87            android:theme="@style/SuperTvDefault.NoActionBar" />
-87-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:71:13-62
+87-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:71:13-62
 88        <activity
-88-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:73:9-75:65
+88-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:73:9-75:65
 89            android:name="com.uni.julio.superplus.view.SearchActivity"
-89-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:74:13-71
+89-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:74:13-71
 90            android:theme="@style/SuperTvDefault.NoActionBar" />
-90-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:75:13-62
+90-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:75:13-62
 91        <activity
-91-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:76:9-78:65
+91-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:76:9-78:65
 92            android:name="com.uni.julio.superplus.view.LoadingActivity"
-92-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:77:13-72
+92-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:77:13-72
 93            android:theme="@style/SuperTvDefault.NoActionBar" />
-93-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:78:13-62
+93-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:78:13-62
 94        <activity
-94-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:79:9-81:65
+94-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:79:9-81:65
 95            android:name="com.uni.julio.superplus.view.LoginActivity"
-95-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:80:13-70
+95-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:80:13-70
 96            android:theme="@style/SuperTvDefault.NoActionBar" />
-96-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:81:13-62
+96-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:81:13-62
 97        <activity
-97-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:82:9-84:65
+97-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:82:9-84:65
 98            android:name="com.uni.julio.superplus.view.MultiSeasonDetailActivity"
-98-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:83:13-82
+98-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:83:13-82
 99            android:theme="@style/SuperTvDefault.NoActionBar" />
-99-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:84:13-62
+99-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:84:13-62
 100        <activity
-100-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:85:9-88:65
+100-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:85:9-88:65
 101            android:name="com.uni.julio.superplus.view.exoplayer.VideoPlayFragment"
-101-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:86:13-84
+101-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:86:13-84
 102            android:screenOrientation="landscape"
-102-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:87:13-50
+102-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:87:13-50
 103            android:theme="@style/SuperTvDefault.NoActionBar" />
-103-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:88:13-62
+103-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:88:13-62
 104        <activity
-104-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:90:9-94:65
+104-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:90:9-94:65
 105            android:name="com.uni.julio.superplus.view.LiveTvNewActivity"
-105-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:91:13-74
+105-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:91:13-74
 106            android:configChanges="keyboard|keyboardHidden|navigation"
-106-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:92:13-71
+106-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:92:13-71
 107            android:screenOrientation="landscape"
-107-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:93:13-50
+107-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:93:13-50
 108            android:theme="@style/SuperTvDefault.NoActionBar" />
-108-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:94:13-62
+108-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:94:13-62
 109        <activity
-109-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:95:9-97:65
+109-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:95:9-97:65
 110            android:name="com.uni.julio.superplus.view.MoviesActivity"
-110-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:96:13-71
+110-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:96:13-71
 111            android:theme="@style/SuperTvDefault.NoActionBar" />
-111-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:97:13-62
+111-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:97:13-62
 112        <activity
-112-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:98:9-101:65
+112-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:98:9-101:65
 113            android:name="com.uni.julio.superplus.view.OneSeasonDetailActivity"
-113-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:99:13-80
+113-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:99:13-80
 114            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
-114-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:100:13-91
+114-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:100:13-91
 115            android:theme="@style/SuperTvDefault.NoActionBar" />
-115-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:101:13-62
+115-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:101:13-62
 116        <activity
-116-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:102:9-104:65
+116-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:102:9-104:65
 117            android:name="com.uni.julio.superplus.view.MoreVideoActivity"
-117-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:103:13-74
+117-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:103:13-74
 118            android:theme="@style/SuperTvDefault.NoActionBar" />
-118-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:104:13-62
+118-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:104:13-62
 119        <activity
-119-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:105:9-107:65
+119-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:105:9-107:65
 120            android:name="com.uni.julio.superplus.view.SpeedTestActivity"
-120-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:106:13-74
+120-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:106:13-74
 121            android:theme="@style/SuperTvDefault.NoActionBar" />
-121-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:107:13-62
+121-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:107:13-62
 122        <activity
-122-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:109:9-111:65
+122-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:109:9-111:65
 123            android:name="com.uni.julio.superplus.view.SelectServerActivity"
-123-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:110:13-77
+123-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:110:13-77
 124            android:theme="@style/SuperTvDefault.NoActionBar" />
-124-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:111:13-62
+124-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:111:13-62
 125        <activity
-125-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:112:9-118:20
+125-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:112:9-118:20
 126            android:name="com.uni.julio.superplus.view.MainActivity"
-126-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:113:13-69
+126-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:113:13-69
 127            android:theme="@style/SuperTvDefault.NoActionBar" >
-127-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:114:13-62
+127-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:114:13-62
 128            <meta-data
-128-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:115:13-117:54
+128-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:115:13-117:54
 129                android:name="android.app.searchable"
-129-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:116:17-54
+129-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:116:17-54
 130                android:resource="@xml/searchable" />
-130-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:117:17-51
+130-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:117:17-51
 131        </activity>
 132        <activity
-132-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:120:9-134:20
+132-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:120:9-134:20
 133            android:name="com.uni.julio.superplus.view.SplashActivity"
-133-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:121:13-71
+133-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:121:13-71
 134            android:configChanges="keyboard|keyboardHidden|orientation"
-134-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:122:13-72
+134-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:122:13-72
 135            android:theme="@style/SuperTvDefault.NoActionBar" >
-135-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:123:13-62
+135-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:123:13-62
 136            <intent-filter>
-136-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:124:13-129:29
+136-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:124:13-129:29
 137                <action android:name="android.intent.action.MAIN" />
-137-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:125:17-69
-137-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:125:25-66
+137-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:125:17-69
+137-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:125:25-66
 138
 139                <category android:name="android.intent.category.LAUNCHER" />
-139-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:126:17-77
-139-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:126:27-74
+139-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:126:17-77
+139-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:126:27-74
 140
 141                <action android:name="android.settings.SETTINGS" />
-141-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:127:17-68
-141-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:127:25-65
+141-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:127:17-68
+141-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:127:25-65
 142
 143                <category android:name="android.intent.category.DEFAULT" />
-143-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:128:17-75
-143-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:128:27-73
+143-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:128:17-75
+143-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:128:27-73
 144            </intent-filter>
 145            <intent-filter>
-145-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:130:13-133:29
+145-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:130:13-133:29
 146                <action android:name="android.intent.action.MAIN" />
-146-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:125:17-69
-146-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:125:25-66
+146-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:125:17-69
+146-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:125:25-66
 147
 148                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-148-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:132:17-86
-148-->D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:132:27-83
+148-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:132:17-86
+148-->D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:132:27-83
 149            </intent-filter>
 150        </activity>
 151
@@ -314,33 +314,33 @@
 164             but set to not exported to explicitly avoid allowing another app to call it.
 165        -->
 166        <service
-166-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:28:9-34:19
+166-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:28:9-34:19
 167            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-167-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:29:13-82
+167-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:29:13-82
 168            android:exported="false" >
-168-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:30:13-37
+168-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:30:13-37
 169            <intent-filter android:priority="-500" >
-169-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:31:13-33:29
-169-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:31:28-51
+169-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:31:13-33:29
+169-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:31:28-51
 170                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-170-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:32:17-78
-170-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:32:25-75
+170-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:32:17-78
+170-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:32:25-75
 171            </intent-filter>
 172        </service>
 173        <service
-173-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:35:9-41:19
+173-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:35:9-41:19
 174            android:name="com.google.firebase.components.ComponentDiscoveryService"
-174-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:36:13-84
+174-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:36:13-84
 175            android:directBootAware="true"
-175-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:35:13-43
+175-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:35:13-43
 176            android:exported="false" >
-176-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:37:13-37
+176-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:37:13-37
 177            <meta-data
-177-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:38:13-40:85
+177-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:38:13-40:85
 178                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-178-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:39:17-119
+178-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:39:17-119
 179                android:value="com.google.firebase.components.ComponentRegistrar" />
-179-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:40:17-82
+179-->[com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:40:17-82
 180            <meta-data
 180-->[com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e64708330b37d0630cbafa02b57432bb\firebase-iid-20.1.7\AndroidManifest.xml:32:13-34:85
 181                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
@@ -428,63 +428,63 @@
 225-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\4954fc2300ad7bc55ac91423f09c28ee\play-services-measurement-17.5.0\AndroidManifest.xml:43:13-69
 226
 227        <provider
-227-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:26:9-31:39
+227-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:26:9-31:39
 228            android:name="com.google.firebase.provider.FirebaseInitProvider"
-228-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:27:13-77
+228-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:27:13-77
 229            android:authorities="com.uni.julio.superplus.firebaseinitprovider"
-229-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:28:13-72
+229-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:28:13-72
 230            android:directBootAware="true"
-230-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:29:13-43
+230-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:29:13-43
 231            android:exported="false"
-231-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:30:13-37
+231-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:30:13-37
 232            android:initOrder="100" />
-232-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:31:13-36
+232-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:31:13-36
 233
 234        <meta-data
-234-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b51c9b291bc6eec00b822628f4ab52da\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
+234-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\bd1dd6b4fdcae2df2e7c108d8bfd301d\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
 235            android:name="com.google.android.gms.version"
-235-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b51c9b291bc6eec00b822628f4ab52da\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
+235-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\bd1dd6b4fdcae2df2e7c108d8bfd301d\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
 236            android:value="@integer/google_play_services_version" />
-236-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b51c9b291bc6eec00b822628f4ab52da\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
+236-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\bd1dd6b4fdcae2df2e7c108d8bfd301d\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
 237
 238        <provider
-238-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d0695166756356d037e141b6d8765fd0\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+238-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e1b550f246b390462462e4731002116f\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
 239            android:name="com.squareup.picasso.PicassoProvider"
-239-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d0695166756356d037e141b6d8765fd0\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+239-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e1b550f246b390462462e4731002116f\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
 240            android:authorities="com.uni.julio.superplus.com.squareup.picasso"
-240-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d0695166756356d037e141b6d8765fd0\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+240-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e1b550f246b390462462e4731002116f\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
 241            android:exported="false" />
-241-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d0695166756356d037e141b6d8765fd0\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+241-->[com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e1b550f246b390462462e4731002116f\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
 242
 243        <service
-243-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:29:9-35:19
+243-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:29:9-35:19
 244            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-244-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:30:13-103
+244-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:30:13-103
 245            android:exported="false" >
-245-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:31:13-37
+245-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:31:13-37
 246            <meta-data
-246-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:32:13-34:39
+246-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:32:13-34:39
 247                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-247-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:33:17-94
+247-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:33:17-94
 248                android:value="cct" />
-248-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:34:17-36
+248-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:34:17-36
 249        </service>
 250        <service
-250-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:26:9-30:19
+250-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:26:9-30:19
 251            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-251-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:27:13-117
+251-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:27:13-117
 252            android:exported="false"
-252-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:28:13-37
+252-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:28:13-37
 253            android:permission="android.permission.BIND_JOB_SERVICE" >
-253-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:29:13-69
+253-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:29:13-69
 254        </service>
 255
 256        <receiver
-256-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:32:9-34:40
+256-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:32:9-34:40
 257            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-257-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:33:13-132
+257-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:33:13-132
 258            android:exported="false" />
-258-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:34:13-37
+258-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:34:13-37
 259    </application>
 260
 261</manifest>

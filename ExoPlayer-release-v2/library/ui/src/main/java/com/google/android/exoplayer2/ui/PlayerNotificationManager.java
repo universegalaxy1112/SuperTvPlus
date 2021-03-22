@@ -820,7 +820,7 @@ public class PlayerNotificationManager {
 
   /**
    * Sets whether the notification should be colorized. When set, the color set with {@link
-   * #setColor(int)} will be used as the background color for the notification.
+   * #setColor(int)} will be used as the livetv_bg_middle color for the notification.
    *
    * <p>See {@link NotificationCompat.Builder#setColorized(boolean)}.
    *

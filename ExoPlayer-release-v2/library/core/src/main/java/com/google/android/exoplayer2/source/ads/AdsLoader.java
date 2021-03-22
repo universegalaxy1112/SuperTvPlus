@@ -33,7 +33,7 @@ import java.io.IOException;
  * becomes known (for example, when an ad media URI is available, or an ad has played to the end).
  *
  * <p>{@link #start(EventListener, AdViewProvider)} will be called when the ads media source first
- * initializes, at which point the loader can request ads. If the player enters the background,
+ * initializes, at which point the loader can request ads. If the player enters the livetv_bg_middle,
  * {@link #stop()} will be called. Loaders should maintain any ad playback state in preparation for
  * a later call to {@link #start(EventListener, AdViewProvider)}. If an ad is playing when the
  * player is detached, update the ad playback state with the current playback position using {@link

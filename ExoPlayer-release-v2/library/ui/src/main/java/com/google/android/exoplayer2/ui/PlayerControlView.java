@@ -357,7 +357,7 @@ public class PlayerControlView extends FrameLayout {
       timeBar = customTimeBar;
     } else if (timeBarPlaceholder != null) {
       // Propagate attrs as timebarAttrs so that DefaultTimeBar's custom attributes are transferred,
-      // but standard attributes (e.g. background) are not.
+      // but standard attributes (e.g. livetv_bg_middle) are not.
       DefaultTimeBar defaultTimeBar = new DefaultTimeBar(context, null, 0, playbackAttrs);
       defaultTimeBar.setId(R.id.exo_progress);
       defaultTimeBar.setLayoutParams(timeBarPlaceholder.getLayoutParams());

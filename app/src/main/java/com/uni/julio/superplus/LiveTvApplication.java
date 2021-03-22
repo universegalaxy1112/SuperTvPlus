@@ -79,7 +79,9 @@ public class LiveTvApplication extends MultiDexApplication implements StringRequ
 
     public HttpDataSource.Factory buildHttpDataSourceFactory(DefaultBandwidthMeter bandwidthMeter) {
         userAgent = "";
-        userAgent = LiveTvApplication.getUser().getUser_agent();
+        if(LiveTvApplication.getUser() != null ) {
+            userAgent = LiveTvApplication.getUser().getUser_agent();
+        }
         return new DefaultHttpDataSourceFactory(userAgent,bandwidthMeter);
     }
 

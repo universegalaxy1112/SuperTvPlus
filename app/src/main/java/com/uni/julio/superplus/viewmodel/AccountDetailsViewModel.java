@@ -1,6 +1,7 @@
 package com.uni.julio.superplus.viewmodel;
 
 import android.app.ProgressDialog;
+import android.text.TextUtils;
 import android.view.View;
 
 import androidx.annotation.NonNull;
@@ -23,6 +24,7 @@ import com.uni.julio.superplus.utils.networing.WebConfig;
 
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -116,7 +118,8 @@ public class AccountDetailsViewModel implements AccountDetailsViewModelContract.
                 });
                 return;
             }
-            this.viewCallback.onCloseSessionNoInternet();
+            if(this.viewCallback != null)
+                this.viewCallback.onCloseSessionNoInternet();
         }
     }
 
@@ -155,7 +158,7 @@ public class AccountDetailsViewModel implements AccountDetailsViewModelContract.
 
     @Override
     public void checkForUpdate(View view) {
-        /*NetManager.getInstance().performCheckForUpdate(new StringRequestListener() {
+        NetManager.getInstance().performCheckForUpdate(new StringRequestListener() {
             @Override
             public void onCompleted(String response) {
                 if (!TextUtils.isEmpty(response)) {
@@ -180,7 +183,7 @@ public class AccountDetailsViewModel implements AccountDetailsViewModelContract.
             public void onError() {
 
             }
-        });*/
+        });
     }
 
     @Override

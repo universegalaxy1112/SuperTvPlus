@@ -123,6 +123,40 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\bd1dd6b4fdcae2df2e7c108d8bfd301d\\jetified-play-services-basement-17.1.0\\res\\values-el\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "222",
+                        "endOffsets": "469"
+                    },
+                    "to": {
+                        "startLines": "79",
+                        "startColumns": "4",
+                        "startOffsets": "8616",
+                        "endColumns": "222",
+                        "endOffsets": "8834"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\472641b163a7bfb92a510179aaaaf383\\jetified-firebase-messaging-20.1.7\\res\\values-el\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "207",
+                        "endColumns": "101",
+                        "endOffsets": "308"
+                    },
+                    "to": {
+                        "startLines": "97",
+                        "startColumns": "4",
+                        "startOffsets": "10854",
+                        "endColumns": "105",
+                        "endOffsets": "10955"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\5a3b5061b70fc032e06907586d1fcc5e\\core-1.2.0\\res\\values-el\\values-el.xml",
                     "from": {
                         "startLines": "2",
@@ -154,40 +188,6 @@
                         "startOffsets": "10960,11067,11168,11266,11359,11488,11600,11699,11790,11920,12047,12156,12281,12429,12561,12690,12805,12896,13044,13140,13245,13352,13467,13563,13676,13794,13925,14053,14161,14277,14406,14540,14667,14799,14886,14973,15089,15227,17846",
                         "endColumns": "106,100,97,92,128,111,98,90,129,126,108,124,147,131,128,114,90,147,95,104,106,114,95,112,117,130,127,107,115,128,133,126,131,86,86,115,137,169,95",
                         "endOffsets": "11062,11163,11261,11354,11483,11595,11694,11785,11915,12042,12151,12276,12424,12556,12685,12800,12891,13039,13135,13240,13347,13462,13558,13671,13789,13920,14048,14156,14272,14401,14535,14662,14794,14881,14968,15084,15222,15392,17937"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\eefaec7fbb6a4af62cf7ada5e808ca96\\jetified-firebase-messaging-20.1.7\\res\\values-el\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "207",
-                        "endColumns": "101",
-                        "endOffsets": "308"
-                    },
-                    "to": {
-                        "startLines": "97",
-                        "startColumns": "4",
-                        "startOffsets": "10854",
-                        "endColumns": "105",
-                        "endOffsets": "10955"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\b51c9b291bc6eec00b822628f4ab52da\\jetified-play-services-basement-17.1.0\\res\\values-el\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "222",
-                        "endOffsets": "469"
-                    },
-                    "to": {
-                        "startLines": "79",
-                        "startColumns": "4",
-                        "startOffsets": "8616",
-                        "endColumns": "222",
-                        "endOffsets": "8834"
                     }
                 }
             ]

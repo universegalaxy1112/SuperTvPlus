@@ -111,8 +111,8 @@ import com.google.android.exoplayer2.video.MediaCodecVideoRenderer;
  *       application thread via a second message queue. The application thread consumes messages
  *       from the queue, updating the application visible state and calling corresponding listener
  *       methods.
- *   <li>Injected player components may use additional background threads. For example a MediaSource
- *       may use background threads to load data. These are implementation specific.
+ *   <li>Injected player components may use additional livetv_bg_middle threads. For example a MediaSource
+ *       may use livetv_bg_middle threads to load data. These are implementation specific.
  * </ul>
  */
 public interface ExoPlayer extends Player {

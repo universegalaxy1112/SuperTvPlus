@@ -812,7 +812,7 @@ public final class AudioTrack {
       if (playState == PLAYSTATE_PLAYING) {
         audioTrack.pause();
       }
-      // AudioTrack.release can take some time, so we call it on a background thread.
+      // AudioTrack.release can take some time, so we call it on a livetv_bg_middle thread.
       final android.media.AudioTrack toRelease = audioTrack;
       audioTrack = null;
       audioTrackUtil.reconfigure(null, false);
@@ -847,7 +847,7 @@ public final class AudioTrack {
       return;
     }
 
-    // AudioTrack.release can take some time, so we call it on a background thread.
+    // AudioTrack.release can take some time, so we call it on a livetv_bg_middle thread.
     final android.media.AudioTrack toRelease = keepSessionIdAudioTrack;
     keepSessionIdAudioTrack = null;
     new Thread() {

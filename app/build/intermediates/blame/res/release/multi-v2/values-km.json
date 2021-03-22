@@ -38,6 +38,40 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\472641b163a7bfb92a510179aaaaf383\\jetified-firebase-messaging-20.1.7\\res\\values-km\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "207",
+                        "endColumns": "100",
+                        "endOffsets": "307"
+                    },
+                    "to": {
+                        "startLines": "90",
+                        "startColumns": "4",
+                        "startOffsets": "9976",
+                        "endColumns": "104",
+                        "endOffsets": "10076"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\bd1dd6b4fdcae2df2e7c108d8bfd301d\\jetified-play-services-basement-17.1.0\\res\\values-km\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "207",
+                        "endOffsets": "454"
+                    },
+                    "to": {
+                        "startLines": "79",
+                        "startColumns": "4",
+                        "startOffsets": "8344",
+                        "endColumns": "207",
+                        "endOffsets": "8547"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\3a9e7ad6c660edde62dd893c964d2529\\play-services-base-17.1.0\\res\\values-km\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
@@ -123,23 +157,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\eefaec7fbb6a4af62cf7ada5e808ca96\\jetified-firebase-messaging-20.1.7\\res\\values-km\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "207",
-                        "endColumns": "100",
-                        "endOffsets": "307"
-                    },
-                    "to": {
-                        "startLines": "90",
-                        "startColumns": "4",
-                        "startOffsets": "9976",
-                        "endColumns": "104",
-                        "endOffsets": "10076"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\8eec308cb7ca3f98a247f21b2954ab96\\leanback-1.0.0\\res\\values-km\\values-km.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40",
@@ -154,23 +171,6 @@
                         "startOffsets": "10081,10188,10289,10383,10477,10599,10707,10806,10900,11019,11137,11240,11359,11505,11622,11738,11849,11940,12064,12153,12263,12372,12478,12576,12691,12812,12922,13032,13136,13243,13363,13488,13603,13721,13808,13893,13999,14135,16657",
                         "endColumns": "106,100,93,93,121,107,98,93,118,117,102,118,145,116,115,110,90,123,88,109,108,105,97,114,120,109,109,103,106,119,124,114,117,86,84,105,135,155,93",
                         "endOffsets": "10183,10284,10378,10472,10594,10702,10801,10895,11014,11132,11235,11354,11500,11617,11733,11844,11935,12059,12148,12258,12367,12473,12571,12686,12807,12917,13027,13131,13238,13358,13483,13598,13716,13803,13888,13994,14130,14286,16746"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\b51c9b291bc6eec00b822628f4ab52da\\jetified-play-services-basement-17.1.0\\res\\values-km\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "207",
-                        "endOffsets": "454"
-                    },
-                    "to": {
-                        "startLines": "79",
-                        "startColumns": "4",
-                        "startOffsets": "8344",
-                        "endColumns": "207",
-                        "endOffsets": "8547"
                     }
                 }
             ]

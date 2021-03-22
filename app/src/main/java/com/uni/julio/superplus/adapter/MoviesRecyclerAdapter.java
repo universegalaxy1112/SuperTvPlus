@@ -80,7 +80,6 @@ public class MoviesRecyclerAdapter extends TVRecyclerViewAdapter<MoviesRecyclerA
 
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onDataBinding(MyViewHolder holder, int position) {
         Movie movie = (Movie) mMovies.get(position);

@@ -7,6 +7,7 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.speech.SpeechRecognizer;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -106,7 +107,7 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
                         extras2.putString("movie", new Gson().toJson(movie));
                         extras2.putInt("mainCategoryId", SearchTvFragment.this.mainCategoryId);
                         launchActivity(OneSeasonDetailActivity.class, extras2);
-                        Objects.requireNonNull(getActivity()).overridePendingTransition(R.anim.right_in, R.anim.left_out);
+                        Objects.requireNonNull(requireActivity()).overridePendingTransition(R.anim.right_in, R.anim.left_out);
                     }
                 }
             }
@@ -128,7 +129,7 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
                 .putExtra("subsURL", movie.getSubtitleUrl())
                 .putExtra("title", movie.getTitle())
                 .setAction(VideoPlayFragment.ACTION_VIEW_LIST);
-        ActivityCompat.startActivityForResult(Objects.requireNonNull(getActivity()), launchIntent, 100, null);
+        ActivityCompat.startActivityForResult(Objects.requireNonNull(requireActivity()), launchIntent, 100, null);
     }
 
     private final class ItemViewSelectedListener implements OnItemViewSelectedListener {
@@ -188,7 +189,7 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Bundle extras = Objects.requireNonNull(getActivity()).getIntent().getExtras();
+        Bundle extras = Objects.requireNonNull(requireActivity()).getIntent().getExtras();
         this.selectedType = (ModelTypes.SelectedType) Objects.requireNonNull(extras).get("selectedType");
         this.mainCategoryId = extras.getInt("mainCategoryId", 0);
         this.mMainCategory = new MainCategory();
@@ -230,9 +231,9 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
     }
 
 
-   /* @Override
+    @Override
     public void startRecognition() {
-        if(!SpeechRecognizer.isRecognitionAvailable(getActivity())) return;
+        if(!SpeechRecognizer.isRecognitionAvailable(requireActivity())) return;
         try {
             if (getPermissionStatus() == 0) {
                 super.startRecognition();
@@ -243,17 +244,17 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
             e.printStackTrace();
         }
 
-    }*/
+    }
 
     public void closeKeyboard() {
-        Objects.requireNonNull(getActivity()).getWindow().setSoftInputMode(2);
+        Objects.requireNonNull(requireActivity()).getWindow().setSoftInputMode(2);
     }
 
     private void launchActivity(Class classToLaunch, Bundle extras) {
-        Intent launchIntent = new Intent(getActivity(), classToLaunch);
+        Intent launchIntent = new Intent(requireActivity(), classToLaunch);
         launchIntent.putExtras(extras);
         startActivityForResult(launchIntent, 100);
-        Objects.requireNonNull(getActivity()).overridePendingTransition(R.anim.right_in, R.anim.left_out);
+        Objects.requireNonNull(requireActivity()).overridePendingTransition(R.anim.right_in, R.anim.left_out);
     }
 
     @Override
@@ -273,7 +274,7 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
 
     @Override
     public boolean onQueryTextSubmit(final String query) {
-        Objects.requireNonNull(getActivity()).findViewById(R.id.progressBar).setVisibility(View.VISIBLE);
+        Objects.requireNonNull(requireActivity()).findViewById(R.id.progressBar).setVisibility(View.VISIBLE);
         LiveTVServicesManual.searchVideo(mMainCategory, removeSpecialChars(query), 45)
                 .delay(2, TimeUnit.SECONDS, Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -286,13 +287,11 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
                     @Override
                     public void onError(Throwable e) {
                         try {
-                            if (getActivity() != null) {
-                                Objects.requireNonNull(getActivity()).findViewById(R.id.progressBar).setVisibility(View.GONE);
-                                Log.d("error", "error");
-                                Toast.makeText(getActivity(), R.string.time_out, Toast.LENGTH_SHORT).show();
-                                hideKeyboard();
-
-                            }
+                            requireActivity();
+                            Objects.requireNonNull(requireActivity()).findViewById(R.id.progressBar).setVisibility(View.GONE);
+                            Log.d("error", "error");
+                            Toast.makeText(requireActivity(), R.string.time_out, Toast.LENGTH_SHORT).show();
+                            hideKeyboard();
 
                         } catch (Exception exception) {
                             exception.printStackTrace();
@@ -303,35 +302,34 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
                     @Override
                     public void onNext(List<VideoStream> videos) {
                         hideKeyboard();
-                        if (getActivity() != null) {
-                            Objects.requireNonNull(getActivity()).findViewById(R.id.progressBar).setVisibility(View.GONE);
-                            movies = videos;
-                            if (movies.size() < 1) {
-                                Dialogs.showTwoButtonsDialog(getActivity(), R.string.ok_dialog, R.string.cancel, R.string.title_order_message, new DialogListener() {
+                        requireActivity();
+                        Objects.requireNonNull(requireActivity()).findViewById(R.id.progressBar).setVisibility(View.GONE);
+                        movies = videos;
+                        if (movies.size() < 1) {
+                            Dialogs.showTwoButtonsDialog(requireActivity(), R.string.ok_dialog, R.string.cancel, R.string.title_order_message, new DialogListener() {
 
-                                    @Override
-                                    public void onAccept() {
-                                        sendOrder(query);
-                                    }
+                                @Override
+                                public void onAccept() {
+                                    sendOrder(query);
+                                }
 
-                                    @Override
-                                    public void onCancel() {
+                                @Override
+                                public void onCancel() {
 
-                                    }
+                                }
 
-                                    @Override
-                                    public void onDismiss() {
+                                @Override
+                                public void onDismiss() {
 
-                                    }
-                                });
-                                return;
-                            }
-                            SearchTvFragment.this.mRowsAdapter.clear();
-                            SearchTvFragment.this.movies = videos;
-                            ArrayObjectAdapter listRowAdapter = new ArrayObjectAdapter(new MoviesPresenter(SearchTvFragment.this.getActivity().getApplicationContext()));
-                            listRowAdapter.addAll(0, SearchTvFragment.this.movies);
-                            SearchTvFragment.this.mRowsAdapter.add(new ListRow(new HeaderItem("Resultados"), listRowAdapter));
+                                }
+                            });
+                            return;
                         }
+                        SearchTvFragment.this.mRowsAdapter.clear();
+                        SearchTvFragment.this.movies = videos;
+                        ArrayObjectAdapter listRowAdapter = new ArrayObjectAdapter(new MoviesPresenter(SearchTvFragment.this.requireActivity().getApplicationContext()));
+                        listRowAdapter.addAll(0, SearchTvFragment.this.movies);
+                        SearchTvFragment.this.mRowsAdapter.add(new ListRow(new HeaderItem("Resultados"), listRowAdapter));
                     }
                 });
         return false;
@@ -339,17 +337,16 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
 
     private void hideKeyboard() {
 
-        if (getActivity() != null) {
-            InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(AppCompatActivity.INPUT_METHOD_SERVICE);
-            //Find the currently focused view, so we can grab the correct window token from it.
-            View view = getActivity().getCurrentFocus();
-            //If no view currently has focus, create a new one, just so we can grab a window token from it
-            if (view == null) {
-                view = new View(getActivity());
-            }
-            if (imm != null)
-                imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        requireActivity();
+        InputMethodManager imm = (InputMethodManager) requireActivity().getSystemService(AppCompatActivity.INPUT_METHOD_SERVICE);
+        //Find the currently focused view, so we can grab the correct window token from it.
+        View view = requireActivity().getCurrentFocus();
+        //If no view currently has focus, create a new one, just so we can grab a window token from it
+        if (view == null) {
+            view = new View(requireActivity());
         }
+        if (imm != null)
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
 
     }
 
@@ -370,12 +367,12 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
         NetManager.getInstance().makeStringRequest(reportUrl, new StringRequestListener() {
             @Override
             public void onCompleted(String response) {
-                Toast.makeText(getActivity(), "Thanks for requesting. We will add it as soon as possible!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(requireActivity(), "Thanks for requesting. We will add it as soon as possible!", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onError() {
-                Toast.makeText(getActivity(), "Failed to send request! Please check your network connection.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(requireActivity(), "Failed to send request! Please check your network connection.", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -393,15 +390,15 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
             accept = R.string.config;
             message = R.string.permission_audio_config;
         }
-        Dialogs.showTwoButtonsDialog(getActivity(), accept, R.string.cancel, message, new DialogListener() {
+        Dialogs.showTwoButtonsDialog(requireActivity(), accept, R.string.cancel, message, new DialogListener() {
             public void onAccept() {
                 if (!SearchTvFragment.this.denyAll) {
                     DataManager.getInstance().saveData("audioPermissionRequested", Boolean.TRUE);
-                    SearchTvFragment.this.requestPermissions(new String[]{"android.permission.WRITE_EXTERNAL_STORAGE"}, REQUEST_RECORD_AUDIO_STATE);
+                    SearchTvFragment.this.requestPermissions(new String[]{"android.permission.RECORD_AUDIO"}, REQUEST_RECORD_AUDIO_STATE);
                     return;
                 }
                 Intent intent = new Intent("android.settings.APPLICATION_DETAILS_SETTINGS");
-                intent.setData(Uri.fromParts("package", Objects.requireNonNull(SearchTvFragment.this.getActivity()).getPackageName(), null));
+                intent.setData(Uri.fromParts("package", Objects.requireNonNull(SearchTvFragment.this.requireActivity()).getPackageName(), null));
                 SearchTvFragment.this.startActivityForResult(intent, 4169);
             }
 
@@ -416,10 +413,10 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
     }
 
     private int getPermissionStatus() {
-        if (ContextCompat.checkSelfPermission(Objects.requireNonNull(getActivity()), "android.permission.RECORD_AUDIO") == 0) {
+        if (ContextCompat.checkSelfPermission(Objects.requireNonNull(requireActivity()), "android.permission.RECORD_AUDIO") == 0) {
             return 0;
         }
-        if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(), "android.permission.RECORD_AUDIO") || !DataManager.getInstance().getBoolean("recordingPermissionRequested", false)) {
+        if (ActivityCompat.shouldShowRequestPermissionRationale(requireActivity(), "android.permission.RECORD_AUDIO") || !DataManager.getInstance().getBoolean("audioPermissionRequested", false)) {
             return 1;
         }
         return 2;
@@ -434,27 +431,27 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
                     return;
                 }
                 return;
-            /*case 4169:
-                if(!SpeechRecognizer.isRecognitionAvailable(getActivity())) return;
+            case 4169:
+                if(!SpeechRecognizer.isRecognitionAvailable(requireActivity())) return;
                 if (getPermissionStatus() == 0) {
                     setupAudioRecognition();
                     return;
                 }
-                return;*/
+                return;
             default:
         }
     }
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        /*if (requestCode == REQUEST_RECORD_AUDIO_STATE && getPermissionStatus() == 0) {
-            if(!SpeechRecognizer.isRecognitionAvailable(getActivity())) return;
+        if (requestCode == REQUEST_RECORD_AUDIO_STATE && getPermissionStatus() == 0) {
+            if(!SpeechRecognizer.isRecognitionAvailable(requireActivity())) return;
             setupAudioRecognition();
-        }*/
+        }
     }
 
     private void setupAudioRecognition() {
-        /*setSpeechRecognitionCallback(new SpeechRecognitionCallback() {
+        setSpeechRecognitionCallback(new SpeechRecognitionCallback() {
             public void recognizeSpeech() {
                 try {
                     SearchTvFragment.this.startActivityForResult(SearchTvFragment.this.getRecognizerIntent(), REQUEST_SPEECH);
@@ -463,8 +460,9 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
                     Log.e("TAG", "Cannot find activity for speech recognizer", e);
                 }
             }
-        });*/
+        });
     }
+
 
     private boolean hasResults() {
         return this.mRowsAdapter.size() > 0;
@@ -472,34 +470,14 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
 
     private void updateBackground(final String uri) {
         try {
-            if (getActivity() != null)
-                /*getActivity().runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Target target = new Target() {
-                            @Override
-                            public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
-                                mBackgroundManager.setBitmap(bitmap);
-                            }
+            requireActivity();
+            Glide.with(this).load(uri).centerCrop().into(new SimpleTarget<Drawable>(this.mMetrics.widthPixels, this.mMetrics.heightPixels) {
+                @Override
+                public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
+                    SearchTvFragment.this.mBackgroundManager.setDrawable(resource);
 
-                            @Override
-                            public void onBitmapFailed(Exception e, Drawable errorDrawable) {
-                            }
-
-                            @Override
-                            public void onPrepareLoad(Drawable placeHolderDrawable) {
-                            }
-                        };
-                        Picasso.get().load(uri).placeholder(R.drawable.placeholder).into(target);
-                    }
-                });*/
-                Glide.with(this).load(uri).centerCrop().into(new SimpleTarget<Drawable>(this.mMetrics.widthPixels, this.mMetrics.heightPixels) {
-                    @Override
-                    public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
-                        SearchTvFragment.this.mBackgroundManager.setDrawable(resource);
-
-                    }
-                });
+                }
+            });
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -509,11 +487,11 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
 
     private void prepareBackgroundManager() {
         try {
-            this.mBackgroundManager = BackgroundManager.getInstance(Objects.requireNonNull(getActivity()));
-            this.mBackgroundManager.attach(getActivity().getWindow());
-            this.mBackgroundManager.setColor(ContextCompat.getColor(getActivity(), R.color.detail_background));
+            this.mBackgroundManager = BackgroundManager.getInstance(Objects.requireNonNull(requireActivity()));
+            this.mBackgroundManager.attach(requireActivity().getWindow());
+            this.mBackgroundManager.setColor(ContextCompat.getColor(requireActivity(), R.color.detail_background));
             mMetrics = new DisplayMetrics();
-            getActivity().getWindowManager().getDefaultDisplay().getMetrics(mMetrics);
+            requireActivity().getWindowManager().getDefaultDisplay().getMetrics(mMetrics);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -524,7 +502,7 @@ public class SearchTvFragment extends SearchSupportFragment implements SearchSup
         if (keyCode != KeyEvent.KEYCODE_BACK || isKeyboardShowing) {
             return false;
         }
-        getActivity().finish();
+        requireActivity().finish();
         return true;
     }
 }

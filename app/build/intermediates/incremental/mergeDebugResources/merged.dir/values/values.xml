@@ -3557,6 +3557,8 @@
     <string name="selection_disabled">Deshabilitado</string>
     <string name="serverSelect_message">Select a server</string>
     <string name="solved">Solved</string>
+    <string name="something_wrong">Please reopen the app. Sorry for the inconvenient.</string>
+    <string name="something_wrong_title">Something went wrong.</string>
     <string name="splash_content_txt">Super Splash</string>
     <string name="start">Start</string>
     <string name="status_bar_notification_info_overflow">999+</string>

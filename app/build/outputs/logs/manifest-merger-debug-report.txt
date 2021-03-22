@@ -1,15 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
-INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
-INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
-INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
+INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
+INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
+INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
 MERGED from [androidx.databinding:databinding-adapters:3.5.2] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\de4d6413ab2728e7ed6096ce2f98187d\databinding-adapters-3.5.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:3.5.2] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\78533b2d379ee4dfe107be7a1bd7b612\databinding-runtime-3.5.2\AndroidManifest.xml:17:1-24:12
-MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\32cf6456d64701071978ab70059aec0e\jetified-android-searchbox-0.0.1\AndroidManifest.xml:2:1-20:12
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5c923aa4af73b5cddf9854d1080c984d\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\936229bc8ebff7757c45c8a20621084b\jetified-android-searchbox-0.0.1\AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\81aef59f1357df38cab69be85907241a\material-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [me.zhanghai.android.materialprogressbar:library:1.1.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\25e514db9fc1989c85d140984a35840b\jetified-library-1.1.6\AndroidManifest.xml:6:1-16:12
-MERGED from [com.github.recruit-lifestyle:WaveSwipeRefreshLayout:1.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e97d582ab56f09b0dc4f225f637cb742\jetified-WaveSwipeRefreshLayout-1.6\AndroidManifest.xml:2:1-12:12
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.1.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\59b3296eeda9e44df409da0246696e29\jetified-library-1.1.6\AndroidManifest.xml:6:1-16:12
+MERGED from [com.github.recruit-lifestyle:WaveSwipeRefreshLayout:1.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\63eed7395874ffec0e2880cd23bd6168\jetified-WaveSwipeRefreshLayout-1.6\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.leanback:leanback-preference:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\67402bd42b29ca635967175c60fe836b\leanback-preference-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9aca62e2f5d58828593c5036bf743dd5\play-services-cast-framework-18.1.0\AndroidManifest.xml:2:1-22:12
 MERGED from [com.google.android.gms:play-services-cast:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\52399e001dc1b268ccd6a9d86c8bdddc\play-services-cast-18.1.0\AndroidManifest.xml:17:1-24:12
@@ -17,7 +18,7 @@ MERGED from [androidx.mediarouter:mediarouter:1.1.0] C:\Users\Cosmic\.gradle\cac
 MERGED from [androidx.legacy:legacy-preference-v14:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\40e150450f56c46a6009a68e5fdee564\legacy-preference-v14-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.preference:preference:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\84557dfe39198802ca91253324d38840\preference-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a9d4263fad29a0cc1fe0d71c8b458379\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:17:1-44:12
+MERGED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:17:1-44:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eb38ca0800aff64706ba10d52241f1cc\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\045f0d5269c010d4c2f5479779655f4f\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.leanback:leanback:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\8eec308cb7ca3f98a247f21b2954ab96\leanback-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -38,13 +39,13 @@ MERGED from [com.google.firebase:firebase-crashlytics:17.2.1] C:\Users\Cosmic\.g
 MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\7c3c238b8a9dcf61caa6c45147de22bd\firebase-installations-16.3.3\AndroidManifest.xml:2:1-23:12
 MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\8a954d597f8ecea0f1566388e7dfd999\firebase-installations-interop-16.0.0\AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\7b2fb66cfad4172092a9daa4e4adc140\firebase-datatransport-17.0.3\AndroidManifest.xml:15:1-34:12
-MERGED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:15:1-40:12
+MERGED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:15:1-40:12
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9217eeb438c6bcc43d33eb1d8a73264d\play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\0196cd3cb615a5797134e3e7b5b14d31\firebase-measurement-connector-18.0.0\AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\f91bee3797ec43e51279aeccf2f51d38\play-services-ads-identifier-17.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\461a7761a0d691a460ace99f330e0153\play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:17:1-27:12
 MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6053024904a81c3b09ee79212c69f9b1\play-services-measurement-base-17.5.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b51c9b291bc6eec00b822628f4ab52da\jetified-play-services-basement-17.1.0\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\bd1dd6b4fdcae2df2e7c108d8bfd301d\jetified-play-services-basement-17.1.0\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\83ecf052b972f1b16a86241d43bd0773\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\33b7f1f693b4456bff3cee333e0dbed6\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\8aa6f045717d2fc9011081690fb5ecf1\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -64,27 +65,26 @@ MERGED from [androidx.activity:activity:1.0.0] C:\Users\Cosmic\.gradle\caches\tr
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\8d3a86bd758297fcd4ff38544d2e3cf0\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\97274d7572712faea42635a863bcd02d\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.2.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5a3b5061b70fc032e06907586d1fcc5e\core-1.2.0\AndroidManifest.xml:17:1-26:12
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d0695166756356d037e141b6d8765fd0\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\463182d5834b8034c902f78afbae386f\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e1b550f246b390462462e4731002116f\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\20b600d3320bd451930c0bcbd7f1bdd6\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9bf19a65d4f1a6d56cbe6ad3b115df77\rxandroid-1.2.1\AndroidManifest.xml:15:1-21:12
 MERGED from [com.wang.avi:library:2.1.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fc6fc8d5464c552a957273f8eab66ade\library-2.1.3\AndroidManifest.xml:2:1-11:12
-MERGED from [com.github.afollestad.material-dialogs:core:0.8.5.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\25efaa9218fd8de22896683ffb0ad058\jetified-core-0.8.5.6\AndroidManifest.xml:2:1-15:12
+MERGED from [com.github.afollestad.material-dialogs:core:0.8.5.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b2e5eaefc9c6679b50312887672b2816\jetified-core-0.8.5.6\AndroidManifest.xml:2:1-15:12
 MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\538a47db2b7a02f984a311393c807315\circleimageview-3.0.1\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.recommendation:recommendation:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\2d6463b23a90d7527e89aab9d1b8ba6a\recommendation-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [:extension-ffmpeg] D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\ExoPlayer-release-v2\extensions\ffmpeg\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-24:12
-MERGED from [:extension-flac] D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\ExoPlayer-release-v2\extensions\flac\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-24:12
-MERGED from [:extension-opus] D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\ExoPlayer-release-v2\extensions\opus\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-24:12
-MERGED from [:extension-vp9] D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-26:12
-MERGED from [:library-all] D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\ExoPlayer-release-v2\library\all\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-24:12
+MERGED from [:extension-ffmpeg] D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\ExoPlayer-release-v2\extensions\ffmpeg\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-24:12
+MERGED from [:extension-flac] D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\ExoPlayer-release-v2\extensions\flac\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-24:12
+MERGED from [:extension-opus] D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\ExoPlayer-release-v2\extensions\opus\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-24:12
+MERGED from [:extension-vp9] D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-26:12
+MERGED from [:library-all] D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\ExoPlayer-release-v2\library\all\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\c3240e6a553e966368d0abc58c1f7711\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\05925ec7cfc3e102fc5a986c9dc048a2\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e892fd14d62c96d74bcb5de312c37894\jetified-firebase-components-16.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\427999ad4c1c44db7420eb257b5bfd64\jetified-firebase-components-16.0.0\AndroidManifest.xml:15:1-23:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\92479c43a7c9d8691c2b6441246f7bb0\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\cf8e127af5594b426cb295f2aea41994\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\dd5d480c5d20a5f2bf7ebb2a4529f68a\gifdecoder-4.10.0\AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:15:1-38:12
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:15:1-41:12
-MERGED from [com.google.android.datatransport:transport-api:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b67c941135cb854f808697393a39d940\jetified-transport-api-2.2.1\AndroidManifest.xml:15:1-22:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\4174421afb48fd5617491392c34e5b27\jetified-transport-api-2.2.1\AndroidManifest.xml:15:1-22:12
 MERGED from [com.google.firebase:firebase-encoders-json:16.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\75ba6ce6e6faf72f2d5842e1ec6f172c\firebase-encoders-json-16.1.0\AndroidManifest.xml:15:1-23:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3c0f7b8fdcd658fe0cd5c324aa9acc53\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\2b12289524599fc6dce59c25c366c34e\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -98,31 +98,30 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Cosmic\.
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3d0cc2debb5e1231b709971770a559cf\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bosphere.android-fadingedgelayout:fadingedgelayout:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6d06256ad7df90884c3205521b4e9b89\fadingedgelayout-1.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [net.steamcrafted:materialiconlib:1.1.5] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\bc8ee26b011b4fb07213a5837e153630\materialiconlib-1.1.5\AndroidManifest.xml:2:1-14:12
-MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5c923aa4af73b5cddf9854d1080c984d\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.codesgood:justifiedtextview:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1e8283e1233167803f625e671e8ef9bc\justifiedtextview-1.1.0\AndroidManifest.xml:2:1-14:12
-INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
-INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
-INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
+INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
+INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
+INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
 	package
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:4:5-38
-		INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml
-		INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:4:5-38
+		INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
-		INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
+		INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
-		INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:2:1-137:12
+		INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:6:5-67
-MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\32cf6456d64701071978ab70059aec0e\jetified-android-searchbox-0.0.1\AndroidManifest.xml:11:5-67
-MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\32cf6456d64701071978ab70059aec0e\jetified-android-searchbox-0.0.1\AndroidManifest.xml:11:5-67
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:6:5-67
+MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\936229bc8ebff7757c45c8a20621084b\jetified-android-searchbox-0.0.1\AndroidManifest.xml:11:5-67
+MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\936229bc8ebff7757c45c8a20621084b\jetified-android-searchbox-0.0.1\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e64708330b37d0630cbafa02b57432bb\firebase-iid-20.1.7\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e64708330b37d0630cbafa02b57432bb\firebase-iid-20.1.7\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\4954fc2300ad7bc55ac91423f09c28ee\play-services-measurement-17.5.0\AndroidManifest.xml:23:5-67
@@ -137,18 +136,18 @@ MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\Cosmic\
 MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\7c3c238b8a9dcf61caa6c45147de22bd\firebase-installations-16.3.3\AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\461a7761a0d691a460ace99f330e0153\play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\461a7761a0d691a460ace99f330e0153\play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:26:5-67
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:26:5-67
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:7:5-70
-MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\32cf6456d64701071978ab70059aec0e\jetified-android-searchbox-0.0.1\AndroidManifest.xml:12:5-71
-MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\32cf6456d64701071978ab70059aec0e\jetified-android-searchbox-0.0.1\AndroidManifest.xml:12:5-71
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:7:5-70
+MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\936229bc8ebff7757c45c8a20621084b\jetified-android-searchbox-0.0.1\AndroidManifest.xml:12:5-71
+MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\936229bc8ebff7757c45c8a20621084b\jetified-android-searchbox-0.0.1\AndroidManifest.xml:12:5-71
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:7:22-68
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:7:22-68
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:8:5-79
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:8:5-79
 MERGED from [com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e64708330b37d0630cbafa02b57432bb\firebase-iid-20.1.7\AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e64708330b37d0630cbafa02b57432bb\firebase-iid-20.1.7\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\4954fc2300ad7bc55ac91423f09c28ee\play-services-measurement-17.5.0\AndroidManifest.xml:24:5-79
@@ -161,72 +160,72 @@ MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\Cosmic\
 MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\7c3c238b8a9dcf61caa6c45147de22bd\firebase-installations-16.3.3\AndroidManifest.xml:10:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\461a7761a0d691a460ace99f330e0153\play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\461a7761a0d691a460ace99f330e0153\play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:8:22-76
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:8:22-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:9:5-81
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:9:22-78
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:9:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:10:5-80
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:10:5-80
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:10:22-77
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:10:22-77
 uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:11:5-82
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:11:5-82
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:11:22-80
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:11:22-80
 uses-feature#android.hardware.touchscreen
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:13:5-14:36
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:13:5-14:36
 	android:required
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:14:9-33
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:14:9-33
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:13:19-62
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:13:19-62
 uses-feature#android.software.leanback
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:15:5-16:36
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:15:5-16:36
 	android:required
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:16:9-33
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:16:9-33
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:15:19-59
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:15:19-59
 uses-feature#android.hardware.wifi
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:17:5-19:20
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:17:5-19:20
 	android:required
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:18:9-33
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:18:9-33
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:17:19-55
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:17:19-55
 uses-feature#android.hardware.camera
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:20:5-21:35
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:20:5-21:35
 	android:required
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:21:9-33
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:21:9-33
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:20:19-57
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:20:19-57
 uses-feature#android.hardware.microphone
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:22:5-23:35
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:22:5-23:35
 	android:required
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:23:9-33
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:23:9-33
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:22:19-61
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:22:19-61
 uses-feature#android.hardware.sensor
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:24:5-25:35
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:24:5-25:35
 	android:required
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:25:9-33
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:25:9-33
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:24:19-57
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:24:19-57
 application
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:27:5-135:27
-MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\32cf6456d64701071978ab70059aec0e\jetified-android-searchbox-0.0.1\AndroidManifest.xml:14:5-18:19
-MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\32cf6456d64701071978ab70059aec0e\jetified-android-searchbox-0.0.1\AndroidManifest.xml:14:5-18:19
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:27:5-135:27
+MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\936229bc8ebff7757c45c8a20621084b\jetified-android-searchbox-0.0.1\AndroidManifest.xml:14:5-18:19
+MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\936229bc8ebff7757c45c8a20621084b\jetified-android-searchbox-0.0.1\AndroidManifest.xml:14:5-18:19
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\81aef59f1357df38cab69be85907241a\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\81aef59f1357df38cab69be85907241a\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9aca62e2f5d58828593c5036bf743dd5\play-services-cast-framework-18.1.0\AndroidManifest.xml:9:5-20:19
 MERGED from [com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9aca62e2f5d58828593c5036bf743dd5\play-services-cast-framework-18.1.0\AndroidManifest.xml:9:5-20:19
 MERGED from [com.google.android.gms:play-services-cast:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\52399e001dc1b268ccd6a9d86c8bdddc\play-services-cast-18.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-cast:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\52399e001dc1b268ccd6a9d86c8bdddc\play-services-cast-18.1.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:22:5-42:19
-MERGED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:22:5-42:19
+MERGED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:22:5-42:19
+MERGED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:22:5-42:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eb38ca0800aff64706ba10d52241f1cc\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eb38ca0800aff64706ba10d52241f1cc\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\915f94fb6c00359ad297902d13250f2c\glide-4.10.0\AndroidManifest.xml:10:5-20
@@ -255,8 +254,8 @@ MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\Cosmic\
 MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\7c3c238b8a9dcf61caa6c45147de22bd\firebase-installations-16.3.3\AndroidManifest.xml:13:5-21:19
 MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\7b2fb66cfad4172092a9daa4e4adc140\firebase-datatransport-17.0.3\AndroidManifest.xml:24:5-32:19
 MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\7b2fb66cfad4172092a9daa4e4adc140\firebase-datatransport-17.0.3\AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:25:5-38:19
-MERGED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:25:5-38:19
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9217eeb438c6bcc43d33eb1d8a73264d\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9217eeb438c6bcc43d33eb1d8a73264d\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\0196cd3cb615a5797134e3e7b5b14d31\firebase-measurement-connector-18.0.0\AndroidManifest.xml:22:5-23:19
@@ -265,26 +264,26 @@ MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\User
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\f91bee3797ec43e51279aeccf2f51d38\play-services-ads-identifier-17.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6053024904a81c3b09ee79212c69f9b1\play-services-measurement-base-17.5.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6053024904a81c3b09ee79212c69f9b1\play-services-measurement-base-17.5.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b51c9b291bc6eec00b822628f4ab52da\jetified-play-services-basement-17.1.0\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b51c9b291bc6eec00b822628f4ab52da\jetified-play-services-basement-17.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\bd1dd6b4fdcae2df2e7c108d8bfd301d\jetified-play-services-basement-17.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\bd1dd6b4fdcae2df2e7c108d8bfd301d\jetified-play-services-basement-17.1.0\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.core:core:1.2.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5a3b5061b70fc032e06907586d1fcc5e\core-1.2.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.2.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5a3b5061b70fc032e06907586d1fcc5e\core-1.2.0\AndroidManifest.xml:24:5-89
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d0695166756356d037e141b6d8765fd0\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d0695166756356d037e141b6d8765fd0\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\463182d5834b8034c902f78afbae386f\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\463182d5834b8034c902f78afbae386f\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
-MERGED from [com.github.afollestad.material-dialogs:core:0.8.5.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\25efaa9218fd8de22896683ffb0ad058\jetified-core-0.8.5.6\AndroidManifest.xml:13:5-20
-MERGED from [com.github.afollestad.material-dialogs:core:0.8.5.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\25efaa9218fd8de22896683ffb0ad058\jetified-core-0.8.5.6\AndroidManifest.xml:13:5-20
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e1b550f246b390462462e4731002116f\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e1b550f246b390462462e4731002116f\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\20b600d3320bd451930c0bcbd7f1bdd6\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\20b600d3320bd451930c0bcbd7f1bdd6\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
+MERGED from [com.github.afollestad.material-dialogs:core:0.8.5.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b2e5eaefc9c6679b50312887672b2816\jetified-core-0.8.5.6\AndroidManifest.xml:13:5-20
+MERGED from [com.github.afollestad.material-dialogs:core:0.8.5.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b2e5eaefc9c6679b50312887672b2816\jetified-core-0.8.5.6\AndroidManifest.xml:13:5-20
 MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\538a47db2b7a02f984a311393c807315\circleimageview-3.0.1\AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\538a47db2b7a02f984a311393c807315\circleimageview-3.0.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\92479c43a7c9d8691c2b6441246f7bb0\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\92479c43a7c9d8691c2b6441246f7bb0\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\dd5d480c5d20a5f2bf7ebb2a4529f68a\gifdecoder-4.10.0\AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\dd5d480c5d20a5f2bf7ebb2a4529f68a\gifdecoder-4.10.0\AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:28:5-36:19
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:28:5-36:19
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:25:5-39:19
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:25:5-39:19
 MERGED from [com.github.bosphere.android-fadingedgelayout:fadingedgelayout:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6d06256ad7df90884c3205521b4e9b89\fadingedgelayout-1.0.0\AndroidManifest.xml:8:5-20
 MERGED from [com.github.bosphere.android-fadingedgelayout:fadingedgelayout:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6d06256ad7df90884c3205521b4e9b89\fadingedgelayout-1.0.0\AndroidManifest.xml:8:5-20
 MERGED from [net.steamcrafted:materialiconlib:1.1.5] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\bc8ee26b011b4fb07213a5837e153630\materialiconlib-1.1.5\AndroidManifest.xml:11:5-12:19
@@ -294,215 +293,217 @@ MERGED from [com.codesgood:justifiedtextview:1.1.0] C:\Users\Cosmic\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.2.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5a3b5061b70fc032e06907586d1fcc5e\core-1.2.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:36:9-35
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:36:9-35
 	android:label
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:31:9-41
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:31:9-41
 	android:roundIcon
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:33:9-48
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:33:9-48
 	android:icon
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:34:9-43
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:34:9-43
 	android:allowBackup
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:29:9-35
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:29:9-35
 	android:banner
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:30:9-42
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:30:9-42
 	android:theme
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:37:9-40
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:37:9-40
 	android:networkSecurityConfig
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:32:9-69
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:32:9-69
 	android:logo
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:35:9-40
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:35:9-40
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:28:9-65
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:28:9-65
 provider#androidx.core.content.FileProvider
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:38:9-48:20
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:38:9-48:20
 	android:grantUriPermissions
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:42:13-47
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:42:13-47
 	android:authorities
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:40:13-71
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:40:13-71
 	android:exported
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:41:13-37
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:41:13-37
 	tools:replace
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:43:13-48
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:43:13-48
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:39:13-62
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:39:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:44:13-47:52
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:44:13-47:52
 	android:resource
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:46:17-50
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:46:17-50
 	tools:replace
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:47:17-49
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:47:17-49
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:45:17-67
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:45:17-67
 activity#com.uni.julio.superplus.view.MoviesTvActivity
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:51:9-54:52
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:51:9-54:52
 	android:screenOrientation
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:53:13-50
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:53:13-50
 	android:theme
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:54:13-50
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:54:13-50
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:52:13-73
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:52:13-73
 activity#com.uni.julio.superplus.view.SearchTvActivity
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:56:9-59:52
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:56:9-59:52
 	android:screenOrientation
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:58:13-50
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:58:13-50
 	android:theme
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:59:13-50
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:59:13-50
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:57:13-73
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:57:13-73
 activity#com.uni.julio.superplus.view.AccountActivity
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:61:9-63:65
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:61:9-63:65
 	android:theme
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:63:13-62
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:63:13-62
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:62:13-72
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:62:13-72
 activity#com.uni.julio.superplus.view.VideoPlayActivity
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:65:9-71:65
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:65:9-71:65
 	android:screenOrientation
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:68:13-50
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:68:13-50
 	android:supportsPictureInPicture
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:70:13-52
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:70:13-52
 	android:resizeableActivity
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:69:13-46
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:69:13-46
 	android:configChanges
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:67:13-91
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:67:13-91
 	android:theme
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:71:13-62
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:71:13-62
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:66:13-74
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:66:13-74
 activity#com.uni.julio.superplus.view.SearchActivity
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:73:9-75:65
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:73:9-75:65
 	android:theme
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:75:13-62
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:75:13-62
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:74:13-71
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:74:13-71
 activity#com.uni.julio.superplus.view.LoadingActivity
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:76:9-78:65
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:76:9-78:65
 	android:theme
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:78:13-62
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:78:13-62
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:77:13-72
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:77:13-72
 activity#com.uni.julio.superplus.view.LoginActivity
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:79:9-81:65
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:79:9-81:65
 	android:theme
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:81:13-62
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:81:13-62
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:80:13-70
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:80:13-70
 activity#com.uni.julio.superplus.view.MultiSeasonDetailActivity
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:82:9-84:65
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:82:9-84:65
 	android:theme
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:84:13-62
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:84:13-62
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:83:13-82
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:83:13-82
 activity#com.uni.julio.superplus.view.exoplayer.VideoPlayFragment
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:85:9-88:65
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:85:9-88:65
 	android:screenOrientation
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:87:13-50
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:87:13-50
 	android:theme
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:88:13-62
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:88:13-62
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:86:13-84
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:86:13-84
 activity#com.uni.julio.superplus.view.LiveTvNewActivity
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:90:9-94:65
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:90:9-94:65
 	android:screenOrientation
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:93:13-50
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:93:13-50
 	android:configChanges
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:92:13-71
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:92:13-71
 	android:theme
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:94:13-62
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:94:13-62
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:91:13-74
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:91:13-74
 activity#com.uni.julio.superplus.view.MoviesActivity
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:95:9-97:65
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:95:9-97:65
 	android:theme
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:97:13-62
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:97:13-62
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:96:13-71
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:96:13-71
 activity#com.uni.julio.superplus.view.OneSeasonDetailActivity
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:98:9-101:65
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:98:9-101:65
 	android:configChanges
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:100:13-91
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:100:13-91
 	android:theme
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:101:13-62
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:101:13-62
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:99:13-80
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:99:13-80
 activity#com.uni.julio.superplus.view.MoreVideoActivity
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:102:9-104:65
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:102:9-104:65
 	android:theme
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:104:13-62
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:104:13-62
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:103:13-74
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:103:13-74
 activity#com.uni.julio.superplus.view.SpeedTestActivity
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:105:9-107:65
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:105:9-107:65
 	android:theme
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:107:13-62
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:107:13-62
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:106:13-74
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:106:13-74
 activity#com.uni.julio.superplus.view.SelectServerActivity
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:109:9-111:65
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:109:9-111:65
 	android:theme
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:111:13-62
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:111:13-62
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:110:13-77
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:110:13-77
 activity#com.uni.julio.superplus.view.MainActivity
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:112:9-118:20
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:112:9-118:20
 	android:theme
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:114:13-62
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:114:13-62
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:113:13-69
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:113:13-69
 meta-data#android.app.searchable
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:115:13-117:54
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:115:13-117:54
 	android:resource
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:117:17-51
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:117:17-51
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:116:17-54
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:116:17-54
 activity#com.uni.julio.superplus.view.SplashActivity
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:120:9-134:20
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:120:9-134:20
 	android:configChanges
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:122:13-72
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:122:13-72
 	android:theme
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:123:13-62
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:123:13-62
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:121:13-71
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:121:13-71
 intent-filter#action:name:android.intent.action.MAIN+action:name:android.settings.SETTINGS+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.LAUNCHER
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:124:13-129:29
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:124:13-129:29
 action#android.intent.action.MAIN
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:125:17-69
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:125:17-69
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:125:25-66
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:125:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:126:17-77
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:126:17-77
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:126:27-74
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:126:27-74
 action#android.settings.SETTINGS
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:127:17-68
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:127:17-68
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:127:25-65
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:127:25-65
 category#android.intent.category.DEFAULT
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:128:17-75
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:128:17-75
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:128:27-73
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:128:27-73
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LEANBACK_LAUNCHER
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:130:13-133:29
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:130:13-133:29
 category#android.intent.category.LEANBACK_LAUNCHER
-ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:132:17-86
+ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:132:17-86
 	android:name
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml:132:27-83
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml:132:27-83
 uses-sdk
-INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml
-INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml
+INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
+INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:databinding-adapters:3.5.2] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\de4d6413ab2728e7ed6096ce2f98187d\databinding-adapters-3.5.2\AndroidManifest.xml:22:5-44
 MERGED from [androidx.databinding:databinding-adapters:3.5.2] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\de4d6413ab2728e7ed6096ce2f98187d\databinding-adapters-3.5.2\AndroidManifest.xml:22:5-44
 MERGED from [androidx.databinding:databinding-runtime:3.5.2] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\78533b2d379ee4dfe107be7a1bd7b612\databinding-runtime-3.5.2\AndroidManifest.xml:22:5-44
 MERGED from [androidx.databinding:databinding-runtime:3.5.2] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\78533b2d379ee4dfe107be7a1bd7b612\databinding-runtime-3.5.2\AndroidManifest.xml:22:5-44
-MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\32cf6456d64701071978ab70059aec0e\jetified-android-searchbox-0.0.1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\32cf6456d64701071978ab70059aec0e\jetified-android-searchbox-0.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5c923aa4af73b5cddf9854d1080c984d\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5c923aa4af73b5cddf9854d1080c984d\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\936229bc8ebff7757c45c8a20621084b\jetified-android-searchbox-0.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.appbaseio:android-searchbox:0.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\936229bc8ebff7757c45c8a20621084b\jetified-android-searchbox-0.0.1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\81aef59f1357df38cab69be85907241a\material-1.1.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\81aef59f1357df38cab69be85907241a\material-1.1.0\AndroidManifest.xml:20:5-44
-MERGED from [me.zhanghai.android.materialprogressbar:library:1.1.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\25e514db9fc1989c85d140984a35840b\jetified-library-1.1.6\AndroidManifest.xml:12:5-14:41
-MERGED from [me.zhanghai.android.materialprogressbar:library:1.1.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\25e514db9fc1989c85d140984a35840b\jetified-library-1.1.6\AndroidManifest.xml:12:5-14:41
-MERGED from [com.github.recruit-lifestyle:WaveSwipeRefreshLayout:1.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e97d582ab56f09b0dc4f225f637cb742\jetified-WaveSwipeRefreshLayout-1.6\AndroidManifest.xml:8:5-10:41
-MERGED from [com.github.recruit-lifestyle:WaveSwipeRefreshLayout:1.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e97d582ab56f09b0dc4f225f637cb742\jetified-WaveSwipeRefreshLayout-1.6\AndroidManifest.xml:8:5-10:41
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.1.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\59b3296eeda9e44df409da0246696e29\jetified-library-1.1.6\AndroidManifest.xml:12:5-14:41
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.1.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\59b3296eeda9e44df409da0246696e29\jetified-library-1.1.6\AndroidManifest.xml:12:5-14:41
+MERGED from [com.github.recruit-lifestyle:WaveSwipeRefreshLayout:1.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\63eed7395874ffec0e2880cd23bd6168\jetified-WaveSwipeRefreshLayout-1.6\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.recruit-lifestyle:WaveSwipeRefreshLayout:1.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\63eed7395874ffec0e2880cd23bd6168\jetified-WaveSwipeRefreshLayout-1.6\AndroidManifest.xml:8:5-10:41
 MERGED from [androidx.leanback:leanback-preference:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\67402bd42b29ca635967175c60fe836b\leanback-preference-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.leanback:leanback-preference:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\67402bd42b29ca635967175c60fe836b\leanback-preference-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9aca62e2f5d58828593c5036bf743dd5\play-services-cast-framework-18.1.0\AndroidManifest.xml:5:5-44
@@ -517,8 +518,8 @@ MERGED from [androidx.preference:preference:1.0.0] C:\Users\Cosmic\.gradle\cache
 MERGED from [androidx.preference:preference:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\84557dfe39198802ca91253324d38840\preference-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a9d4263fad29a0cc1fe0d71c8b458379\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\a9d4263fad29a0cc1fe0d71c8b458379\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eb38ca0800aff64706ba10d52241f1cc\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eb38ca0800aff64706ba10d52241f1cc\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\045f0d5269c010d4c2f5479779655f4f\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
@@ -559,8 +560,8 @@ MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] C:\Users
 MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\8a954d597f8ecea0f1566388e7dfd999\firebase-installations-interop-16.0.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\7b2fb66cfad4172092a9daa4e4adc140\firebase-datatransport-17.0.3\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\7b2fb66cfad4172092a9daa4e4adc140\firebase-datatransport-17.0.3\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9217eeb438c6bcc43d33eb1d8a73264d\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9217eeb438c6bcc43d33eb1d8a73264d\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\0196cd3cb615a5797134e3e7b5b14d31\firebase-measurement-connector-18.0.0\AndroidManifest.xml:20:5-44
@@ -571,8 +572,8 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\461a7761a0d691a460ace99f330e0153\play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6053024904a81c3b09ee79212c69f9b1\play-services-measurement-base-17.5.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6053024904a81c3b09ee79212c69f9b1\play-services-measurement-base-17.5.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b51c9b291bc6eec00b822628f4ab52da\jetified-play-services-basement-17.1.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b51c9b291bc6eec00b822628f4ab52da\jetified-play-services-basement-17.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\bd1dd6b4fdcae2df2e7c108d8bfd301d\jetified-play-services-basement-17.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\bd1dd6b4fdcae2df2e7c108d8bfd301d\jetified-play-services-basement-17.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\83ecf052b972f1b16a86241d43bd0773\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\83ecf052b972f1b16a86241d43bd0773\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\33b7f1f693b4456bff3cee333e0dbed6\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -611,48 +612,46 @@ MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Co
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\97274d7572712faea42635a863bcd02d\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.2.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5a3b5061b70fc032e06907586d1fcc5e\core-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.2.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5a3b5061b70fc032e06907586d1fcc5e\core-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d0695166756356d037e141b6d8765fd0\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d0695166756356d037e141b6d8765fd0\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\463182d5834b8034c902f78afbae386f\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\463182d5834b8034c902f78afbae386f\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e1b550f246b390462462e4731002116f\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e1b550f246b390462462e4731002116f\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\20b600d3320bd451930c0bcbd7f1bdd6\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\20b600d3320bd451930c0bcbd7f1bdd6\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
 MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9bf19a65d4f1a6d56cbe6ad3b115df77\rxandroid-1.2.1\AndroidManifest.xml:19:5-43
 MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9bf19a65d4f1a6d56cbe6ad3b115df77\rxandroid-1.2.1\AndroidManifest.xml:19:5-43
 MERGED from [com.wang.avi:library:2.1.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fc6fc8d5464c552a957273f8eab66ade\library-2.1.3\AndroidManifest.xml:7:5-9:41
 MERGED from [com.wang.avi:library:2.1.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fc6fc8d5464c552a957273f8eab66ade\library-2.1.3\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.afollestad.material-dialogs:core:0.8.5.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\25efaa9218fd8de22896683ffb0ad058\jetified-core-0.8.5.6\AndroidManifest.xml:8:5-11:75
-MERGED from [com.github.afollestad.material-dialogs:core:0.8.5.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\25efaa9218fd8de22896683ffb0ad058\jetified-core-0.8.5.6\AndroidManifest.xml:8:5-11:75
+MERGED from [com.github.afollestad.material-dialogs:core:0.8.5.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b2e5eaefc9c6679b50312887672b2816\jetified-core-0.8.5.6\AndroidManifest.xml:8:5-11:75
+MERGED from [com.github.afollestad.material-dialogs:core:0.8.5.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b2e5eaefc9c6679b50312887672b2816\jetified-core-0.8.5.6\AndroidManifest.xml:8:5-11:75
 MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\538a47db2b7a02f984a311393c807315\circleimageview-3.0.1\AndroidManifest.xml:5:5-7:41
 MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\538a47db2b7a02f984a311393c807315\circleimageview-3.0.1\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.recommendation:recommendation:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\2d6463b23a90d7527e89aab9d1b8ba6a\recommendation-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.recommendation:recommendation:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\2d6463b23a90d7527e89aab9d1b8ba6a\recommendation-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [:extension-ffmpeg] D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\ExoPlayer-release-v2\extensions\ffmpeg\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
-MERGED from [:extension-ffmpeg] D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\ExoPlayer-release-v2\extensions\ffmpeg\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
-MERGED from [:extension-flac] D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\ExoPlayer-release-v2\extensions\flac\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
-MERGED from [:extension-flac] D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\ExoPlayer-release-v2\extensions\flac\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
-MERGED from [:extension-opus] D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\ExoPlayer-release-v2\extensions\opus\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
-MERGED from [:extension-opus] D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\ExoPlayer-release-v2\extensions\opus\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
-MERGED from [:extension-vp9] D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
-MERGED from [:extension-vp9] D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
-MERGED from [:library-all] D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\ExoPlayer-release-v2\library\all\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
-MERGED from [:library-all] D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\ExoPlayer-release-v2\library\all\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:extension-ffmpeg] D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\ExoPlayer-release-v2\extensions\ffmpeg\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:extension-ffmpeg] D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\ExoPlayer-release-v2\extensions\ffmpeg\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:extension-flac] D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\ExoPlayer-release-v2\extensions\flac\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:extension-flac] D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\ExoPlayer-release-v2\extensions\flac\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:extension-opus] D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\ExoPlayer-release-v2\extensions\opus\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:extension-opus] D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\ExoPlayer-release-v2\extensions\opus\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:extension-vp9] D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:extension-vp9] D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:library-all] D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\ExoPlayer-release-v2\library\all\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
+MERGED from [:library-all] D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\ExoPlayer-release-v2\library\all\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\c3240e6a553e966368d0abc58c1f7711\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\c3240e6a553e966368d0abc58c1f7711\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\05925ec7cfc3e102fc5a986c9dc048a2\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\05925ec7cfc3e102fc5a986c9dc048a2\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e892fd14d62c96d74bcb5de312c37894\jetified-firebase-components-16.0.0\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e892fd14d62c96d74bcb5de312c37894\jetified-firebase-components-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\427999ad4c1c44db7420eb257b5bfd64\jetified-firebase-components-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\427999ad4c1c44db7420eb257b5bfd64\jetified-firebase-components-16.0.0\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\92479c43a7c9d8691c2b6441246f7bb0\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\92479c43a7c9d8691c2b6441246f7bb0\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\cf8e127af5594b426cb295f2aea41994\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\cf8e127af5594b426cb295f2aea41994\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\dd5d480c5d20a5f2bf7ebb2a4529f68a\gifdecoder-4.10.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\dd5d480c5d20a5f2bf7ebb2a4529f68a\gifdecoder-4.10.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-api:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b67c941135cb854f808697393a39d940\jetified-transport-api-2.2.1\AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-api:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b67c941135cb854f808697393a39d940\jetified-transport-api-2.2.1\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\4174421afb48fd5617491392c34e5b27\jetified-transport-api-2.2.1\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\4174421afb48fd5617491392c34e5b27\jetified-transport-api-2.2.1\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-encoders-json:16.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\75ba6ce6e6faf72f2d5842e1ec6f172c\firebase-encoders-json-16.1.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-encoders-json:16.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\75ba6ce6e6faf72f2d5842e1ec6f172c\firebase-encoders-json-16.1.0\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3c0f7b8fdcd658fe0cd5c324aa9acc53\documentfile-1.0.0\AndroidManifest.xml:20:5-44
@@ -679,22 +678,20 @@ MERGED from [com.github.bosphere.android-fadingedgelayout:fadingedgelayout:1.0.0
 MERGED from [com.github.bosphere.android-fadingedgelayout:fadingedgelayout:1.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\6d06256ad7df90884c3205521b4e9b89\fadingedgelayout-1.0.0\AndroidManifest.xml:6:5-43
 MERGED from [net.steamcrafted:materialiconlib:1.1.5] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\bc8ee26b011b4fb07213a5837e153630\materialiconlib-1.1.5\AndroidManifest.xml:7:5-9:41
 MERGED from [net.steamcrafted:materialiconlib:1.1.5] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\bc8ee26b011b4fb07213a5837e153630\materialiconlib-1.1.5\AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5c923aa4af73b5cddf9854d1080c984d\multidex-2.0.0\AndroidManifest.xml:20:5-43
-MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5c923aa4af73b5cddf9854d1080c984d\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.codesgood:justifiedtextview:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1e8283e1233167803f625e671e8ef9bc\justifiedtextview-1.1.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.codesgood:justifiedtextview:1.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1e8283e1233167803f625e671e8ef9bc\justifiedtextview-1.1.0\AndroidManifest.xml:7:5-9:41
-INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml
-INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml
+INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
+INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.github.afollestad.material-dialogs:core:0.8.5.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\25efaa9218fd8de22896683ffb0ad058\jetified-core-0.8.5.6\AndroidManifest.xml:11:9-72
+		ADDED from [com.github.afollestad.material-dialogs:core:0.8.5.6] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b2e5eaefc9c6679b50312887672b2816\jetified-core-0.8.5.6\AndroidManifest.xml:11:9-72
 	android:targetSdkVersion
-		INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml
-		INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml
-		ADDED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml
-		INJECTED from D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
+		ADDED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.FOREGROUND_SERVICE
 ADDED from [com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9aca62e2f5d58828593c5036bf743dd5\play-services-cast-framework-18.1.0\AndroidManifest.xml:7:5-77
 	android:name
@@ -718,21 +715,21 @@ ADDED from [com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users
 	android:name
 		ADDED from [com.google.android.gms:play-services-cast-framework:18.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\9aca62e2f5d58828593c5036bf743dd5\play-services-cast-framework-18.1.0\AndroidManifest.xml:18:13-85
 service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:28:9-34:19
+ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:28:9-34:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:30:13-37
+		ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:29:13-82
+		ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:29:13-82
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:31:13-33:29
+ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:31:13-33:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:31:28-51
+		ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:31:28-51
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:32:17-78
+ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:32:17-78
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:32:25-75
+		ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:32:25-75
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:35:9-41:19
+ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:35:9-41:19
 MERGED from [com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e64708330b37d0630cbafa02b57432bb\firebase-iid-20.1.7\AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e64708330b37d0630cbafa02b57432bb\firebase-iid-20.1.7\AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\fd7ce96e602ba06dcf446e6540071086\play-services-measurement-api-17.5.0\AndroidManifest.xml:27:9-33:19
@@ -743,22 +740,22 @@ MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\Cosmic\
 MERGED from [com.google.firebase:firebase-installations:16.3.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\7c3c238b8a9dcf61caa6c45147de22bd\firebase-installations-16.3.3\AndroidManifest.xml:14:9-20:19
 MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\7b2fb66cfad4172092a9daa4e4adc140\firebase-datatransport-17.0.3\AndroidManifest.xml:25:9-31:19
 MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\7b2fb66cfad4172092a9daa4e4adc140\firebase-datatransport-17.0.3\AndroidManifest.xml:25:9-31:19
-MERGED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:33:9-37:35
-MERGED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:33:9-37:35
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:37:13-37
+		ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:37:13-37
 	tools:targetApi
-		ADDED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:37:13-32
+		ADDED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:37:13-32
 	android:directBootAware
-		ADDED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:35:13-43
+		ADDED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:35:13-43
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:36:13-84
+		ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:36:13-84
 meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
-ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:38:13-40:85
+ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:38:13-40:85
 	android:value
-		ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:40:17-82
+		ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:40:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\eefaec7fbb6a4af62cf7ada5e808ca96\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:39:17-119
+		ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\472641b163a7bfb92a510179aaaaf383\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:39:17-119
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.firebase:firebase-iid:20.1.7] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e64708330b37d0630cbafa02b57432bb\firebase-iid-20.1.7\AndroidManifest.xml:24:5-68
 MERGED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\4954fc2300ad7bc55ac91423f09c28ee\play-services-measurement-17.5.0\AndroidManifest.xml:25:5-68
@@ -860,60 +857,60 @@ ADDED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Cosmic\.
 	android:name
 		ADDED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\7b2fb66cfad4172092a9daa4e4adc140\firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:26:9-31:39
+ADDED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:26:9-31:39
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:28:13-72
+		ADDED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:28:13-72
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:30:13-37
+		ADDED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:30:13-37
 	android:directBootAware
-		ADDED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:29:13-43
+		ADDED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:29:13-43
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:31:13-36
+		ADDED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:31:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\abac0ce13b92cf1538de93201336fddf\jetified-firebase-common-19.3.1\AndroidManifest.xml:27:13-77
+		ADDED from [com.google.firebase:firebase-common:19.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\3e428e785aeba895233b05bddb3155e4\jetified-firebase-common-19.3.1\AndroidManifest.xml:27:13-77
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b51c9b291bc6eec00b822628f4ab52da\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\bd1dd6b4fdcae2df2e7c108d8bfd301d\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b51c9b291bc6eec00b822628f4ab52da\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\bd1dd6b4fdcae2df2e7c108d8bfd301d\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\b51c9b291bc6eec00b822628f4ab52da\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\bd1dd6b4fdcae2df2e7c108d8bfd301d\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
 provider#com.squareup.picasso.PicassoProvider
-ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d0695166756356d037e141b6d8765fd0\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e1b550f246b390462462e4731002116f\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
 	android:authorities
-		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d0695166756356d037e141b6d8765fd0\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e1b550f246b390462462e4731002116f\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
 	android:exported
-		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d0695166756356d037e141b6d8765fd0\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e1b550f246b390462462e4731002116f\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
 	android:name
-		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\d0695166756356d037e141b6d8765fd0\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\e1b550f246b390462462e4731002116f\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
 uses-feature#0x00020000
-ADDED from [:extension-vp9] D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:5-54
+ADDED from [:extension-vp9] D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:5-54
 	android:glEsVersion
-		ADDED from [:extension-vp9] D:\workspace\2020\8_Aug\SuperPlus\SuperTvPlus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:19-51
+		ADDED from [:extension-vp9] D:\workspace\2020\8_Aug\Android_SuperPlus_Julio_Mexico\SuperTvPlus\ExoPlayer-release-v2\extensions\vp9\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:19-51
 service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
-ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:29:9-35:19
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:36:9-38:40
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:36:9-38:40
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:36:9-38:40
 	android:exported
-		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:31:13-37
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:30:13-103
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:30:13-103
 meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
-ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:32:13-34:39
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:32:13-34:39
 	android:value
-		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:34:17-36
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:34:17-36
 	android:name
-		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\87afea3f5fcb8b0f948ca581bb78264b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:33:17-94
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\837b4ddd0a2acdf9cce0ecd0bac54e5a\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:33:17-94
 service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
-ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:26:9-30:19
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:26:9-30:19
 	android:exported
-		ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:28:13-37
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:28:13-37
 	android:permission
-		ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:29:13-69
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:29:13-69
 	android:name
-		ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:27:13-117
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:27:13-117
 receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
-ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:32:9-34:40
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:32:9-34:40
 	android:exported
-		ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:34:13-37
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\1dd8fe87c5b9eb9aa8d82776ed8ec912\jetified-transport-runtime-2.2.4\AndroidManifest.xml:33:13-132
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\Cosmic\.gradle\caches\transforms-2\files-2.1\5867fb7f89790fa21cb0c92a81f4bc58\jetified-transport-runtime-2.2.4\AndroidManifest.xml:33:13-132

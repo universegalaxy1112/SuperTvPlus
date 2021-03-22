@@ -92,7 +92,7 @@ public class MoviesCategoryAdapter extends TVRecyclerViewAdapter<MoviesCategoryA
             }
         } catch (Exception e) {
             e.printStackTrace();
-            Dialogs.showOneButtonDialog(mContext, R.string.exception_title, R.string.exception_content, new DialogInterface.OnClickListener() {
+            Dialogs.showOneButtonDialog(mContext, R.string.something_wrong_title, R.string.something_wrong, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     ((AppCompatActivity) mContext).finish();

@@ -89,7 +89,7 @@ public final class CssParserTest {
   @Test
   public void testParseMethodSimpleInput() {
     WebvttCssStyle expectedStyle = new WebvttCssStyle();
-    String styleBlock1 = " ::cue { color : black; background-color: PapayaWhip }";
+    String styleBlock1 = " ::cue { color : black; livetv_bg_middle-color: PapayaWhip }";
     expectedStyle.setFontColor(0xFF000000);
     expectedStyle.setBackgroundColor(0xFFFFEFD5);
     assertParserProduces(styleBlock1, expectedStyle);
@@ -99,7 +99,7 @@ public final class CssParserTest {
     expectedStyle.setFontColor(0xFF000000);
     assertParserProduces(styleBlock2, expectedStyle);
 
-    String styleBlock3 = "::cue {\n background-color\n:#00fFFe}";
+    String styleBlock3 = "::cue {\n livetv_bg_middle-color\n:#00fFFe}";
     expectedStyle = new WebvttCssStyle();
     expectedStyle.setBackgroundColor(0xFF00FFFE);
     assertParserProduces(styleBlock3, expectedStyle);
@@ -108,7 +108,7 @@ public final class CssParserTest {
   @Test
   public void testParseMethodMultipleRulesInBlockInput() {
     String styleBlock =
-        "::cue {\n background-color\n:#00fFFe}      \n::cue {\n background-color\n:#00000000}\n";
+        "::cue {\n livetv_bg_middle-color\n:#00fFFe}      \n::cue {\n livetv_bg_middle-color\n:#00000000}\n";
     WebvttCssStyle expectedStyle = new WebvttCssStyle();
     expectedStyle.setBackgroundColor(0xFF00FFFE);
     WebvttCssStyle secondExpectedStyle = new WebvttCssStyle();
@@ -118,7 +118,7 @@ public final class CssParserTest {
 
   @Test
   public void testMultiplePropertiesInBlock() {
-    String styleBlock = "::cue(#id){text-decoration:underline; background-color:green;"
+    String styleBlock = "::cue(#id){text-decoration:underline; livetv_bg_middle-color:green;"
         + "color:red; font-family:Courier; font-weight:bold}";
     WebvttCssStyle expectedStyle = new WebvttCssStyle();
     expectedStyle.setTargetId("id");
@@ -133,7 +133,7 @@ public final class CssParserTest {
 
   @Test
   public void testRgbaColorExpression() {
-    String styleBlock = "::cue(#rgb){background-color: rgba(\n10/* Ugly color */,11\t, 12\n,.1);"
+    String styleBlock = "::cue(#rgb){livetv_bg_middle-color: rgba(\n10/* Ugly color */,11\t, 12\n,.1);"
         + "color:rgb(1,1,\n1)}";
     WebvttCssStyle expectedStyle = new WebvttCssStyle();
     expectedStyle.setTargetId("rgb");

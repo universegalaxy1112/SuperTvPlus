@@ -8509,6 +8509,8 @@ string selection_default_none
 string selection_disabled
 string serverSelect_message
 string solved
+string something_wrong
+string something_wrong_title
 string splash_content_txt
 string start
 string status_bar_notification_info_overflow

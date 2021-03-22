@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-tl\\values-tl.xml",
+            "outputFile": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-tl\\values-tl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\a9d4263fad29a0cc1fe0d71c8b458379\\appcompat-1.1.0\\res\\values-tl\\values-tl.xml",
@@ -72,6 +72,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\472641b163a7bfb92a510179aaaaf383\\jetified-firebase-messaging-20.1.7\\res\\values-tl\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "207",
+                        "endColumns": "100",
+                        "endOffsets": "307"
+                    },
+                    "to": {
+                        "startLines": "97",
+                        "startColumns": "4",
+                        "startOffsets": "10759",
+                        "endColumns": "104",
+                        "endOffsets": "10859"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\3a9e7ad6c660edde62dd893c964d2529\\play-services-base-17.1.0\\res\\values-tl\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
@@ -103,23 +120,6 @@
                         "startOffsets": "2845,2920,3019,3117,3247,3376,3462,3630,3762,3872,4033,4150,4253,4366,4502,4583,4688,4796,4904,4983,5538,5615,5690,5769,5872,5978,6088,6189,6289,6364,6467,6564,6667,6791,6935,7030,7121,7229",
                         "endColumns": "74,98,97,129,128,85,167,131,109,160,116,102,112,135,80,104,107,107,78,74,76,74,78,102,105,109,100,99,74,102,96,102,123,143,94,90,107,78",
                         "endOffsets": "2915,3014,3112,3242,3371,3457,3625,3757,3867,4028,4145,4248,4361,4497,4578,4683,4791,4899,4978,5053,5610,5685,5764,5867,5973,6083,6184,6284,6359,6462,6559,6662,6786,6930,7025,7116,7224,7303"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\eefaec7fbb6a4af62cf7ada5e808ca96\\jetified-firebase-messaging-20.1.7\\res\\values-tl\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "207",
-                        "endColumns": "100",
-                        "endOffsets": "307"
-                    },
-                    "to": {
-                        "startLines": "97",
-                        "startColumns": "4",
-                        "startOffsets": "10759",
-                        "endColumns": "104",
-                        "endOffsets": "10859"
                     }
                 },
                 {
@@ -157,24 +157,7 @@
                     }
                 },
                 {
-                    "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-tl\\values-tl.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,137,214,283,350,430,501",
-                        "endColumns": "81,76,68,66,79,70,66",
-                        "endOffsets": "132,209,278,345,425,496,563"
-                    },
-                    "to": {
-                        "startLines": "89,90,91,92,93,94,95",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "10159,10241,10318,10387,10454,10534,10605",
-                        "endColumns": "81,76,68,66,79,70,66",
-                        "endOffsets": "10236,10313,10382,10449,10529,10600,10667"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\b51c9b291bc6eec00b822628f4ab52da\\jetified-play-services-basement-17.1.0\\res\\values-tl\\values.xml",
+                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\bd1dd6b4fdcae2df2e7c108d8bfd301d\\jetified-play-services-basement-17.1.0\\res\\values-tl\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -188,6 +171,23 @@
                         "startOffsets": "8525",
                         "endColumns": "203",
                         "endOffsets": "8724"
+                    }
+                },
+                {
+                    "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-tl\\values-tl.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,137,214,283,350,430,501",
+                        "endColumns": "81,76,68,66,79,70,66",
+                        "endOffsets": "132,209,278,345,425,496,563"
+                    },
+                    "to": {
+                        "startLines": "89,90,91,92,93,94,95",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "10159,10241,10318,10387,10454,10534,10605",
+                        "endColumns": "81,76,68,66,79,70,66",
+                        "endOffsets": "10236,10313,10382,10449,10529,10600,10667"
                     }
                 }
             ]

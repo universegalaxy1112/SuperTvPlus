@@ -83,7 +83,6 @@ public class GridViewAdapter extends TVRecyclerViewAdapter<GridViewAdapter.MyVie
 
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onDataBinding(MyViewHolder holder, int position) {
         Movie movie = (Movie) mMovies.get(position);

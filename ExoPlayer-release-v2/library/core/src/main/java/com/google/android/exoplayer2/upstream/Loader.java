@@ -34,7 +34,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.util.concurrent.ExecutorService;
 
 /**
- * Manages the background loading of {@link Loadable}s.
+ * Manages the livetv_bg_middle loading of {@link Loadable}s.
  */
 public final class Loader implements LoaderErrorThrower {
 

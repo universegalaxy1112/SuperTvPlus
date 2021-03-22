@@ -2,11 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.uni.julio.superplus"
     android:targetSandboxVersion="2"
-    android:versionCode="15"
-    android:versionName="3.0.5" >
+    android:versionCode="16"
+    android:versionName="3.0.6" >
 
     <uses-sdk
-        android:minSdkVersion="21"
+        android:minSdkVersion="19"
         android:targetSdkVersion="29" />
 
     <uses-permission android:name="android.permission.INTERNET" />

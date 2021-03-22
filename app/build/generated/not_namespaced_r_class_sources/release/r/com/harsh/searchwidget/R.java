@@ -1484,7 +1484,7 @@ public final class R {
         public static final int permission_subtitle = 0x7f12014f;
         public static final int permission_title = 0x7f120150;
         public static final int search_menu_title = 0x7f120160;
-        public static final int status_bar_notification_info_overflow = 0x7f12016a;
+        public static final int status_bar_notification_info_overflow = 0x7f12016c;
     }
     public static final class style {
         private style() {}

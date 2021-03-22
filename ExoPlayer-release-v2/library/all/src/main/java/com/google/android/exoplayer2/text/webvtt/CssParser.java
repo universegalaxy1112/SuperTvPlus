@@ -28,7 +28,7 @@ import java.util.regex.Pattern;
  */
 /* package */ final class CssParser {
 
-  private static final String PROPERTY_BGCOLOR = "background-color";
+  private static final String PROPERTY_BGCOLOR = "livetv_bg_middle-color";
   private static final String PROPERTY_FONT_FAMILY = "font-family";
   private static final String PROPERTY_FONT_WEIGHT = "font-weight";
   private static final String PROPERTY_TEXT_DECORATION = "text-decoration";

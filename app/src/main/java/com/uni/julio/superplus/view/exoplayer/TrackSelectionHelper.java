@@ -65,7 +65,6 @@ import java.util.Locale;
     this.adaptiveVideoTrackSelectionFactory = adaptiveVideoTrackSelectionFactory;
   }
 
-  @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
   public void showSelectionDialog(Activity activity, CharSequence title, MappedTrackInfo trackInfo,
                                   int rendererIndex) {
     this.trackInfo = trackInfo;
@@ -88,7 +87,6 @@ import java.util.Locale;
             .setPositiveButton(R.string.accept, this)
             .setNegativeButton(R.string.cancel, null);
     AlertDialog dialog=builder.create();
-    dialog.create();
     dialog.show();
     Button ne=dialog.getButton(DialogInterface.BUTTON_NEGATIVE);
     Button po=dialog.getButton(DialogInterface.BUTTON_POSITIVE);

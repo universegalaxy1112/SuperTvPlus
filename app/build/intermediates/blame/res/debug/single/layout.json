@@ -1,70 +1,70 @@
 [
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_server.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout\\item_server.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_oneseason_detail.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_oneseason_detail.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_search.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_search.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\live_category_list.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\src\\main\\res\\layout\\live_category_list.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\gridview_row.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout\\gridview_row.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_account.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_account.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_selectserver.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_selectserver.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_search.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_search.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_oneseason_detail.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_oneseason_detail.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_live.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_live.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\video_list_row.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout\\video_list_row.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_selectserver.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_selectserver.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\live_category_list.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout\\live_category_list.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\livetvnew_list.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\src\\main\\res\\layout\\livetvnew_list.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\livetvnew_list.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout\\livetvnew_list.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_movies.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_movies.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_live.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_live.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_multi_season_detail.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_multi_season_detail.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\multiseason_row.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout\\multiseason_row.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_server.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\src\\main\\res\\layout\\item_server.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_account.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_account.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\video_list_section.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\src\\main\\res\\layout\\video_list_section.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_livetvnew.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_livetvnew.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\multiseason_row.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\src\\main\\res\\layout\\multiseason_row.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\video_list_section.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout\\video_list_section.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_livetvnew.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_livetvnew.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_morevideo.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_morevideo.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\gridview_row.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\src\\main\\res\\layout\\gridview_row.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_movies.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_movies.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\video_list_row.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\src\\main\\res\\layout\\video_list_row.xml"
     },
     {
-        "merged": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_multi_season_detail.xml",
-        "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_multi_season_detail.xml"
+        "merged": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_morevideo.xml",
+        "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\src\\main\\res\\layout\\activity_morevideo.xml"
     }
 ]

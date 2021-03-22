@@ -1065,7 +1065,7 @@ public final class R {
         public static final int lb_search_bar_hint_with_title = 0x7f1200da;
         public static final int lb_search_bar_hint_with_title_speech = 0x7f1200db;
         public static final int orb_search_action = 0x7f120141;
-        public static final int status_bar_notification_info_overflow = 0x7f12016a;
+        public static final int status_bar_notification_info_overflow = 0x7f12016c;
     }
     public static final class style {
         private style() {}

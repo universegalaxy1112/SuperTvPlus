@@ -155,7 +155,6 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                     return "Unknown";
         }
     }
-        @RequiresApi(api = Build.VERSION_CODES.O)
         private void setupChannels(){
             CharSequence adminChannelName = getString(R.string.channel_Name);
             String adminChannelDescription = getString(R.string.channel_description);

@@ -977,7 +977,7 @@ public final class DefaultAudioSink implements AudioSink {
       if (audioTrackPositionTracker.isPlaying()) {
         audioTrack.pause();
       }
-      // AudioTrack.release can take some time, so we call it on a background thread.
+      // AudioTrack.release can take some time, so we call it on a livetv_bg_middle thread.
       final AudioTrack toRelease = audioTrack;
       audioTrack = null;
       if (pendingConfiguration != null) {
@@ -1022,7 +1022,7 @@ public final class DefaultAudioSink implements AudioSink {
       return;
     }
 
-    // AudioTrack.release can take some time, so we call it on a background thread.
+    // AudioTrack.release can take some time, so we call it on a livetv_bg_middle thread.
     final AudioTrack toRelease = keepSessionIdAudioTrack;
     keepSessionIdAudioTrack = null;
     new Thread() {

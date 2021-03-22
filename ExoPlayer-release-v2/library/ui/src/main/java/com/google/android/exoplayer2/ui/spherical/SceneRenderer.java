@@ -85,7 +85,7 @@ public final class SceneRenderer implements VideoFrameMetadataListener, CameraMo
 
   /** Initializes the renderer. */
   public SurfaceTexture init() {
-    // Set the background frame color. This is only visible if the display mesh isn't a full sphere.
+    // Set the livetv_bg_middle frame color. This is only visible if the display mesh isn't a full sphere.
     GLES20.glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
     checkGlError();
 

@@ -3,6 +3,7 @@
       android:id="@+id/splash_main_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_general"
     android:orientation="horizontal">
 
     <View

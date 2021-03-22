@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ru\\values-ru.xml",
+            "outputFile": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ru\\values-ru.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\8eec308cb7ca3f98a247f21b2954ab96\\leanback-1.0.0\\res\\values-ru\\values-ru.xml",
@@ -18,57 +18,6 @@
                         "startOffsets": "10713,10820,10921,11016,11110,11249,11360,11457,11548,11672,11794,11904,12030,12175,12302,12427,12533,12624,12757,12855,12959,13063,13178,13281,13401,13515,13634,13751,13872,13998,14114,14242,14353,14476,14563,14646,14749,14891,17516",
                         "endColumns": "106,100,94,93,138,110,96,90,123,121,109,125,144,126,124,105,90,132,97,103,103,114,102,119,113,118,116,120,125,115,127,110,122,86,82,102,141,171,81",
                         "endOffsets": "10815,10916,11011,11105,11244,11355,11452,11543,11667,11789,11899,12025,12170,12297,12422,12528,12619,12752,12850,12954,13058,13173,13276,13396,13510,13629,13746,13867,13993,14109,14237,14348,14471,14558,14641,14744,14886,15058,17593"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\eefaec7fbb6a4af62cf7ada5e808ca96\\jetified-firebase-messaging-20.1.7\\res\\values-ru\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "207",
-                        "endColumns": "100",
-                        "endOffsets": "307"
-                    },
-                    "to": {
-                        "startLines": "97",
-                        "startColumns": "4",
-                        "startOffsets": "10608",
-                        "endColumns": "104",
-                        "endOffsets": "10708"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\b51c9b291bc6eec00b822628f4ab52da\\jetified-play-services-basement-17.1.0\\res\\values-ru\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "215",
-                        "endOffsets": "462"
-                    },
-                    "to": {
-                        "startLines": "79",
-                        "startColumns": "4",
-                        "startOffsets": "8372",
-                        "endColumns": "215",
-                        "endOffsets": "8583"
-                    }
-                },
-                {
-                    "source": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-ru\\values-ru.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,140,215,290,364,444,523",
-                        "endColumns": "84,74,74,73,79,78,70",
-                        "endOffsets": "135,210,285,359,439,518,589"
-                    },
-                    "to": {
-                        "startLines": "89,90,91,92,93,94,95",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "9977,10062,10137,10212,10286,10366,10445",
-                        "endColumns": "84,74,74,73,79,78,70",
-                        "endOffsets": "10057,10132,10207,10281,10361,10440,10511"
                     }
                 },
                 {
@@ -103,6 +52,57 @@
                         "startOffsets": "2822,2905,3019,3107,3218,3347,3431,3590,3711,3819,3959,4076,4177,4285,4410,4499,4604,4709,4817,4899,5458,5541,5623,5710,5813,5916,6007,6109,6212,6291,6393,6490,6589,6699,6842,6936,7027,7131",
                         "endColumns": "82,113,87,110,128,83,158,120,107,139,116,100,107,124,88,104,104,107,81,82,82,81,86,102,102,90,101,102,78,101,96,98,109,142,93,90,103,83",
                         "endOffsets": "2900,3014,3102,3213,3342,3426,3585,3706,3814,3954,4071,4172,4280,4405,4494,4599,4704,4812,4894,4977,5536,5618,5705,5808,5911,6002,6104,6207,6286,6388,6485,6584,6694,6837,6931,7022,7126,7210"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\bd1dd6b4fdcae2df2e7c108d8bfd301d\\jetified-play-services-basement-17.1.0\\res\\values-ru\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "215",
+                        "endOffsets": "462"
+                    },
+                    "to": {
+                        "startLines": "79",
+                        "startColumns": "4",
+                        "startOffsets": "8372",
+                        "endColumns": "215",
+                        "endOffsets": "8583"
+                    }
+                },
+                {
+                    "source": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\ExoPlayer-release-v2\\library\\all\\build\\intermediates\\packaged_res\\debug\\values-ru\\values-ru.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,140,215,290,364,444,523",
+                        "endColumns": "84,74,74,73,79,78,70",
+                        "endOffsets": "135,210,285,359,439,518,589"
+                    },
+                    "to": {
+                        "startLines": "89,90,91,92,93,94,95",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "9977,10062,10137,10212,10286,10366,10445",
+                        "endColumns": "84,74,74,73,79,78,70",
+                        "endOffsets": "10057,10132,10207,10281,10361,10440,10511"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\472641b163a7bfb92a510179aaaaf383\\jetified-firebase-messaging-20.1.7\\res\\values-ru\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "207",
+                        "endColumns": "100",
+                        "endOffsets": "307"
+                    },
+                    "to": {
+                        "startLines": "97",
+                        "startColumns": "4",
+                        "startOffsets": "10608",
+                        "endColumns": "104",
+                        "endOffsets": "10708"
                     }
                 },
                 {

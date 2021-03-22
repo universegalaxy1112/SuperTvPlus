@@ -35,7 +35,7 @@ public class MainCategoriesMenuViewModel implements MainCategoriesMenuViewModelC
 
     @Override
     public void onViewResumed() {
-        if(LiveTvApplication.getUser().getAdultos() == 1){
+        if(LiveTvApplication.getUser() != null && LiveTvApplication.getUser().getAdultos() == 1){
             if(VideoStreamManager.getInstance().getMainCategoriesList().size() > 9 && VideoStreamManager.getInstance().getMainCategoriesList().get(9).getId() == 7)
             {
                 VideoStreamManager.getInstance().getMainCategoriesList().remove(9);

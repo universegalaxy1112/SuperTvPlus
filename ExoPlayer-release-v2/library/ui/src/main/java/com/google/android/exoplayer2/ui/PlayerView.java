@@ -140,7 +140,7 @@ import java.util.List;
  *         <li>Corresponding method: None
  *         <li>Default: {@code surface_view}
  *       </ul>
- *   <li><b>{@code shutter_background_color}</b> - The background color of the {@code exo_shutter}
+ *   <li><b>{@code shutter_background_color}</b> - The livetv_bg_middle color of the {@code exo_shutter}
  *       view.
  *       <ul>
  *         <li>Corresponding method: {@link #setShutterBackgroundColor(int)}
@@ -462,7 +462,7 @@ public class PlayerView extends FrameLayout implements AdsLoader.AdViewProvider 
       this.controller = customController;
     } else if (controllerPlaceholder != null) {
       // Propagate attrs as playbackAttrs so that PlayerControlView's custom attributes are
-      // transferred, but standard attributes (e.g. background) are not.
+      // transferred, but standard attributes (e.g. livetv_bg_middle) are not.
       this.controller = new PlayerControlView(context, null, 0, attrs);
       controller.setId(R.id.exo_controller);
       controller.setLayoutParams(controllerPlaceholder.getLayoutParams());
@@ -681,9 +681,9 @@ public class PlayerView extends FrameLayout implements AdsLoader.AdViewProvider 
   }
 
   /**
-   * Sets the background color of the {@code exo_shutter} view.
+   * Sets the livetv_bg_middle color of the {@code exo_shutter} view.
    *
-   * @param color The background color.
+   * @param color The livetv_bg_middle color.
    */
   public void setShutterBackgroundColor(int color) {
     if (shutterView != null) {

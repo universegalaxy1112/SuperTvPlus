@@ -72,40 +72,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\b51c9b291bc6eec00b822628f4ab52da\\jetified-play-services-basement-17.1.0\\res\\values-az\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "220",
-                        "endOffsets": "467"
-                    },
-                    "to": {
-                        "startLines": "79",
-                        "startColumns": "4",
-                        "startOffsets": "8386",
-                        "endColumns": "220",
-                        "endOffsets": "8602"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\eefaec7fbb6a4af62cf7ada5e808ca96\\jetified-firebase-messaging-20.1.7\\res\\values-az\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "207",
-                        "endColumns": "102",
-                        "endOffsets": "309"
-                    },
-                    "to": {
-                        "startLines": "90",
-                        "startColumns": "4",
-                        "startOffsets": "10038",
-                        "endColumns": "106",
-                        "endOffsets": "10140"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\8eec308cb7ca3f98a247f21b2954ab96\\leanback-1.0.0\\res\\values-az\\values-az.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40",
@@ -120,6 +86,23 @@
                         "startOffsets": "10145,10252,10353,10453,10551,10670,10785,10884,10977,11111,11242,11354,11482,11627,11758,11886,11997,12093,12230,12327,12438,12544,12652,12749,12863,12974,13095,13213,13318,13426,13542,13651,13763,13867,13954,14039,14144,14281,16842",
                         "endColumns": "106,100,99,97,118,114,98,92,133,130,111,127,144,130,127,110,95,136,96,110,105,107,96,113,110,120,117,104,107,115,108,111,103,86,84,104,136,156,94",
                         "endOffsets": "10247,10348,10448,10546,10665,10780,10879,10972,11106,11237,11349,11477,11622,11753,11881,11992,12088,12225,12322,12433,12539,12647,12744,12858,12969,13090,13208,13313,13421,13537,13646,13758,13862,13949,14034,14139,14276,14433,16932"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\bd1dd6b4fdcae2df2e7c108d8bfd301d\\jetified-play-services-basement-17.1.0\\res\\values-az\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "220",
+                        "endOffsets": "467"
+                    },
+                    "to": {
+                        "startLines": "79",
+                        "startColumns": "4",
+                        "startOffsets": "8386",
+                        "endColumns": "220",
+                        "endOffsets": "8602"
                     }
                 },
                 {
@@ -171,6 +154,23 @@
                         "startOffsets": "9951,17121,17290,17374",
                         "endColumns": "86,168,83,78",
                         "endOffsets": "10033,17285,17369,17448"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\472641b163a7bfb92a510179aaaaf383\\jetified-firebase-messaging-20.1.7\\res\\values-az\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "207",
+                        "endColumns": "102",
+                        "endOffsets": "309"
+                    },
+                    "to": {
+                        "startLines": "90",
+                        "startColumns": "4",
+                        "startOffsets": "10038",
+                        "endColumns": "106",
+                        "endOffsets": "10140"
                     }
                 }
             ]

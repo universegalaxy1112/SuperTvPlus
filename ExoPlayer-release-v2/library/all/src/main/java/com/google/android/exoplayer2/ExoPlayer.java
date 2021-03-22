@@ -101,8 +101,8 @@ import com.google.android.exoplayer2.video.MediaCodecVideoRenderer;
  * playback event occurs on the internal playback thread, a message is delivered to the application
  * thread via a second message queue. The application thread consumes messages from the queue,
  * updating the application visible state and calling corresponding listener methods.</li>
- * <li>Injected player components may use additional background threads. For example a MediaSource
- * may use a background thread to load data. These are implementation specific.</li>
+ * <li>Injected player components may use additional livetv_bg_middle threads. For example a MediaSource
+ * may use a livetv_bg_middle thread to load data. These are implementation specific.</li>
  * </ul>
  */
 public interface ExoPlayer {

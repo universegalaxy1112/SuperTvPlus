@@ -1860,10 +1860,10 @@ public final class R {
         public static final int lb_search_bar_hint_with_title_speech = 0x7f1200db;
         public static final int orb_search_action = 0x7f120141;
         public static final int search_menu_title = 0x7f120160;
-        public static final int status_bar_notification_info_overflow = 0x7f12016a;
-        public static final int summary_collapsed_preference_list = 0x7f12016c;
-        public static final int v7_preference_off = 0x7f12018b;
-        public static final int v7_preference_on = 0x7f12018c;
+        public static final int status_bar_notification_info_overflow = 0x7f12016c;
+        public static final int summary_collapsed_preference_list = 0x7f12016e;
+        public static final int v7_preference_off = 0x7f12018d;
+        public static final int v7_preference_on = 0x7f12018e;
     }
     public static final class style {
         private style() {}

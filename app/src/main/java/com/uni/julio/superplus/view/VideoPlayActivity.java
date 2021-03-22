@@ -134,7 +134,7 @@ public class VideoPlayActivity extends BaseActivity implements LiveTVToggleUILis
         videoPlayFragment.onNewIntent(intent);
     }
 
-    /* @RequiresApi(api = Build.VERSION_CODES.O)
+    /*
      private void enterPIPMode(){
          *//*registerReceiver(mute, new IntentFilter("mute"));
         registerReceiver(unMute, new IntentFilter("unMute"));
@@ -149,7 +149,7 @@ public class VideoPlayActivity extends BaseActivity implements LiveTVToggleUILis
         enterPictureInPictureMode(mPictureInPictureParamsBuilder.build());*//*
 
     }*/
-   /* @RequiresApi(api = Build.VERSION_CODES.O)
+   /*
     @Override
     public void onUserLeaveHint() {
       *//*  if (!isInPictureInPictureMode()) {

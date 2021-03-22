@@ -14,13 +14,13 @@ public class ActivityAccountBindingImpl extends ActivityAccountBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.Appbarlayout, 7);
-        sViewsWithIds.put(R.id.toolbar, 8);
-        sViewsWithIds.put(R.id.splash_main_container, 9);
-        sViewsWithIds.put(R.id.device0, 10);
-        sViewsWithIds.put(R.id.device1, 11);
-        sViewsWithIds.put(R.id.device2, 12);
-        sViewsWithIds.put(R.id.testspeed, 13);
+        sViewsWithIds.put(R.id.Appbarlayout, 8);
+        sViewsWithIds.put(R.id.toolbar, 9);
+        sViewsWithIds.put(R.id.splash_main_container, 10);
+        sViewsWithIds.put(R.id.device0, 11);
+        sViewsWithIds.put(R.id.device1, 12);
+        sViewsWithIds.put(R.id.device2, 13);
+        sViewsWithIds.put(R.id.testspeed, 14);
     }
     // views
     @NonNull
@@ -29,28 +29,31 @@ public class ActivityAccountBindingImpl extends ActivityAccountBinding  {
     private final android.widget.TextView mboundView4;
     @NonNull
     private final android.widget.TextView mboundView5;
+    @NonNull
+    private final android.widget.TextView mboundView7;
     // variables
     // values
     // listeners
-    private OnClickListenerImpl mAccountDetailsVMOnCloseSessionAndroidViewViewOnClickListener;
+    private OnClickListenerImpl mAccountDetailsVMCheckForUpdateAndroidViewViewOnClickListener;
+    private OnClickListenerImpl1 mAccountDetailsVMOnCloseSessionAndroidViewViewOnClickListener;
     // Inverse Binding Event Handlers
 
     public ActivityAccountBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 14, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 15, sIncludes, sViewsWithIds));
     }
     private ActivityAccountBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 1
-            , (com.google.android.material.appbar.AppBarLayout) bindings[7]
+            , (com.google.android.material.appbar.AppBarLayout) bindings[8]
             , (android.widget.LinearLayout) bindings[2]
             , (android.widget.TextView) bindings[6]
-            , (android.widget.TextView) bindings[10]
             , (android.widget.TextView) bindings[11]
             , (android.widget.TextView) bindings[12]
+            , (android.widget.TextView) bindings[13]
             , (android.widget.LinearLayout) bindings[0]
             , (android.widget.ProgressBar) bindings[1]
-            , (android.widget.LinearLayout) bindings[9]
-            , (android.widget.TextView) bindings[13]
-            , (androidx.appcompat.widget.Toolbar) bindings[8]
+            , (android.widget.LinearLayout) bindings[10]
+            , (android.widget.TextView) bindings[14]
+            , (androidx.appcompat.widget.Toolbar) bindings[9]
             );
         this.accountDetailsContent.setTag(null);
         this.cvLoginScreenLogin.setTag(null);
@@ -61,6 +64,8 @@ public class ActivityAccountBindingImpl extends ActivityAccountBinding  {
         this.mboundView4.setTag(null);
         this.mboundView5 = (android.widget.TextView) bindings[5];
         this.mboundView5.setTag(null);
+        this.mboundView7 = (android.widget.TextView) bindings[7];
+        this.mboundView7.setTag(null);
         this.progressBar.setTag(null);
         setRootTag(root);
         // listeners
@@ -149,6 +154,7 @@ public class ActivityAccountBindingImpl extends ActivityAccountBinding  {
         java.lang.String userVersion = null;
         java.lang.String userName = null;
         androidx.databinding.ObservableBoolean AccountDetailsVMIsLoading1 = null;
+        android.view.View.OnClickListener accountDetailsVMCheckForUpdateAndroidViewViewOnClickListener = null;
         java.lang.String userExpirationDate = null;
         android.view.View.OnClickListener accountDetailsVMOnCloseSessionAndroidViewViewOnClickListener = null;
 
@@ -174,8 +180,10 @@ public class ActivityAccountBindingImpl extends ActivityAccountBinding  {
             if ((dirtyFlags & 0xaL) != 0) {
 
                     if (accountDetailsVM != null) {
+                        // read accountDetailsVM::checkForUpdate
+                        accountDetailsVMCheckForUpdateAndroidViewViewOnClickListener = (((mAccountDetailsVMCheckForUpdateAndroidViewViewOnClickListener == null) ? (mAccountDetailsVMCheckForUpdateAndroidViewViewOnClickListener = new OnClickListenerImpl()) : mAccountDetailsVMCheckForUpdateAndroidViewViewOnClickListener).setValue(accountDetailsVM));
                         // read accountDetailsVM::onCloseSession
-                        accountDetailsVMOnCloseSessionAndroidViewViewOnClickListener = (((mAccountDetailsVMOnCloseSessionAndroidViewViewOnClickListener == null) ? (mAccountDetailsVMOnCloseSessionAndroidViewViewOnClickListener = new OnClickListenerImpl()) : mAccountDetailsVMOnCloseSessionAndroidViewViewOnClickListener).setValue(accountDetailsVM));
+                        accountDetailsVMOnCloseSessionAndroidViewViewOnClickListener = (((mAccountDetailsVMOnCloseSessionAndroidViewViewOnClickListener == null) ? (mAccountDetailsVMOnCloseSessionAndroidViewViewOnClickListener = new OnClickListenerImpl1()) : mAccountDetailsVMOnCloseSessionAndroidViewViewOnClickListener).setValue(accountDetailsVM));
                     }
             }
         }
@@ -203,6 +211,7 @@ public class ActivityAccountBindingImpl extends ActivityAccountBinding  {
             // api target 1
 
             this.cvLoginScreenLogin.setOnClickListener(accountDetailsVMOnCloseSessionAndroidViewViewOnClickListener);
+            this.mboundView7.setOnClickListener(accountDetailsVMCheckForUpdateAndroidViewViewOnClickListener);
         }
         if ((dirtyFlags & 0xcL) != 0) {
             // api target 1
@@ -216,6 +225,17 @@ public class ActivityAccountBindingImpl extends ActivityAccountBinding  {
     public static class OnClickListenerImpl implements android.view.View.OnClickListener{
         private com.uni.julio.superplus.viewmodel.AccountDetailsViewModel value;
         public OnClickListenerImpl setValue(com.uni.julio.superplus.viewmodel.AccountDetailsViewModel value) {
+            this.value = value;
+            return value == null ? null : this;
+        }
+        @Override
+        public void onClick(android.view.View arg0) {
+            this.value.checkForUpdate(arg0); 
+        }
+    }
+    public static class OnClickListenerImpl1 implements android.view.View.OnClickListener{
+        private com.uni.julio.superplus.viewmodel.AccountDetailsViewModel value;
+        public OnClickListenerImpl1 setValue(com.uni.julio.superplus.viewmodel.AccountDetailsViewModel value) {
             this.value = value;
             return value == null ? null : this;
         }

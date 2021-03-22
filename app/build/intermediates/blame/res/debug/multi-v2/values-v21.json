@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\workspace\\2020\\8_Aug\\SuperPlus\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "D:\\workspace\\2020\\8_Aug\\Android_SuperPlus_Julio_Mexico\\SuperTvPlus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\81aef59f1357df38cab69be85907241a\\material-1.1.0\\res\\values-v21\\values-v21.xml",
@@ -78,7 +78,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\25efaa9218fd8de22896683ffb0ad058\\jetified-core-0.8.5.6\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\Cosmic\\.gradle\\caches\\transforms-2\\files-2.1\\b2e5eaefc9c6679b50312887672b2816\\jetified-core-0.8.5.6\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,13",
                         "startColumns": "4,4",

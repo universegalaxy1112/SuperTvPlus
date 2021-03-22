@@ -158,7 +158,7 @@ public abstract class DownloadService extends Service {
    */
   public static final String KEY_FOREGROUND = "foreground";
 
-  /** Invalid foreground notification id that can be used to run the service in the background. */
+  /** Invalid foreground notification id that can be used to run the service in the livetv_bg_middle. */
   public static final int FOREGROUND_NOTIFICATION_ID_NONE = 0;
 
   /** Default foreground notification update interval in milliseconds. */
@@ -186,7 +186,7 @@ public abstract class DownloadService extends Service {
    * Creates a DownloadService.
    *
    * <p>If {@code foregroundNotificationId} is {@link #FOREGROUND_NOTIFICATION_ID_NONE} then the
-   * service will only ever run in the background. No foreground notification will be displayed and
+   * service will only ever run in the livetv_bg_middle. No foreground notification will be displayed and
    * {@link #getScheduler()} will not be called.
    *
    * <p>If {@code foregroundNotificationId} is not {@link #FOREGROUND_NOTIFICATION_ID_NONE} then the
@@ -194,7 +194,7 @@ public abstract class DownloadService extends Service {
    * often as the interval specified by {@link #DEFAULT_FOREGROUND_NOTIFICATION_UPDATE_INTERVAL}.
    *
    * @param foregroundNotificationId The notification id for the foreground notification, or {@link
-   *     #FOREGROUND_NOTIFICATION_ID_NONE} if the service should only ever run in the background.
+   *     #FOREGROUND_NOTIFICATION_ID_NONE} if the service should only ever run in the livetv_bg_middle.
    */
   protected DownloadService(int foregroundNotificationId) {
     this(foregroundNotificationId, DEFAULT_FOREGROUND_NOTIFICATION_UPDATE_INTERVAL);
@@ -204,7 +204,7 @@ public abstract class DownloadService extends Service {
    * Creates a DownloadService.
    *
    * @param foregroundNotificationId The notification id for the foreground notification, or {@link
-   *     #FOREGROUND_NOTIFICATION_ID_NONE} if the service should only ever run in the background.
+   *     #FOREGROUND_NOTIFICATION_ID_NONE} if the service should only ever run in the livetv_bg_middle.
    * @param foregroundNotificationUpdateInterval The maximum interval between updates to the
    *     foreground notification, in milliseconds. Ignored if {@code foregroundNotificationId} is
    *     {@link #FOREGROUND_NOTIFICATION_ID_NONE}.
@@ -238,7 +238,7 @@ public abstract class DownloadService extends Service {
    * Creates a DownloadService.
    *
    * @param foregroundNotificationId The notification id for the foreground notification, or {@link
-   *     #FOREGROUND_NOTIFICATION_ID_NONE} if the service should only ever run in the background.
+   *     #FOREGROUND_NOTIFICATION_ID_NONE} if the service should only ever run in the livetv_bg_middle.
    * @param foregroundNotificationUpdateInterval The maximum interval between updates to the
    *     foreground notification, in milliseconds. Ignored if {@code foregroundNotificationId} is
    *     {@link #FOREGROUND_NOTIFICATION_ID_NONE}.
@@ -918,7 +918,7 @@ public abstract class DownloadService extends Service {
           Intent intent = getIntent(context, serviceClass, DownloadService.ACTION_INIT);
           context.startService(intent);
         } catch (IllegalStateException e) {
-          /* startService fails if the app is in the background then don't stop the scheduler. */
+          /* startService fails if the app is in the livetv_bg_middle then don't stop the scheduler. */
           return;
         }
       }
